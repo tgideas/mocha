@@ -1,0 +1,16 @@
+{
+  "author": "TGideas",
+  "name": "Mocha",
+  "version": "0.1.0",
+  "description": "Mocha Workflow Automation.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-connect": "latest"
+  },
+  "license": "BSD",
+  "repository": {
+    "type": "",
+    "url": "https://github.com/tgideas/mocha"
+  }
+}
