@@ -1,0 +1,31 @@
+/*
+ * dialog v.1
+ * Author:sonichuang
+ * Modify:2015-12-03
+ * 
+ */
+.mocha-page-mark{position: fixed;z-index:999;left:0;top:0;width:100%;height:100%;
+	/* css3 rgba */
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.7); 
+}
+.mocha-dialog{position: fixed;z-index:1001;left:50%;top:10%;margin:0 0 0 -45%;width:90%;background-color: #fff;}
+	.mocha-dialog-close{position: absolute;right:10px;top:10px;font-size:1.8em;}
+	.mocha-dialog-hd{padding:0.8em;}
+	.mocha-dialog-hd-title{font-size: 1.2em;text-align: center;padding:0 1em;}
+	.mocha-dialog-bd{padding:1em;}
+	.mocha-dialog-fd{padding:1em;border-top:1px solid #ccc;text-align: center;}
+	.mocha-box-fd-btn{display: inline-block;vertical-align: middle;padding:0.5em 1em;margin:0 0.5em;}
+	/* scheme */
+	.mocha-dialog-scheme1{}
+	.mocha-dialog-scheme2{}
+	.mocha-dialog-scheme2 .mocha-dialog-hd{display: none;}
+	.mocha-dialog-scheme2 .mocha-dialog-bd{padding:3em 0 0 0;text-align: center;}
+	/* skin */
+	.mocha-dialog-skin1{background-color: #fff;}
+	.mocha-dialog-skin1 .mocha-dialog-hd{background-color: #ddd;}
+	.mocha-dialog-skin1 .mocha-dialog-close{color: #666;}
+	.mocha-dialog-skin1 .mocha-dialog-close:active{color: #333;}
+	.mocha-dialog-skin1 .mocha-box-fd-btn{background-color: #ddd;color: #333;}
+	.mocha-dialog-scheme2.mocha-dialog-skin1{background:none;color: #fff;}
+	.mocha-dialog-scheme2.mocha-dialog-skin1 .mocha-dialog-close{color: #ccc;}
