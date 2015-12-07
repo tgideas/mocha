@@ -20,7 +20,7 @@
 	.mocha-txt-list-scheme2 .mocha-tlu-item{padding-left:1em;}
 	.mocha-txt-list-scheme2 .mocha-tlu-item-icon{display: none;}
 	.mocha-txt-list-scheme3 .mocha-tlu-item{padding-left:1em;}
-	.mocha-txt-list-scheme3 .mocha-tlu-item-title{overflow: hidden;*zoom:1;height:1.2em;line-height: 1.2em;padding-right:4em;text-overflow:ellipsis;white-space:nowrap;}
+	.mocha-txt-list-scheme3 .mocha-tlu-item-title{overflow: hidden;height:1.2em;line-height: 1.2em;padding-right:4em;text-overflow:ellipsis;white-space:nowrap;}
 	.mocha-txt-list-scheme3 .mocha-tlu-item-meta{position: absolute;right:1em;top:1em;}
 	/* skin */
 	.mocha-txt-list-skin1{font-size:12px;}

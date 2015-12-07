@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>banner-slider TGideas移动页面模块化</title>
+	<!-- 页面重构：dereksu | 创建：20151203 | 团队博客：http://tgideas.qq.com/ -->
+	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<link href="../../css/banner-slider/banner-slider_v.1.css" rel="stylesheet">
+	<style>
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: 14px;}
+	body{padding-bottom: 10px;}
+	</style>
+</head>
+<body>
+
+<h3>样式一（demo1）:</h3>
+
+<div id="mochaBannerSlider1" data-psdw="640" data-bannersliderw="640" data-bannersliderh="330" class="mocha-banner-slider mocha-banner-slider-scheme1 mocha-banner-slider-skin1">
+	<ul class="content">
+		<li class="current"><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-3.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-4.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-5.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<h3>样式一（demo2）:</h3>
+
+<div id="mochaBannerSlider2" data-psdw="640" data-bannersliderw="580" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme1 mocha-banner-slider-skin1">
+	<ul class="content">
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<h3>样式二（demo1）:</h3>
+
+<div id="mochaBannerSlider3" data-psdw="640" data-bannersliderw="640" data-bannersliderh="330" class="mocha-banner-slider mocha-banner-slider-scheme2 mocha-banner-slider-skin1">
+	<ul class="content">
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<h3>样式二（demo2）:</h3>
+
+<div id="mochaBannerSlider4" data-psdw="640" data-bannersliderw="580" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme2 mocha-banner-slider-skin1">
+	<ul class="content">
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<h3>样式三（demo1）:</h3>
+
+<div id="mochaBannerSlider5Wrapper" class="mocha-banner-slider-wrapper">
+	<div id="mochaBannerSlider5" data-psdw="640" data-bannersliderw="560" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme3 mocha-banner-slider-skin3">
+		<ul class="content">
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 prevBtn">&lt;</a>
+	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 nextBtn">&gt;</a>
+</div>
+
+<h3>样式三（demo2）:</h3>
+
+<div id="mochaBannerSlider6Wrapper" class="mocha-banner-slider-wrapper">
+	<div id="mochaBannerSlider6" data-psdw="640" data-bannersliderw="560" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme2 mocha-banner-slider-skin4">
+		<ul class="content">
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 prevBtn">&lt;</a>
+	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 nextBtn">&gt;</a>
+</div>
+
+<h3>样式四:</h3>
+
+<div id="mochaBannerSlider7" data-psdw="640" data-bannersliderw="640" data-bannersliderh="380" data-liwidth="300" data-lipadding="20" class="mocha-banner-slider mocha-banner-slider-scheme3 mocha-banner-slider-skin3">
+	<ul class="content">
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<h3>样式五（demo1）:</h3>
+
+<div id="mochaBannerSlider8" data-psdw="640" class="mocha-banner-slider-wrapper">
+	<div data-bannersliderw="640" data-bannersliderh="330" data-bannerslidermarginbottom="20" class="gallery-top mocha-banner-slider">
+		<ul class="content">
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-1.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-3.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-4.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-5.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	
+	<div data-bannersliderw="640" data-bannersliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-banner-slider mocha-banner-slider-scheme4">
+		<ul class="content">
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-1.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-2.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-3.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-4.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-5.jpg" alt=""></li>
+		</ul>
+	</div>
+</div>
+
+<h3>样式五（demo2）:</h3>
+
+<div id="mochaBannerSlider9" data-psdw="640" class="mocha-banner-slider-wrapper">
+	<div data-bannersliderw="580" data-bannersliderh="300" data-bannerslidermarginbottom="20" class="gallery-top mocha-banner-slider">
+		<ul class="content">
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-1.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-3.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-4.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-5.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	
+	<div data-bannersliderw="580" data-bannersliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-banner-slider mocha-banner-slider-scheme4">
+		<ul class="content">
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-1.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-2.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-3.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-4.jpg" alt=""></li>
+			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-5.jpg" alt=""></li>
+		</ul>
+	</div>
+</div>
+
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/motion/slide.v1.0.min.js"></script>
+<script src="../../js/banner-slider/banner-slider_v.1.js"></script>
+</body>
+</html>
