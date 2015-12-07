@@ -3,15 +3,15 @@
  * Author:dereksu
  * Modify:2015-12-3
  * Description:
- * 1.htmlÖĞdata-xxxÊÇÉè¼Æ¸åÖĞÁ¿³öÀ´µÄÖµ£¬jsÖĞÅäÖÃµÄcontrollerHÊÇÖØ¹¹ÖĞÊµ¼ÊµÄcssÏñËØÖµ£¨Ò»°ãÊÇÉè¼Æ¸åÖĞµÄÖµµÄÒ»°ë£©;
- * 2.gallery-thumbsÖĞµÄÍ¼¿É»»³É¸úgallery-topÖĞµÄ´óÍ¼ÏàÍ¬¿í¸ß±ÈÀıµÄĞ¡Í¼Æ¬;
- * 3.Ã¿¸öslider-liÄÚÖ§³Ö¼Óa±êÇ©»òÕß²»¼Óa±êÇ©Ö±½ÓÒ»ÕÅÍ¼Æ¬Õ¹Ê¾;
- * 4.banner-sliderÖĞµÄÃ¿¸öliµÄÍ¼Æ¬¶¼ÓÃdata-srcÀ´´æÍ¼Æ¬µØÖ·£¬»á°´Ğè¼ÓÔØ
+ * 1.htmlä¸­data-xxxæ˜¯è®¾è®¡ç¨¿ä¸­é‡å‡ºæ¥çš„å€¼ï¼Œjsä¸­é…ç½®çš„controllerHæ˜¯é‡æ„ä¸­å®é™…çš„cssåƒç´ å€¼ï¼ˆä¸€èˆ¬æ˜¯è®¾è®¡ç¨¿ä¸­çš„å€¼çš„ä¸€åŠï¼‰;
+ * 2.gallery-thumbsä¸­çš„å›¾å¯æ¢æˆè·Ÿgallery-topä¸­çš„å¤§å›¾ç›¸åŒå®½é«˜æ¯”ä¾‹çš„å°å›¾ç‰‡;
+ * 3.æ¯ä¸ªslider-liå†…æ”¯æŒåŠ aæ ‡ç­¾æˆ–è€…ä¸åŠ aæ ‡ç­¾ç›´æ¥ä¸€å¼ å›¾ç‰‡å±•ç¤º;
+ * 4.banner-sliderä¸­çš„æ¯ä¸ªliçš„å›¾ç‰‡éƒ½ç”¨data-srcæ¥å­˜å›¾ç‰‡åœ°å€ï¼Œä¼šæŒ‰éœ€åŠ è½½
  */
 
 
 /**
- * ÑùÊ½Ò»JS
+ * æ ·å¼ä¸€JS
  */
 function setMochaBannerSliderType1Size(bannerSliderId, bannerSliderW, bannerSliderH, psdW) {
 	var bannerSliderLen = $("#" + bannerSliderId + " .content li").length;
@@ -48,13 +48,13 @@ function mochaBannerSliderType1Init(bannerSliderIdArr, callback) {
 			}
 		});
 
-		//³õÊ¼»¯³É¹¦Ö®ºóµÄ»Øµ÷
+		//åˆå§‹åŒ–æˆåŠŸä¹‹åçš„å›è°ƒ
 		if (typeof callback == 'function') {
 			callback();
 		}
 	}
 }
-//³õÊ¼»¯ÑùÊ½Ò»£¨demo1ºÍdemo2£©
+//åˆå§‹åŒ–æ ·å¼ä¸€ï¼ˆdemo1å’Œdemo2ï¼‰
 Zepto(function($) {
 	mochaBannerSliderType1Init(["mochaBannerSlider1", "mochaBannerSlider2"], function() {
 		//window.mochaBannerSlider1.play();
@@ -64,7 +64,7 @@ Zepto(function($) {
 
 
 /**
- * ÑùÊ½¶şJS
+ * æ ·å¼äºŒJS
  */
 function setMochaBannerSliderType2Size(bannerSliderId, bannerSliderW, bannerSliderH, psdW, controllerH) {
 	var bannerSliderLen = $("#" + bannerSliderId + " .content li").length;
@@ -102,13 +102,13 @@ function mochaBannerSliderType2Init(bannerSliderIdArr, callback) {
 			}
 		});
 
-		//³õÊ¼»¯³É¹¦Ö®ºóµÄ»Øµ÷
+		//åˆå§‹åŒ–æˆåŠŸä¹‹åçš„å›è°ƒ
 		if (typeof callback == 'function') {
 			callback();
 		}
 	}
 }
-//³õÊ¼»¯ÑùÊ½¶ş£¨demo1ºÍdemo2£©
+//åˆå§‹åŒ–æ ·å¼äºŒï¼ˆdemo1å’Œdemo2ï¼‰
 Zepto(function($) {
 	mochaBannerSliderType2Init([{
 		'id': 'mochaBannerSlider3',
@@ -124,7 +124,7 @@ Zepto(function($) {
 
 
 /**
- * ÑùÊ½ÈıJS
+ * æ ·å¼ä¸‰JS
  */
 function setMochaBannerSliderType3Size(bannerSliderId, bannerSliderW, bannerSliderH, psdW, controllerH) {
 	var bannerSliderLen = $("#" + bannerSliderId + " .content li").length;
@@ -166,13 +166,13 @@ function mochaBannerSliderType3Init(bannerSliderIdArr, callback) {
 			}
 		});
 
-		//³õÊ¼»¯³É¹¦Ö®ºóµÄ»Øµ÷
+		//åˆå§‹åŒ–æˆåŠŸä¹‹åçš„å›è°ƒ
 		if (typeof callback == 'function') {
 			callback();
 		}
 	}
 }
-//³õÊ¼»¯ÑùÊ½Èı£¨demo1ºÍdemo2£©
+//åˆå§‹åŒ–æ ·å¼ä¸‰ï¼ˆdemo1å’Œdemo2ï¼‰
 Zepto(function($) {
 	mochaBannerSliderType3Init([{
 		'id': 'mochaBannerSlider5',
@@ -186,7 +186,7 @@ Zepto(function($) {
 });
 
 /**
- * ÑùÊ½ËÄJS
+ * æ ·å¼å››JS
  */
 function setMochaBannerSliderType4Size(bannerSliderId, bannerSliderW, bannerSliderH, psdW, controllerH, liWidth, liPadding) {
 	var bannerSliderLen = $("#" + bannerSliderId + " .content li").length;
@@ -269,13 +269,13 @@ function mochaBannerSliderType4Init(bannerSliderIdArr, callback) {
 			setMochaBannerSliderType4Lazyload(bannerSliderIdArr[i].id);
 		}
 
-		//³õÊ¼»¯³É¹¦Ö®ºóµÄ»Øµ÷
+		//åˆå§‹åŒ–æˆåŠŸä¹‹åçš„å›è°ƒ
 		if (typeof callback == 'function') {
 			callback();
 		}
 	}
 }
-//³õÊ¼»¯ÑùÊ½ËÄ
+//åˆå§‹åŒ–æ ·å¼å››
 Zepto(function($) {
 	mochaBannerSliderType4Init([{
 		'id': 'mochaBannerSlider7',
@@ -286,7 +286,7 @@ Zepto(function($) {
 });
 
 /**
- * ÑùÊ½ÎåJS
+ * æ ·å¼äº”JS
  */
 function setMochaBannerSliderType5Size(bannerSliderId, bannerSliderGalleryTopW, bannerSliderGalleryTopH, bannerSliderGalleryTopMarginBottom, bannerSliderGalleryThumbsW, bannerSliderGalleryThumbsH, bannerSliderGalleryThumbsLiPaddingRight, psdW) {
 	var bannerSliderGalleryTopLen = $("#" + bannerSliderId + " .gallery-top .content li").length;
@@ -392,7 +392,7 @@ function mochaBannerSliderType5Init(bannerSliderIdArr, callback) {
 				lazy: true,
 				event: {
 					init: function() {
-						//ÉèÖÃthumbs³õÊ¼»¯ÑùÊ½
+						//è®¾ç½®thumbsåˆå§‹åŒ–æ ·å¼
 						setMochaBannerSliderType5GalleryThumbsStyle(bannerSliderIdArr[i]);
 					}
 				}
@@ -411,13 +411,13 @@ function mochaBannerSliderType5Init(bannerSliderIdArr, callback) {
 			setMochaBannerSliderType5Lazyload(bannerSliderIdArr[i]);
 		}
 
-		//³õÊ¼»¯³É¹¦Ö®ºóµÄ»Øµ÷
+		//åˆå§‹åŒ–æˆåŠŸä¹‹åçš„å›è°ƒ
 		if (typeof callback == 'function') {
 			callback();
 		}
 	}
 }
-//³õÊ¼»¯ÑùÊ½Îå£¨demo1ºÍdemo2£©
+//åˆå§‹åŒ–æ ·å¼äº”ï¼ˆdemo1å’Œdemo2ï¼‰
 Zepto(function($) {
 	mochaBannerSliderType5Init(["mochaBannerSlider8", "mochaBannerSlider9"], function() {
 		//window.mochaBannerSlider8galleryTop.play();
@@ -428,7 +428,7 @@ Zepto(function($) {
 
 
 /**
- * body zoomËõ·Å ²»½¨ÒéÊ¹ÓÃ
+ * body zoomç¼©æ”¾ ä¸å»ºè®®ä½¿ç”¨
  */
 /*
 function setFullScreenMode(width) {
