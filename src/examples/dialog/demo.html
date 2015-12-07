@@ -8,46 +8,52 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>盒模块   -TGideas 移动页面模块化</title>
+	<title>弹层模块 -TGideas 移动页面模块化</title>
 	<link href="../../css/base/base_v.1.css" rel="stylesheet">
 	<link href="../../css/dialog/dialog_v.1.css" rel="stylesheet">
 
 	<style type="text/css" media="screen">
 		.h2{font-size:1.4em;margin:1em 0 1em;}
 		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #ddd;}
-		.button{}
+		.button{color: #fff;font-size:1.2em;display: block;width: 90%;margin:1em auto;line-height: 3em;background-color: #06f;border:0;border-radius:1em;}
 	</style>
 </head>
 <body>
 <h2 class="h2">弹层模块(Dialog)</h2>
 
-<button href="javascript:;" class="button">点击弹出Dialog样式1</button>
-<button href="javascript:;" class="button">点击弹出Dialog样式2</button>
+<button id="showDialogBtn1" href="javascript:;" class="button">点击弹出Dialog样式1</button>
+<button id="showDialogBtn2" href="javascript:;" class="button">点击弹出Dialog样式2</button>
 
 
 <!-- page-mark -->
-<div class="mocha-page-mark"></div>
+<!-- <div class="mocha-page-mark"></div> -->
 
 <!-- mocha-dialog-scheme1(样式1-有标题及按钮) -->
-<div class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1">
-	<a href="javascript:;" class="mocha-dialog-close">&times;</a>
-	<div class="mocha-dialog-hd">
-		<h3 class="mocha-dialog-hd-title">样式1-有标题及按钮</h3>
-	</div>
-	<div class="mocha-dialog-bd">
-		<p>{模块内容}</p>
-	</div>
-	<div class="mocha-dialog-fd">
-		<a href="#" class="mocha-box-fd-btn">按钮文字</a>
-		<a href="#" class="mocha-box-fd-btn">按钮文字</a>
+<div id="demoDialog1" class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1" style="display:none">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-hd">
+			<h3 class="mocha-dialog-hd-title">样式1-有标题及按钮</h3>
+		</div>
+		<div class="mocha-dialog-bd">
+			<p>{模块内容}</p>
+		</div>
+		<div class="mocha-dialog-fd">
+			<a href="#" class="mocha-box-fd-btn">按钮文字</a>
+			<a href="#" class="mocha-box-fd-btn">按钮文字</a>
+		</div>
 	</div>
 </div>
 
 <!-- mocha-dialog-scheme2(样式2-无标题及按钮) -->
-<div class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="top:300px;">
-	<a href="javascript:;" class="mocha-dialog-close">&times;</a>
-	<div class="mocha-dialog-bd">
-		<p>{模块内容}</p>
+<div id="demoDialog2" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;top:300px;">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-bd">
+			<p>{模块内容-无标题及按钮}</p>
+		</div>
 	</div>
 </div>
 
@@ -56,10 +62,15 @@
 <script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
 <script>
 	(function mochaDialogFunc(){
+		$("#showDialogBtn1").bind("tap",function(){
+			$("#demoDialog1").css("display","block");
+		})
+		$("#showDialogBtn2").bind("tap",function(){
+			$("#demoDialog2").css("display","block");
+		})
 		$(".mocha-dialog-close").tap(function(){
-			console.log("hello")
-			$(this).parent(".mocha-dialog").hide();
-			$("div.mocha-page-mark").hide();
+			// console.log("hello")
+			$(this).parents(".mocha-dialog").css("display","none");
 		})
 
 	})()
