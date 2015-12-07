@@ -420,7 +420,7 @@ function mochaBannerSliderType5Init(bannerSliderIdArr, callback) {
 //初始化样式五（demo1和demo2）
 Zepto(function($) {
 	mochaBannerSliderType5Init(["mochaBannerSlider8", "mochaBannerSlider9"], function() {
-		window.mochaBannerSlider8galleryTop.play();
+		//window.mochaBannerSlider8galleryTop.play();
 		window.mochaBannerSlider9galleryTop.play();
 	});
 });
