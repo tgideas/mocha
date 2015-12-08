@@ -161,6 +161,46 @@
 
 <script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
 <script src="http://ossweb-img.qq.com/images/js/motion/slide.v1.0.min.js"></script>
-<script src="../../js/banner-slider/banner-slider_v.1.js"></script>
+<script src="../../js/comm/comm_v.1.js"></script>
+<script>
+Zepto(function($) {
+	//样式一
+	MOCHA.bannerSliderInit(1, ["mochaBannerSlider1", "mochaBannerSlider2"], function() {
+		window.mochaBannerSlider2.play();
+	});
+	//样式二
+	MOCHA.bannerSliderInit(2, [{
+		'id': 'mochaBannerSlider3',
+		'controllerH': 24
+	}, {
+		'id': 'mochaBannerSlider4',
+		'controllerH': 24
+	}], function() {
+		window.mochaBannerSlider3.play();
+		window.mochaBannerSlider4.play();
+	});
+	//样式三
+	MOCHA.bannerSliderInit(3, [{
+		'id': 'mochaBannerSlider5',
+		'controllerH': 34
+	}, {
+		'id': 'mochaBannerSlider6',
+		'controllerH': 0
+	}], function() {
+		window.mochaBannerSlider6.play();
+	});
+	//样式四
+	MOCHA.bannerSliderInit(4, [{
+		'id': 'mochaBannerSlider7',
+		'controllerH': 34
+	}], function() {
+		window.mochaBannerSlider7.play();
+	});
+	//样式五
+	MOCHA.bannerSliderInit(5, ["mochaBannerSlider8", "mochaBannerSlider9"], function() {
+		window.mochaBannerSlider9galleryTop.play();
+	});
+});
+</script>
 </body>
 </html>
