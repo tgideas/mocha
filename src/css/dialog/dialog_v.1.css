@@ -11,7 +11,7 @@
 }
 .mocha-dialog{}
 	.mocha-dialog-mark{position: fixed;z-index:999;left:0;top:0;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.7);}
-	.mocha-dialog-box{position: fixed;z-index:1001;left:50%;top:10%;margin:0 0 0 -45%;width:90%;background-color: #fff;}
+	.mocha-dialog-box{position: fixed;z-index:1001;left:50%;top:20%;margin:0 0 0 -45%;width:90%;background-color: #fff;}
 	.mocha-dialog-close{position: absolute;right:10px;top:10px;font-size:1.8em;}
 	.mocha-dialog-hd{padding:0.8em;}
 	.mocha-dialog-hd-title{font-size: 1.2em;text-align: center;padding:0 1em;}
@@ -23,6 +23,7 @@
 	.mocha-dialog-scheme2{}
 	.mocha-dialog-scheme2 .mocha-dialog-hd{display: none;}
 	.mocha-dialog-scheme2 .mocha-dialog-bd{padding:3em 0 0 0;text-align: center;}
+	.mocha-dialog-scheme2 .mocha-dialog-bd p{margin:0 0 0.5em;}
 	/* skin */
 	.mocha-dialog-skin1 .mocha-dialog-box{background-color: #fff;}
 	.mocha-dialog-skin1 .mocha-dialog-hd{background-color: #ddd;}

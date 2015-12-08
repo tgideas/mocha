@@ -15,7 +15,7 @@
 	<style type="text/css" media="screen">
 		.h2{font-size:1.4em;margin:1em 0 1em;}
 		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #ddd;}
-		.button{color: #fff;font-size:1.2em;display: block;width: 90%;margin:1em auto;line-height: 3em;background-color: #06f;border:0;border-radius:1em;}
+		.button{color: #fff;font-size:1.2em;display: block;width: 90%;margin:1em auto;line-height: 2.5em;background-color: #06f;border:0;border-radius:1em;}
 	</style>
 </head>
 <body>
@@ -23,6 +23,7 @@
 
 <button id="showDialogBtn1" href="javascript:;" class="button">点击弹出Dialog样式1</button>
 <button id="showDialogBtn2" href="javascript:;" class="button">点击弹出Dialog样式2</button>
+<button id="showDialogBtn3" href="javascript:;" class="button">二维码弹出层</button>
 
 
 <!-- page-mark -->
@@ -38,6 +39,7 @@
 		</div>
 		<div class="mocha-dialog-bd">
 			<p>{模块内容}</p>
+			<p>{模块内容}</p>
 		</div>
 		<div class="mocha-dialog-fd">
 			<a href="#" class="mocha-box-fd-btn">按钮文字</a>
@@ -47,12 +49,25 @@
 </div>
 
 <!-- mocha-dialog-scheme2(样式2-无标题及按钮) -->
-<div id="demoDialog2" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;top:300px;">
+<div id="demoDialog2" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
 	<div class="mocha-dialog-mark"></div>
 	<div class="mocha-dialog-box">
 		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
 		<div class="mocha-dialog-bd">
 			<p>{模块内容-无标题及按钮}</p>
+		</div>
+	</div>
+</div>
+
+<!-- mocha-dialog-scheme2(二维码浮层) -->
+<div id="demoDialog3" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-bd">
+			<p><img width="200" height="200" src="http://ui.code.oa.com/files/image/201503/20150313112541495.png" alt=""></p>
+			<p>长按识别二维码</p>
+			<p>关注XXXX官方公众号</p>
 		</div>
 	</div>
 </div>
@@ -67,6 +82,9 @@
 		})
 		$("#showDialogBtn2").bind("tap",function(){
 			$("#demoDialog2").css("display","block");
+		})
+		$("#showDialogBtn3").bind("tap",function(){
+			$("#demoDialog3").css("display","block");
 		})
 		$(".mocha-dialog-close").tap(function(){
 			// console.log("hello")
