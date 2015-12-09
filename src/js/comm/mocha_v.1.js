@@ -1094,5 +1094,3 @@ var Mocha = function() {
 
 	return _export;
 }();
-
-
