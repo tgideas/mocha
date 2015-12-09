@@ -6,7 +6,7 @@
 	/* bannerslider */
   .mocha-banner-slider{position: relative;margin:0 auto;}
 	.mocha-banner-slider .content{position:absolute;top:0;left:0;z-index: 1;}
-	.mocha-banner-slider .content li{float: left;position: relative;}
+	.mocha-banner-slider .content li{float: left;position: relative;overflow: hidden;}
 	.mocha-banner-slider .content li a{display: inline-block;}
 	.mocha-banner-slider .controller{width:100%;z-index: 2;}
 	.mocha-banner-slider .controller li{display: inline-block;line-height:9999px;}
