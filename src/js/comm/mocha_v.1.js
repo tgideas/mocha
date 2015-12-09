@@ -1,5 +1,5 @@
 /*
- * comm v.1
+ * mocha v.1
  * Author:dereksu
  * Modify:2015-12-09
  */
