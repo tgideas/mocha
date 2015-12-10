@@ -570,7 +570,7 @@ var Mocha = function() {
 			$("#" + bannerSliderId + " .content li").css('width', parseInt(liWidth) * clientWidth / psdW + 'px');
 			$("#" + bannerSliderId + " .content li").css('padding', '0px ' + (parseInt(liPadding) / psdW) * clientWidth + 'px');
 			$("#" + bannerSliderId + " .content").css('transform', 'translateX(-' + mochaObj[bannerSliderId].curPage * $("#" + bannerSliderId + " .content li").width() + 'px)');
-			$("#" + bannerSliderId + " .content").css('left', (clientWidth - $("#" + bannerSliderId + " .content li").width()) / 2 + 'px');
+			$("#" + bannerSliderId + " .content").css('left', ((((bannerSliderW / psdW * clientWidth) - $("#" + bannerSliderId + " .content li").width()) / 2) - (parseInt(liPadding) / psdW) * clientWidth / 2) + 'px');
 		},
 		bannerSliderType4Resize: function(bannerSliderId, bannerSliderW, bannerSliderH, psdW, controllerH, liWidth, liPadding) {
 			$(window).resize(function(event) {
@@ -747,7 +747,7 @@ var Mocha = function() {
 			$("#" + bannerSliderId + " .gallery-thumbs .content li").css('width', bannerSliderGalleryTopW / bannerSliderGalleryTopH * ((bannerSliderGalleryThumbsH / psdW) * clientWidth) + 'px');
 			$("#" + bannerSliderId + " .gallery-thumbs .content li").css('paddingRight', (parseInt(bannerSliderGalleryThumbsLiPaddingRight) / psdW) * clientWidth + 'px');
 			$("#" + bannerSliderId + " .gallery-thumbs .content").css('transform', 'translateX(-' + mochaObj[bannerSliderId + 'SmallPic'].curPage * $("#" + bannerSliderId + " .gallery-thumbs .content li").width() + 'px)');
-			$("#" + bannerSliderId + " .gallery-thumbs .content").css('left', (clientWidth - $("#" + bannerSliderId + " .gallery-thumbs .content li").width()) / 2 + 'px');
+			$("#" + bannerSliderId + " .gallery-thumbs .content").css('left', ((((bannerSliderGalleryThumbsW / psdW * clientWidth) - $("#" + bannerSliderId + " .gallery-thumbs .content li").width()) / 2) + (parseInt(bannerSliderGalleryThumbsLiPaddingRight) / psdW) * clientWidth / 2) + 'px');
 		},
 		setBannerSliderType5GalleryThumbsStyle: function(bannerSliderId) {
 			$("#" + bannerSliderId + " .gallery-thumbs .content li").eq(mochaObj[bannerSliderId + ''].curPage).addClass('cur');
