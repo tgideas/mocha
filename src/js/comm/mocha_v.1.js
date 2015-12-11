@@ -1069,7 +1069,7 @@ var Mocha = function() {
 	//对外API
 	var _export = {
 		version: "1.1",
-		onInit: function(callback) {
+		init: function(callback) {
 			if (!window.Zepto) {
 				_util.scriptLoader('http://ossweb-img.qq.com/images/js/zepto/zepto.min.js', function() {
 
