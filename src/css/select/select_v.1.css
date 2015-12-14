@@ -4,20 +4,14 @@
  * Modify:2015-12-07
  * 
  */
-.mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;}
-	.mocha-select select{height: 1.875em;margin-bottom: .6875em;font-size: 16px;line-height:1.875em;border-width: .0625em;border-style: solid;border-radius: .25em;}
+.mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;overflow: hidden;}
+	.mocha-select select{float: left;height: 1.875em;margin-right: 3.5%;margin-bottom: .6875em;font-size: 16px;line-height:1.875em;border-width: .0625em;border-style: solid;border-radius: .25em;}
+	.mocha-select select:last-child{margin-right: 0;}
 
 	/* scheme1 */
-	.mocha-select-scheme1 select {display: block;width: 100%;}
-	.mocha-select-scheme2{overflow: hidden;}
-	.mocha-select-scheme2 select{width: 48%;}
-	.mocha-select-scheme2 select:nth-child(1){float: left;}
-	.mocha-select-scheme2 select:nth-child(2){float: right;}
-	.mocha-select-scheme3{overflow: hidden;}
-	.mocha-select-scheme3 select{width: 30.76%;}
-	.mocha-select-scheme3 select:nth-child(1){float: left;}
-	.mocha-select-scheme3 select:nth-child(2){float: left;margin-left: 3.59%;}
-	.mocha-select-scheme3 select:nth-child(3){float: right;}
+	.mocha-select-scheme1 select{width: 100%;}
+	.mocha-select-scheme2 select{width: 48.25%;}
+	.mocha-select-scheme3 select{width: 31%}
 
 	/* skin */
 	.mocha-select-skin1 select{color:#000;border-color:#65655b;}
