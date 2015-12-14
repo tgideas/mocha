@@ -4,17 +4,15 @@
  * Modify:2015-12-05
  * 
  */
- figure{margin: 0;}
-.mocha-menu{width:100%;height:3.0625em;}
-	.mocha-menu a{float: left;width: 33%;height: 100%;line-height:3.0625em;text-align: center;-webkit-box-sizing: border-box;}
-	.mocha-menu a:nth-child(2){width: 34%;}
-	.mocha-menu-icon{display: inline-block;width: 1em;height: 1em;margin-right: 0.3125em;color: rgba(0,0,0,0);vertical-align: middle;}
+.mocha-menu{width:100%;height:3.0625em;display: table;}
+	.mocha-menu a{display: table-cell;height: 100%;line-height:3.0625em;text-align: center;}
+	.mocha-menu-icon{display: none;width: 1em;height: 1em;margin-right: .3125em;color: rgba(0,0,0,0);vertical-align: middle;}
 
 	/* scheme1 */
-	.mocha-menu-scheme1 .mocha-menu-icon{display: none;}
-	.mocha-menu-scheme3 a{width: 25%;font-size: 0.75em;line-height:1.2em;}
-	.mocha-menu-scheme3 a:nth-child(2){width: 25%;}
-	.mocha-menu-scheme3 .mocha-menu-icon{display: block;width: 1.75em;height: 1.75em;margin: 0.4375em auto 0.1875em;}
+	.mocha-menu-scheme1 {position: absolute;bottom: 0;z-index: 99;}
+	.mocha-menu-scheme2 .mocha-menu-icon{display: inline-block;}
+	.mocha-menu-scheme3 a{font-size: .75em;line-height:1.2em;}
+	.mocha-menu-scheme3 .mocha-menu-icon{display: block;width: 1.75em;height: 1.75em;margin: .4375em auto .1875em;}
 
 	/* skin */
 	.mocha-menu-skin1{background-color: #717171;}

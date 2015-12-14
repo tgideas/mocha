@@ -13,49 +13,60 @@
 	<link href="../../css/navigation/navigation_v.1.css" rel="stylesheet">
 
 	<style type="text/css" media="screen">
-		h2{font-size:1.4em;margin:1em 0 1em;}
-		h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #ddd;}
+		.h2{font-size:1.4em;margin:1em 0 1em;}
+		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #ddd;}
 	</style>
 </head>
 <body>
+<h3 class="h3">样式1-有导航</h3>
+<!-- mocha-navigation-scheme1(样式1-有导航) -->
+<header class="mocha-nav mocha-navigation-scheme1 mocha-nav-skin1">
+	<a href="javascript:;" class="mocha-nav-logo">
+		<img src="http://dummyimage.com/40x40/000/fff" width="40" height="40" alt="游戏名字" />
+		<div class="mocha-nav-logo-desc">
+			<h1>我叫MT2</h1>
+			<h2>焕新一代3D手游</h2>
+		</div>
+	</a>
+	<!-- 导航 -->
+	<div class="mocha-nav-slide"><i class="mocha-nav-slide-icon" title="导航开关"></i></div>
+	<nav class="mocha-nav-list">
+	    <div class="mocha-nav-list-cover">
+	    <ul>
+	      <li><a href="javascript:;">首页</a></li>
+	      <li><a href="javascript:;">热门活动</a></li>
+	      <li><a href="javascript:;">新闻中心</a></li>
+	      <li><a href="javascript:;">游戏攻略</a></li>
+	      <li><a href="javascript:;">游戏图库</a></li>
+	      <li><a href="javascript:;">论坛</a></li>
+	    </ul>
+	    </div>
+	</nav>
+  	<a href="javascript:;" class="mocha-nav-btn">关注</a>
+</header>
+<h3 class="h3">样式2-无导航</h3>
+<!-- mocha-navigation-scheme2(样式2-无导航) -->
 <header class="mocha-nav mocha-nav-skin1">
-    <div class="mocha-nav-hd">
-	    <a href="javascript:;" class="mocha-nav-hd-logo">
-	      	<figure>
-				<img src="http://dummyimage.com/40x40/000/fff" width="40" height="40" alt="游戏名字" />
-				<figcaption>现在就关注XXXX公众号</figcaption>
-			</figure>
-		</a>
-    </div>
-	<div class="mocha-nav-bd">
-		<div class="mocha-nav-bd-slide"><i class="mocha-nav-bd-slide-icon" title="导航开关"></i></div>
-		<nav class="mocha-nav-bd-list">
-		    <div class="mocha-nav-bd-list-cover">
-		    <ul>
-		      <li><a href="javascript:;">首页</a></li>
-		      <li><a href="javascript:;">热门活动</a></li>
-		      <li><a href="javascript:;">新闻中心</a></li>
-		      <li><a href="javascript:;">游戏攻略</a></li>
-		      <li><a href="javascript:;">游戏图库</a></li>
-		      <li><a href="javascript:;">论坛</a></li>
-		    </ul>
-		    </div>
-		</nav>
-	  	<a href="javascript:;" class="mocha-nav-bd-btn">关注</a>
-	</div>
+	<a href="javascript:;" class="mocha-nav-logo">
+		<img src="http://dummyimage.com/40x40/000/fff" width="40" height="40" alt="游戏名字" />
+		<div class="mocha-nav-logo-desc">
+			<h1>我叫MT2</h1>
+			<h2>焕新一代3D手游</h2>
+		</div>
+	</a>
+  	<a href="javascript:;" class="mocha-nav-btn">关注</a>
 </header>	
-
 <!-- demo JS -->
 <script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
 <script>
-	$(".mocha-nav-bd-slide").bind("touchstart", function() {
-        if ($(".mocha-nav-bd-list-open").length) {
-            $(".mocha-nav-bd-list").removeClass("mocha-nav-bd-list-open");
-            $(".mocha-nav-bd-slide").removeClass("mocha-nav-bd-slide-close");
+	$(".mocha-nav-slide").bind("touchstart", function() {
+        if ($(".mocha-nav-list-open").length) {
+            $(".mocha-nav-list").removeClass("mocha-nav-list-open");
+            $(".mocha-nav-slide").removeClass("mocha-nav-slide-close");
             $("body").unbind("touchmove", false);
         } else {
-            $(".mocha-nav-bd-list").addClass("mocha-nav-bd-list-open");
-            $(".mocha-nav-bd-slide").addClass("mocha-nav-bd-slide-close");
+            $(".mocha-nav-list").addClass("mocha-nav-list-open");
+            $(".mocha-nav-slide").addClass("mocha-nav-slide-close");
             $("body").bind("touchmove", false);
         }
     }, false);
