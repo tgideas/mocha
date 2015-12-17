@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>lottery TGideas移动页面模块化</title>
+	<!-- 页面重构：dereksu | 创建：20151213 | 团队博客：http://tgideas.qq.com/ -->
+	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<link href="../../css/lottery/lottery_v.1.css" rel="stylesheet">
+	<style>
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: 14px;}
+	body{padding-bottom: 10px;}
+	</style>
+</head>
+<body>
+
+	<h3>样式一（方形）:</h3>
+	<div id="lottery1" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme1">
+		<div id="lottery1content" class="content"></div>
+	</div>
+
+	<h3>样式二（圆形）:</h3>
+	<div id="lottery2" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme2">
+		<div id="lottery2content" class="content"></div>
+	</div>
+
+	<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+	<script src="http://ossweb-img.qq.com/images/js/motion/lottery.min.js"></script>
+	<script src="../../js/lottery/lottery_v.1.js"></script>
+</body>
+</html>
