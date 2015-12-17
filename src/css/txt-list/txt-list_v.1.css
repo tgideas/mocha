@@ -10,7 +10,7 @@
 	.mocha-tlu-item:after{content: '.';height: 0;line-height: 0;display: block;clear: both;visibility: hidden;}
 	.mocha-tlu-item:last-child{border-bottom:none;}
 	.mocha-tlu-item-icon{position: absolute;left:1em;top:1em;width:2.5em;height:1.5em;line-height: 1.5em;border-radius:5em;background-color: #ccc;text-align: center;}
-	.mocha-tlu-item-title{font-size:1.2em;}
+	.mocha-tlu-item-title{font-size:1.4em;}
 	.mocha-tlu-item-meta{padding-top:0.2em;}
 	.mocha-tlu-item-meta time{padding-left:1em;}
 	.mocha-tlu-item-sup{float: left;margin-right:0.5em;}
