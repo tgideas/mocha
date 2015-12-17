@@ -1,0 +1,17 @@
+/*
+ * button v.1
+ * Author:sonichuang
+ * Modify:2015-12-15
+ * 
+ */
+
+.mocha-button{line-height: 2.5em;text-align: center;}
+	/* scheme */
+	.mocha-button-scheme1{display:block;width: 100%;}
+	.mocha-button-scheme2{display:inline-block;width:48%;margin-right:2%;}
+	.mocha-button-scheme3{display:inline-block;width:32%;margin-right:1%;}
+	.mocha-button-scheme4{display:inline-block;margin-right:1%;padding:0 0.5em;}
+	/* skin */
+	.mocha-button-skin1{font-size:16px;color: #fff;background-color: #ee3e45;border-radius:0.2em;box-shadow:inset 0 -3px 0px #be3237;}
+	.mocha-button-skin1:active{background-color: #be3237;box-shadow:inset 0 3px 0px #9d2c2c;}
+	.mocha-button-skin1.mocha-button-disable{background-color: #898989;box-shadow:inset 0 -3px 0px #6f6f6f;}
