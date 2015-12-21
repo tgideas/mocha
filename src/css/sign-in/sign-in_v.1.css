@@ -1,0 +1,64 @@
+/*
+ * sign-in v.1
+ * Author:dereksu
+ * Modify:2015-12-20
+ */
+/* sign-in */
+  .mocha-sign-in{margin:0 auto;font-size: 16px;overflow: hidden;}
+	/* scheme */
+	.mocha-sign-in-scheme1{width:80%;}
+	.mocha-sign-in-scheme1 .title-panel{width:100%;height: 26px;line-height:26px;overflow: hidden;}
+	.mocha-sign-in-scheme1 .title-panel .tit{display: block;height:100%;padding-left: 5px;float: left;}
+	.mocha-sign-in-scheme1 .title-panel .total{display: block;height:100%;padding:0 5px;float: right;}
+	.mocha-sign-in-scheme1 .title-panel .qqnum{display: block;height:100%;float: right;}
+	.mocha-sign-in-scheme1 .title-panel .total .num{display: inline;font-style: normal;}
+	.mocha-sign-in-scheme1 .date-panel{width:100%;height: 20px;line-height: 20px;overflow: hidden;}
+	.mocha-sign-in-scheme1 .date-panel .nowdate{display: block;height: 100%;padding-right:5px;float: right; }
+	.mocha-sign-in-scheme1 .btn-panel{width:100%;height: 50px;line-height: 30px;overflow: hidden;}
+	.mocha-sign-in-scheme1 .btn-panel .signinbtn,.mocha-sign-in-scheme1 .btn-panel .querysigninbtn{display: block;height: 30px;margin:10px 5px;padding:0 5px;float: right;}
+	.mocha-sign-in-scheme2{}
+	.mocha-sign-in-scheme2 .content{width: 270px;height:30px;position: relative;margin: 0 auto;}
+	.mocha-sign-in-scheme2 .content:before{content:'';height: 6px;position: absolute;top:50%;margin-top: -3px;left: 2%;right: 2%;display: block;z-index: 1;}
+	.mocha-sign-in-scheme2 .content .signinbox{width: 100%;height: 100%;position: absolute;top:0;left: 0;z-index: 2;}
+	.mocha-sign-in-scheme2 .content .signinbox .signinitem{display: block;float:left;width:30px;height: 100%;margin: 0 5px;z-index: 2;}
+	.mocha-sign-in-scheme2 .content .signinbox .signinitem:first-child{margin-left: 0;}
+	.mocha-sign-in-scheme2 .content .signinbox .signinitem:last-child{margin-right: 0;}
+	/* skin */
+	.mocha-sign-in-skin1 {background: #bbb;border: #2a2a2a solid 1px;}
+	.mocha-sign-in-skin1 .title-panel{background:#2a2a2a;font-size: 0.75em;color:#fff;}
+	.mocha-sign-in-skin1 .date-panel{font-size: 0.5625em;color:#171717;border-top:1px #65655b solid;border-bottom: 1px #65655b solid;}
+	.mocha-sign-in-skin1 .btn-panel{font-size: 1em;color:#fff;}
+	.mocha-sign-in-skin1 .btn-panel .signinbtn,.mocha-sign-in-skin1 .btn-panel .querysigninbtn{border: 1px solid #ccc;border-radius: 5px;background: #009dfe;}
+	.mocha-sign-in-skin2 .content:before{background: #4e4e4e;}
+	.mocha-sign-in-skin2 .content .signinbox .signinitem{background: #4e4e4e;border-radius: 50%;}
+	/*日历请用TABLE构造 以下为基础样式*/
+	.mocha-sign-in-skin1 .calendar table{ border-collapse:collapse;margin:0 auto;padding:0;border: 0;}
+	.mocha-sign-in-skin1 .calendar td{ border:5px #bbb solid; padding:.3em .3em;text-align:center;}
+	.mocha-sign-in-skin1 .calendar th{border:5px #bbb solid; padding:.3em .3em;text-align:center;}
+	.mocha-sign-in-skin1 .calendar tbody{background: #4f4f4f; color: #bbb; }
+	.mocha-sign-in-skin1 .calendar thead{background: #bbb; color: #171717; }
+	/*以下样式为组件根据类名自动为对应元素追加的样式*/
+	/*可不用此类名，也可更改对应DOM结构，只需要修改对应控件接口即可*/
+	/*main是追加在标签TABLE上的样式*/
+	.mocha-sign-in-skin1 .calendar .main{background: #4f4f4f; color: #bbb;}
+	/*head是追加在标签THEAD上的样式*/
+	.mocha-sign-in-skin1 .calendar .head{background: #bbb; color: #171717;}
+	/*head是追加在标签TBODY上的样式*/
+	.mocha-sign-in-skin1 .calendar .body{}
+	/*week是追加在标签TBODY中的TR的样式*/
+	.mocha-sign-in-skin1 .calendar .week{background: #4f4f4f; color: #bbb;}
+	/*normal是追加在标签TD上的样式，用以表示普通日的样式*/
+	.mocha-sign-in-skin1 .calendar .normal{color:#fefefe;}
+	/*normal是追加在标签TD上的样式，用以表示非活动日的样式*/
+	.mocha-sign-in-skin1 .calendar .noday{color: #bbb;}
+	/*normal是追加在标签TD上的样式，用以表示今日的样式*/
+	.mocha-sign-in-skin1 .calendar .today{color: green;}
+	/*normal是追加在标签TD上的样式，用以表示特殊日的样式*/
+	.mocha-sign-in-skin1 .calendar .special{color: #000; background:red;}
+	/*normal是追加在标签TD上的样式，用以表示周末的样式*/
+	.mocha-sign-in-skin1 .calendar .weekend{color:red;}
+	/*normal是追加在标签TD上的样式，用以表示签到日的样式，仅在签到日历中使用*/
+	.mocha-sign-in-skin1 .calendar .signcls{background:green;color:black;}
+	/*normal是追加在标签TD上的样式，用以表示未签到日的样式，仅在签到日历中使用*/
+	.mocha-sign-in-skin1 .calendar .nosigncls{background:gray;color:black;}
+	

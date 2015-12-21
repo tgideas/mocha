@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>sign-in TGideas移动页面模块化</title>
+	<!-- 页面重构：dereksu | 创建：20151203 | 团队博客：http://tgideas.qq.com/ -->
+	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<link href="../../css/sign-in/sign-in_v.1.css" rel="stylesheet">
+	<style>
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: 14px;}
+	body{padding-bottom: 10px !important;}
+	</style>
+</head>
+<body>
+
+<h3>样式一:</h3>
+
+<div class="mocha-sign-in mocha-sign-in-scheme1 mocha-sign-in-skin1">
+	<div class="title-panel clearfix">
+		<span class="tit">签到日历</span>
+		<span class="total">本月已累积签到<i class="num" id="queryCheckInRes">0</i>天</span>
+		<span class="qqnum" id="login_qq_span"></span>
+	</div>
+	<div class="date-panel clearfix">
+		<span class="nowdate" id="nowDate"></span>
+	</div>
+	<div id="cal" class="calendar">
+		<table class="main"><thead class="head"><tr><th>星期日</th><th>星期一</th><th>星期二</th><th>星期三</th><th>星期四</th><th>星期五</th><th>星期六</th></tr></thead><tbody class="body"><tr class="week"><td class="noday">29</td><td class="noday">30</td><td class="normal">1</td><td class="normal">2</td><td class="normal">3</td><td class="normal">4</td><td class="weekend">5</td></tr><tr class="week"><td class="weekend">6</td><td class="normal">7</td><td class="normal">8</td><td class="normal">9</td><td class="normal">10</td><td class="normal">11</td><td class="weekend">12</td></tr><tr class="week"><td class="weekend">13</td><td class="normal">14</td><td class="normal">15</td><td class="normal">16</td><td class="normal">17</td><td class="normal">18</td><td class="weekend">19</td></tr><tr class="week"><td class="today">20</td><td class="normal">21</td><td class="normal">22</td><td class="normal">23</td><td class="normal">24</td><td class="normal">25</td><td class="weekend">26</td></tr><tr class="week"><td class="weekend">27</td><td class="normal">28</td><td class="normal">29</td><td class="normal">30</td><td class="normal">31</td><td class="noday">1</td><td class="noday">2</td></tr></tbody></table>
+	</div>
+	<div class="btn-panel">
+		<a class="signinbtn" onclick="amsSubmit(39028,216921)">签到</a>
+		<a class="querysigninbtn" onclick="amsInit(39028,216920);">查询签到 </a>
+	</div>
+</div>
+
+<h3>样式二:</h3>
+
+<div class="mocha-sign-in mocha-sign-in-scheme2 mocha-sign-in-skin2" id="signin" data-psdw="640" data-isscale="true">
+	<div class="content">
+		<div class="signinbox clearfix">
+			<a href="javascript:void(0);" class="signinitem"></a>
+			<a href="javascript:void(0);" class="signinitem"></a>
+			<a href="javascript:void(0);" class="signinitem"></a>
+			<a href="javascript:void(0);" class="signinitem"></a>
+			<a href="javascript:void(0);" class="signinitem"></a>
+			<a href="javascript:void(0);" class="signinitem"></a>
+			<a href="javascript:void(0);" class="signinitem"></a>
+		</div>
+	</div>
+</div>
+
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+<!-- AMS头 -->
+<script src="http://pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+<script type="text/javascript" src="http://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"  ></script>
+<script type="text/javascript" src="http://ossweb-img.qq.com/images/js/mobile_build/milo.js" ></script>
+<script type="text/javascript" src="http://ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<script src="../../js/sign-in/sign-in_v.1.js"></script>
+</body>
+</html>
+
+
+
