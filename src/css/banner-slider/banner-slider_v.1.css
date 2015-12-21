@@ -16,6 +16,9 @@
 	.mocha-banner-slider-scheme3 .controller{position:absolute;bottom:7px;right:0;height:20px;text-align:center;}
 	.mocha-banner-slider-scheme4.gallery-thumbs .content li{opacity: 0.5;}
 	.mocha-banner-slider-scheme4.gallery-thumbs .content li.cur{opacity: 1;}
+	.mocha-banner-slider-scheme4.video-thumbs .content li{opacity: 0.5;}
+	.mocha-banner-slider-scheme4.video-thumbs .content li.cur{opacity: 1;}
+	.mocha-banner-slider-scheme4.video-thumbs .content li p{overflow: hidden;font-size: 12px;margin-top: 4px;text-align: center;}
 	/* skin */
 	.mocha-banner-slider-skin1 .controller li{width:20px;height:4px;margin:3px;background-color:#8a8a8a;}
 	.mocha-banner-slider-skin1 .controller li.current{background-color:#ffdb72;}
