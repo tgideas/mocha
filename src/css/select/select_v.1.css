@@ -5,7 +5,7 @@
  * 
  */
 .mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;overflow: hidden;}
-	.mocha-select select{float: left;height: 1.875em;margin-right: 3.5%;margin-bottom: .6875em;font-size: 16px;line-height:1.875em;border-width: .0625em;border-style: solid;border-radius: .25em;}
+	.mocha-select select{float: left;height: 1.875em;margin-right: 3.5%;margin-bottom: .6875em;font-size: 16px;line-height:1.875em;border-width: 1px;border-style: solid;border-radius: .25em;}
 	.mocha-select select:last-child{margin-right: 0;}
 
 	/* scheme1 */

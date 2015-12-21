@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>评论样式-TGideas 移动页面模块化</title>
+	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<link href="../../css/comment/comment_v.1.css" rel="stylesheet">
+
+	<style type="text/css" media="screen">
+		.h2{font-size:1.4em;margin:1em 0 1em;}
+		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #ddd;}
+	</style>
+</head>
+<body>
+<h2 class="h2">评论样式</h2>
+<div class="mocha-comment mocha-comment-scheme1 mocha-comment-skin1">
+	<div class="mocha-comment-content">
+		<div class="mocha-comment-list">
+			<div class="mocha-comment-list-infobox">
+				<cite class="mocha-comment-list-head"><img src="http://dummyimage.com/40x40/000/fff"></cite>
+				<div class="mocha-comment-list-title">齐天大盛</div>
+				<a class="mocha-comment-list-reply" href="javascript:void(0);">回复</a>
+			</div>
+			<div class="mocha-comment-list-txt">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+			<div class="mocha-comment-list-date"><span>09月24日</span><span>09:56</span></div>
+			<div class="mocha-comment-list-second">
+				<div class="mocha-comment-list-second-bar">
+					<ul>
+						<li><span>某人说:</span>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+						<li><span>凯文呵呵</span><cite>回复</cite>凯文呵呵:222</li>
+					</ul>
+					<div class="mocha-comment-list-more">查看更多...</div>
+				</div>
+			</div>
+		</div>
+		<div class="mocha-comment-list">
+			<div class="mocha-comment-list-infobox">
+				<cite class="mocha-comment-list-head"><img src="http://dummyimage.com/40x40/000/fff"></cite>
+				<div class="mocha-comment-list-title">昆仑山</div>
+				<a class="mocha-comment-list-reply" href="javascript:void(0);">回复</a>
+			</div>
+			<div class="mocha-comment-list-txt">内容内容内容内容</div>
+			<div class="mocha-comment-list-date"><span>09月24日</span><span>09:56</span></div>
+		</div>
+		
+	</div>
+	<div class="mocha-comment-btn">
+        <a id="showCommentBtn" href="javascript:void(0);">我要评论</a>
+    </div>
+    <div id="demoCommentAlert" class="mocha-comment-alert" style="display: none;">
+    	<div class="mocha-comment-alert-mark"></div>
+        <div class="mocha-comment-alert-box">
+            <div class="imocha-comment-alert-form">
+                <textarea class="mocha-comment-alert-textarea" placeholder="请输入内容，140字以内"></textarea>
+            </div>
+            <div class="mocha-comment-alert-shop clearfix">
+                <span class="mocha-comment-alert-words">已超出<b class="mocha-comment-alert-num">0</b>个字</span>
+                <div class="mocha-comment-alert-btn">
+                    <span class="mocha-comment-alert-cancel">取消</span>
+                    <span class="mocha-comment-alert-reply">回复</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- demo JS -->
+<script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script>
+	(function mochaCommentFunc(){
+		$("#showCommentBtn").bind("tap",function(){
+			$("#demoCommentAlert").css("display","block");
+		})
+		$(".mocha-comment-list-reply").bind("tap",function(){
+			$("#demoCommentAlert").css("display","block");
+		})
+		$(".mocha-comment-alert-cancel").tap(function(){
+			$(this).parents(".mocha-comment-alert").css("display","none");
+		})
+	})()
+</script>
+</body>
+</html>
