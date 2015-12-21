@@ -30,7 +30,11 @@
 	.mocha-sign-in-skin1 .btn-panel{font-size: 1em;color:#fff;}
 	.mocha-sign-in-skin1 .btn-panel .signinbtn,.mocha-sign-in-skin1 .btn-panel .querysigninbtn{border: 1px solid #ccc;border-radius: 5px;background: #009dfe;}
 	.mocha-sign-in-skin2 .content:before{background: #4e4e4e;}
-	.mocha-sign-in-skin2 .content .signinbox .signinitem{background: #4e4e4e;border-radius: 50%;}
+	.mocha-sign-in-skin2 .content .signinbox{color:#fefefe;font-size: 1em;text-align: center;line-height: 30px;}
+	.mocha-sign-in-skin2 .content .signinbox .signinitem{background: #4e4e4e;border-radius: 50%;color: inherit;}
+	.mocha-sign-in-skin2 .content .signinbox .signinitem.normal{background: #4e4e4e;}
+	.mocha-sign-in-skin2 .content .signinbox .signinitem.signcls{background: green;}
+	.mocha-sign-in-skin2 .content .signinbox .signinitem.today{background: #009dfe;}
 	/*日历请用TABLE构造 以下为基础样式*/
 	.mocha-sign-in-skin1 .calendar table{ border-collapse:collapse;margin:0 auto;padding:0;border: 0;}
 	.mocha-sign-in-skin1 .calendar td{ border:5px #bbb solid; padding:.3em .3em;text-align:center;}
