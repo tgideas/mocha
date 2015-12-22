@@ -18,7 +18,9 @@ document.getElementById('nowDate').innerHTML = nowYear + '年' + nowMonth + '月
 //提交签到的配置
 amsCfg_216921 = {
 	type: "comit",
-	sData: {},
+	sData: {
+		"appid": "363"
+	},
 	success: function(res) {
 		amsInit(39028, 216920);
 		console.log(res.sMsg);
@@ -27,7 +29,9 @@ amsCfg_216921 = {
 //查询签到的配置
 amsCfg_216920 = {
 	type: "query",
-	sData: {},
+	sData: {
+		"appid": "363"
+	},
 	success: function(checkInInfo, signDateList) { //返回总天数
 		g("queryCheckInRes").innerHTML = checkInInfo.total;
 	},
@@ -69,6 +73,7 @@ function signinScaleFun(signinId) {
 	var clientWidth = document.documentElement.clientWidth ? document.documentElement.clientWidth : clientW;
 	document.getElementById(signinId).style.zoom = clientWidth / clientW;
 }
+
 function signinScale(signinId) {
 	var signinIsScale = $("#" + signinId).data('isscale');
 	if (signinIsScale !== false) {
