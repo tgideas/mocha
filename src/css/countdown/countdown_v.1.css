@@ -1,0 +1,24 @@
+/*
+ * countdown v.1
+ * Author:dereksu
+ * Modify:2015-12-25
+ */
+
+/* countdown */
+.mocha-countdown{position: relative;margin:0 auto;font-size: 16px;overflow: hidden;}
+/* scheme */
+.mocha-countdown-scheme1{width: 80%;height: 60px;text-align: center;line-height: 60px;font-size: 1.6em;}
+.mocha-countdown-scheme2{width: 80%;height: 60px;text-align: center;line-height: 60px;font-size: 1.2em;}
+.mocha-countdown-scheme3{width: 90%;height: 60px;text-align: center;line-height: 60px;font-size: 1em;}
+/* skin */
+.mocha-countdown-skin1{background-color:#4e4e4e;color:#fff;letter-spacing: .16em;}
+.mocha-countdown-skin2{background-color:#4e4e4e;color:#fff;}
+.mocha-countdown-skin2 .ctime3_p{display:inline-block;vertical-align:middle;margin:0 .12em;width:1em;height:40px;line-height:40px;overflow:hidden;text-align:center;color:#4e4e4e;border:1px solid #eee;border-radius:.3em;background:#fff;box-shadow:3px 3px 7px rgba(0,0,0,0.3)}
+.mocha-countdown-skin2 .nanistyle{-webkit-animation:nanistyle 0.8s;}
+@-webkit-keyframes nanistyle{
+  0% {opacity: 0;-webkit-transform-origin: 50% 0%;-webkit-transform: perspective(800px) rotateX(90deg);}
+  50% {opacity: 1;-webkit-transform-origin: 50% 0%;-webkit-transform: perspective(800px) rotateX(-20deg);}
+  100% {opacity: 1;-webkit-transform-origin: 50% 0%;-webkit-transform: perspective(800px) rotateX(0deg);}
+}  
+	
+	
