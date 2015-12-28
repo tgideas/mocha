@@ -21,16 +21,24 @@
 <body>
 
 <h3>demo1:只获取客户端时间，不纠正本地与服务器时间差（时间采用默认间隔符）</h3>
-<div id="ctime1" class="ctime1 mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1"></div>
+<div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
+	<p id="ctime1" class="content ctime1"></p>
+</div>
 
 <h3>demo2:Ajax请求favicon.ico获取服务器时间（演示自定义时间间隔符）</h3>
-<div id="ctime2" class="ctime2 mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1"></div>
+<div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
+	<p id="ctime2" class="content ctime2"></p>
+</div>
 
 <h3>demo3：通过PHP获取服务器时间（演示CSS3动画、自定义时间间隔符）</h3>
-<div id="ctime3" class="ctime3 mocha-countdown mocha-countdown-scheme3 mocha-countdown-skin2"></div>
+<div class="mocha-countdown mocha-countdown-scheme2 mocha-countdown-skin1">
+	<p id="ctime3" class="content ctime3"></p>
+</div>
 
 <h3>demo4：倒计时结束（演示当倒计时到00天的时候隐藏'00天'、倒计时完成的回调方法）</h3>
-<div id="ctime4" class="ctime4 mocha-countdown mocha-countdown-scheme2 mocha-countdown-skin1"></div>
+<div class="mocha-countdown mocha-countdown-scheme3 mocha-countdown-skin2">
+	<p id="ctime4" class="content ctime4"></p>
+</div>
 
 <script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
 <script>if(typeof(pgvMain) == 'function') pgvMain();</script>
