@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>视频样式 -TGideas 移动页面模块化</title>
+	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<link href="../../css/loading/loading_v.1.css" rel="stylesheet">
+
+	<style type="text/css" media="screen">
+		.h2{font-size:1.4em;margin:1em 0 1em;}
+		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #f1f1f1;}
+	</style>
+</head>
+<body>
+<h2 class="h2">进度条样式</h2>
+<h3 class="h3">Loading样式-无动图</h3>
+<!-- mocha-loading-scheme1(样式1) -->
+<div class="mocha-loading mocha-loading-scheme1 mocha-loading-skin1">
+	<div class="mocha-loading-bar">
+		<span class="mocha-loading-bar-bg" style="width:30%;"></span>
+		<p class="mocha-loading-num">30%</p>
+	</div>
+</div>
+<h3 class="h3">Loading样式-有动图</h3>
+<!-- mocha-loading-scheme2(样式2) -->
+<div class="mocha-loading mocha-loading-scheme2 mocha-loading-skin1">
+	<img class="mocha-loading-img" src="http://mpt.webplat.ied.com/img.php?120*60" alt="动图">
+	<div class="mocha-loading-bar">
+		<span class="mocha-loading-bar-bg" style="width:50%;"></span>
+		<p class="mocha-loading-num">50%</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>音频样式 -TGideas 移动页面模块化</title>
+	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<link href="../../css/audio/audio_v.1.css" rel="stylesheet">
+
+	<style type="text/css" media="screen">
+		.h2{font-size:1.4em;margin:1em 0 1em;}
+		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #f1f1f1;}
+	</style>
+</head>
+<body>
+<h2 class="h2">音频样式</h2>
+<!-- mocha-audio-scheme1(样式1) -->
+<div class="mocha-audio mocha-audio-scheme1 mocha-audio-skin1">
+	<a id="mochaAudioPlay" class="mocha-audio-btn" href="javascript:;"><span class="mocha-audio-icon-play"></span></a>
+	<a id="mochaAudioPause" class="mocha-audio-btn" href="javascript:;" style="display:none;"><span class="mocha-audio-icon-pause"></span></a>
+	<div class="mocha-audio-info">
+		<p>音频名称 3'33"</p>
+		<p>音频简介内容</p>
+	</div>
+</div>
+<!-- demo JS -->
+<script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script>
+	(function mochaAudioFunc(){
+		$("#mochaAudioPlay").bind("tap",function(){
+			$(this).css("display","none");
+			$("#mochaAudioPause").css("display","inline-block");
+		})
+		$("#mochaAudioPause").bind("tap",function(){
+			$(this).css("display","none");
+			$("#mochaAudioPlay").css("display","inline-block");
+		})
+	})()
+</script>
+</body>
+</html>

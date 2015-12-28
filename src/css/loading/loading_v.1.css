@@ -1,0 +1,22 @@
+/*
+ * loading v.1
+ * Author:kevinhehe
+ * Modify:2015-12-21
+ * 
+ */
+.mocha-loading{width: 90.625%;margin-left: auto;margin-right: auto;}
+	.mocha-loading-bar{position: relative;width: 90.625%;height: 1.5625em;margin-left: auto;margin-right: auto;border-radius: .78125em;overflow: hidden;}
+	.mocha-loading-bar-bg{position: absolute;top: 0;left: 0;height: 1.5625em;border-radius: .78125em;}
+	.mocha-loading-num{position: relative;text-align: center;line-height: 1.5625em;z-index: 5;}
+	.mocha-loading-img{display: none;margin: 0 auto 1.25em;}
+	/* scheme */
+	.mocha-loading-scheme1{}
+	.mocha-loading-scheme2 .mocha-loading-img{display: block;}
+	/* skin */
+	.mocha-loading-skin1 .mocha-loading-bar{background-color: #bbb;}
+	.mocha-loading-skin1 .mocha-loading-bar-bg{background-color: #009dfe;}
+
+
+
+
+
