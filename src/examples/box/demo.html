@@ -8,13 +8,13 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>盒模块   -TGideas 移动页面模块化</title>
+	<title>盒模块 - TGideas 移动页面模块化</title>
 	<link href="../../css/base/base_v.1.css" rel="stylesheet">
 	<link href="../../css/box/box_v.1.css" rel="stylesheet">
 
 	<style type="text/css" media="screen">
-		.h2{font-size:1.4em;margin:1em 0 1em;}
-		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #ddd;}
+		.h2{font-size:1.4rem;margin:1rem 0 1rem;}
+		.h3{font-size:1.2rem;margin:1rem 0 1rem;padding:0.5rem;background-color: #ddd;}
 	</style>
 </head>
 <body>
@@ -33,8 +33,22 @@
 </div>
 
 
-
-
+<script>
+// 自动设置font-size 自适应
+(function (win,doc){
+	if (!win.addEventListener) return; 
+	var html=document.documentElement,
+		setFont = function() { 
+			var cliWidth=html.clientWidth; 
+			html.style.fontSize = 16 * (cliWidth/320)+'px'; 
+			html.style.display = "none";
+			html.clientWidth; //Force relayout - important to new Android devices
+			html.style.display = "";
+		};
+	win.addEventListener('resize',setFont,false);
+	doc.addEventListener('DOMContentLoaded',setFont,false);
+})(window,document);
+</script>
 
 </body>
 </html>

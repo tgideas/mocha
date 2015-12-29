@@ -8,14 +8,14 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>弹层模块 -TGideas 移动页面模块化</title>
+	<title>弹层模块 - TGideas 移动页面模块化</title>
 	<link href="../../css/base/base_v.1.css" rel="stylesheet">
 	<link href="../../css/dialog/dialog_v.1.css" rel="stylesheet">
 
 	<style type="text/css" media="screen">
-		.h2{font-size:1.4em;margin:1em 0 1em;}
-		.h3{font-size:1.2em;margin:1em 0 1em;padding:0.5em;background-color: #ddd;}
-		.button{color: #fff;font-size:1.2em;display: block;width: 90%;margin:1em auto;line-height: 2.5em;background-color: #06f;border:0;border-radius:1em;}
+		.h2{font-size:1.4rem;margin:1rem 0 1rem;}
+		.h3{font-size:1.2rem;margin:1rem 0 1rem;padding:0.5rem;background-color: #ddd;}
+		.button{color: #fff;font-size:1.2rem;display: block;width: 90%;margin:1rem auto;line-height: 2.5rem;background-color: #06f;border:0;border-radius:1rem;}
 	</style>
 </head>
 <body>
@@ -76,6 +76,21 @@
 <!-- demo JS -->
 <script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
 <script>
+// 自动设置font-size 自适应
+(function (win,doc){
+	if (!win.addEventListener) return; 
+	var html=document.documentElement,
+		setFont = function() { 
+			var cliWidth=html.clientWidth; 
+			html.style.fontSize = 16 * (cliWidth/320)+'px'; 
+			html.style.display = "none";
+			html.clientWidth; //Force relayout - important to new Android devices
+			html.style.display = "";
+		};
+	win.addEventListener('resize',setFont,false);
+	doc.addEventListener('DOMContentLoaded',setFont,false);
+})(window,document);
+
 	(function mochaDialogFunc(){
 		$("#showDialogBtn1").bind("tap",function(){
 			$("#demoDialog1").css("display","block");
