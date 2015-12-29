@@ -1,0 +1,20 @@
+/*
+ * audio v.1
+ * Author:kevinhehe
+ * Modify:2015-12-16
+ * 
+ */
+.mocha-audio{width: 90.625%;margin-left: auto;margin-right: auto;text-align: center;}
+	.mocha-audio-btn {display: inline-block;width: 2.1875em;height: 1.4875em;padding-top: .7em;text-align: center;vertical-align: top;background: transparent;border: none;border-radius: 1.09375em;}
+	.mocha-audio-icon-play,.mocha-audio-icon-pause{margin: 0 auto;display: block;}
+	.mocha-audio-icon-play {width: 0;height: 0;border-left: .6875em solid #fff;border-top: .375em solid transparent;border-bottom: .375em solid transparent;}
+	.mocha-audio-icon-pause {width: .6875em;height: .75em;background: linear-gradient(90deg, #fff 37%, transparent 37%, transparent 63%, #fff 63%);}
+	.mocha-audio-info{display: inline-block;text-align: left;font-size: 12px;line-height: 1.45em;}
+	/* scheme */
+	.mocha-audio-scheme1{}
+	/* skin */
+	.mocha-audio-skin1{}
+	.mocha-audio-skin1 .mocha-audio-btn{background-color: #3f3f3f;}
+	.mocha-audio-skin1 .mocha-audio-icon-play{border-left-color:#fff;}
+	.mocha-audio-skin1 .mocha-audio-icon-pause{background: linear-gradient(90deg, #fff 37%, transparent 37%, transparent 63%, #fff 63%);}
+

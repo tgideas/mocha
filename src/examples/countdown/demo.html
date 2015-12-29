@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>countdown TGideas移动页面模块化</title>
+	<!-- 页面重构：dereksu | 创建：20151225 | 团队博客：http://tgideas.qq.com/ -->
+	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<link href="../../css/countdown/countdown_v.1.css" rel="stylesheet">
+	<style>
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: 14px;}
+	body{padding-bottom: 10px !important;font-family: "Microsoft YaHei";}
+	</style>
+</head>
+<body>
+
+<h3>demo1:只获取客户端时间，不纠正本地与服务器时间差（时间采用默认间隔符）</h3>
+<div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
+	<p id="ctime1" class="content ctime1"></p>
+</div>
+
+<h3>demo2:Ajax请求favicon.ico获取服务器时间（演示自定义时间间隔符）</h3>
+<div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
+	<p id="ctime2" class="content ctime2"></p>
+</div>
+
+<h3>demo3：通过PHP获取服务器时间（演示CSS3动画、自定义时间间隔符）</h3>
+<div class="mocha-countdown mocha-countdown-scheme2 mocha-countdown-skin1">
+	<p id="ctime3" class="content ctime3"></p>
+</div>
+
+<h3>demo4：倒计时结束（演示当倒计时到00天的时候隐藏'00天'、倒计时完成的回调方法）</h3>
+<div class="mocha-countdown mocha-countdown-scheme3 mocha-countdown-skin2">
+	<p id="ctime4" class="content ctime4"></p>
+</div>
+
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+<script src="http://ossweb-img.qq.com/images/js/mocha/countdown.min.js"></script>
+<script>
+/**
+ * demo1 JS
+ * 只获取客户端时间，不纠正本地与服务器时间差（时间采用默认间隔符）
+ */
+var ctimer1 = new countDown("ctime1",{
+	ttime:[2025,10,11,12,00,00]
+});
+
+/**
+ * demo2 JS
+ * Ajax请求favicon.ico获取服务器时间（演示自定义时间间隔符）
+ * getServerTime().stgap是获取本地与服务器时间差
+ */
+var ctimer2 = new countDown("ctime2",{
+	ttime:[2025,10,11,12,00,00],
+	gap:getServerTime().stgap,
+	sp:["-","-","-",""]
+});
+
+/**
+ * demo3和demo4 JS
+ */
+var scriptLoader=function(b,a,f){var d=b.split("."),c=d[d.length-1],e=document.createElement("script"),g="src";e.setAttribute(g,b);document.body.appendChild(e);e.onload=function(){if(typeof a=="function"){if(typeof f!="undefined"){a(f)}else{a()}}};e.onerror=function(){}};
+scriptLoader('http://apps.game.qq.com/CommArticle/app/reg/gdate.php',function(){
+//通过php获取本地与服务器时间差_gapTime，获取不到则使用客户端时间
+var _gapTime = typeof(json_curdate)!=="undefined" ? +new Date(json_curdate.replace(/-/g,"/"))-(+new Date()) : 0;
+
+/**
+ * demo3 JS
+ * 通过PHP获取服务器时间（演示CSS3动画、自定义时间间隔符）
+ * _gapTime是获取本地与服务器时间差
+ */
+var ctimer3 = new countDown("ctime3",{
+	ttime:[2025,10,11,12,00,00],
+	gap:_gapTime,
+	nani:'nanistyle',
+	sp:["天","时","分","秒"]
+});
+
+/**
+ * demo4 JS
+ * 倒计时结束（演示当倒计时到00天的时候隐藏'00天'、倒计时完成的回调方法）
+ * _gapTime是获取本地与服务器时间差
+ */
+var	ctimer4 = new countDown("ctime4",{
+	ttime:[2015,12,25,18,41,00],
+	gap:_gapTime,
+	sp:["天","时","分","秒"],
+	hideday:true,
+	done:function(){
+		console.info('ctime4倒计时时间到！');
+	}
+	});
+
+});
+</script>
+</body>
+</html>
