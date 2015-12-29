@@ -4,23 +4,17 @@
  * Modify:2015-12-08
  * 
  */
-.mocha-tab{margin-bottom:1em;}
+.mocha-tab{margin-bottom:0.16rem;}
 	.mocha-tab-triggers{}
 	.mocha-tab-triggers-ul{display:table;width: 100%;}
-	.mocha-tab-triggers-ul li{text-align: center;display:table-cell;padding:1em 0.5em;}
+	.mocha-tab-triggers-ul li{text-align: center;display:table-cell;padding:0.16rem 0.08em;}
 	.mocha-tab-panels{}
-	.mocha-tab-panel{display:none;padding:1em;}
+	.mocha-tab-panel{display:none;padding:0.16rem;}
 	/* scheme */
 	.mocha-tab-scheme1 .mocha-tab-triggers-ul li{border-left:1px solid #ccc;}
 	.mocha-tab-scheme2 .mocha-tab-triggers-ul li{border-bottom:2px solid #ccc;}
 	/* skin */
-	.mocha-tab-skin1{}
+	.mocha-tab-skin1{font-size:0.16rem;}
 	.mocha-tab-skin1 .mocha-tab-triggers{background-color: #ddd;}
 	.mocha-tab-scheme1.mocha-tab-skin1 .mocha-tab-triggers-ul .current{color: #fff;background-color: #09f;border-left:none;}
 	.mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current{color: #09f;font-weight: bold;border-color:#09f;}
-
-
-
-
-
-

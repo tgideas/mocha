@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="gbk">
 	<meta name="applicable-device" content="mobile">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
 	<meta name="robots" content="all" />
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>å¼¹å±‚æ¨¡å—Â - TGideas ç§»åŠ¨é¡µé¢æ¨¡å—åŒ–</title>
-	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<title>µ¯²ãÄ£¿é - TGideas ÒÆ¶¯Ò³ÃæÄ£¿é»¯</title>
+	<link href="../../css/base/base_v.2.css" rel="stylesheet">
 	<link href="../../css/dialog/dialog_v.1.css" rel="stylesheet">
 
 	<style type="text/css" media="screen">
-		.h2{font-size:1.4rem;margin:1rem 0 1rem;}
-		.h3{font-size:1.2rem;margin:1rem 0 1rem;padding:0.5rem;background-color: #ddd;}
-		.button{color: #fff;font-size:1.2rem;display: block;width: 90%;margin:1rem auto;line-height: 2.5rem;background-color: #06f;border:0;border-radius:1rem;}
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+		.button{color: #fff;font-size:0.18rem;display: block;width: 90%;margin:0.16rem auto;line-height:0.4rem;background-color: #06f;border:0;border-radius:0.16rem;}
 	</style>
 </head>
 <body>
-<h2 class="h2">å¼¹å±‚æ¨¡å—(Dialog)</h2>
+<h2 class="h2">µ¯²ãÄ£¿é(Dialog)</h2>
 
-<button id="showDialogBtn1" href="javascript:;" class="button">ç‚¹å‡»å¼¹å‡ºDialogæ ·å¼1</button>
-<button id="showDialogBtn2" href="javascript:;" class="button">ç‚¹å‡»å¼¹å‡ºDialogæ ·å¼2</button>
-<button id="showDialogBtn3" href="javascript:;" class="button">äºŒç»´ç å¼¹å‡ºå±‚</button>
+<button id="showDialogBtn1" href="javascript:;" class="button">µã»÷µ¯³öDialogÑùÊ½1</button>
+<button id="showDialogBtn2" href="javascript:;" class="button">µã»÷µ¯³öDialogÑùÊ½2</button>
+<button id="showDialogBtn3" href="javascript:;" class="button">¶şÎ¬Âëµ¯³ö²ã</button>
 
 
 <!-- page-mark -->
 <!-- <div class="mocha-page-mark"></div> -->
 
-<!-- mocha-dialog-scheme1(æ ·å¼1-æœ‰æ ‡é¢˜åŠæŒ‰é’®) -->
+<!-- mocha-dialog-scheme1(ÑùÊ½1-ÓĞ±êÌâ¼°°´Å¥) -->
 <div id="demoDialog1" class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1" style="display:none">
 	<div class="mocha-dialog-mark"></div>
 	<div class="mocha-dialog-box">
 		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
 		<div class="mocha-dialog-hd">
-			<h3 class="mocha-dialog-hd-title">æ ·å¼1-æœ‰æ ‡é¢˜åŠæŒ‰é’®</h3>
+			<h3 class="mocha-dialog-hd-title">ÑùÊ½1-ÓĞ±êÌâ¼°°´Å¥</h3>
 		</div>
 		<div class="mocha-dialog-bd">
-			<p>{æ¨¡å—å†…å®¹}</p>
-			<p>{æ¨¡å—å†…å®¹}</p>
+			<p>{Ä£¿éÄÚÈİ}</p>
+			<p>{Ä£¿éÄÚÈİ}</p>
 		</div>
 		<div class="mocha-dialog-fd">
-			<a href="#" class="mocha-box-fd-btn">æŒ‰é’®æ–‡å­—</a>
-			<a href="#" class="mocha-box-fd-btn">æŒ‰é’®æ–‡å­—</a>
+			<a href="#" class="mocha-box-fd-btn">°´Å¥ÎÄ×Ö</a>
+			<a href="#" class="mocha-box-fd-btn">°´Å¥ÎÄ×Ö</a>
 		</div>
 	</div>
 </div>
 
-<!-- mocha-dialog-scheme2(æ ·å¼2-æ— æ ‡é¢˜åŠæŒ‰é’®) -->
+<!-- mocha-dialog-scheme2(ÑùÊ½2-ÎŞ±êÌâ¼°°´Å¥) -->
 <div id="demoDialog2" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
 	<div class="mocha-dialog-mark"></div>
 	<div class="mocha-dialog-box">
 		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
 		<div class="mocha-dialog-bd">
-			<p>{æ¨¡å—å†…å®¹-æ— æ ‡é¢˜åŠæŒ‰é’®}</p>
+			<p>{Ä£¿éÄÚÈİ-ÎŞ±êÌâ¼°°´Å¥}</p>
 		</div>
 	</div>
 </div>
 
-<!-- mocha-dialog-scheme2(äºŒç»´ç æµ®å±‚) -->
+<!-- mocha-dialog-scheme2(¶şÎ¬Âë¸¡²ã) -->
 <div id="demoDialog3" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
 	<div class="mocha-dialog-mark"></div>
 	<div class="mocha-dialog-box">
 		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
 		<div class="mocha-dialog-bd">
 			<p><img width="200" height="200" src="http://ui.code.oa.com/files/image/201503/20150313112541495.png" alt=""></p>
-			<p>é•¿æŒ‰è¯†åˆ«äºŒç»´ç </p>
-			<p>å…³æ³¨XXXXå®˜æ–¹å…¬ä¼—å·</p>
+			<p>³¤°´Ê¶±ğ¶şÎ¬Âë</p>
+			<p>¹Ø×¢XXXX¹Ù·½¹«ÖÚºÅ</p>
 		</div>
 	</div>
 </div>
@@ -76,20 +76,6 @@
 <!-- demo JS -->
 <script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
 <script>
-// è‡ªåŠ¨è®¾ç½®font-size è‡ªé€‚åº”
-(function (win,doc){
-	if (!win.addEventListener) return; 
-	var html=document.documentElement,
-		setFont = function() { 
-			var cliWidth=html.clientWidth; 
-			html.style.fontSize = 16 * (cliWidth/320)+'px'; 
-			html.style.display = "none";
-			html.clientWidth; //Force relayout - important to new Android devices
-			html.style.display = "";
-		};
-	win.addEventListener('resize',setFont,false);
-	doc.addEventListener('DOMContentLoaded',setFont,false);
-})(window,document);
 
 	(function mochaDialogFunc(){
 		$("#showDialogBtn1").bind("tap",function(){
@@ -101,11 +87,10 @@
 		$("#showDialogBtn3").bind("tap",function(){
 			$("#demoDialog3").css("display","block");
 		})
-		$(".mocha-dialog-close").tap(function(){
+		$(".mocha-dialog-close,.mocha-dialog-mark").tap(function(){
 			// console.log("hello")
 			$(this).parents(".mocha-dialog").css("display","none");
 		})
-
 	})()
 </script>
 </body>
