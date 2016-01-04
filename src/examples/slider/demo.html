@@ -9,10 +9,10 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>banner-slider TGideas移动页面模块化</title>
+	<title>slider TGideas移动页面模块化</title>
 	<!-- 页面重构：dereksu | 创建：20151203 | 团队博客：http://tgideas.qq.com/ -->
 	<link href="../../css/base/base_v.2.css" rel="stylesheet">
-	<link href="../../css/banner-slider/banner-slider_v.1.css" rel="stylesheet">
+	<link href="../../css/slider/slider_v.1.css" rel="stylesheet">
 	<style>
 	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: .14rem;}
 	body{padding-bottom: 10px !important;}
@@ -22,7 +22,7 @@
 
 <h3>样式一（demo1）:</h3>
 
-<div id="bannerSlider1" data-psdw="640" data-bannersliderw="640" data-bannersliderh="330" class="mocha-banner-slider mocha-banner-slider-scheme1 mocha-banner-slider-skin1">
+<div id="slider1" data-psdw="640" data-sliderw="640" data-sliderh="330" class="mocha-slider mocha-slider-scheme1 mocha-slider-skin1">
 	<ul class="content">
 		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330.jpg" alt=""></a></li>
 		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-2.jpg" alt=""></a></li>
@@ -34,7 +34,7 @@
 
 <h3>样式一（demo2）:</h3>
 
-<div id="bannerSlider2" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow1" data-psdw="640" data-bannersliderw="580" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme1 mocha-banner-slider-skin1">
+<div id="slider2" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow1" data-psdw="640" data-sliderw="580" data-sliderh="300" class="mocha-slider mocha-slider-scheme1 mocha-slider-skin1">
 	<ul class="content">
 		<!-- <li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
 		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
@@ -50,7 +50,7 @@
 
 <h3>样式二（demo1）:</h3>
 
-<div id="bannerSlider3" data-psdw="640" data-bannersliderw="640" data-bannersliderh="330" class="mocha-banner-slider mocha-banner-slider-scheme2 mocha-banner-slider-skin1">
+<div id="slider3" data-psdw="640" data-sliderw="640" data-sliderh="330" class="mocha-slider mocha-slider-scheme2 mocha-slider-skin1">
 	<ul class="content">
 		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
 		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
@@ -62,7 +62,7 @@
 
 <h3>样式二（demo2）:</h3>
 
-<div id="bannerSlider4" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow2" data-psdw="640" data-bannersliderw="580" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme2 mocha-banner-slider-skin1">
+<div id="slider4" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow2" data-psdw="640" data-sliderw="580" data-sliderh="300" class="mocha-slider mocha-slider-scheme2 mocha-slider-skin1">
 	<ul class="content">
 		<!-- <li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
 		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
@@ -78,8 +78,8 @@
 
 <h3>样式三（demo1）:</h3>
 
-<div id="bannerSlider5Wrapper" class="mocha-banner-slider-wrapper">
-	<div id="bannerSlider5" data-psdw="640" data-bannersliderw="560" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme3 mocha-banner-slider-skin3">
+<div id="slider5Wrapper" class="mocha-slider-wrapper">
+	<div id="slider5" data-psdw="640" data-sliderw="560" data-sliderh="300" class="mocha-slider mocha-slider-scheme3 mocha-slider-skin3">
 		<ul class="content">
 			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
 			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
@@ -88,14 +88,14 @@
 			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
 		</ul>
 	</div>
-	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 prevBtn">&lt;</a>
-	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 nextBtn">&gt;</a>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn1 prevBtn">&lt;</a>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn1 nextBtn">&gt;</a>
 </div>
 
 <h3>样式三（demo2）:</h3>
 
-<div id="bannerSlider6Wrapper" class="mocha-banner-slider-wrapper">
-	<div id="bannerSlider6" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow3" data-psdw="640" data-bannersliderw="560" data-bannersliderh="300" class="mocha-banner-slider mocha-banner-slider-scheme2 mocha-banner-slider-skin4">
+<div id="slider6Wrapper" class="mocha-slider-wrapper">
+	<div id="slider6" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow3" data-psdw="640" data-sliderw="560" data-sliderh="300" class="mocha-slider mocha-slider-scheme2 mocha-slider-skin4">
 		<ul class="content">
 			<!-- <li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
 			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
@@ -108,13 +108,13 @@
 			<li data-posid="12362"></li>
 		</ul>
 	</div>
-	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 prevBtn">&lt;</a>
-	<a href="javascript:void(0);" class="mocha-banner-slider-btn mocha-banner-slider-btn1 nextBtn">&gt;</a>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn1 prevBtn">&lt;</a>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn1 nextBtn">&gt;</a>
 </div>
 
 <h3>样式四:</h3>
 
-<div id="bannerSlider7" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow4" data-psdw="640" data-bannersliderw="640" data-bannersliderh="380" data-liwidth="300" data-lipadding="20" class="mocha-banner-slider mocha-banner-slider-scheme3 mocha-banner-slider-skin3">
+<div id="slider7" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow4" data-psdw="640" data-sliderw="640" data-sliderh="380" data-liwidth="300" data-lipadding="20" class="mocha-slider mocha-slider-scheme3 mocha-slider-skin3">
 	<ul class="content">
 		<!-- <li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
 		<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
@@ -130,8 +130,8 @@
 
 <h3>样式五（demo1）:</h3>
 
-<div id="bannerSlider8" data-psdw="640" class="mocha-banner-slider-wrapper">
-	<div data-bannersliderw="640" data-bannersliderh="330" data-bannerslidermarginbottom="20" class="gallery-top mocha-banner-slider">
+<div id="slider8" data-psdw="640" class="mocha-slider-wrapper">
+	<div data-sliderw="640" data-sliderh="330" data-slidermarginbottom="20" class="gallery-top mocha-slider">
 		<ul class="content">
 			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-1.jpg" alt=""></a></li>
 			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-2.jpg" alt=""></a></li>
@@ -141,7 +141,7 @@
 		</ul>
 	</div>
 	
-	<div data-bannersliderw="640" data-bannersliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-banner-slider mocha-banner-slider-scheme4">
+	<div data-sliderw="640" data-sliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-slider mocha-slider-scheme4">
 		<ul class="content">
 			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-1.jpg" alt=""></li>
 			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-2.jpg" alt=""></li>
@@ -154,8 +154,8 @@
 
 <h3>样式五（demo2）:</h3>
 
-<div id="bannerSlider9" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow5" data-psdw="640" class="mocha-banner-slider-wrapper">
-	<div data-bannersliderw="580" data-bannersliderh="300" data-bannerslidermarginbottom="20" class="gallery-top mocha-banner-slider">
+<div id="slider9" data-odatanewjsid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow5" data-psdw="640" class="mocha-slider-wrapper">
+	<div data-sliderw="580" data-sliderh="300" data-slidermarginbottom="20" class="gallery-top mocha-slider">
 		<ul class="content">
 			<!-- <li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-1.jpg" alt=""></a></li>
 			<li><a href='#'><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-2.jpg" alt=""></a></li>
@@ -169,7 +169,7 @@
 		</ul>
 	</div>
 	
-	<div data-bannersliderw="580" data-bannersliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-banner-slider mocha-banner-slider-scheme4">
+	<div data-sliderw="580" data-sliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-slider mocha-slider-scheme4">
 		<ul class="content">
 			<!-- <li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-1.jpg" alt=""></li>
 			<li><img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-2.jpg" alt=""></li>
@@ -182,14 +182,14 @@
 
 <h3>样式六 视频播放（demo1）:</h3>
 
-<div id="bannerSlider10" data-psdw="640" data-proportion="16-9" class="mocha-banner-slider-wrapper">
-	<div id="bannerSlider10_player" data-bannersliderw="640" data-bannerslidermarginbottom="20" class="video-top mocha-banner-slider" onclick="pgvSendClick({hottag:'a20151208mocha.index.btn.videobig'})"></div>
+<div id="slider10" data-psdw="640" data-proportion="16-9" class="mocha-slider-wrapper">
+	<div id="slider10_player" data-sliderw="640" data-slidermarginbottom="20" class="video-top mocha-slider" onclick="pgvSendClick({hottag:'a20151208mocha.index.btn.videobig'})"></div>
 	
-	<div data-bannersliderw="640" data-bannersliderh="110" data-lipaddingright="20" class="video-thumbs mocha-banner-slider mocha-banner-slider-scheme4">
+	<div data-sliderw="640" data-sliderh="110" data-lipaddingright="20" class="video-thumbs mocha-slider mocha-slider-scheme4">
 		<ul class="content">
 			<li data-vid="b14016xwapw" onclick="pgvSendClick({hottag:'a20151208mocha.index.btn.videothumbs1'});">
 				<img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-1.jpg" alt="">
-				<p>新版桶牛竞技场<br>新版桶牛竞技场</p>
+				<p>新版桶牛竞技场新版桶牛竞技场</p>
 			</li>
 			<li data-vid="d01452426av" onclick="pgvSendClick({hottag:'a20151208mocha.index.btn.videothumbs2'});">
 				<img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-2.jpg" alt="">
@@ -217,10 +217,10 @@
 
 <h3>样式六 视频播放（demo2）:</h3>
 
-<div id="bannerSlider11" data-psdw="640" data-proportion="16-9" class="mocha-banner-slider-wrapper">
-	<div id="bannerSlider11_player" data-bannersliderw="580" data-bannerslidermarginbottom="20" class="video-top mocha-banner-slider" onclick="pgvSendClick({hottag:'a20151208mocha.index.btn.videobig'})"></div>
+<div id="slider11" data-psdw="640" data-proportion="16-9" class="mocha-slider-wrapper">
+	<div id="slider11_player" data-sliderw="580" data-slidermarginbottom="20" class="video-top mocha-slider" onclick="pgvSendClick({hottag:'a20151208mocha.index.btn.videobig'})"></div>
 	
-	<div data-bannersliderw="580" data-bannersliderh="110" data-lipaddingright="20" class="video-thumbs mocha-banner-slider mocha-banner-slider-scheme4">
+	<div data-sliderw="580" data-sliderh="110" data-lipaddingright="20" class="video-thumbs mocha-slider mocha-slider-scheme4">
 		<ul class="content">
 			<li data-vid="b14016xwapw" onclick="pgvSendClick({hottag:'a20151208mocha.index.btn.videothumbs1'});">
 				<img data-src="http://game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-1.jpg" alt="">
@@ -252,88 +252,92 @@
 
 <script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
 <script>if(typeof(pgvMain) == 'function') pgvMain();</script>
-<script src="../../js/comm/mocha_v.1.js"></script>
+
+<!--注明: slider.min.js 目前还在测试阶段，请勿引用到线上项目 20160104-->
+<script src="http://ossweb-img.qq.com/images/js/mocha/slider.min.js"></script>
+<!--注明: slider.min.js 目前还在测试阶段，请勿引用到线上项目 20160104-->
+
 <script>
-//Mocha初始化
-Mocha.init(function(mocha) {
-	//设置bannerSlider样式一
-	mocha.bannerSlider(1, [{
-		id: "bannerSlider1",
+//Slider初始化
+Slider.init(function(slider) {
+	//设置slider样式一
+	slider.type(1, [{
+		id: "slider1",
 		callback: function() {
-			console.log('bannerSlider1初始化完成');
-			mochaObj.bannerSlider1.play();
+			console.log('slider1初始化完成');
+			sliderObj.slider1.play();
 		}
 	}, {
-		id: "bannerSlider2",
+		id: "slider2",
 		callback: function() {
-			console.log('bannerSlider2初始化完成');
-			mochaObj.bannerSlider2.play();
+			console.log('slider2初始化完成');
+			sliderObj.slider2.play();
 		}
 	}]);
-	//设置bannerSlider样式二
-	mocha.bannerSlider(2, [{
-		id: 'bannerSlider3',
+	//设置slider样式二
+	slider.type(2, [{
+		id: 'slider3',
 		controllerH: 24,
 		callback: function() {
-			console.log('bannerSlider3初始化完成');
-			mochaObj.bannerSlider3.play();
+			console.log('slider3初始化完成');
+			sliderObj.slider3.play();
 		}
 	}, {
-		id: 'bannerSlider4',
+		id: 'slider4',
 		controllerH: 24,
 		callback: function() {
-			console.log('bannerSlider4初始化完成');
-			mochaObj.bannerSlider4.playTo(1);
+			console.log('slider4初始化完成');
+			sliderObj.slider4.playTo(1);
 		}
 	}]);
-	//设置bannerSlider样式三
-	mocha.bannerSlider(3, [{
-		id: 'bannerSlider5',
+	//设置slider样式三
+	slider.type(3, [{
+		id: 'slider5',
 		controllerH: 34,
 		callback: function() {
-			console.log('bannerSlider5初始化完成');
-			mochaObj.bannerSlider5.play();
+			console.log('slider5初始化完成');
+			sliderObj.slider5.play();
 		}
 	}, {
-		id: 'bannerSlider6',
+		id: 'slider6',
 		controllerH: 0,
 		callback: function() {
-			console.log('bannerSlider6初始化完成');
-			mochaObj.bannerSlider6.play();
+			console.log('slider6初始化完成');
+			sliderObj.slider6.play();
 		}
 	}]);
-	//设置bannerSlider样式四
-	mocha.bannerSlider(4, [{
-		id: 'bannerSlider7',
+	//设置slider样式四
+	slider.type(4, [{
+		id: 'slider7',
 		controllerH: 34,
 		callback: function() {
-			console.log('bannerSlider7初始化完成');
-			mochaObj.bannerSlider7.play();
+			console.log('slider7初始化完成');
+			sliderObj.slider7.play();
 		}
 	}]);
-	//设置bannerSlider样式五
-	mocha.bannerSlider(5, [{
-		id: 'bannerSlider8',
+	//设置slider样式五
+	slider.type(5, [{
+		id: 'slider8',
 		callback: function() {
-			console.log('bannerSlider8初始化完成');
-			mochaObj.bannerSlider8.play();
+			console.log('slider8初始化完成');
+			sliderObj.slider8.play();
 		}
 	}, {
-		id: 'bannerSlider9',
+		id: 'slider9',
 		callback: function() {
-			console.log('bannerSlider9初始化完成');
+			console.log('slider9初始化完成');
 		}
 	}]);
-	//设置bannerSlider样式六-视频播放
-	mocha.bannerSlider(6, [{
-		id: 'bannerSlider10',
+	//设置slider样式六-视频播放
+	slider.type(6, [{
+		id: 'slider10',
 		callback: function() {
-			console.log('bannerSlider10初始化完成');
+			console.log('slider10初始化完成');
 		}
 	},{
-		id: 'bannerSlider11',
+		id: 'slider11',
 		callback: function() {
-			console.log('bannerSlider11初始化完成');
+			console.log('slider11初始化完成');
 		}
 	}]);
 });
