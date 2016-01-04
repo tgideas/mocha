@@ -4,8 +4,8 @@
  * Modify:2015-12-3
  */
 	/* bannerslider */
-  .mocha-banner-slider{position: relative;margin:0 auto;}
-	.mocha-banner-slider .content{position:absolute;top:0;left:0;z-index: 1;}
+  .mocha-banner-slider{position: relative;margin:0 auto;overflow: hidden;}
+	.mocha-banner-slider .content{position:absolute;top:0;left:0;z-index: 1;font-size: 0;}
 	.mocha-banner-slider .content li{float: left;position: relative;overflow: hidden;}
 	.mocha-banner-slider .content li a{display: inline-block;}
 	.mocha-banner-slider .controller{width:100%;z-index: 2;}
@@ -18,7 +18,7 @@
 	.mocha-banner-slider-scheme4.gallery-thumbs .content li.cur{opacity: 1;}
 	.mocha-banner-slider-scheme4.video-thumbs .content li{opacity: 0.5;}
 	.mocha-banner-slider-scheme4.video-thumbs .content li.cur{opacity: 1;}
-	.mocha-banner-slider-scheme4.video-thumbs .content li p{overflow: hidden;font-size: 12px;margin-top: 4px;text-align: center;}
+	.mocha-banner-slider-scheme4.video-thumbs .content li p{overflow: hidden;font-size: .12rem;margin-top: .04rem;line-height:.14rem;text-align: center;}
 	/* skin */
 	.mocha-banner-slider-skin1 .controller li{width:20px;height:4px;margin:3px;background-color:#8a8a8a;}
 	.mocha-banner-slider-skin1 .controller li.current{background-color:#ffdb72;}
@@ -30,7 +30,7 @@
 	.mocha-banner-slider-wrapper{position: relative;width:100%;overflow: hidden;}
 	/* btn */
 	.mocha-banner-slider-btn{display:block;position:absolute;}
-	.mocha-banner-slider-btn1{color:#fff;font-size:16px;font-weight:bolder;padding:.5em;width:50px;height:50px;line-height:50px;top:50%;background-color: #a72525;border-radius: 50%;-webkit-border-radius: 50%;}
-	.mocha-banner-slider-btn1.prevBtn{left:-47px;text-align: right;}
-	.mocha-banner-slider-btn1.nextBtn{right:-47px;text-align: left;}
+	.mocha-banner-slider-btn1{color:#fff;font-size:.16rem;font-weight:bolder;padding:.08rem;width:.50rem;height:.50rem;line-height:.50rem;top:50%;background-color: #a72525;border-radius: 50%;-webkit-border-radius: 50%;}
+	.mocha-banner-slider-btn1.prevBtn{left:-.47rem;text-align: right;}
+	.mocha-banner-slider-btn1.nextBtn{right:-.47rem;text-align: left;}
 	
