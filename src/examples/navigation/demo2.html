@@ -18,9 +18,9 @@
 	</style>
 </head>
 <body>
-<h3 class="h3">样式1-有导航</h3>
-<!-- mocha-navigation-scheme1(样式1-有导航) -->
-<header class="mocha-nav mocha-navigation-scheme1 mocha-nav-skin1">
+<h3 class="h3">样式3-导航在下方且滚动固定</h3>
+<!-- mocha-navigation-scheme2(样式3-导航在下方且滚动固定) -->
+<header class="mocha-nav mocha-navigation-scheme2 mocha-navigation-scheme3 mocha-nav-skin1">
 	<div class="mocha-nav-cover"></div>
 	<a href="javascript:;" class="mocha-nav-logo">
 		<img src="http://dummyimage.com/40x40/000/fff" alt="游戏名字" />
@@ -48,19 +48,6 @@
 	</div>
   	<a href="javascript:;" class="mocha-nav-btn">进入游戏</a>
 </header>
-<h3 class="h3">样式2-无导航</h3>
-<!-- mocha-navigation-scheme2(样式2-无导航) -->
-<header class="mocha-nav mocha-nav-skin1">
-	<div class="mocha-nav-cover"></div>
-	<a href="javascript:;" class="mocha-nav-logo">
-		<img src="http://dummyimage.com/40x40/000/fff" alt="游戏名字" />
-		<div class="mocha-nav-logo-desc">
-			<h1>我叫MT2</h1>
-			<h2>焕新一代3D手游</h2>
-		</div>
-	</a>
-  	<a href="javascript:;" class="mocha-nav-btn">关注</a>
-</header>
 <!-- demo JS -->
 <script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
 <script>
@@ -80,7 +67,7 @@
 
     $("body").bind("touchend", function() {
 	    if (window.scrollY >= 90) {
-	        $(".mocha-nav").addClass("mocha-nav-fixed");
+	        $(".mocha-navigation-scheme3").addClass("mocha-nav-fixed");
 	    } else {
 	        $(".mocha-nav-fixed").removeClass("mocha-nav-fixed");
 	    }

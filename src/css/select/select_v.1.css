@@ -5,7 +5,7 @@
  * 
  */
 .mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;overflow: hidden;}
-	.mocha-select select{float: left;height: 1.875em;margin-right: 3.5%;margin-bottom: .6875em;font-size: 16px;line-height:1.875em;border-width: 1px;border-style: solid;border-radius: .25em;}
+	.mocha-select select{float: left;height: .3rem;margin-right: 3.5%;margin-bottom: .11rem;line-height:.3rem;border-width: 1px;border-style: solid;border-radius: .045rem;}
 	.mocha-select select:last-child{margin-right: 0;}
 
 	/* scheme1 */
@@ -14,4 +14,4 @@
 	.mocha-select-scheme3 select{width: 31%}
 
 	/* skin */
-	.mocha-select-skin1 select{color:#000;border-color:#65655b;}
+	.mocha-select-skin1 select{font-size:0.12rem;color:#000;border-color:#65655b;}
