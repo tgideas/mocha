@@ -1,5 +1,5 @@
 ---
-title: my first post
+title: button
 date: 2016-01-04 17:45:01
 tags:
 ---
@@ -7,7 +7,7 @@ tags:
 ## 图文模块
 作者：`sonichuang`
 版本：`v.1`
-依赖：`/css/mocha.css`
+依赖：`mocha.css`
 
 ### 样式1-图片加文字
 
@@ -15,11 +15,12 @@ tags:
 
 <p style="width:90%;margin:0 auto;text-align:justify">
 	<a href="javascript:;" class="mocha-button mocha-button-scheme3 mocha-button-skin1">次按钮1</a>
+	<a href="javascript:;" class="mocha-button mocha-button-scheme3 mocha-button-skin1">次按钮2</a>
 </p>
 
 #### html
 ``` html
-<p style="width:90%;font-size:0;margin:0 auto;text-align:justify">
+<p style="width:90%;margin:0 auto;text-align:justify">
 	<a href="javascript:;" class="mocha-button mocha-button-scheme3 mocha-button-skin1">次按钮1</a>
 	<a href="javascript:;" class="mocha-button mocha-button-scheme3 mocha-button-skin1">次按钮2</a>
 	<a href="javascript:;" class="mocha-button mocha-button-scheme3 mocha-button-skin1 mocha-button-disable">次按钮3</a>
