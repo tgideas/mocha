@@ -12,5 +12,8 @@
   "repository": {
     "type": "",
     "url": "https://github.com/tgideas/mocha"
+  },
+  "dependencies": {
+    "hexo": "^3.1.1"
   }
 }
