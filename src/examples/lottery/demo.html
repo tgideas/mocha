@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="gbk">
 	<meta name="applicable-device" content="mobile">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
 	<meta name="format-detection" content="telephone=no"/>
@@ -9,29 +9,126 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>lottery TGideasç§»åŠ¨é¡µé¢æ¨¡å—åŒ–</title>
-	<!-- é¡µé¢é‡æ„ï¼šdereksu | åˆ›å»ºï¼š20151213 | å›¢é˜Ÿåšå®¢ï¼šhttp://tgideas.qq.com/ -->
-	<link href="../../css/base/base_v.1.css" rel="stylesheet">
+	<title>lottery TGideasÒÆ¶¯Ò³ÃæÄ£¿é»¯</title>
+	<!-- Ò³ÃæÖØ¹¹£ºdereksu | ´´½¨£º20151213 | ÍÅ¶Ó²©¿Í£ºhttp://tgideas.qq.com/ -->
+	<link href="../../css/base/base_v.2.css" rel="stylesheet">
 	<link href="../../css/lottery/lottery_v.1.css" rel="stylesheet">
 	<style>
-	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: 14px;}
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: .14rem;}
 	body{padding-bottom: 10px;}
 	</style>
 </head>
 <body>
 
-	<h3>æ ·å¼ä¸€ï¼ˆæ–¹å½¢ï¼‰:</h3>
+	<h3>ÑùÊ½Ò»£¨·½ĞÎ£©:</h3>
 	<div id="lottery1" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme1">
 		<div id="lottery1content" class="content"></div>
 	</div>
 
-	<h3>æ ·å¼äºŒï¼ˆåœ†å½¢ï¼‰:</h3>
+	<h3>ÑùÊ½¶ş£¨Ô²ĞÎ£©:</h3>
 	<div id="lottery2" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme2">
 		<div id="lottery2content" class="content"></div>
 	</div>
 
 	<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
 	<script src="http://ossweb-img.qq.com/images/js/motion/lottery.min.js"></script>
-	<script src="../../js/lottery/lottery_v.1.js"></script>
+	<script>
+	/*
+	 * lottery v.1
+	 * Author:dereksu
+	 * Modify:2015-12-13
+	 * Description:
+	 * 1.htmlÖĞdata-psdw´ú±íÉè¼Æ¸å¿í¶È£¬Èç640
+	 * 2.htmlÖĞdata-isscale´ú±íÊÇ·ñÒª×ÔÊÊÓ¦ÆÁÄ»³ß´ç½øĞĞËõ·Å£¬Èçtrue/false (×¢£ºÈç¹û±¾ÉíbodyÓĞ½øĞĞzoomËõ·ÅµÄ£¬ÕâÀï¾Í²»ÒªÔÙËõ·ÅÁË£¬¼´ÉèÎªfalse)
+	 */
+	function lotteryScaleFun(lotteryId) {
+		var clientW = parseInt($("#" + lotteryId).data('psdw')) / 2;
+		document.getElementById(lotteryId).style.width = clientW + 'px';
+		var clientWidth = document.documentElement.clientWidth ? document.documentElement.clientWidth : clientW;
+		document.getElementById(lotteryId).style.zoom = clientWidth / clientW;
+	}
+
+	function lotteryScale(lotteryId) {
+		var lottery1IsScale = $("#" + lotteryId).data('isscale');
+		if (lottery1IsScale !== false) {
+			lotteryScaleFun(lotteryId);
+			$(window).bind('orientationchange', function(event) {
+				lotteryScaleFun(lotteryId);
+			});
+			$(window).bind('resize', function(event) {
+				lotteryScaleFun(lotteryId);
+			});
+		}
+	}
+	/**
+	 * ÑùÊ½1js
+	 */
+	//µã»÷¿ªÊ¼³é½±
+	function callJsToStart1() {
+		callFlashToRoll1(3);
+	}
+	//¿ª·¢»ñµÃ³é½±½á¹û ¿ªÊ¼²¥·ÅĞ§¹û
+	function callFlashToRoll1(id) {
+		//Í¨Öª×ªÅÌ×ªµ½¶ÔÓ¦µÄÖĞ½±²úÆ·µÄid £¨ĞòºÅ´Ó0,1,2.....£¬0ÊÇÖ¸Õë³õÊ¼Ö¸Ê¾µÄÎ»ÖÃ£¬ÑØ×ÅË³Ê±ÕëµÄ·½ÏòµİÔö£©
+		if (lotteryObj1) lotteryObj1.stopRoll(id);
+	}
+	//¶¯»­Íê³ÉÍ¨Öªjs
+	function callJsToComplete1() {
+		alert('lotteryObj1-¹§Ï²Äã»ñ½±ÁË£¡');
+	}
+	//³õÊ¼»¯³é½±¶ÔÏóµÄlotteryObj1 
+	var lotteryObj1 = new mo.Lottery({
+		//'lighturl':'http://ossweb-img.qq.com/images/motion/lottery/light.png',
+		'total': 12,
+		'width': 307,
+		'height': 247,
+		'sbtnx': 77,
+		'sbtny': 62,
+		'sbtnw': 153,
+		'sbtnh': 123,
+		'boxw': 75,
+		'boxh': 60,
+		'position': "0_0,77_0,154_0,231_0,231_62,231_124,231_186,154_186,77_186,0_186,0_124,0_62",
+		'contentId': 'lottery1content',
+		'onClickRollEvent': callJsToStart1,
+		'onCompleteRollEvent': callJsToComplete1
+	});
+	lotteryScale('lottery1');
+
+	/**
+	 * ÑùÊ½2js
+	 */
+	//µã»÷¿ªÊ¼³é½±
+	function callJsToStart2() {
+		callFlashToRoll2(5);
+	}
+	//¿ª·¢»ñµÃ³é½±½á¹û ¿ªÊ¼²¥·ÅĞ§¹û 
+	function callFlashToRoll2(id) {
+		//Í¨Öª×ªÅÌ×ªµ½¶ÔÓ¦µÄÖĞ½±²úÆ·µÄid £¨ĞòºÅ´Ó0,1,2.....£¬0ÊÇÖ¸Õë³õÊ¼Ö¸Ê¾µÄÎ»ÖÃ£¬ÑØ×ÅË³Ê±ÕëµÄ·½ÏòµİÔö£©
+		if (lotteryObj2) lotteryObj2.stopRoll(id);
+	}
+	//¶¯»­Íê³ÉÍ¨Öªjs
+	function callJsToComplete2() {
+		alert('lotteryObj2-¹§Ï²Äã»ñ½±ÁË£¡');
+	}
+	//³õÊ¼»¯³é½±¶ÔÏóµÄlotteryObj2 
+	var lotteryObj2 = new mo.Lottery({
+		//'flashUrl' : 'http://ossweb-img.qq.com/images/flash/lottery/circle/lotteyround_2013_v1.swf',
+		'r': 8, //½±Æ·×ÜÊı
+		'width': 244, //×ªÅÌ¿í¶È
+		'height': 244, //×ªÅÌ¸ß¶È
+		'flashFirst': false,
+		'b': 'http://ossweb-img.qq.com/images/flash/lottery/circle/g.png', //Ô²ÅÌµÄÍ¼Æ¬
+		's': 'http://ossweb-img.qq.com/images/flash/lottery/circle/z.png', //¿ªÊ¼³é½±°´Å¥Í¼Æ¬
+		'bx': 0, //Ô²ÅÌµÄÍ¼Æ¬Î»ÖÃx×ø±ê £¨×ªÅÌµÄÖĞĞÄµã×ø±êÎª£¨0,0£©£©
+		'by': 0, //Ô²ÅÌµÄÍ¼Æ¬Î»ÖÃy×ø±ê
+		'sx': 0, //¿ªÊ¼³é½±°´Å¥x×ø±ê
+		'sy': 0, //¿ªÊ¼³é½±°´Å¥y×ø±ê
+		'contentId': 'lottery2content', //×ªÅÌdiv²ãµÄid 
+		'onClickRollEvent': callJsToStart2, //¶ÔÓ¦ÉÏÃæ½Ó¿Ú
+		'onCompleteRollEvent': callJsToComplete2 //¶ÔÓ¦ÉÏÃæ½Ó¿Ú
+	});
+	lotteryScale('lottery2');
+	</script>
 </body>
 </html>
