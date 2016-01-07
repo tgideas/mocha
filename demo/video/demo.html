@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="gbk">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>video(视频模块) - TGideas Mocha</title>
+	<!-- debug css Star 
+	<link href="../../css/base/base_v.2.css" rel="stylesheet">
+	<link href="../../css/video/video_v.1.css" rel="stylesheet">
+	 debug css End -->
+
+	<!-- online css Star -->
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha.min.css" rel="stylesheet">
+	<!-- online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+	</style>
+</head>
+<body>
+<h2 class="h2">video(视频模块)</h2>
+<!-- mocha-video-scheme1(样式1) -->
+<div id="mod_player" class="mocha-video mocha-video-scheme1 mocha-video-skin1">
+</div>
+<!-- demo JS -->
+<script src="http://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="gbk"></script>
+<script type="text/javascript">
+var video = new tvp.VideoInfo();
+video.setVid("l0165p3yzq5");
+var player =new tvp.Player();
+player.create({
+    width:"100%",
+    video:video,
+    modId:"mod_player",
+    playerType: 'html5',
+    isHtml5UseUI:true,
+    isHtml5UseAirPlay:true,
+    isHtml5ShowPosterOnChange:false, /*HTML5播放器切换视频的时候是否要显示Poster*/
+    autoplay:false 
+});
+</script>
+</body>
+</html>
