@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="gbk">
+	<meta charset="utf-8">
 	<meta name="applicable-device" content="mobile">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
 	<meta name="robots" content="all" />
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>����ģ�� - TGideas �ƶ�ҳ��ģ�黯</title>
+	<title>dialog(弹层模块) - TGideas Mocha</title>
+	<!-- debug css Star -->
 	<link href="../../css/base/base_v.2.css" rel="stylesheet">
 	<link href="../../css/dialog/dialog_v.1.css" rel="stylesheet">
+	<!-- debug css End -->
 
+	<!-- online css Star
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha.min.css" rel="stylesheet">
+	online css End -->
 	<style type="text/css" media="screen">
 		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
 		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
@@ -19,55 +24,55 @@
 	</style>
 </head>
 <body>
-<h2 class="h2">����ģ��(Dialog)</h2>
+<h2 class="h2">dialog(弹层模块)</h2>
 
-<button id="showDialogBtn1" href="javascript:;" class="button">�������Dialog��ʽ1</button>
-<button id="showDialogBtn2" href="javascript:;" class="button">�������Dialog��ʽ2</button>
-<button id="showDialogBtn3" href="javascript:;" class="button">��ά�뵯����</button>
+<button id="showDialogBtn1" href="javascript:;" class="button">点击弹出Dialog样式1</button>
+<button id="showDialogBtn2" href="javascript:;" class="button">点击弹出Dialog样式2</button>
+<button id="showDialogBtn3" href="javascript:;" class="button">二维码弹出层</button>
 
 
 <!-- page-mark -->
 <!-- <div class="mocha-page-mark"></div> -->
 
-<!-- mocha-dialog-scheme1(��ʽ1-�б��⼰��ť) -->
+<!-- mocha-dialog-scheme1(样式1-有标题及按钮) -->
 <div id="demoDialog1" class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1" style="display:none">
 	<div class="mocha-dialog-mark"></div>
 	<div class="mocha-dialog-box">
 		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
 		<div class="mocha-dialog-hd">
-			<h3 class="mocha-dialog-hd-title">��ʽ1-�б��⼰��ť</h3>
+			<h3 class="mocha-dialog-hd-title">样式1-有标题及按钮</h3>
 		</div>
 		<div class="mocha-dialog-bd">
-			<p>{ģ������}</p>
-			<p>{ģ������}</p>
+			<p>{模块内容}</p>
+			<p>{模块内容}</p>
 		</div>
 		<div class="mocha-dialog-fd">
-			<a href="#" class="mocha-box-fd-btn">��ť����</a>
-			<a href="#" class="mocha-box-fd-btn">��ť����</a>
+			<a href="#" class="mocha-box-fd-btn">按钮文字</a>
+			<a href="#" class="mocha-box-fd-btn">按钮文字</a>
 		</div>
 	</div>
 </div>
 
-<!-- mocha-dialog-scheme2(��ʽ2-�ޱ��⼰��ť) -->
+<!-- mocha-dialog-scheme2(样式2-无标题及按钮) -->
 <div id="demoDialog2" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
 	<div class="mocha-dialog-mark"></div>
 	<div class="mocha-dialog-box">
 		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
 		<div class="mocha-dialog-bd">
-			<p>{ģ������-�ޱ��⼰��ť}</p>
+			<p>{模块内容-无标题及按钮}</p>
 		</div>
 	</div>
 </div>
 
-<!-- mocha-dialog-scheme2(��ά�븡��) -->
+<!-- mocha-dialog-scheme2(二维码浮层) -->
 <div id="demoDialog3" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
 	<div class="mocha-dialog-mark"></div>
 	<div class="mocha-dialog-box">
 		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
 		<div class="mocha-dialog-bd">
 			<p><img width="200" height="200" src="http://ui.code.oa.com/files/image/201503/20150313112541495.png" alt=""></p>
-			<p>����ʶ���ά��</p>
-			<p>��עXXXX�ٷ����ں�</p>
+			<p>长按识别二维码</p>
+			<p>关注XXXX官方公众号</p>
 		</div>
 	</div>
 </div>

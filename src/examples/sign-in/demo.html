@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="gbk">
+	<meta charset="utf-8">
 	<meta name="applicable-device" content="mobile">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
 	<meta name="format-detection" content="telephone=no"/>
@@ -9,40 +9,47 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>sign-in TGideasÒÆ¶¯Ò³ÃæÄ£¿é»¯</title>
-	<!-- Ò³ÃæÖØ¹¹£ºdereksu | ´´½¨£º20151203 | ÍÅ¶Ó²©¿Í£ºhttp://tgideas.qq.com/ -->
+	<title>sign-in(ç­¾åˆ°æ¨¡å—) - TGideas Mocha</title>
+	<!-- é¡µé¢é‡æ„ï¼šdereksu | åˆ›å»ºï¼š20151203 | å›¢é˜Ÿåšå®¢ï¼šhttp://tgideas.qq.com/ -->
+	<!-- debug css Star -->
 	<link href="../../css/base/base_v.2.css" rel="stylesheet">
 	<link href="../../css/sign-in/sign-in_v.1.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha.min.css" rel="stylesheet">
+	online css End -->
 	<style>
+	.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
 	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: .14rem;}
 	body{padding-bottom: 10px !important;}
 	</style>
 </head>
 <body>
-
-<h3>ÑùÊ½Ò»(<a href="http://tgideas.qq.com/act/a20151218mochasignin/">µã»÷ÕâÀï¿´ÏßÉÏdemo</a>):</h3>
+<h2 class="h2">sign-in(ç­¾åˆ°æ¨¡å—)</h2>
+<h3>æ ·å¼ä¸€(<a href="http://tgideas.qq.com/act/a20151218mochasignin/">ç‚¹å‡»è¿™é‡Œçœ‹çº¿ä¸Šdemo</a>):</h3>
 
 <div class="mocha-sign-in mocha-sign-in-scheme1 mocha-sign-in-skin1">
 	<div class="title-panel clearfix">
-		<span class="tit">Ç©µ½ÈÕÀú</span>
-		<span class="total">±¾ÔÂÒÑÀÛ»ıÇ©µ½<i class="num" id="queryCheckInRes">0</i>Ìì</span>
+		<span class="tit">ç­¾åˆ°æ—¥å†</span>
+		<span class="total">æœ¬æœˆå·²ç´¯ç§¯ç­¾åˆ°<i class="num" id="queryCheckInRes">0</i>å¤©</span>
 		<span class="qqnum" id="login_qq_span"></span>
 	</div>
 	<div class="date-panel clearfix">
 		<span class="nowdate" id="nowDate"></span>
 	</div>
 	<div id="cal" class="calendar">
-		<table class="main"><thead class="head"><tr><th>ĞÇÆÚÈÕ</th><th>ĞÇÆÚÒ»</th><th>ĞÇÆÚ¶ş</th><th>ĞÇÆÚÈı</th><th>ĞÇÆÚËÄ</th><th>ĞÇÆÚÎå</th><th>ĞÇÆÚÁù</th></tr></thead><tbody class="body"><tr class="week"><td class="noday">29</td><td class="noday">30</td><td class="normal">1</td><td class="normal">2</td><td class="normal">3</td><td class="normal">4</td><td class="weekend">5</td></tr><tr class="week"><td class="weekend">6</td><td class="normal">7</td><td class="normal">8</td><td class="normal">9</td><td class="normal">10</td><td class="normal">11</td><td class="weekend">12</td></tr><tr class="week"><td class="weekend">13</td><td class="normal">14</td><td class="normal">15</td><td class="normal">16</td><td class="normal">17</td><td class="normal">18</td><td class="weekend">19</td></tr><tr class="week"><td class="weekend">20</td><td class="today">21</td><td class="normal">22</td><td class="normal">23</td><td class="normal">24</td><td class="normal">25</td><td class="weekend">26</td></tr><tr class="week"><td class="weekend">27</td><td class="normal">28</td><td class="normal">29</td><td class="normal">30</td><td class="normal">31</td><td class="noday">1</td><td class="noday">2</td></tr></tbody></table>
+		<table class="main"><thead class="head"><tr><th>æ˜ŸæœŸæ—¥</th><th>æ˜ŸæœŸä¸€</th><th>æ˜ŸæœŸäºŒ</th><th>æ˜ŸæœŸä¸‰</th><th>æ˜ŸæœŸå››</th><th>æ˜ŸæœŸäº”</th><th>æ˜ŸæœŸå…­</th></tr></thead><tbody class="body"><tr class="week"><td class="noday">29</td><td class="noday">30</td><td class="normal">1</td><td class="normal">2</td><td class="normal">3</td><td class="normal">4</td><td class="weekend">5</td></tr><tr class="week"><td class="weekend">6</td><td class="normal">7</td><td class="normal">8</td><td class="normal">9</td><td class="normal">10</td><td class="normal">11</td><td class="weekend">12</td></tr><tr class="week"><td class="weekend">13</td><td class="normal">14</td><td class="normal">15</td><td class="normal">16</td><td class="normal">17</td><td class="normal">18</td><td class="weekend">19</td></tr><tr class="week"><td class="weekend">20</td><td class="today">21</td><td class="normal">22</td><td class="normal">23</td><td class="normal">24</td><td class="normal">25</td><td class="weekend">26</td></tr><tr class="week"><td class="weekend">27</td><td class="normal">28</td><td class="normal">29</td><td class="normal">30</td><td class="normal">31</td><td class="noday">1</td><td class="noday">2</td></tr></tbody></table>
 	</div>
 	<div class="btn-panel">
-		<a class="signinbtn" onclick="amsSubmit(39028,216921)">Ç©µ½</a>
-		<a class="querysigninbtn" onclick="amsInit(39028,216920);">²éÑ¯Ç©µ½ </a>
+		<a class="signinbtn" onclick="amsSubmit(39028,216921)">ç­¾åˆ°</a>
+		<a class="querysigninbtn" onclick="amsInit(39028,216920);">æŸ¥è¯¢ç­¾åˆ° </a>
 	</div>
 </div>
 
-<!-- ÈÕÀúÇ©µ½°¸Àı:http://tgideas.qq.com/act/a20151218mochasignin/ -->
+<!-- æ—¥å†ç­¾åˆ°æ¡ˆä¾‹:http://tgideas.qq.com/act/a20151218mochasignin/ -->
 
-<h3>ÑùÊ½¶ş:</h3>
+<h3>æ ·å¼äºŒ:</h3>
 
 <div class="mocha-sign-in mocha-sign-in-scheme2 mocha-sign-in-skin2" id="signin" data-psdw="640" data-isscale="true">
 	<div class="content">
@@ -50,7 +57,7 @@
 			<a href="javascript:void(0);" class="signinitem signcls"></a>
 			<a href="javascript:void(0);" class="signinitem signcls"></a>
 			<a href="javascript:void(0);" class="signinitem signcls"></a>
-			<a href="javascript:void(0);" onclick="amsSubmit(39028,216921)" class="signinitem today">Ç©</a>
+			<a href="javascript:void(0);" onclick="amsSubmit(39028,216921)" class="signinitem today">ç­¾</a>
 			<a href="javascript:void(0);" class="signinitem normal"></a>
 			<a href="javascript:void(0);" class="signinitem normal"></a>
 			<a href="javascript:void(0);" class="signinitem normal"></a>
@@ -58,26 +65,26 @@
 	</div>
 </div>
 
-<!-- ¶ÌÆÚÇ©µ½°¸Àı:http://pvp.qq.com/cp/a20151208yxzj/index.html -->
+<!-- çŸ­æœŸç­¾åˆ°æ¡ˆä¾‹:http://pvp.qq.com/cp/a20151208yxzj/index.html -->
 
 <script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
 <script>if(typeof(pgvMain) == 'function') pgvMain();</script>
-<!-- AMSÍ· -->
+<!-- AMSå¤´ -->
 <script src="http://pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
 <script type="text/javascript" src="http://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"  ></script>
 <script type="text/javascript" src="http://ossweb-img.qq.com/images/js/mobile_build/milo.js" ></script>
 <script type="text/javascript" src="http://ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
 <script>
 /**
- * ÑùÊ½Ò»JS
+ * æ ·å¼ä¸€JS
  */
-//»ñÈ¡µ±Ç°µÄÈÕÆÚ
+//è·å–å½“å‰çš„æ—¥æœŸ
 var myDate = new Date();
-var nowYear = myDate.getFullYear(); //Äê
-var nowMonth = myDate.getMonth() + 1; //ÔÂ
-var nowDate = myDate.getDate(); //ÈÕ
-document.getElementById('nowDate').innerHTML = nowYear + 'Äê' + nowMonth + 'ÔÂ' + nowDate + 'ÈÕ';
-//Ìá½»Ç©µ½µÄÅäÖÃ
+var nowYear = myDate.getFullYear(); //å¹´
+var nowMonth = myDate.getMonth() + 1; //æœˆ
+var nowDate = myDate.getDate(); //æ—¥
+document.getElementById('nowDate').innerHTML = nowYear + 'å¹´' + nowMonth + 'æœˆ' + nowDate + 'æ—¥';
+//æäº¤ç­¾åˆ°çš„é…ç½®
 amsCfg_216921 = {
 	type: "comit",
 	sData: {
@@ -88,35 +95,35 @@ amsCfg_216921 = {
 		console.log(res.sMsg);
 	}
 };
-//²éÑ¯Ç©µ½µÄÅäÖÃ
+//æŸ¥è¯¢ç­¾åˆ°çš„é…ç½®
 amsCfg_216920 = {
 	type: "query",
 	sData: {
 		"appid": "363"
 	},
-	success: function(checkInInfo, signDateList) { //·µ»Ø×ÜÌìÊı
+	success: function(checkInInfo, signDateList) { //è¿”å›æ€»å¤©æ•°
 		g("queryCheckInRes").innerHTML = checkInInfo.total;
 	},
-	calCfg: { //ÈÕÀúÏÔÊ¾µÄÅäÖÃ¶ÔÏó£¬¸ü¶à²ÎÊı¿É²Î¿¼Calendar & SignCalendar Àà
-		specialday: [], //ÌØÊâÈÕÆÚ
-		container: "cal", //ÈÕÀúÏÔÊ¾ÈİÆ÷
-		onCreateDay: function(day, type, y, m, d) { //ÈÕÀú¶ÔÏóµÄdomÄÚÈİ
+	calCfg: { //æ—¥å†æ˜¾ç¤ºçš„é…ç½®å¯¹è±¡ï¼Œæ›´å¤šå‚æ•°å¯å‚è€ƒCalendar & SignCalendar ç±»
+		specialday: [], //ç‰¹æ®Šæ—¥æœŸ
+		container: "cal", //æ—¥å†æ˜¾ç¤ºå®¹å™¨
+		onCreateDay: function(day, type, y, m, d) { //æ—¥å†å¯¹è±¡çš„domå†…å®¹
 			day.innerHTML = "" + d + "";
 		},
 		signDateList: []
 	},
-	css: "biz.calendar.cal", //cssÑùÊ½£¬ÓĞÌØÊâÑùÊ½£¬ÇëÓÃ¾ø¶ÔµØÖ·
-	calShow: true, //ÈÕÀúÊÇ·ñÏÔÊ¾
-	msg: { //msg ÌáÊ¾Óï¾ä¶ÔÏó
-		"systemError": "ºÜ±§Ç¸£¬ÏµÍ³·±Ã¦£¬ÇëÉÔºóÔÙÊÔ",
-		"hasCheckin": "Äú½ñÌìÒÑÇ©µ½",
-		"checkinSuccess": "Ç©µ½³É¹¦",
-		"checkinFailure": "Ç©µ½³É¹¦"
+	css: "biz.calendar.cal", //cssæ ·å¼ï¼Œæœ‰ç‰¹æ®Šæ ·å¼ï¼Œè¯·ç”¨ç»å¯¹åœ°å€
+	calShow: true, //æ—¥å†æ˜¯å¦æ˜¾ç¤º
+	msg: { //msg æç¤ºè¯­å¥å¯¹è±¡
+		"systemError": "å¾ˆæŠ±æ­‰ï¼Œç³»ç»Ÿç¹å¿™ï¼Œè¯·ç¨åå†è¯•",
+		"hasCheckin": "æ‚¨ä»Šå¤©å·²ç­¾åˆ°",
+		"checkinSuccess": "ç­¾åˆ°æˆåŠŸ",
+		"checkinFailure": "ç­¾åˆ°æˆåŠŸ"
 	}
 };
-//³õÊ¼»¯Ç©µ½
+//åˆå§‹åŒ–ç­¾åˆ°
 amsInit(39028, 216920);
-//»ñÈ¡µ±Ç°µÇÂ¼µÄQQºÅ
+//è·å–å½“å‰ç™»å½•çš„QQå·
 milo.ready(function() {
 	need("biz.login", function(LoginManager) {
 		LoginManager.checkLogin(function() {
