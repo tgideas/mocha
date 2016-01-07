@@ -6,7 +6,9 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "latest",
-    "gulp-connect": "latest"
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "latest",
+    "gulp-minify-css": "^1.2.3"
   },
   "license": "BSD",
   "repository": {

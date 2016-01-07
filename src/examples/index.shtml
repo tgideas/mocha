@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="gbk">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>按钮模块 -TGideas 移动页面模块化</title>
+	<link href="../css/base/base_v.2.css" rel="stylesheet">
+	<!-- <link href="../../css/button/button_v.1.css" rel="stylesheet"> -->
+
+	<style type="text/css" media="screen">
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{color: #06c;font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.05rem;text-align: center;}
+		.p{color: #999;font-size:0.16rem;text-align: center;}
+		.power{color: #999;font-size:0.12rem;text-align: center;padding-bottom:0.2rem;}
+		.demo-nav{border-top: 1px solid #ddd;font-size: 0.18em;margin:0.25rem 0.04rem;}
+			.demo-nav li{border-bottom: 1px solid #eee;}
+			.demo-nav li a{color: #333;display: block;text-align: center;line-height: 0.4rem;}
+	</style>
+</head>
+<body>
+	
+	<h3 class="h3">Mocha</h3>
+	<p class="p">TGideas 移动端模块资源</p>
+	<ul class="demo-nav">
+		<li><a href="audio/demo.html">audio</a></li>
+		<li><a href="box/demo.html">box</a></li>
+		<li><a href="button/demo.html">button</a></li>
+		<li><a href="comment/demo.html">comment</a></li>
+		<li><a href="countdown/demo.html">countdown</a></li>
+		<li><a href="dialog/demo.html">dialog</a></li>
+		<li><a href="gift/demo.html">gift</a></li>
+		<li><a href="loading/demo.html">loading</a></li>
+		<li><a href="lottery/demo.html">lottery</a></li>
+		<li><a href="menu/demo.html">menu</a></li>
+		<li><a href="navigation/demo.html">navigation</a></li>
+		<li><a href="pic-list/demo.html">pic-list</a></li>
+		<li><a href="pictxt-list/demo.html">pictxt-list</a></li>
+		<li><a href="select/demo.html">select</a></li>
+		<li><a href="sign/demo.html">sign-in</a></li>
+		<li><a href="slider/demo.html">slider</a></li>
+		<li><a href="tab/demo.html">tab</a></li>
+		<li><a href="table/demo.html">table</a></li>
+		<li><a href="txt-list/demo.html">txt-list</a></li>
+		<li><a href="video/demo.html">video</a></li>
+	</ul>
+	
+	<p class="power">@TGideas</p>
+</body>
+</html>
+
+
