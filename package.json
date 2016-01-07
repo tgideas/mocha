@@ -5,10 +5,13 @@
   "description": "Mocha Workflow Automation.",
   "main": "gulpfile.js",
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp": "latest",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "latest",
-    "gulp-minify-css": "^1.2.3"
+    "gulp-convert-encoding": "0.0.3",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-replace": "^0.5.4"
   },
   "license": "BSD",
   "repository": {

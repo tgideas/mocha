@@ -11,7 +11,10 @@
 var gulp 		  = require('gulp'),
     concat    = require('gulp-concat'),
     minifyCSS = require('gulp-minify-css'),
-    connect   = require('gulp-connect');
+    replace   = require('gulp-replace'),
+    del       = require('del'),
+    connect   = require('gulp-connect'),
+    convertEncoding = require('gulp-convert-encoding');
 
 /*
  * Setting Pathsstella
@@ -57,7 +60,7 @@ gulp.task('build-mocha-css', function(){
              paths.src + "css/" + "button/" + "button_v.1.css",
              paths.src + "css/" + "comment/" + "comment_v.1.css",
              paths.src + "css/" + "countdown/" + "countdown_v.1.css",
-             paths.src + "css/" + "dialog" + "dialog_v.1.css",
+             paths.src + "css/" + "dialog/" + "dialog_v.1.css",
              paths.src + "css/" + "gift/" + "gift_v.1.css",
              paths.src + "css/" + "loading/" + "loading_v.1.css",
              paths.src + "css/" + "lottery/" + "lottery_v.1.css",
@@ -67,15 +70,38 @@ gulp.task('build-mocha-css', function(){
              paths.src + "css/" + "pictxt-list/" + "pictxt-list_v.1.css",
              paths.src + "css/" + "select/" + "select_v.1.css",
              paths.src + "css/" + "sign-in/" + "sign-in_v.1.css",
-             paths.src + "css/" + "slider" + "slider_v.1.css",
+             paths.src + "css/" + "slider/" + "slider_v.1.css",
              paths.src + "css/" + "tab/" + "tab_v.1.css",
-             paths.src + "css/" + "table" + "table_v.1.css",
+             paths.src + "css/" + "table/" + "table_v.1.css",
              paths.src + "css/" + "txt-list/" + "txt-list_v.1.css",
              paths.src + "css/" + "video/" + "video_v.1.css"])
-    .pipe(concat('mocha.css'))
+    .pipe(concat('mocha.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest(paths.src + "css/"))
 });
+
+/* ---------------------------------------------------
+ * Task demo Build [向/demo目录输出相关文件]
+ */
+gulp.task('build-mocha-demo', function(){
+  //del(['demo/**/*.htm', 'demo/**/*.html'],function(){
+
+    gulp.src([paths.src+'examples/**/*.html', paths.src+'examples/**/*.htm'])
+      // css地址替换
+      .pipe(replace('<!-- debug css Star -->', '<!-- debug css Star '))
+      .pipe(replace('<!-- debug css End -->', ' debug css End -->'))
+      .pipe(replace('<!-- online css Star','<!-- online css Star -->'))
+      .pipe(replace('online css End -->','<!-- online css End -->'))
+
+      // UTF-8 to GBK
+      .pipe(replace('charset="utf-8"', 'charset="gbk"')) 
+      .pipe(convertEncoding({to: 'GBK'}))
+      
+      .pipe(gulp.dest('demo/'))
+      console.log('Build demo/**/*.html OK！')
+  //})
+})
+
 
 
 

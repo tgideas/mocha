@@ -27,3 +27,4 @@ build/Release
 node_modules
 
 doc/public
+demo
