@@ -102,7 +102,13 @@ gulp.task('build-mocha-demo', function(){
   //})
 })
 
-
+/* ---------------------------------------------------
+ * Task build docs files [向/docs目录输出相关文件]
+ */
+gulp.task('build-mocha-docs', function(){
+    gulp.src(['doc/public/*/**'])
+      .pipe(gulp.dest('docs/'))
+})
 
 
 /* ---------------------------------------------------
