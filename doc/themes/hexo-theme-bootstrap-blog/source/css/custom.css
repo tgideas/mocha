@@ -184,6 +184,9 @@ code {
   padding-left: 0;
   list-style: none;
 }
+.sidebar-module-list li {
+  margin-bottom:0.5em;
+}
 .sidebar-module-list-child {
   padding-left: 25px;
 }
