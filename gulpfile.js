@@ -94,8 +94,8 @@ gulp.task('build-mocha-demo', function(){
       .pipe(replace('online css End -->','<!-- online css End -->'))
 
       // UTF-8 to GBK
-      .pipe(replace('charset="utf-8"', 'charset="gbk"')) 
-      .pipe(convertEncoding({to: 'GBK'}))
+      // .pipe(replace('charset="utf-8"', 'charset="gbk"')) 
+      // .pipe(convertEncoding({to: 'GBK'}))
       
       .pipe(gulp.dest('demo/'))
       console.log('Build demo/**/*.html OK！')
