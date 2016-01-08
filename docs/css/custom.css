@@ -54,7 +54,8 @@ code {
 /* Override Bootstrap's default container width */
 @media (min-width: 1200px) {
   .container {
-    width: 970px;
+    /*width: 970px;*/
+    width:100%;
   }
 }
 
