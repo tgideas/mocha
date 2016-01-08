@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="gbk">
+	<meta charset="utf-8">
 	<meta name="applicable-device" content="mobile">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
 	<meta name="format-detection" content="telephone=no"/>
@@ -9,8 +9,8 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>countdown(µ¹¼ÆÊ±)- TGideas Mocha</title>
-	<!-- Ò³ÃæÖØ¹¹£ºdereksu | ´´½¨£º20151225 | ÍÅ¶Ó²©¿Í£ºhttp://tgideas.qq.com/ -->
+	<title>countdown(å€’è®¡æ—¶)- TGideas Mocha</title>
+	<!-- é¡µé¢é‡æ„ï¼šdereksu | åˆ›å»ºï¼š20151225 | å›¢é˜Ÿåšå®¢ï¼šhttp://tgideas.qq.com/ -->
 	<!-- debug css Star 
 	<link href="../../css/base/base_v.2.css" rel="stylesheet">
 	<link href="../../css/countdown/countdown_v.1.css" rel="stylesheet">
@@ -26,18 +26,18 @@
 	</style>
 </head>
 <body>
-<h2 class="h2">countdown(µ¹¼ÆÊ±)</h2>
-<h3>demo1:AjaxÇëÇófavicon.ico»ñÈ¡·şÎñÆ÷Ê±¼ä£¨ÑİÊ¾×Ô¶¨ÒåÊ±¼ä¼ä¸ô·û£©</h3>
+<h2 class="h2">countdown(å€’è®¡æ—¶)</h2>
+<h3>demo1:Ajaxè¯·æ±‚favicon.icoè·å–æœåŠ¡å™¨æ—¶é—´ï¼ˆæ¼”ç¤ºè‡ªå®šä¹‰æ—¶é—´é—´éš”ç¬¦ï¼‰</h3>
 <div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
 	<p id="ctime1" class="content ctime1"></p>
 </div>
 
-<h3>demo2£ºÍ¨¹ıPHP»ñÈ¡·şÎñÆ÷Ê±¼ä£¨ÑİÊ¾CSS3¶¯»­¡¢×Ô¶¨ÒåÊ±¼ä¼ä¸ô·û£©</h3>
+<h3>demo2ï¼šé€šè¿‡PHPè·å–æœåŠ¡å™¨æ—¶é—´ï¼ˆæ¼”ç¤ºCSS3åŠ¨ç”»ã€è‡ªå®šä¹‰æ—¶é—´é—´éš”ç¬¦ï¼‰</h3>
 <div class="mocha-countdown mocha-countdown-scheme2 mocha-countdown-skin1">
 	<p id="ctime2" class="content ctime2"></p>
 </div>
 
-<h3>demo3£ºµ¹¼ÆÊ±½áÊø£¨ÑİÊ¾µ±µ¹¼ÆÊ±µ½00ÌìµÄÊ±ºòÒş²Ø'00Ìì'¡¢µ¹¼ÆÊ±Íê³ÉµÄ»Øµ÷·½·¨£©</h3>
+<h3>demo3ï¼šå€’è®¡æ—¶ç»“æŸï¼ˆæ¼”ç¤ºå½“å€’è®¡æ—¶åˆ°00å¤©çš„æ—¶å€™éšè—'00å¤©'ã€å€’è®¡æ—¶å®Œæˆçš„å›è°ƒæ–¹æ³•ï¼‰</h3>
 <div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin2">
 	<p id="ctime3" class="content ctime3"></p>
 </div>
@@ -48,8 +48,8 @@
 <script>
 /**
  * demo1 JS
- * AjaxÇëÇófavicon.ico»ñÈ¡·şÎñÆ÷Ê±¼ä£¨ÑİÊ¾×Ô¶¨ÒåÊ±¼ä¼ä¸ô·û£©
- * getServerTime().stgapÊÇ»ñÈ¡±¾µØÓë·şÎñÆ÷Ê±¼ä²î
+ * Ajaxè¯·æ±‚favicon.icoè·å–æœåŠ¡å™¨æ—¶é—´ï¼ˆæ¼”ç¤ºè‡ªå®šä¹‰æ—¶é—´é—´éš”ç¬¦ï¼‰
+ * getServerTime().stgapæ˜¯è·å–æœ¬åœ°ä¸æœåŠ¡å™¨æ—¶é—´å·®
  */
 var ctimer1 = new countDown("ctime1",{
 	ttime:[2025,10,11,12,00,00],
@@ -58,37 +58,37 @@ var ctimer1 = new countDown("ctime1",{
 });
 
 /**
- * demo2ºÍdemo3 JS
+ * demo2å’Œdemo3 JS
  */
 var scriptLoader=function(b,a,f){var d=b.split("."),c=d[d.length-1],e=document.createElement("script"),g="src";e.setAttribute(g,b);document.body.appendChild(e);e.onload=function(){if(typeof a=="function"){if(typeof f!="undefined"){a(f)}else{a()}}};e.onerror=function(){}};
 scriptLoader('http://apps.game.qq.com/CommArticle/app/reg/gdate.php',function(){
-//Í¨¹ıphp»ñÈ¡±¾µØÓë·şÎñÆ÷Ê±¼ä²î_gapTime£¬»ñÈ¡²»µ½ÔòÊ¹ÓÃ¿Í»§¶ËÊ±¼ä
+//é€šè¿‡phpè·å–æœ¬åœ°ä¸æœåŠ¡å™¨æ—¶é—´å·®_gapTimeï¼Œè·å–ä¸åˆ°åˆ™ä½¿ç”¨å®¢æˆ·ç«¯æ—¶é—´
 var _gapTime = typeof(json_curdate)!=="undefined" ? +new Date(json_curdate.replace(/-/g,"/"))-(+new Date()) : 0;
 
 /**
  * demo2 JS
- * Í¨¹ıPHP»ñÈ¡·şÎñÆ÷Ê±¼ä£¨ÑİÊ¾CSS3¶¯»­¡¢×Ô¶¨ÒåÊ±¼ä¼ä¸ô·û£©
- * _gapTimeÊÇ»ñÈ¡±¾µØÓë·şÎñÆ÷Ê±¼ä²î
+ * é€šè¿‡PHPè·å–æœåŠ¡å™¨æ—¶é—´ï¼ˆæ¼”ç¤ºCSS3åŠ¨ç”»ã€è‡ªå®šä¹‰æ—¶é—´é—´éš”ç¬¦ï¼‰
+ * _gapTimeæ˜¯è·å–æœ¬åœ°ä¸æœåŠ¡å™¨æ—¶é—´å·®
  */
 var ctimer2 = new countDown("ctime2",{
 	ttime:[2025,10,11,12,00,00],
 	gap:_gapTime,
 	nani:'nanistyle',
-	sp:["Ìì","Ê±","·Ö","Ãë"]
+	sp:["å¤©","æ—¶","åˆ†","ç§’"]
 });
 
 /**
  * demo3 JS
- * µ¹¼ÆÊ±½áÊø£¨ÑİÊ¾µ±µ¹¼ÆÊ±µ½00ÌìµÄÊ±ºòÒş²Ø'00Ìì'¡¢µ¹¼ÆÊ±Íê³ÉµÄ»Øµ÷·½·¨£©
- * _gapTimeÊÇ»ñÈ¡±¾µØÓë·şÎñÆ÷Ê±¼ä²î
+ * å€’è®¡æ—¶ç»“æŸï¼ˆæ¼”ç¤ºå½“å€’è®¡æ—¶åˆ°00å¤©çš„æ—¶å€™éšè—'00å¤©'ã€å€’è®¡æ—¶å®Œæˆçš„å›è°ƒæ–¹æ³•ï¼‰
+ * _gapTimeæ˜¯è·å–æœ¬åœ°ä¸æœåŠ¡å™¨æ—¶é—´å·®
  */
 var	ctimer3 = new countDown("ctime3",{
 	ttime:[2016,12,25,18,41,00],
 	gap:_gapTime,
-	sp:["Ìì","Ê±","·Ö","Ãë"],
+	sp:["å¤©","æ—¶","åˆ†","ç§’"],
 	hideday:true,
 	done:function(){
-		console.info('ctime3µ¹¼ÆÊ±Ê±¼äµ½£¡');
+		console.info('ctime3å€’è®¡æ—¶æ—¶é—´åˆ°ï¼');
 	}
 	});
 
