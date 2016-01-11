@@ -28,7 +28,8 @@ tags:
 </div>
 ```
 
-### 您可以修改默认的`.mocha-box-skin1`皮肤类，或者在`page.css`新增`.mocha-box-skin2`
+### 修改模块皮肤CSS 
+模块的默认皮肤类`.mocha-box-skin1`，您可以在您项目的`page.css`里修改`.mocha-box-skin1`皮肤类，或者新增`.mocha-box-skin2`。
 ``` css
 /* skin */
 .mocha-box-skin1{font-size:0.16rem;color: #666;}
