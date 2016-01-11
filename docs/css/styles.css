@@ -661,6 +661,9 @@ code {
   padding-left: 0;
   list-style: none;
 }
+.sidebar-module-list li {
+  margin-bottom:0.5em;
+}
 .sidebar-module-list-child {
   padding-left: 25px;
 }
@@ -738,7 +741,6 @@ code {
 .archives-wrap {
   margin-bottom: 30px;
 }
-
 .archive-year-wrap a,
 .archive-article .article-datetime a {
   color: #333;
