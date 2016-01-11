@@ -30,7 +30,7 @@
 	.mocha-pictxt-list-scheme3 .mocha-ptlu-item-meta span{display: block;}
 	.mocha-pictxt-list-scheme3 .mocha-ptlu-item-btn{position: absolute;right:0;top:0.32rem;width:20%;}
  	/* skin */
- 	.mocha-pic-txt-list-skin1{font-size:0.14rem;}
- 	.mocha-pic-txt-list-skin1 .mocha-ptlu-item h4{color: #333;}
- 	.mocha-pic-txt-list-skin1 .mocha-ptlu-item-meta{color: #999;}
-	.mocha-pic-txt-list-skin1.mocha-pictxt-list-scheme2 .mocha-ptlu-item{border-bottom-color:#ddd;}
+ 	.mocha-pictxt-list-skin1{font-size:0.14rem;}
+ 	.mocha-pictxt-list-skin1 .mocha-ptlu-item h4{color: #333;}
+ 	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta{color: #999;}
+	.mocha-pictxt-list-skin1.mocha-pictxt-list-scheme2 .mocha-ptlu-item{border-bottom-color:#ddd;}
