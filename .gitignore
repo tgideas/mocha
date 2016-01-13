@@ -29,3 +29,7 @@ node_modules
 doc/public
 docs
 demo
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
