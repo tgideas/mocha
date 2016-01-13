@@ -28,3 +28,6 @@ node_modules
 src
 doc
 
+# Sublime
+*.sublime-project
+*.sublime-workspace
