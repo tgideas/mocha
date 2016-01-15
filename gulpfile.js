@@ -59,6 +59,7 @@ gulp.task('build-mocha-css', function(){
              paths.src + "css/" + "box/" + "box_v.1.css",
              paths.src + "css/" + "button/" + "button_v.1.css",
              paths.src + "css/" + "comment/" + "comment_v.1.css",
+             paths.src + "css/" + "common-foot/" + "common-foot_v.1.css",
              paths.src + "css/" + "countdown/" + "countdown_v.1.css",
              paths.src + "css/" + "dialog/" + "dialog_v.1.css",
              paths.src + "css/" + "gift/" + "gift_v.1.css",

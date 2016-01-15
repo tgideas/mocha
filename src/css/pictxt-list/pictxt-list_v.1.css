@@ -13,7 +13,7 @@
 	.mocha-ptlu-item h4{font-size:.14rem;line-height:0.18rem;}
 	.mocha-ptlu-item-meta{padding-top:0.06rem;text-align: right;}
 	.mocha-ptlu-item .video-title{display: block;}
-	.mocha-ptlu-item .icon-play{position: absolute;left:50%;top:0.26rem;margin:0 0 0 -0.16rem;width:.32rem;height:.38rem;background:url(../../images/icon-play.png) no-repeat 0 0;background-size:100% auto;}
+	.mocha-ptlu-item .icon-play{position: absolute;left:50%;top:0.26rem;margin:0 0 0 -0.16rem;width:.32rem;height:.38rem;background:url(http://ossweb-img.qq.com/images/js/mocha/images/icon-play.png) no-repeat 0 0;background-size:100% auto;}
  	/* scheme */
  	.mocha-pictxt-list-scheme1 .mocha-ptlu-item{width:48%;margin-bottom:.16rem;}
 	.mocha-pictxt-list-scheme2 .mocha-ptlu-item{display: block;overflow: hidden;width:100%;padding:0.16rem 0;border-bottom: 1px solid #ccc;}
