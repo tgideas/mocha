@@ -27,18 +27,18 @@
 </head>
 <body>
 <h2 class="h2">countdown(倒计时)</h2>
-<h3>demo1:Ajax请求favicon.ico获取服务器时间（演示自定义时间间隔符）</h3>
+<h3 id="countdowndemo1">demo1:Ajax请求favicon.ico获取服务器时间（演示自定义时间间隔符）</h3>
 <div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
 	<p id="ctime1" class="content ctime1"></p>
 </div>
 
-<h3>demo2：通过PHP获取服务器时间（演示CSS3动画、自定义时间间隔符）</h3>
-<div class="mocha-countdown mocha-countdown-scheme2 mocha-countdown-skin1">
+<h3 id="countdowndemo2">demo2：通过PHP获取服务器时间（演示CSS3动画、自定义时间间隔符）</h3>
+<div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
 	<p id="ctime2" class="content ctime2"></p>
 </div>
 
-<h3>demo3：倒计时结束（演示当倒计时到00天的时候隐藏'00天'、倒计时完成的回调方法）</h3>
-<div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin2">
+<h3 id="countdowndemo3">demo3：倒计时结束（演示当倒计时到00天的时候隐藏'00天'、倒计时完成的回调方法）</h3>
+<div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
 	<p id="ctime3" class="content ctime3"></p>
 </div>
 
@@ -83,7 +83,7 @@ var ctimer2 = new countDown("ctime2",{
  * _gapTime是获取本地与服务器时间差
  */
 var	ctimer3 = new countDown("ctime3",{
-	ttime:[2016,12,25,18,41,00],
+	ttime:[2015,12,25,18,41,00],
 	gap:_gapTime,
 	sp:["天","时","分","秒"],
 	hideday:true,

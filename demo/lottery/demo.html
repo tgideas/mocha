@@ -27,13 +27,13 @@
 </head>
 <body>
 	<h2 class="h2">lottery(抽奖模块)</h2>
-	<h3>样式一（方形）:</h3>
-	<div id="lottery1" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme1">
+	<h3 id="lotterydemo1">样式一（方形）:</h3>
+	<div id="lottery1" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme1 mocha-lottery-skin1">
 		<div id="lottery1content" class="content"></div>
 	</div>
 
-	<h3>样式二（圆形）:</h3>
-	<div id="lottery2" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme2">
+	<h3 id="lotterydemo2">样式二（圆形）:</h3>
+	<div id="lottery2" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme2 mocha-lottery-skin1">
 		<div id="lottery2content" class="content"></div>
 	</div>
 
@@ -54,7 +54,7 @@
 		var clientWidth = document.documentElement.clientWidth ? document.documentElement.clientWidth : clientW;
 		document.getElementById(lotteryId).style.zoom = clientWidth / clientW;
 	}
-
+	//缩放方法
 	function lotteryScale(lotteryId) {
 		var lottery1IsScale = $("#" + lotteryId).data('isscale');
 		if (lottery1IsScale !== false) {
@@ -100,6 +100,7 @@
 		'onClickRollEvent': callJsToStart1,
 		'onCompleteRollEvent': callJsToComplete1
 	});
+	//执行缩放
 	lotteryScale('lottery1');
 
 	/**
@@ -135,6 +136,7 @@
 		'onClickRollEvent': callJsToStart2, //对应上面接口
 		'onCompleteRollEvent': callJsToComplete2 //对应上面接口
 	});
+	//执行缩放
 	lotteryScale('lottery2');
 	</script>
 </body>
