@@ -74,9 +74,9 @@ gulp.task('build-mocha-css', function(){
              paths.src + "css/" + "tab/" + "tab_v.1.css",
              paths.src + "css/" + "table/" + "table_v.1.css",
              paths.src + "css/" + "txt-list/" + "txt-list_v.1.css",
-             paths.src + "css/" + "video/" + "video_v.1.css"],
-             // paths.src + "css/" + "first-screen/" + "first-screen_v.1.css",
-             paths.src + "css/" + "common-foot/" + "common-foot_v.1.css")
+             paths.src + "css/" + "video/" + "video_v.1.css",
+             paths.src + "css/" + "first-screen/" + "first-screen_v.1.css",
+             paths.src + "css/" + "common-foot/" + "common-foot_v.1.css"])
     .pipe(concat('mocha.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest(paths.src + "css/"))
