@@ -4,6 +4,7 @@
  * Modify:2016-01-13
  * 
  */
+ .mocha-firstscreen-html,.mocha-firstscreen-html body{height:100%;}
 .mocha-firstscreen-header{width:100%;font-size:0.16rem;height:.6rem;line-height:.6rem;text-align:center;background:#ccc;position:absolute;left:0;top:0;}
 .mocha-firstscreen-section{height:100%;padding:0.6rem 0 0.56rem;box-sizing: border-box;font-size:.16rem;background:#000;}
 .mocha-firstscreen-kv{height:100%;}
