@@ -69,24 +69,33 @@ tags:
 ```
 
 ### tab实例化JS
-依赖`zepto.js`和`motion`的[tab](http://tgideas.github.io/motion/doc/data/component/mo.Tab.html)组件
+【点击式选择卡】依赖`zepto.js`和`motion`的[tab](http://tgideas.github.io/motion/doc/data/component/mo.Tab.html)组件
+【滑动式选择卡】依赖`zepto.js`和`motion`的[slide](http://tgideas.github.io/motion/doc/data/component/mo.Slide.html)组件
 ``` html
 <script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<!-- 实例化:【点击式选择卡】 -->
 <script src="http://game.gtimg.cn/images/js/motion/tab.min.js"></script>
 <script>
-// 实例化页签功能
 $(function(){
 	window.tab1 = new mo.Tab({
 		target: $('#tabBox1 div.mocha-tab-panel'),
-		controller: $('#tabBox1 .mocha-tab-triggers-ul li')
-		// lazy: true
-	});
-	window.tab2 = new mo.Tab({
-		target: $('#tabBox2 div.mocha-tab-panel'),
-		controller: $('#tabBox2 .mocha-tab-triggers-ul li'),
+		controller: $('#tabBox1 .mocha-tab-triggers-ul li'),
 		lazy: true
 	});
 });
+</script>
+<!-- 实例化:【滑动式选择卡】 -->
+<script src="http://game.gtimg.cn/images/js/motion/slide.v2.0.min.js"></script>
+<script>
+	$('#tabBox2 div.mocha-tab-panels').css("height",100);	//指定slider内容区高度
+	tab2 = new mo.Slide({
+		target: $('#tabBox2 div.mocha-tab-panel'),
+		controller: $('#tabBox2 .mocha-tab-triggers-ul li'),
+		direction: 'x',
+		effect: 'slide',
+		circle: true,
+		autoPlay: false
+	})	
 </script>
 ```
 
