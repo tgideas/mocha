@@ -25,7 +25,7 @@
 <body>
 <h2 class="h2">video(视频模块)</h2>
 <!-- mocha-video-scheme1(样式1) -->
-<div id="mod_player" class="mocha-video mocha-video-scheme1 mocha-video-skin1">
+<div id="mochaVideo" class="mocha-video mocha-video-scheme1 mocha-video-skin1">
 </div>
 <!-- demo JS -->
 <script src="http://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="utf-8"></script>
@@ -36,7 +36,8 @@ var player =new tvp.Player();
 player.create({
     width:"100%",
     video:video,
-    modId:"mod_player",
+    modId:"mochaVideo",
+    pic:"http://ossweb-img.qq.com/images/roco/act/a20120925movie/video_pic.jpg",
     playerType: 'html5',
     isHtml5UseUI:true,
     isHtml5UseAirPlay:true,
