@@ -8,7 +8,7 @@ date: 2016-02-22 12:45:01
 ### 访问地址：
 demo [http://tgideas.github.io/mocha/demo/](http://tgideas.github.io/mocha/demo/)
 doc  [http://tgideas.github.io/mocha/docs/](http://tgideas.github.io/mocha/docs/)
-github[http://tgideas.github.io/mocha/docs/](https://github.com/tgideas/mocha/)
+github[https://github.com/tgideas/mocha/](https://github.com/tgideas/mocha/)
 
 ### 介绍说明：
 Mocha是TGideas官方设计团队，根据目前移动端官网、微官网、运营活动页面上经常出现的元素进行提取，量身打造的移动端页面UI样式库。统一的模块代码风格及公用CSS库，可以编码效率，帮助日常的移动端页面快速生成。目前包含的模块有：（`红字为功能组件`）
