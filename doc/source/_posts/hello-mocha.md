@@ -36,12 +36,12 @@ Mocha是TGideas官方设计团队，根据目前移动端官网、微官网、�
 
 
 ### 使用优势：
-- 整合Motion组件代码，方便功能驱动
-![d1](http://game.gtimg.cn/images/js/mocha/images/intro/D1.png)
-目前整合的组件有 `Tab`  `Slider`  `Lottery`...
-
 - 复制对应模块代码，快速构建移动端页面
-比如，拿到下面的页面设计稿，页面上使用的模块可以归纳成： `Slider  Tab  Box  Pic-list  Pictxt-list  Button`  这6个模块。
-![d2](http://game.gtimg.cn/images/js/mocha/images/intro/D2.png)
-在Doc列表里找到相应的UI组件，进行代码复制
-![d3](http://game.gtimg.cn/images/js/mocha/images/intro/D3.png)
+对于日常的`运营专题`，如下图，我们可以通过`Navigation` `Button` `Lottery` `Gift` 等模块来快速获取代码...
+![](http://game.gtimg.cn/images/js/mocha/images/intro/D4.png)
+对于`微官网及内容站`，页面上使用的模块可以归纳成： `Slider` `Tab` `Box` `Pic-list` `Pictxt-list` `Button`  等模块来快速获取代码...
+![](http://game.gtimg.cn/images/js/mocha/images/intro/D2.png)
+我们可以在Doc列表里找到相应的模块，查看使用方法并进行编码复制。
+
+- 整合[Motion](http://tgideas.github.io/motion/index.html)组件代码，方便功能驱动
+目前整合的组件有 `Tab`  `Slider`  `Lottery`...
