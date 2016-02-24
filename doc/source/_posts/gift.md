@@ -19,6 +19,7 @@ tags:
     <ul>
         <li>
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
             <a href="javascript:;">领取礼包</a>
         </li>
     </ul>
@@ -31,10 +32,12 @@ tags:
     <ul>
         <li>
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
             <a href="javascript:;">领取礼包</a>
         </li>
         <li>
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
             <a href="javascript:;">领取礼包</a>
         </li>
     </ul>
@@ -47,18 +50,58 @@ tags:
     <ul>
         <li>
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
             <a href="javascript:;">领取礼包</a>
         </li>
         <li>
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
             <a href="javascript:;">领取礼包</a>
         </li>
         <li>
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
             <a href="javascript:;">领取礼包</a>
         </li>
     </ul>
 </div>  
+```
+
+![gift](http://game.gtimg.cn/images/js/mocha/images/demo/gift2.png)
+
+### 样式4-上图下字且多图一按钮 `.mocha-gift-scheme4`
+``` html
+<div class="mocha-gift mocha-gift-scheme3 mocha-gift-scheme4 mocha-gift-skin1">
+    <ul>
+        <li>
+            <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
+        </li>
+        <li>
+            <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
+        </li>
+        <li>
+            <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
+        </li>
+        <li>
+            <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
+        </li>
+        <li>
+            <img src="http://dummyimage.com/290x107/000/fff" alt="">
+            <p>礼品x1</p>
+        </li>
+    </ul>
+    <a href="javascript:;">领取礼包</a>
+</div>    
 ```
 
 ### 修改模块皮肤CSS 
@@ -66,5 +109,6 @@ tags:
 ``` css
 /* skin */
 .mocha-gift-skin1{font-size: .16em;}
+.mocha-gift-skin1 p{font-size: .12em;}
 .mocha-gift-skin1 a{color: #fff;background-color: #717171;}
 ```
