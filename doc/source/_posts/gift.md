@@ -106,7 +106,7 @@ tags:
 模块的默认皮肤类`.mocha-gift-skin1`，您可以在您项目的`page.css`里修改`.mocha-gift-skin1`皮肤类，或者新增`.mocha-gift-skin2`。
 ``` css
 /* skin */
-.mocha-gift-skin1{font-size: .16em;}
-.mocha-gift-skin1 p{font-size: .12em;}
+.mocha-gift-skin1{font-size: .16rem;}
+.mocha-gift-skin1 p{font-size: .12rem;}
 .mocha-gift-skin1 a{color: #fff;background-color: #717171;}
 ```
