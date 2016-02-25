@@ -20,6 +20,6 @@
 	.mocha-gift-scheme3 li:nth-child(3n){margin-right: 0;}
 	.mocha-gift-scheme4 p{display: block;}
 	/* skin */
-	.mocha-gift-skin1{font-size: .16em;}
-	.mocha-gift-skin1 p{font-size: .12em;}
+	.mocha-gift-skin1{font-size: .16rem;}
+	.mocha-gift-skin1 p{font-size: .12rem;}
 	.mocha-gift-skin1 a{color: #fff;background-color: #717171;}
