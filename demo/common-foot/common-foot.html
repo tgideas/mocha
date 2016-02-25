@@ -115,7 +115,6 @@ function unitWXShare(){
 		success: function (res) {
 			systemInfo.networkType = res.networkType; // 返回网络类型2g，3g，4g，wifi
 			pgvSendClick({hottag:'mobile.'+systemInfo.OStype+'.'+systemInfo.plat+'.'+systemInfo.networkType});
-			alert('mobile.'+systemInfo.OStype+'.'+systemInfo.plat+'.'+systemInfo.networkType);
 		}
 	});
 });
