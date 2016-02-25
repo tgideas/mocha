@@ -69,7 +69,7 @@ tags:
 
 ![gift](http://game.gtimg.cn/images/js/mocha/images/demo/gift2.png)
 
-### 样式4-上图下字且多图一按钮 `.mocha-gift-scheme4`
+### 样式4-上图下字和一按钮 ,`.mocha-gift-scheme1~3`控制每行显示礼包的数量  (1到3个)，`.mocha-gift-scheme4`控制的是上图下字。以上图为例，需添加`.mocha-gift-scheme3`+`.mocha-gift-scheme4`方可实现。
 ``` html
 <div class="mocha-gift mocha-gift-scheme3 mocha-gift-scheme4 mocha-gift-skin1">
     <ul>
@@ -85,8 +85,6 @@ tags:
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
             <p>礼品x1</p>
         </li>
-    </ul>
-    <ul>
         <li>
             <img src="http://dummyimage.com/290x107/000/fff" alt="">
             <p>礼品x1</p>
