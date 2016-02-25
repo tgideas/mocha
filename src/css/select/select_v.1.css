@@ -6,12 +6,14 @@
  */
 .mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;overflow: hidden;}
 	.mocha-select select{float: left;height: .3rem;margin-right: 3.5%;margin-bottom: .11rem;line-height:.3rem;border-width: 1px;border-style: solid;border-radius: .045rem;}
-	.mocha-select select:last-child{margin-right: 0;}
 
 	/* scheme1 */
 	.mocha-select-scheme1 select{width: 100%;}
+	.mocha-select-scheme1  select:last-child{margin-right: 0;}
 	.mocha-select-scheme2 select{width: 48.25%;}
+	.mocha-select-scheme2  select:nth-child(even){margin-right: 0;}
 	.mocha-select-scheme3 select{width: 31%}
+	.mocha-select-scheme3  select:nth-child(3n){margin-right: 0;}
 
 	/* skin */
 	.mocha-select-skin1 select{font-size:0.12rem;color:#000;border-color:#65655b;}
