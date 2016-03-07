@@ -108,5 +108,5 @@ tags:
 /* skin */
 .mocha-gift-skin1{font-size: .16rem;}
 .mocha-gift-skin1 p{font-size: .12rem;}
-.mocha-gift-skin1 a{color: #fff;background-color: #717171;}
+.mocha-gift-skin1 .mocha-gift-btn{font-size: .16rem;color: #fff;background-color: #717171;}
 ```
