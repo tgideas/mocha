@@ -28,8 +28,8 @@ node_modules
 
 doc/public
 doc/db.json
-docs/*
-demo/*
+docs
+demo
 
 # Sublime
 *.sublime-project
