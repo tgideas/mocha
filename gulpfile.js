@@ -55,6 +55,7 @@ gulp.task('watch-file', function () {
  */
 gulp.task('build-mocha-css', function(){
   gulp.src([paths.src + "css/" + "base/" + "base_v.2.css",
+             paths.src + "css/" + "text/" + "text_v.1.css",
              paths.src + "css/" + "audio/" + "audio_v.1.css",
              paths.src + "css/" + "box/" + "box_v.1.css",
              paths.src + "css/" + "button/" + "button_v.1.css",

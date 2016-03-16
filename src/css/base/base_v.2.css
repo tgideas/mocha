@@ -20,11 +20,19 @@
 @media only screen and (max-width:360px),only screen and (max-device-width:360px){body,html{font-size:112.5px}}
 @media only screen and (max-width:320px),only screen and (max-device-width:320px){body,html{font-size:100px}}
 @media only screen and (max-width:240px),only screen and (max-device-width:240px){body,html{font-size:75px}}
-body,ul,ol,dl,dt,dd,form,h1,h2,h3,h4,p,img,section,header,ruby,rb,rt,i,b,input{margin:0;padding:0;font-style:normal;}
-html,body,h1,h2{font-weight:400;line-height:1;font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;}
+body,ul,ol,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,p,img,section,header,ruby,rb,rt,i,b,input{margin:0;padding:0;font-style:normal;}
+html,body{font-weight:400;line-height:1;font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;}
 i{display:block;font-style:normal;}
 li{list-style:none;}
 a,a:visited{text-decoration:none;}
 img{border:0;}
 em,cite{font-style:normal;}
+body{font-size: 0.16rem;color: #000;}
+h1{font-size: 0.32rem;}
+h2{font-size: 0.30rem;}
+h3{font-size: 0.28rem;}
+h4{font-size: 0.26rem;}
+h5{font-size: 0.24rem;}
+h6{font-size: 0.20rem;}
+p{font-size: 0.16rem;}
 .clearfix:after{content: '.';height: 0;line-height: 0;display: block;clear: both;visibility: hidden;}
