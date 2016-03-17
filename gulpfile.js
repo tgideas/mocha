@@ -73,6 +73,7 @@ gulp.task('build-mocha-css', function(){
              paths.src + "css/" + "sign-in/" + "sign-in_v.1.css",
              paths.src + "css/" + "slider/" + "slider_v.1.css",
              paths.src + "css/" + "search-bar/" + "search-bar_v.1.css",
+             paths.src + "css/" + "title/" + "title_v.1.css",
              paths.src + "css/" + "tab/" + "tab_v.1.css",
              paths.src + "css/" + "table/" + "table_v.1.css",
              paths.src + "css/" + "txt-list/" + "txt-list_v.1.css",

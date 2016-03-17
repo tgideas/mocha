@@ -1,0 +1,20 @@
+/*
+ * title v.1
+ * Author:sonichuang
+ * Modify:2016-03-17
+ * 
+ */
+.mocha-title{padding:0.1rem;line-height:0.2rem;overflow: hidden;}
+	.mocha-title-txt{float:left;font-size:0.18rem;}
+	.mocha-title-extra{position: relative;float:right;}
+	.mocha-title-extra a{margin-left:0.05rem;padding:0.03rem 0.08rem;}
+	/* skin */
+	.mocha-title-skin1{background-color: #eee;border-top: 2px solid #666;}
+	.mocha-title-skin1 .mocha-title-txt{color: #000;}
+	.mocha-title-skin1 .mocha-title-extra a{color: #333;background-color: #fff;border:1px solid #eee;border-radius:0.1rem;}
+	.mocha-title-skin2{background-color: #fff;border-top: 1px solid #eee;border-bottom: 1px solid #eee;}
+	.mocha-title-skin2 .mocha-title-txt{color: #000;}
+	.mocha-title-skin2 .mocha-title-extra a{color: #333;background-color: #f6f6f6;border:1px solid #eee;border-radius:0.1rem;}
+	.mocha-title-skin3{background-color: #eee;padding:0 0.1rem 0 0;}
+	.mocha-title-skin3 .mocha-title-txt{color: #000;padding:0.1rem;border-left:6px solid #333;background-color: #fff;padding:0 0.1rem;}
+	.mocha-title-skin3 .mocha-title-extra a{color: #fff;background-color: #333;border-radius:0;}

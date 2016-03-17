@@ -69,5 +69,8 @@ tags:
 .mocha-text-skin1 div,.mocha-text-skin1 p,.mocha-text-skin1 li{color: #333;}
 .mocha-text-skin2{color: #fff;background-color: #222;}
 ```
-####  皮肤1(白底，标题下划线) `.mohca-text-skin1`  皮肤2(黑底白字) `.mohca-text-skin2`
+####  `mocha.css`已提供2套预设皮肤
+- 皮肤1(白底，标题下划线) `.mohca-text-skin1` 
+- 皮肤2(黑底白字) `.mohca-text-skin2`
+
 您可以在您项目的`page.css`里修改`.mocha-text-skin1`，`.mocha-text-skin2`皮肤类，或者新增`.mocha-text-skin3`。
