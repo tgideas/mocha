@@ -4,12 +4,14 @@
  * Modify:2015-12-08
  * 
  */
-.mocha-gift{width:90.625%;margin-left: auto;margin-right: auto;overflow: hidden;}
-	.mocha-gift ul{overflow: hidden;font-size: 0;}
+.mocha-gift{width:90.625%;margin-left: auto;margin-right: auto;}
+	.mocha-gift ul{font-size: 0;text-align: center;}
 	.mocha-gift li{display: inline-block;margin-right: 3.5%;vertical-align: top;}
-	.mocha-gift img{display: block;width: 100%;margin-bottom: .05rem;}
+	.mocha-gift .mocha-gift-box{position: relative;display: block;width: 100%;margin-bottom: .05rem;}
 	.mocha-gift p{display: none;text-align: center;margin-bottom: .05rem;}
 	.mocha-gift .mocha-gift-btn{display: block;width: 100%;height: .32rem;line-height:.32rem;text-align: center;}
+	.mocha-gift .act .mocha-gift-box{outline: 2px solid #09BB07;}
+	.mocha-gift .act .mocha-gift-box:before{content: "";display: block;position: absolute;top: -.07rem;left: -.07rem;width: .14rem;height: .14rem;border-radius: 50%;background: #09BB07 url("http://ossweb-img.qq.com/images/js/mocha/images/icon-tick.png") no-repeat 50% 50%;background-size: .11rem .08rem;}
 
 	/* scheme */
 	.mocha-gift-scheme1 li{width: 100%;}
@@ -22,4 +24,5 @@
 	/* skin */
 	.mocha-gift-skin1{font-size: .16rem;}
 	.mocha-gift-skin1 p{font-size: .12rem;}
-	.mocha-gift-skin1 .mocha-gift-btn{font-size: .16rem;color: #fff;background-color: #717171;}
+	.mocha-gift-skin1 .mocha-gift-btn{font-size: .16rem;color: #fff;background-color: #04BE02;}
+	.mocha-gift-skin1 .mocha-gift-btn-disabled{background-color: #717171;}
