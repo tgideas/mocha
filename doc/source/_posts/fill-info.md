@@ -3,11 +3,9 @@
 <p>作者：<code>kevinhehe</code>
 版本：<code>v.1</code>
 依赖：<code>mocha.css</code></p>
+<div class="highlight highlight-text-html-basic">
 <pre>
 <!-- 填写资料模块 -->
-<h2 class="h2">fill-info(填写资料模块)<a href="/mocha/docs/fill-info/" class="btn-docs" target="_blank">查看文档</a></h2>
-<button id="showDialogBtn1" href="javascript:;" class="button">点击弹出Dialog样式1</button>
-
 <div class="mocha-fill-info">
 	<div class="mocha-fill-main">
         <div class="mocha-fill-hd">
@@ -52,3 +50,4 @@
    </div>
 </div>
 </pre>
+</div>
