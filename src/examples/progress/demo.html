@@ -8,10 +8,10 @@
 	<meta name="author" content="Tencent-TGideas" />
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
-	<title>loading(进度条) - TGideas Mocha</title>
+	<title>progress(进度条) - TGideas Mocha</title>
 	<!-- debug css Star -->
 	<link href="../../css/base/base_v.2.css" rel="stylesheet">
-	<link href="../../css/loading/loading_v.1.css" rel="stylesheet">
+	<link href="../../css/progress/progress_v.1.css" rel="stylesheet">
 	<!-- debug css End -->
 
 	<!-- online css Star
@@ -24,20 +24,23 @@
 	</style>
 </head>
 <body>
-<h2 class="h2">loadding(加载中)<a href="/mocha/docs/loadding/" class="btn-docs" target="_blank">查看文档</a></h2>
-<h3 class="h3">样式1 局部加载中</h3>
-<!-- mocha-loading-scheme1(样式1) -->
-<div class="mocha-loading mocha-loading-scheme1">
-	<p class="mocha-loading-txt">努力加载中...</p>
-	<i class="mocha-loading-icon"></i>
+<h2 class="h2">progress(进度条)<a href="/mocha/docs/progress/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h3 class="h3">progress样式1-无动图</h3>
+<!-- mocha-progress-scheme1(样式1) -->
+<div class="mocha-progress mocha-progress-scheme1 mocha-progress-skin1">
+	<div class="mocha-progress-bar">
+		<span class="mocha-progress-bar-bg" style="-webkit-transform: translate(30%,0);"></span>
+		<p class="mocha-progress-num">30%</p>
+	</div>
 </div>
-<h3 class="h3">样式2 页面加载中</h3>
-<!-- mocha-loading-scheme2(样式2) -->
-<div class="mocha-loading mocha-loading-scheme2 mocha-loading-skin1">
-	<i class="mocha-loading-icon"></i>
-	<p class="mocha-loading-txt">努力加载中...</p>
+<h3 class="h3">progress样式2-有动图</h3>
+<!-- mocha-progress-scheme2(样式2) -->
+<div class="mocha-progress mocha-progress-scheme2 mocha-progress-skin1">
+	<img class="mocha-progress-img" src="http://dummyimage.com/120x60/000/fff" alt="动图">
+	<div class="mocha-progress-bar">
+		<span class="mocha-progress-bar-bg" style="-webkit-transform: translate(50%,0);"></span>
+		<p class="mocha-progress-num">50%</p>
+	</div>
 </div>
-
-
 </body>
 </html>
