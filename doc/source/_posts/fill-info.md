@@ -9,7 +9,7 @@ tags:
 版本：`v.1`
 依赖：`mocha.css`
 
-![txt-list](http://game.gtimg.cn/images/js/mocha/images/demo/fill-info.png)
+![fill-info](http://game.gtimg.cn/images/js/mocha/images/demo/fill-info.png)
 
 ### [运行Demo](http://tgideas.github.io/mocha/demo/fill-info/demo.html "fill-info(填写资料模块)")
 
