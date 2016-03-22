@@ -95,6 +95,10 @@
         </li>
       
         <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/loading/">loading</a>
+        </li>
+      
+        <li>
           <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/title/">title</a>
         </li>
       
@@ -139,10 +143,6 @@
         </li>
       
         <li>
-          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/video/">video</a>
-        </li>
-      
-        <li>
           <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/audio/">audio</a>
         </li>
       
@@ -155,11 +155,15 @@
         </li>
       
         <li>
-          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/loading/">loading</a>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/gift/">gift</a>
         </li>
       
         <li>
-          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/gift/">gift</a>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/video/">video</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/progress/">progress</a>
         </li>
       
         <li>
@@ -262,6 +266,61 @@
 
     <footer class="article-footer">
       <a data-url="http://tgideas.github.io/mocha/docs/hello-mocha/" data-id="cim1qibug000g0npveo22e6q2" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-loading" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/mocha/docs/loading/">loading</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/mocha/docs/loading/" class="article-date"><time datetime="2016-03-22T08:30:00.000Z" itemprop="datePublished">2016-03-22</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="loading_28_u8FDB_u5EA6_u6761_29"><a href="#loading_28_u8FDB_u5EA6_u6761_29" class="headerlink" title="loading(进度条)"></a>loading(进度条)</h2><p>作者：<code>janfzhao</code><br>版本：<code>v.1</code><br>依赖：<code>mocha.css</code></p>
+<p><img src="http://game.gtimg.cn/images/js/mocha/images/demo/loading.png" alt="loading"></p>
+<h3 id="u8FD0_u884CDemo"><a href="#u8FD0_u884CDemo" class="headerlink" title="运行Demo"></a><a href="http://tgideas.github.io/mocha/demo/loading/demo.html" title="loading(加载中)">运行Demo</a></h3><h3 id="u6837_u5F0F1-_u5C40_u90E8_u52A0_u8F7D_u4E2D_-mocha-loading-scheme1"><a href="#u6837_u5F0F1-_u5C40_u90E8_u52A0_u8F7D_u4E2D_-mocha-loading-scheme1" class="headerlink" title="样式1-局部加载中 .mocha-loading-scheme1"></a>样式1-局部加载中 <code>.mocha-loading-scheme1</code></h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-loading mocha-loading-scheme1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"mocha-loading-txt"</span>&gt;</span>努力加载中...<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"mocha-loading-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u6837_u5F0F2__u9875_u9762_u52A0_u8F7D_u4E2D_-mocha-loading-scheme2"><a href="#u6837_u5F0F2__u9875_u9762_u52A0_u8F7D_u4E2D_-mocha-loading-scheme2" class="headerlink" title="样式2 页面加载中 .mocha-loading-scheme2"></a>样式2 页面加载中 <code>.mocha-loading-scheme2</code></h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-loading mocha-loading-scheme2 mocha-loading-skin1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"mocha-loading-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"mocha-loading-txt"</span>&gt;</span>努力加载中...<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS"><a href="#u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS" class="headerlink" title="修改模块皮肤CSS"></a>修改模块皮肤CSS</h3><p>模块的默认皮肤类<code>.mocha-loading-skin1</code>，您可以在您项目的<code>page.css</code>里修改<code>.mocha-loading-skin1</code>皮肤类，或者新增<code>.mocha-loading-skin2</code>。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* skin */</span></span><br><span class="line"><span class="class">.mocha-loading-skin1</span><span class="rules">&#123;<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">70px</span></span></span>;<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">65</span>)</span></span>; <span class="rule"><span class="attribute">border-radius</span>:<span class="value"> <span class="number">6px</span></span></span>; <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://tgideas.github.io/mocha/docs/loading/" data-id="cim1qibue000f0npvev6vuxja" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -823,61 +882,6 @@
 
     <footer class="article-footer">
       <a data-url="http://tgideas.github.io/mocha/docs/sign-in/" data-id="cim1qibu500070npvb8odovx1" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-comment" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/mocha/docs/comment/">comment</a>
-    </h1>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/mocha/docs/comment/" class="article-date"><time datetime="2016-01-14T03:00:00.000Z" itemprop="datePublished">2016-01-14</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="comment_28_u8BC4_u8BBA_u6837_u5F0F_29"><a href="#comment_28_u8BC4_u8BBA_u6837_u5F0F_29" class="headerlink" title="comment(评论样式)"></a>comment(评论样式)</h2><p>作者：<code>kevinhehe</code><br>版本：<code>v.1</code><br>依赖：<code>mocha.css</code></p>
-<p><img src="http://game.gtimg.cn/images/js/mocha/images/demo/comment.png" alt="comment"></p>
-<h3 id="u8FD0_u884CDemo"><a href="#u8FD0_u884CDemo" class="headerlink" title="运行Demo"></a><a href="http://tgideas.github.io/mocha/demo/comment/demo.html" title="comment(评论样式)">运行Demo</a></h3><h3 id="u6837_u5F0F1_-mocha-comment-scheme1"><a href="#u6837_u5F0F1_-mocha-comment-scheme1" class="headerlink" title="样式1 .mocha-comment-scheme1"></a>样式1 <code>.mocha-comment-scheme1</code></h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment mocha-comment-scheme1 mocha-comment-skin1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-content"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-infobox"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">cite</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-head"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://dummyimage.com/40x40/000/fff"</span>&gt;</span><span class="tag">&lt;/<span class="title">cite</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-title"</span>&gt;</span>齐天大盛<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-reply"</span> <span class="attribute">href</span>=<span class="value">"javascript:void(0);"</span>&gt;</span>回复<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-txt"</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-date"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>09月24日<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>09:56<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-second"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-second-bar"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>某人说:<span class="tag">&lt;/<span class="title">span</span>&gt;</span>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>凯文呵呵<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">cite</span>&gt;</span>回复<span class="tag">&lt;/<span class="title">cite</span>&gt;</span>凯文呵呵:222<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-more"</span>&gt;</span>查看更多...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-infobox"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">cite</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-head"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://dummyimage.com/40x40/000/fff"</span>&gt;</span><span class="tag">&lt;/<span class="title">cite</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-title"</span>&gt;</span>昆仑山<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-reply"</span> <span class="attribute">href</span>=<span class="value">"javascript:void(0);"</span>&gt;</span>回复<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-txt"</span>&gt;</span>内容内容内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-list-date"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>09月24日<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>09:56<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-btn"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">id</span>=<span class="value">"showCommentBtn"</span> <span class="attribute">href</span>=<span class="value">"javascript:void(0);"</span>&gt;</span>我要评论<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"demoCommentAlert"</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-mark"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-box"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"imocha-comment-alert-form"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">textarea</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-textarea"</span> <span class="attribute">placeholder</span>=<span class="value">"请输入内容，140字以内"</span>&gt;</span><span class="tag">&lt;/<span class="title">textarea</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-shop clearfix"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-words"</span>&gt;</span>已超出<span class="tag">&lt;<span class="title">b</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-num"</span>&gt;</span>0<span class="tag">&lt;/<span class="title">b</span>&gt;</span>个字<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-btn"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-cancel"</span>&gt;</span>取消<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"mocha-comment-alert-reply"</span>&gt;</span>回复<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="comment_u5B9E_u4F8B_u5316JS"><a href="#comment_u5B9E_u4F8B_u5316JS" class="headerlink" title="comment实例化JS"></a>comment实例化JS</h3><p>依赖<code>zepto.js</code>组件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://game.gtimg.cn/images/js/zepto/zepto.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><br><span class="line">    (<span class="function"><span class="keyword">function</span> <span class="title">mochaCommentFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        $(<span class="string">"#showCommentBtn"</span>).bind(<span class="string">"tap"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            $(<span class="string">"#demoCommentAlert"</span>).css(<span class="string">"display"</span>,<span class="string">"block"</span>);</span><br><span class="line">        &#125;)</span><br><span class="line">        $(<span class="string">".mocha-comment-list-reply"</span>).bind(<span class="string">"tap"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            $(<span class="string">"#demoCommentAlert"</span>).css(<span class="string">"display"</span>,<span class="string">"block"</span>);</span><br><span class="line">        &#125;)</span><br><span class="line">        $(<span class="string">".mocha-comment-alert-cancel"</span>).tap(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            $(<span class="keyword">this</span>).parents(<span class="string">".mocha-comment-alert"</span>).css(<span class="string">"display"</span>,<span class="string">"none"</span>);</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)()</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS"><a href="#u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS" class="headerlink" title="修改模块皮肤CSS"></a>修改模块皮肤CSS</h3><p>模块的默认皮肤类<code>.mocha-comment-skin1</code>，您可以在您项目的<code>page.css</code>里修改<code>.mocha-comment-skin1</code>皮肤类，或者新增<code>.mocha-comment-skin2</code>。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* skin */</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span><span class="rules">&#123;<span class="rule"><span class="attribute">font-size</span>:<span class="value"> .<span class="number">16rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-list-reply</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#69c</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-list-title</span> <span class="tag">em</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#0e0e0e</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-list-date</span> <span class="tag">span</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#a6a6a6</span></span></span>;<span class="rule"><span class="attribute">font-size</span>:<span class="value">.<span class="number">12rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-list-second</span><span class="rules">&#123;<span class="rule"><span class="attribute">font-size</span>:<span class="value">.<span class="number">14rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-list-second-bar</span><span class="rules">&#123;<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#f3f3f3</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-list-second-bar</span> <span class="tag">cite</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#69c</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-list-more</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#69c</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-btn</span><span class="rules">&#123;<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#e9e9e9</span></span></span>;<span class="rule"><span class="attribute">font-size</span>:<span class="value">.<span class="number">14rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-alert-box</span><span class="rules">&#123;<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;<span class="rule"><span class="attribute">font-size</span>:<span class="value">.<span class="number">14rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-alert-textarea</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#323230</span></span></span>;<span class="rule"><span class="attribute">font-size</span>:<span class="value">.<span class="number">14rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-alert-shop</span> <span class="class">.mocha-comment-alert-words</span> <span class="tag">b</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#69c</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-comment-skin1</span> <span class="class">.mocha-comment-alert-btn</span> <span class="tag">span</span><span class="pseudo">:nth-last-of-type(1)</span><span class="rules">&#123;<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#69c</span></span></span>; <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#fff</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/comment/" data-id="cim1qibun000k0npv35sb5srv" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
