@@ -80,6 +80,7 @@ gulp.task('build-mocha-css', function(){
              paths.src + "css/" + "txt-list/" + "txt-list_v.1.css",
              paths.src + "css/" + "video/" + "video_v.1.css",
              paths.src + "css/" + "first-screen/" + "first-screen_v.1.css",
+             paths.src + "css/" + "fill-info/" + "fill-info_v.1.css",
              paths.src + "css/" + "common-foot/" + "common-foot_v.1.css"])
     .pipe(concat('mocha.min.css'))
     .pipe(minifyCSS())
