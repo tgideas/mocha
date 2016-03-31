@@ -6,14 +6,17 @@
  */
 .mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;overflow: hidden;}
 	.mocha-select select{float: left;height: .3rem;margin-right: 3.5%;margin-bottom: .11rem;line-height:.3rem;border-width: 1px;border-style: solid;border-radius: .045rem;}
+	.mocha-select label{float: left;margin-bottom: .05rem;}
+	.mocha-select .mocha-select-panel{float: left;margin-right: 3.5%;}
+	.mocha-select .mocha-select-panel select{width: 100%;}
 
 	/* scheme1 */
-	.mocha-select-scheme1 select{width: 100%;}
-	.mocha-select-scheme1  select:last-child{margin-right: 0;}
-	.mocha-select-scheme2 select{width: 48.25%;}
-	.mocha-select-scheme2  select:nth-child(even){margin-right: 0;}
-	.mocha-select-scheme3 select{width: 31%}
-	.mocha-select-scheme3  select:nth-child(3n){margin-right: 0;}
+	.mocha-select-scheme1 select,.mocha-select-scheme1  .mocha-select-panel{width: 100%;}
+	.mocha-select-scheme1 select:last-child,.mocha-select-scheme1  .mocha-select-panel:last-child{margin-right: 0;}
+	.mocha-select-scheme2 select,.mocha-select-scheme2  .mocha-select-panel{width: 48.25%;}
+	.mocha-select-scheme2 select:nth-child(even),.mocha-select-scheme2  .mocha-select-panel:nth-child(even){margin-right: 0;}
+	.mocha-select-scheme3 select,.mocha-select-scheme3  .mocha-select-panel{width: 31%}
+	.mocha-select-scheme3 select:nth-child(3n),.mocha-select-scheme3  .mocha-select-panel:nth-child(3n){margin-right: 0;}
 
 	/* skin */
 	.mocha-select-skin1 select{font-size:0.12rem;color:#000;border-color:#65655b;}

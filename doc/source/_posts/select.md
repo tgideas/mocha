@@ -18,6 +18,14 @@ tags:
 <div class="mocha-select mocha-select-scheme1 mocha-select-skin1">
     <select><option value="请选择省份">请选择省份</option></select>
     <select><option value="请选择城市">请选择城市</option></select>
+    <div class="mocha-select-panel">
+        <label for="">省份</label>
+        <select><option value="请选择省份">请选择省份</option></select>
+    </div>
+    <div class="mocha-select-panel">
+        <label for="">城市</label>
+        <select><option value="请选择城市">请选择城市</option></select>
+    </div>
 </div>
 ```
 
@@ -26,6 +34,14 @@ tags:
 <div class="mocha-select mocha-select-scheme2 mocha-select-skin1">
     <select><option value="请选择省份">请选择省份</option></select>
     <select><option value="请选择城市">请选择城市</option></select>
+    <div class="mocha-select-panel">
+        <label for="">省份</label>
+        <select><option value="请选择省份">请选择省份</option></select>
+    </div>
+    <div class="mocha-select-panel">
+        <label for="">城市</label>
+        <select><option value="请选择城市">请选择城市</option></select>
+    </div>
 </div>  
 ```
 
@@ -35,7 +51,19 @@ tags:
     <select><option value="请选择省份">请选择省份</option></select>
     <select><option value="请选择城市">请选择城市</option></select>
     <select><option value="请选择城市">请选择城市</option></select>
-</div>    
+    <div class="mocha-select-panel">
+        <label for="">省份</label>
+        <select><option value="请选择省份">请选择省份</option></select>
+    </div>
+    <div class="mocha-select-panel">
+        <label for="">城市</label>
+        <select><option value="请选择城市">请选择城市</option></select>
+    </div>
+    <div class="mocha-select-panel">
+        <label for="">城市</label>
+        <select><option value="请选择城市">请选择城市</option></select>
+    </div>
+</div>     
 ```
 
 ### 修改模块皮肤CSS 
