@@ -102,7 +102,7 @@ tags:
 模块的默认皮肤类`.mocha-data-user-skin1`，您可以在您项目的`page.css`里修改`.mocha-data-user-skin1`皮肤类，或者新增`.mocha-data-user-skin2`。
 ``` css
 /* skin */
-.mocha-data-user-skin1 .mocha-data-user{color: #474747;background: #e5e5e5;border:1px solid #afaeae;}
+.mocha-data-user-skin1{color: #474747;background: #e5e5e5;border:1px solid #afaeae;}
 .mocha-data-user-skin1 .mocha-data-user-bd{border-left: 1px solid #c4c4c4;}
 .mocha-data-user-skin1 .mocha-data-user-level{background: #818181;colfff;}
 .mocha-data-user-skin1 .mocha-data-user-content p,.mocha-data-user-skimocha-data-user-bd p{font-size: .09rem;line-height: .14rem;color:#474747;}

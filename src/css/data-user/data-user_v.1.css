@@ -39,7 +39,7 @@
 	}
 
 	/* skin */
-	.mocha-data-user-skin1 .mocha-data-user{color: #474747;background: #e5e5e5;border:1px solid #afaeae;}
+	.mocha-data-user-skin1{color: #474747;background: #e5e5e5;border:1px solid #afaeae;}
 	.mocha-data-user-skin1 .mocha-data-user-bd{border-left: 1px solid #c4c4c4;}
 	.mocha-data-user-skin1 .mocha-data-user-level{background: #818181;color:#fff;}
 	.mocha-data-user-skin1 .mocha-data-user-content p,.mocha-data-user-skin1 .mocha-data-user-bd p{font-size: .09rem;line-height: .14rem;color:#474747;}
