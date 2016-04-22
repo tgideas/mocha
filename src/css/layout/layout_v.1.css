@@ -1,0 +1,34 @@
+/*
+ * layout v.1
+ * Author:sonichuang
+ * Modify:2016-04-21
+ * 
+ */
+@media screen and (orientation: landscape) {
+	.mocha-layout{display:flex;justify-content:flex-start;align-content:flex-start;align-items:flex-start;flex-flow:row wrap;}
+		/* scheme */
+		.mocha-layout-scheme1 .mocha-layout-flex{flex:1 1 auto;}
+		.mocha-layout-scheme2 .mocha-layout-flex{width:100%;display:flex;}
+		.mocha-layout-scheme2 .mocha-layout-box{flex:1 1 auto;}
+
+		.mocha-layout-row-1-2 .mocha-layout-flex:first-child,
+		.mocha-layout-scheme2 .mocha-layout-row-1-2 .mocha-layout-box:first-child{flex:1 1 auto;}
+		.mocha-layout-row-1-2 .mocha-layout-flex:nth-child(2),
+		.mocha-layout-scheme2 .mocha-layout-row-1-2 .mocha-layout-box:nth-child(2){flex:2 1 auto;}
+		
+		.mocha-layout-row-2-1 .mocha-layout-flex:first-child,
+		.mocha-layout-scheme2 .mocha-layout-row-2-1 .mocha-layout-box:first-child{flex:2 1 auto;}
+		.mocha-layout-row-2-1 .mocha-layout-flex:nth-child(2),
+		.mocha-layout-scheme2 .mocha-layout-row-2-1 .mocha-layout-box:nth-child(2){flex:1 1 auto;}
+		
+		.mocha-layout-row-2-3 .mocha-layout-flex:first-child,
+		.mocha-layout-scheme2 .mocha-layout-row-2-3 .mocha-layout-box:first-child{flex:2 1 auto;}
+		.mocha-layout-row-2-3 .mocha-layout-flex:nth-child(2),
+		.mocha-layout-scheme2 .mocha-layout-row-2-3 .mocha-layout-box:nth-child(2){flex:3 1 auto;}
+		
+		.mocha-layout-row-3-2 .mocha-layout-flex:first-child,
+		.mocha-layout-scheme2 .mocha-layout-row-3-2 .mocha-layout-box:first-child{flex:3 1 auto;}
+		
+		.mocha-layout-row-3-2 .mocha-layout-flex:nth-child(2),
+		.mocha-layout-scheme2 .mocha-layout-row-3-2 .mocha-layout-box:nth-child(2){flex:2 1 auto;}
+}
