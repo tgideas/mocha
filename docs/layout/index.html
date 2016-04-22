@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>layout | Mocha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="layout(布局模块)作者：sonichuang版本：v.1依赖：mocha.css
+左右布局 .mocha-layout-scheme1
+运行Demo左右布局 - 左2右212345678910&amp;lt;div class=&quot;mocha-layout mocha-layout-scheme1&quot;&amp;gt;	&amp;lt;div class=&quot;mocha-layout-flex&quot;&amp;gt;		&amp;lt;div">
+<meta property="og:type" content="article">
+<meta property="og:title" content="layout">
+<meta property="og:url" content="http://tgideas.github.io/mocha/docs/layout/index.html">
+<meta property="og:site_name" content="Mocha">
+<meta property="og:description" content="layout(布局模块)作者：sonichuang版本：v.1依赖：mocha.css
+左右布局 .mocha-layout-scheme1
+运行Demo左右布局 - 左2右212345678910&amp;lt;div class=&quot;mocha-layout mocha-layout-scheme1&quot;&amp;gt;	&amp;lt;div class=&quot;mocha-layout-flex&quot;&amp;gt;		&amp;lt;div">
+<meta property="og:image" content="http://game.gtimg.cn/images/js/mocha/images/demo/layout1.png">
+<meta property="og:image" content="http://game.gtimg.cn/images/js/mocha/images/demo/layout2.png">
+<meta property="og:image" content="http://game.gtimg.cn/images/js/mocha/images/demo/layout3.png">
+<meta property="og:image" content="http://game.gtimg.cn/images/js/mocha/images/demo/layout4.png">
+<meta property="og:updated_time" content="2016-04-22T07:06:11.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="layout">
+<meta name="twitter:description" content="layout(布局模块)作者：sonichuang版本：v.1依赖：mocha.css
+左右布局 .mocha-layout-scheme1
+运行Demo左右布局 - 左2右212345678910&amp;lt;div class=&quot;mocha-layout mocha-layout-scheme1&quot;&amp;gt;	&amp;lt;div class=&quot;mocha-layout-flex&quot;&amp;gt;		&amp;lt;div">
+  
+    <link rel="alternate" href="/atom.xml" title="Mocha" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/mocha/docs/css/styles.css" type="text/css">
+  
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/mocha/docs/index.html">Home</a></li>
+        
+          <li><a class=""
+                 href="/mocha/docs/archives/">Archives</a></li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="blog-header">
+  <h1 class="blog-title">Mocha</h1>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-3 blog-sidebar">
+          
+  
+
+
+  
+
+
+  
+
+  
+  <div class="sidebar-module">
+    <h4>所有模块</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/hello-mocha/">Hello Mocha</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/layout/">layout</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/data-user/">data-user</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/loading/">loading</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/fill-info/">fill-info</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/title/">title</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/text/">text</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/pic-list/">pic-list</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/search-bar/">search-bar</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/slider/">slider</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/countdown/">countdown</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/lottery/">lottery</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/sign-in/">sign-in</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/navigation/">navigation</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/comment/">comment</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/menu/">menu</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/progress/">progress</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/audio/">audio</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/select/">select</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/video/">video</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/gift/">gift</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/table/">table</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/pictxt-list/">pictxt-list</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/tab/">tab</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/dialog/">dialog</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/box/">box</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/txt-list/">txt-list</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/button/">button</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+        </div>
+        <div class="col-sm-9 col-sm-offset-0 blog-main">
+          <article id="post-layout" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      layout
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/mocha/docs/layout/" class="article-date"><time datetime="2016-04-22T07:45:38.000Z" itemprop="datePublished">2016-04-22</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="layout_28_u5E03_u5C40_u6A21_u5757_29"><a href="#layout_28_u5E03_u5C40_u6A21_u5757_29" class="headerlink" title="layout(布局模块)"></a>layout(布局模块)</h2><p>作者：<code>sonichuang</code><br>版本：<code>v.1</code><br>依赖：<code>mocha.css</code></p>
+<h3 id="u5DE6_u53F3_u5E03_u5C40_-mocha-layout-scheme1"><a href="#u5DE6_u53F3_u5E03_u5C40_-mocha-layout-scheme1" class="headerlink" title="左右布局 .mocha-layout-scheme1"></a>左右布局 <code>.mocha-layout-scheme1</code></h3><p><img src="http://game.gtimg.cn/images/js/mocha/images/demo/layout1.png" alt="左右布局"></p>
+<h3 id="u8FD0_u884CDemo"><a href="#u8FD0_u884CDemo" class="headerlink" title="运行Demo"></a><a href="http://tgideas.github.io/mocha/demo/layout/demo.html" title="layout(布局模块)">运行Demo</a></h3><h3 id="u5DE6_u53F3_u5E03_u5C40_-__u5DE62_u53F32"><a href="#u5DE6_u53F3_u5E03_u5C40_-__u5DE62_u53F32" class="headerlink" title="左右布局 - 左2右2"></a>左右布局 - 左2右2</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>D<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u5DE6_u53F3_u5E03_u5C40_-__u5DE62_u53F31"><a href="#u5DE6_u53F3_u5E03_u5C40_-__u5DE62_u53F31" class="headerlink" title="左右布局 - 左2右1"></a>左右布局 - 左2右1</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u5DE6_u53F3_u5E03_u5C40_-__u5DE61_u53F32"><a href="#u5DE6_u53F3_u5E03_u5C40_-__u5DE61_u53F32" class="headerlink" title="左右布局 - 左1右2"></a>左右布局 - 左1右2</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u5DE6_u53F3_u5E03_u5C40_-__u5DE6_u53F3_u975E_u7B49_u5206"><a href="#u5DE6_u53F3_u5E03_u5C40_-__u5DE6_u53F3_u975E_u7B49_u5206" class="headerlink" title="左右布局 - 左右非等分"></a>左右布局 - 左右非等分</h3><p><img src="http://game.gtimg.cn/images/js/mocha/images/demo/layout2.png" alt="左右布局"></p>
+<h3 id="u8FD0_u884CDemo-1"><a href="#u8FD0_u884CDemo-1" class="headerlink" title="运行Demo"></a><a href="http://tgideas.github.io/mocha/demo/layout/demo.html" title="layout(布局模块)">运行Demo</a></h3><h4 id="u5DE6_u53F31_3A2_-mocha-layout-row-1-2"><a href="#u5DE6_u53F31_3A2_-mocha-layout-row-1-2" class="headerlink" title="左右1:2 .mocha-layout-row-1-2"></a>左右1:2 <code>.mocha-layout-row-1-2</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme1 mocha-layout-row-1-2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u5DE6_u53F32_3A3_-mocha-layout-row-2-3"><a href="#u5DE6_u53F32_3A3_-mocha-layout-row-2-3" class="headerlink" title="左右2:3 .mocha-layout-row-2-3"></a>左右2:3 <code>.mocha-layout-row-2-3</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme1 mocha-layout-row-2-3"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u5DE6_u53F33_3A2_-mocha-layout-row-3-2"><a href="#u5DE6_u53F33_3A2_-mocha-layout-row-3-2" class="headerlink" title="左右3:2 .mocha-layout-row-3-2"></a>左右3:2 <code>.mocha-layout-row-3-2</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme1 mocha-layout-row-3-2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u5DE6_u53F32_3A1_-mocha-layout-row-2-1"><a href="#u5DE6_u53F32_3A1_-mocha-layout-row-2-1" class="headerlink" title="左右2:1 .mocha-layout-row-2-1"></a>左右2:1 <code>.mocha-layout-row-2-1</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme1 mocha-layout-row-2-1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u4E0A_u4E0B_u5E03_u5C40_-mocha-layout-scheme2"><a href="#u4E0A_u4E0B_u5E03_u5C40_-mocha-layout-scheme2" class="headerlink" title="上下布局 .mocha-layout-scheme2"></a>上下布局 <code>.mocha-layout-scheme2</code></h3><p><img src="http://game.gtimg.cn/images/js/mocha/images/demo/layout3.png" alt="上下布局"></p>
+<h3 id="u8FD0_u884CDemo-2"><a href="#u8FD0_u884CDemo-2" class="headerlink" title="运行Demo"></a><a href="http://tgideas.github.io/mocha/demo/layout/demo.html" title="layout(布局模块)">运行Demo</a></h3><h3 id="u4E0A_u4E0B_u5E03_u5C40__u4E0A2_u4E0B1"><a href="#u4E0A_u4E0B_u5E03_u5C40__u4E0A2_u4E0B1" class="headerlink" title="上下布局 上2下1"></a>上下布局 上2下1</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u4E0A_u4E0B_u5E03_u5C40__u4E0A1_u4E0B2"><a href="#u4E0A_u4E0B_u5E03_u5C40__u4E0A1_u4E0B2" class="headerlink" title="上下布局 上1下2"></a>上下布局 上1下2</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span>	</span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="u4E0A_u4E0B_u5E03_u5C40_-__u5DE6_u53F3_u975E_u7B49_u5206"><a href="#u4E0A_u4E0B_u5E03_u5C40_-__u5DE6_u53F3_u975E_u7B49_u5206" class="headerlink" title="上下布局 - 左右非等分"></a>上下布局 - 左右非等分</h3><p><img src="http://game.gtimg.cn/images/js/mocha/images/demo/layout4.png" alt="上下布局"></p>
+<h3 id="u8FD0_u884CDemo-3"><a href="#u8FD0_u884CDemo-3" class="headerlink" title="运行Demo"></a><a href="http://tgideas.github.io/mocha/demo/layout/demo.html" title="layout(布局模块)">运行Demo</a></h3><h4 id="u5DE6_u53F31_3A2_-mocha-layout-row-1-2-1"><a href="#u5DE6_u53F31_3A2_-mocha-layout-row-1-2-1" class="headerlink" title="左右1:2 .mocha-layout-row-1-2"></a>左右1:2 <code>.mocha-layout-row-1-2</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span>	</span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex mocha-layout-row-1-2"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u5DE6_u53F32_3A3_-mocha-layout-row-2-3-1"><a href="#u5DE6_u53F32_3A3_-mocha-layout-row-2-3-1" class="headerlink" title="左右2:3 .mocha-layout-row-2-3"></a>左右2:3 <code>.mocha-layout-row-2-3</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span>	</span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex mocha-layout-row-2-3"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u5DE6_u53F33_3A2_-mocha-layout-row-3-2-1"><a href="#u5DE6_u53F33_3A2_-mocha-layout-row-3-2-1" class="headerlink" title="左右3:2 .mocha-layout-row-3-2"></a>左右3:2 <code>.mocha-layout-row-3-2</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span>	</span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex mocha-layout-row-3-2"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u5DE6_u53F32_3A1_-mocha-layout-row-2-1-1"><a href="#u5DE6_u53F32_3A1_-mocha-layout-row-2-1-1" class="headerlink" title="左右2:1 .mocha-layout-row-2-1"></a>左右2:1 <code>.mocha-layout-row-2-1</code></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout mocha-layout-scheme2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>A<span class="tag">&lt;/<span class="title">div</span>&gt;</span>	</span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-flex mocha-layout-row-2-1"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-layout-box"</span>&gt;</span>C<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://tgideas.github.io/mocha/docs/layout/" data-id="cinbdjge5000i7opvfwo78b4a" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/mocha/docs/data-user/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">data-user</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/mocha/docs/hello-mocha/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">Hello Mocha</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
+
+  
+</article>
+
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2016 TGideas<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="/mocha/docs/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/mocha/docs/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/mocha/docs/js/script.js" type="text/javascript"></script>
+
+</body>
+</html>
