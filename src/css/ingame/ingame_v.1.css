@@ -1,0 +1,106 @@
+/*
+ * ingame v.1
+ * Author:kevinhehe
+ * Modify:2016-04-14
+ * 
+ */
+.mocha-ingame{height: 100%;}
+	.mocha-ingame-media{margin-top: .1rem;overflow: hidden;}
+	.mocha-ingame .mocha-pic-list-scheme1 .mocha-pic-list-item{display: block;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame-media-l .mocha-pic-list-scheme1 .mocha-pic-list-item{float: left;width: 50%;}
+	.mocha-ingame-media-l .mocha-pic-list-scheme1 .mocha-pic-list-item{padding-right: .05rem;}
+	.mocha-ingame-media-l .mocha-pic-list-scheme1 .mocha-pic-list-item:last-child{padding-right: 0;padding-left: .05rem;}
+	.mocha-ingame .mocha-slider-scheme1 .content,.mocha-ingame .mocha-slider-scheme1 .content li,.mocha-ingame .mocha-slider-scheme1 .content li a,.mocha-ingame .mocha-slider-scheme1 .content li img{height:100% !important;} 
+	.mocha-ingame .mocha-txt-list .mocha-tlu-item{height: .5rem;padding: .1rem 0 .1rem .4rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame .mocha-txt-list .mocha-tlu-item-icon{top: .1rem;left: 0;width: .3rem;height: .3rem;padding: .05rem;font-size: .09rem;line-height: .1rem;border-radius: .03rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame .mocha-txt-list .mocha-tlu-item-title{font-size: .15rem;}
+	.mocha-ingame .mocha-txt-list .mocha-tlu-item-meta{padding-top: .05rem;font-size: .1rem;}
+	.mocha-ingame .mocha-txt-list .mocha-tlu-item-hot{display: inline-block;width: .1rem;height: .1rem;margin-right: .05rem;text-align: center;line-height: .1rem;font-size: .07rem;vertical-align: top;}
+	.mocha-ingame .mocha-txt-list-scheme2 .mocha-tlu-item{padding: .1rem 0;}
+	.mocha-ingame .mocha-tab{margin-bottom: 0;font-size: .15rem;}
+	.mocha-ingame .mocha-tab-scheme2 .mocha-tab-triggers-ul li{border-right: 1px solid #ccc;}
+	.mocha-ingame .mocha-tab-scheme2 .mocha-tab-triggers-ul li:last-child{border-right: 0;}
+	.mocha-ingame .mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current {border-right-color: #ccc;font-weight: normal;}
+	.mocha-ingame .mocha-pic-list-scheme4 .mocha-pic-list-item{margin-top: .15rem;margin-bottom: 0;}
+	.mocha-ingame .mocha-pic-list-scheme4 .mocha-pic-list-item .txt{margin-top: .1rem;margin-bottom: 0;font-size: .13rem;line-height: .18rem;}
+	.mocha-ingame .mocha-pic-list-scheme4 .mocha-pic-list-item .pic{width: .6rem;height: .6rem;margin: 0 auto;}
+	
+ 	.mocha-pic-list-scheme5 .mocha-pic-list-item{width:48.5%;margin-right:3%;}
+	.mocha-ingame .mocha-pic-list-scheme5 .mocha-pic-list-item{position: relative;height: 1.105rem;margin-top: .1rem;margin-bottom: 0;border: 1px solid #d9d9d9;-webkit-box-sizing: border-box;box-sizing: border-box;overflow: hidden;}
+	.mocha-ingame .mocha-pic-list-scheme5 .mocha-pic-list-item .txt{position: absolute;bottom: 0;left: 0;display: block;width: 100%;height: .31rem;margin: 0;padding: .08rem .1rem 0;font-size: .13rem;line-height: .18rem;text-align: left;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame-tab1 .mocha-ingame-index-wrap,.mocha-ingame-tab2 .mocha-ingame-index-wrap{padding-top: 0;}
+	.mocha-ingame-tab1 .mocha-ingame-tab-fixed,.mocha-ingame-tab2 .mocha-ingame-tab-fixed{z-index: 5;}
+	.mocha-ingame-strategy .mocha-tab-scheme4{padding: 0 .1rem;}
+	.mocha-ingame-strategy .mocha-tab-scheme4 .mocha-tab-triggers-ul li:first-child{margin-left: 0;}
+	.mocha-ingame-content-wrap .mocha-title-skin3{height: .31rem;padding: .11rem 0 .06rem .1rem;border-top: 1px solid #cfcfcf;border-bottom: 1px solid #cfcfcf;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame-content-wrap .mocha-title-skin3 .mocha-title-txt{font-size: .1rem;line-height: .12rem;padding-left: .05rem;font-weight: normal;border-left: 3px solid #333;background-color: transparent;}
+	.mocha-ingame-index-wrap .mocha-ingame-media-l .mocha-pictxt-list-scheme1 .mocha-ptlu-item{position: relative;width: 100%;height: 100%;margin-top: 0;}
+	.mocha-ingame-index-wrap .mocha-pictxt-list-scheme1 .mocha-ptlu-item .pic{margin-bottom: 0;}
+	.mocha-ingame-index-wrap .mocha-pictxt-list-scheme1 .mocha-ptlu-item{width: 23.5%;margin-top: .1rem;margin-bottom: 0;}
+	.mocha-ingame-media-l .mocha-ptlu-item-info{position: absolute;left: 0;bottom: 0;width: 100%;height: .5rem;padding: .1rem .1rem .1rem .45rem;}
+	.mocha-ingame-media-l .mocha-pictxt-list-skin1 .mocha-ptlu-item .icon-play{top: 50%;margin-top: -.16rem;}
+	.mocha-ptlu-item-head{position: absolute;left: 0;bottom: .35rem;}
+	.mocha-ptlu-item-info{height: .35rem;padding: .05rem;background-color: #d3d3d3;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-pictxt-list-skin1 .mocha-ptlu-item h4{font-size: .13rem;font-weight: normal;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta{font-size: .1rem;padding-top: 0;overflow: hidden;}
+	.mocha-ptlu-item-meta .icon{display: inline-block;width: .05rem;height: .05rem;margin-right: .05rem;vertical-align: middle;background-color: #000;}
+	.mocha-ingame-media-l .mocha-pictxt-list-scheme1{}
+	.mocha-ingame-media-l .mocha-ptlu-item-meta{text-align: left;}
+	.mocha-ingame-media-l .mocha-ptlu-item-icon{position: absolute;top: .1rem;left: .1rem;width: .3rem;height: .3rem;padding: .05rem;font-size: .09rem;line-height: .1rem;color: #fff;text-align: center;border-radius: .03rem;-webkit-box-sizing: border-box;box-sizing: border-box;background-color: #888;}
+	.mocha-ingame-media-l .mocha-pictxt-list-skin1 .mocha-ptlu-item h4{font-size: .15rem;}
+
+
+
+@media screen and (orientation: landscape) {
+	.mocha-ingame-index-wrap{padding: .1rem;
+    overflow: hidden;-webkit-transform-origin: 0 0;}
+	.mocha-ingame-content-wrap {position: relative;margin-left: .5rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame-media-l{float: left;width: 3.94rem;height: 1.45rem;}
+	.mocha-ingame .mocha-slider-scheme1{height:100% !important;}
+	.mocha-ingame-media-r{float: right;width: 1.93rem;height: 1.45rem;}
+	.mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item{height: .675rem;margin-bottom: .1rem;}
+	.mocha-ingame .mocha-pic-list-scheme4 .mocha-pic-list-item{width:15%;margin-right:2%;}
+	.mocha-ingame .mocha-pic-list-scheme4 .mocha-pic-list-item:nth-child(6n){margin-right: 0;}
+	.mocha-ingame .mocha-pic-list-scheme5 .mocha-pic-list-item{width: 31.66%;margin-right: 2.5%;}
+	.mocha-ingame .mocha-pic-list-scheme5 .mocha-pic-list-item:nth-child(3n){margin-right: 0;}
+	.mocha-ingame-tab1 .mocha-ingame-tab-fixed,.mocha-ingame-tab2 .mocha-ingame-tab-fixed{width: calc(100% - 0.5rem);}
+	.mocha-ingame-tab1 .mocha-ingame-tab-fixed{position: fixed;top: 0;left: .5rem;z-index: 5;}
+	.mocha-ingame-tab2 .mocha-ingame-tab-fixed{position: fixed;top: 0;left: 0;}
+	.mocha-ingame-tab2 .mocha-ingame-index-wrap{margin-left: 1.04rem;}
+	.mocha-ingame-tab2 .mocha-ingame-tab-fixed{left: .5rem;width: 1.04rem;height: 100%;}
+	.mocha-ingame-tab2 .mocha-ingame-tab-fixed .mocha-tab-scheme2 li{display: block;border-bottom: 1px solid #ccc;}
+	.mocha-ingame-tab2 .mocha-ingame-tab-fixed .mocha-tab-scheme2 .mocha-tab-triggers-ul .current{border-bottom-color: #ccc;border-right: 2px solid #09f;}
+	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta span:first-child{float: left;}
+	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta span:last-child{float: right;}
+	.mocha-ingame-video .mocha-ingame-media-l,.mocha-ingame-video .mocha-ingame-media-r{width: 2.935rem;height: 1.65rem;}
+	.mocha-ingame-video .mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item{height: .775rem;}
+}
+
+@media screen and (orientation: portrait) {
+	.mocha-ingame-index-wrap{padding: .1rem;overflow: hidden;-webkit-transform-origin: 0 0;}
+	.mocha-ingame-index-wrap:last-child{padding-bottom: .6rem;}
+	.mocha-ingame-content-wrap {position: relative;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame-media-l,.mocha-ingame-media-r{width: 100%;}
+	.mocha-ingame-media-l .mocha-pic-list-scheme1 .mocha-pic-list-item{margin-bottom: 0;}
+	.mocha-ingame-media-r{margin-top: .1rem;}
+	.mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item{float: left;width: 50%;margin-bottom: 0;}
+	.mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item:first-child{padding-right: .05rem;}
+	.mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item:last-child{padding-left: .05rem;}
+	.mocha-ingame .mocha-menu-scheme1{position: fixed;}
+	.mocha-ingame .mocha-pic-list-scheme4 .mocha-pic-list-item{margin-right: 4%;}
+	.mocha-ingame .mocha-pic-list-scheme4 .mocha-pic-list-item:nth-child(4n){margin-right: 0;}
+ 	.mocha-ingame .mocha-pic-list-scheme5 .mocha-pic-list-item:nth-child(2n){margin-right: 0;}
+	.mocha-ingame-tab1 .mocha-ingame-tab-fixed,.mocha-ingame-tab2 .mocha-ingame-tab-fixed{position: fixed;top: 0;left: 0;width: 100%;}
+	.mocha-ingame-tab2 .mocha-ingame-tab-fixed{width: 100%;}
+	.mocha-ingame-tab2 .mocha-ingame-index-wrap{margin-top: .52rem;}
+	.mocha-ingame-index-wrap .mocha-pictxt-list-scheme1 .mocha-ptlu-item{width: 48.5%;}
+	.mocha-ingame-video .mocha-ingame-media-r .mocha-pic-list-item{width: 100%;height: .935rem;padding-right: 0;}
+	.mocha-ingame-video .mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item:first-child{padding-right: 0;margin-bottom: .1rem;}
+	.mocha-ingame-video .mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item:last-child{padding-left: 0;}
+}
+
+	/* skin */
+	.mocha-ingame-skin1 .mocha-txt-list .mocha-tlu-item-hot{color: #fff;background-color: #d0d0d0;}
+	.mocha-ingame-skin1.mocha-ingame-tab2 .mocha-ingame-tab-fixed{background-color: #ddd;}
+	.mocha-ingame-skin1 .mocha-ingame-tab-fixed{background-color: #fff;}
+	.mocha-ingame-skin1 .mocha-pic-list-scheme5 .mocha-pic-list-item .txt{background-color: #d9d9d9;}
