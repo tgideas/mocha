@@ -8,24 +8,33 @@
 	.mocha-data-user,.mocha-data-user-hd,.mocha-data-user-bd{display: -webkit-box;display: box;display: -webkit-flexbox;display: flexbox;display: -webkit-flex;display:flex;}
 	.mocha-data-user,.mocha-data-user-hd,.mocha-data-user-bd{-webkit-box-align:center;box-align:center;-webkit-flex-align:center;flex-align:center;-webkit-align-items:center;align-items:center;}
 	.mocha-data-user-name,.mocha-data-user-num,.mocha-data-user-box p{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
-	.mocha-data-user{height:0.59rem;}
+	.mocha-data-user{height:0.6rem;}
 	.mocha-data-user-hd{width:33.8%;height:100%;}
 	.mocha-data-user-bd{width:35%;height:100%;-webkit-box-sizing: border-box;box-sizing: border-box;}
-	.mocha-data-user-btn{width:23%;height:100%;}
-	.mocha-data-user-img{padding:0 7.5% 0 5.4%;width: .5rem;}
-	.mocha-data-user-img img{display: block;width: .5rem;border-radius:100%;height: .5rem;}
+	.mocha-data-user-btn{width: 23%;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-data-user-img{padding: .1rem;width: .4rem;}
+	.mocha-data-user-img img{display: block;width: 100%;border-radius:100%;}
 	.mocha-data-user-name{position:relative;display: block;}
 	.mocha-data-user-level{padding:.01rem .07rem;border-radius: .06rem;}
-	.mocha-data-user-box{padding:0 10% 0;width:80%;}
-	.mocha-data-user-btn a{width:90%;display: block;height: .35rem;min-width: 1.15rem;margin-top: .12rem;line-height: .35rem;text-align:center;}
-	.mocha-data-user-ui{position: relative;display: inline-block;width: .16rem;height: .16rem;margin: -.02rem 0 0 .05rem;text-align: center;line-height: .16rem;vertical-align: middle;border-radius: 50%;}
+	.mocha-data-user-box{padding:0 .1rem 0;width:80%;}
+	.mocha-data-user-btn a{display: block;height: .4rem;min-width: 1.15rem;margin-top: .1rem;line-height: .4rem;text-indent: .1rem;}
+	.mocha-data-user-ui{position: relative;width: .16rem;height: .16rem;text-align: center;line-height: .16rem;vertical-align: middle;border-radius: 50%;}
 	.mocha-data-user-ui:before{border-image: none;border-style: solid;border-width: 0 1px 1px 0;content: "";display: block;height: .06rem;position: absolute;right: .06rem;top: .04rem;transform: rotate(-45deg);width: .06rem;}
+	
+	@media screen and (orientation:landscape) {
+		.mocha-data-user{-webkit-box-sizing: border-box;box-sizing: border-box;}
+		.mocha-data-user-btn{height:100%;padding-right: .1rem;}
+		.mocha-data-user-btn a{border-radius: .035rem;}
+		.mocha-data-user-ui{float: right;margin: .1rem .1rem 0 0;}
+	}
 	@media screen and (orientation:portrait) {
-		.mocha-data-user{position: relative;padding-bottom: .35rem;}
+		.mocha-data-user{position: relative;padding-bottom: .4rem;}
 	    .mocha-data-user-hd {width: 50%;}
 	    .mocha-data-user-bd {width: 25%;}
-	    .mocha-data-user-btn{position: absolute;top:0.59rem;left:0;right:0;width:100%;}
+	    .mocha-data-user-btn{position: absolute;top:0.6rem;left:0;right:0;width:100%;text-align: center;}
 	    .mocha-data-user-btn a{width:100%;margin-top: 0;}
+	    .mocha-data-user-ui{display: inline-block;margin: -.01rem 0 0 .05rem;}
+		
 	}
 
 	/* scheme1 */
@@ -43,8 +52,8 @@
 	.mocha-data-user-skin1 .mocha-data-user-bd{border-left: 1px solid #c4c4c4;}
 	.mocha-data-user-skin1 .mocha-data-user-level{background: #818181;color:#fff;}
 	.mocha-data-user-skin1 .mocha-data-user-content p,.mocha-data-user-skin1 .mocha-data-user-bd p{font-size: .09rem;line-height: .14rem;color:#474747;}
-	.mocha-data-user-skin1 .mocha-data-user-name,.mocha-data-user-skin1 .mocha-data-user-num{font-size: .15rem;line-height: .24rem;}
-	.mocha-data-user-skin1 .mocha-data-user-num{font-size: .18rem;font-weight:bold;}
+	.mocha-data-user-skin1 .mocha-data-user-name,.mocha-data-user-skin1 .mocha-data-user-num{font-size: .15rem;line-height: .25rem;}
+	.mocha-data-user-skin1 .mocha-data-user-num{font-size: .18rem;}
 	.mocha-data-user-skin1 .mocha-data-user-level{font-size: .09rem;line-height: .14rem;}
 	.mocha-data-user-skin1 .mocha-data-user-btn a{font-size: .13rem;background: #afaeae;color:#fff;}
 	.mocha-data-user-skin1 .mocha-data-user-ui{color: #fff;border: 1px solid #fff;}

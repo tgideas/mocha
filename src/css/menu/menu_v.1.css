@@ -4,7 +4,7 @@
  * Modify:2015-12-05
  * 
  */
-.mocha-menu{width:100%;height:.49rem;}
+.mocha-menu{width:100%;height:.5rem;}
 	.mocha-menu ul{width:100%;height:100%;display: -webkit-box;-webkit-box-orient: horizontal;}
 	.mocha-menu li{position: relative;display: -webkit-flex;
     -webkit-box-flex: 1;height: 100%;text-align: center;}
@@ -15,9 +15,9 @@
 	.mocha-menu-scheme1 {position: absolute;bottom: 0;z-index: 99;}
 	.mocha-menu-scheme2 .mocha-menu-icon{display: inline-block;}
 	.mocha-menu-scheme3 a{font-size: .12rem;line-height: .144rem;}
-	.mocha-menu-scheme3 .mocha-menu-icon{display: block;width: .21rem;height: .21rem;margin: 0 auto .0225rem;}
+	.mocha-menu-scheme3 .mocha-menu-icon{display: block;width: .22rem;height: .22rem;margin: 0 auto .05rem;}
 	@media screen and (orientation: landscape) {
-	    .mocha-menu-scheme1{width: .49rem;min-width: .49rem;max-width: .49rem;height: 100%;position: fixed;z-index: 20;top: 0;left: 0;}
+	    .mocha-menu-scheme1{width: .5rem;min-width: .5rem;max-width: .5rem;height: 100%;position: fixed;z-index: 20;top: 0;left: 0;}
 	    .mocha-menu-scheme1 ul{-webkit-box-orient: vertical;}
 	    .mocha-menu-scheme1 li a{width: auto;}
 	    .mocha-menu-scheme1.mocha-menu-scheme2 .mocha-menu-icon{margin-bottom: .05rem;margin-right: 0;}
