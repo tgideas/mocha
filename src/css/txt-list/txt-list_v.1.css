@@ -22,6 +22,8 @@
 	.mocha-txt-list-scheme3 .mocha-tlu-item{padding-left:0.16rem;}
 	.mocha-txt-list-scheme3 .mocha-tlu-item-title{overflow: hidden;height:0.2rem;line-height:0.2rem;padding-right:0.64rem;text-overflow:ellipsis;white-space:nowrap;}
 	.mocha-txt-list-scheme3 .mocha-tlu-item-meta{position: absolute;right:0.16rem;top:0.16rem;}
+	.mocha-txt-list-scheme3 .mocha-tlu-item-icon,
+	.mocha-txt-list-scheme3 .mocha-tlu-item-meta em{display: none;}
 	/* skin */
 	.mocha-txt-list-skin1{font-size:0.14rem;}
 	.mocha-txt-list-skin1 a:link,.mocha-txt-list-skin1 a:visited{color: #666;}
