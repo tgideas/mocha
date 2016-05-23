@@ -20,7 +20,9 @@
 	.mocha-gift-scheme2 li:nth-child(even){margin-right: 0;}
 	.mocha-gift-scheme3 li{width: 31%;}
 	.mocha-gift-scheme3 li:nth-child(3n){margin-right: 0;}
-	.mocha-gift-scheme4 p{display: block;}
+	.mocha-gift-scheme4 li{width: 22.375%;}
+	.mocha-gift-scheme4 li:nth-child(4n){margin-right: 0;}
+	.mocha-gift-scheme5 p{display: block;}
 	/* skin */
 	.mocha-gift-skin1{font-size: .16rem;}
 	.mocha-gift-skin1 p{font-size: .12rem;}

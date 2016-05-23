@@ -79,11 +79,47 @@ tags:
 </div> 
 ```
 
+### 样式4-1行4个 `.mocha-gift-scheme4`
+``` html
+<div class="mocha-gift mocha-gift-scheme4 mocha-gift-skin1">
+    <ul>
+        <li>
+            <div class="mocha-gift-box">
+                <img src="http://dummyimage.com/290x107/000/fff" width="100%" height="100%" alt="">
+            </div>
+            <p>礼品x1</p>
+            <a href="javascript:;" class="mocha-gift-btn">领取礼包</a>
+        </li>
+        <li>
+            <div class="mocha-gift-box">
+                <img src="http://dummyimage.com/290x107/000/fff" width="100%" height="100%" alt="">
+            </div>
+            <p>礼品x1</p>
+            <a href="javascript:;" class="mocha-gift-btn">领取礼包</a>
+        </li>
+        <li>
+            <div class="mocha-gift-box">
+                <img src="http://dummyimage.com/290x107/000/fff" width="100%" height="100%" alt="">
+            </div>
+            <p>礼品x1</p>
+            <a href="javascript:;" class="mocha-gift-btn">领取礼包</a>
+        </li>
+        <li>
+            <div class="mocha-gift-box">
+                <img src="http://dummyimage.com/290x107/000/fff" width="100%" height="100%" alt="">
+            </div>
+            <p>礼品x1</p>
+            <a href="javascript:;" class="mocha-gift-btn">领取礼包</a>
+        </li>
+    </ul>
+</div> 
+```
+
 ![gift](http://game.gtimg.cn/images/js/mocha/images/demo/gift2.png)
 
-### 样式4-上图下字和一按钮 ,`.mocha-gift-scheme1~3`控制每行显示礼包的数量  (1到3个)，`.mocha-gift-scheme4`控制的是上图下字。以上图为例，需添加`.mocha-gift-scheme3`+`.mocha-gift-scheme4`方可实现。
+### 样式5-上图下字和一按钮 ,`.mocha-gift-scheme1~3`控制每行显示礼包的数量  (1到3个)，`.mocha-gift-scheme5`控制的是上图下字。以上图为例，需添加`.mocha-gift-scheme3`+`.mocha-gift-scheme5`方可实现。
 ``` html
-<div class="mocha-gift mocha-gift-scheme3 mocha-gift-scheme4 mocha-gift-skin1">
+<div class="mocha-gift mocha-gift-scheme3 mocha-gift-scheme5 mocha-gift-skin1">
     <ul>
         <li>
             <div class="mocha-gift-box">
@@ -128,9 +164,9 @@ tags:
 
 ![gift](http://game.gtimg.cn/images/js/mocha/images/demo/gift3.png)
 
-### 样式5-礼包签到,在样式4的基础上对li添加类名`.act`为当前标识样式，对按钮添加类名`.mocha-gift-btn-disabled`为按钮灰化样式。
+### 样式6-礼包签到,在样式4的基础上对li添加类名`.act`为当前标识样式，对按钮添加类名`.mocha-gift-btn-disabled`为按钮灰化样式。
 ``` html
-<div class="mocha-gift mocha-gift-scheme3 mocha-gift-scheme4 mocha-gift-skin1">
+<div class="mocha-gift mocha-gift-scheme3 mocha-gift-scheme5 mocha-gift-skin1">
     <ul>
         <li class="act">
             <p>第一天</p>

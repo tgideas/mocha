@@ -30,7 +30,7 @@ tags:
 
 ### 样式2-有导航 `.mocha-navigation-scheme2`
 ``` html
-<header class="mocha-nav .mocha-navigation-scheme2 mocha-nav-skin1">
+<header class="mocha-nav mocha-navigation-scheme2 mocha-nav-skin1">
     <div class="mocha-nav-cover"></div>
     <a href="javascript:;" class="mocha-nav-logo">
         <img src="http://dummyimage.com/40x40/000/fff" alt="游戏名字" />
@@ -40,8 +40,8 @@ tags:
         </div>
     </a>
     <!-- 导航 -->
-    <div class="mocha-nav-navigation">
-        <div class="mocha-nav-navigation-cover"></div>
+    <div class="mocha-nav-box">
+        <div class="mocha-nav-box-cover"></div>
         <nav class="mocha-nav-list">
             <div class="mocha-nav-list-cover">
                 <ul>
