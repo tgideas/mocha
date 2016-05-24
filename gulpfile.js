@@ -89,8 +89,9 @@ gulp.task('build-mocha-css', function(){
     .pipe(concat('mocha-1.1.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest(paths.src + "css/"));
+});
 
-
+gulp.task('build-ingame-css', function(){
   return gulp.src([paths.src + "css/" + "ingame/" + "ingame_v.1.css"])
     .pipe(concat('mocha-ingame.css'))
     .pipe(gulp.dest(paths.src + "css/"));
@@ -138,7 +139,12 @@ gulp.task('build-mocha-docs', function(){
  * 自动化组合
  */ 
 gulp.task('watch',gulp.parallel('connect','watch-file'));              //文件更新自动 F5
-gulp.task('demo',gulp.parallel('build-mocha-css','build-mocha-js','build-mocha-demo'));
+gulp.task('demo',gulp.parallel('build-mocha-css','build-ingame-css','build-mocha-js','build-mocha-demo'));
 gulp.task('docs',gulp.parallel('build-mocha-docs'));
+
+
+
+
+
 
 
