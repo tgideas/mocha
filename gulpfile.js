@@ -93,7 +93,8 @@ gulp.task('build-mocha-css', function(){
 
 gulp.task('build-ingame-css', function(){
   return gulp.src([paths.src + "css/" + "ingame/" + "ingame_v.1.css"])
-    .pipe(concat('mocha-ingame.css'))
+    .pipe(concat('mocha-ingame.min.css'))
+    .pipe(minifyCSS())
     .pipe(gulp.dest(paths.src + "css/"));
 });
 
