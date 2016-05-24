@@ -88,7 +88,11 @@ gulp.task('build-mocha-css', function(){
            paths.src + "css/" + "common-foot/" + "common-foot_v.1.css"])
     .pipe(concat('mocha-1.1.min.css'))
     .pipe(minifyCSS())
-    .pipe(gulp.dest(paths.src + "css/"))
+    .pipe(gulp.dest(paths.src + "css/"));
+
+return gulp.src([paths.src + "css/" + "ingame/" + "ingame_v.1.css"])
+    .pipe(concat('mocha-ingame.css'))
+    .pipe(gulp.dest(paths.src + "css/"));
 });
 
 /* ---------------------------------------------------
