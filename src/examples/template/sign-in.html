@@ -35,34 +35,55 @@
 	})(window,document);
 	</script>
 <style>
-body{background: #202020 url("http://dummyimage.com/640x500/00041c/fff.png&text=KV") no-repeat 0 .6rem;background-size: contain;}
-.mocha-sign-wrap{position: relative;width: 100%;left: 0;top: 2rem;padding: 0 .15rem; -webkit-box-sizing: border-box;box-sizing: border-box;}
-.mocha-sign-wrap .mocha-text{padding: .1rem 0;line-height: .22rem;color: #fff;}
-.mocha-sign-wrap .mocha-text h4{margin-bottom: 0;font-size: .13rem;font-weight: normal;color: #bcbcbc;}
-.mocha-sign-wrap .mocha-text p{font-size: .12rem;color: #a1a1a1;}
+.mocha-sign-wrap{position: relative;width: 100%;left: 0;top: 2.1rem;padding: 0 .15rem; -webkit-box-sizing: border-box;box-sizing: border-box;}
+.mocha-sign-wrap .mocha-text{padding: .1rem 0;line-height: .22rem;}
+.mocha-sign-wrap .mocha-text h4{margin-bottom: 0;font-size: .13rem;font-weight: normal;}
+.mocha-sign-wrap .mocha-text p{font-size: .12rem;}
 .mocha-sign-wrap .mocha-text-center{padding: 0;}
-.mocha-button-skin1{box-shadow: none;border-radius: 0;background-color: #d70600;}
+.mocha-button-skin1{box-shadow: none;border-radius: 0;}
 .mocha-button-skin1.mocha-button-scheme1{font-size: .2rem;line-height: .5rem;}
-.mocha-dialog-skin1 .mocha-dialog-box{background-color: #303030;}
 .mocha-dialog-skin1 .mocha-dialog-fd{padding-top: .1rem;border-top: 0;}
-.mocha-dialog-skin1 .mocha-dialog-hd-title{font-size: .2rem;color: #fff;}
-.mocha-dialog-skin1 .mocha-dialog-hd{padding: .1rem;background-color: #1e1e1e;}
+.mocha-dialog-skin1 .mocha-dialog-hd-title{font-size: .2rem;}
+.mocha-dialog-skin1 .mocha-dialog-hd{padding: .1rem;}
 .mocha-dialog-skin1 .mocha-dialog-bd{padding: .4rem .16rem .16rem;}
-.mocha-dialog-skin1 .mocha-box-fd-btn{width: 1.4rem;height: .4rem;padding: 0;margin: 0 auto;font-size: .18rem;line-height: .4rem;color: #fff;background-color: #d80604;}
+.mocha-dialog-skin1 .mocha-box-fd-btn{width: 1.4rem;height: .4rem;padding: 0;margin: 0 auto;font-size: .18rem;line-height: .4rem;}
 .mocha-dialog-skin1 .mocha-dialog-close{top: .05rem;right: .05rem;width: .3rem;height: .3rem;color: rgba(0,0,0,0);}
-.mocha-dialog-skin1 .mocha-dialog-close:before,.mocha-dialog-skin1 .mocha-dialog-close:after{content: '';display: block;position: absolute;bottom: 0;width: .01rem;height: .42rem;background-color: #fff;transform-origin: 0 100%;}
+.mocha-dialog-skin1 .mocha-dialog-close:before,.mocha-dialog-skin1 .mocha-dialog-close:after{content: '';display: block;position: absolute;bottom: 0;width: .01rem;height: .42rem;transform-origin: 0 100%;}
 .mocha-dialog-skin1 .mocha-dialog-close:before{left: 0;transform: rotate(45deg);}
 .mocha-dialog-skin1 .mocha-dialog-close:after{right: 0;transform: rotate(-45deg);}
-.mocha-dialog-skin1 .mocha-text-center{padding: 0;font-size: .14rem;color: #fff;}
+.mocha-dialog-skin1 .mocha-text-center{padding: 0;font-size: .14rem;}
 .mocha-gift-skin1{width: 100%;}
+.mocha-gift-skin1 li{position: relative;margin-bottom: .1rem;}
+.mocha-gift-skin1 .date{position: absolute;top: .04rem;left: 0;width: 100%;z-index: 5;}
+.mocha-gift-skin1 .txt{position: absolute;bottom: .04rem;left: 0;width: 100%;z-index: 5;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.mocha-sign-wrap .mocha-text-skin3{padding-top: 0;}
+/* skin */
+body{background: url("http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery-bg.jpg") no-repeat 0 .6rem,url("http://ossweb-img.qq.com/images/js/mocha/images/demo/template_skin.jpg") repeat;background-size: contain;}
+.mocha-nav-skin1{background-color: #1d1d1d;}
+.mocha-nav-skin1 .mocha-nav-logo{color: #fff;}
+.mocha-nav-skin1 .mocha-nav-slide-icon, .mocha-nav-skin1 .mocha-nav-slide-icon:before, .mocha-nav-skin1 .mocha-nav-slide-icon:after{background-color: #e40600;box-shadow: .01rem .02rem 0 #000;}
+.mocha-nav-skin1 .mocha-nav-slide-close .mocha-nav-slide-icon{box-shadow: none;}
+.mocha-nav-skin1 .mocha-nav-slide-close .mocha-nav-slide-icon:before, .mocha-nav-skin1 .mocha-nav-slide-close .mocha-nav-slide-icon:after{background-color: #e40600;}
+.mocha-sign-wrap .mocha-text{color: #fff;}
+.mocha-sign-wrap .mocha-text h4{color: #bdbdbd;}
+.mocha-sign-wrap .mocha-text p{color: #a1a1a1;}
+.mocha-dialog-skin1 .mocha-dialog-box{background-color: #303030;}
+.mocha-button-skin1{background-color: #d70600;}
+.mocha-dialog-skin1 .mocha-dialog-hd{background-color: #1e1e1e;}
+.mocha-dialog-skin1 .mocha-dialog-hd-title{color: #fff;}
+.mocha-dialog-skin1 .mocha-box-fd-btn{color: #fff;background-color: #d80604;}
+.mocha-dialog-skin1 .mocha-dialog-close:before,.mocha-dialog-skin1 .mocha-dialog-close:after{background-color: #fff;}
+.mocha-dialog-skin1 .mocha-text-center{color: #fff;}
+.mocha-text span{color: #d80400;}
 .mocha-gift-skin1 p{color: #bcbcbc;}
+.mocha-gift-skin1 .date{color: #d80400;}
 </style>
 </head>
 <body>
 <header class="mocha-nav mocha-navigation-scheme2 mocha-nav-skin1">
 	<div class="mocha-nav-cover"></div>
 	<a href="javascript:;" class="mocha-nav-logo">
-		<img src="http://dummyimage.com/40x40/000/fff" alt="游戏名字" />
+		<img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/nav-logo.png" alt="天天炫斗" />
 		<div class="mocha-nav-logo-desc">
 			<h1>天天炫斗公众号</h1>
 			<h2>第一实时PK动作手游</h2>
@@ -88,73 +109,72 @@ body{background: #202020 url("http://dummyimage.com/640x500/00041c/fff.png&text=
 </header>
 <div class="mocha-sign-wrap">
 	<p style="font-size:0;margin:0 auto;">
-		<a id="showDialogBtn1" href="javascript:;" class="mocha-button mocha-button-scheme1 mocha-button-skin1">进入游戏</a>
+		<a id="showDialogBtn1" href="javascript:;" class="mocha-button mocha-button-scheme1 mocha-button-skin1">马上签到</a>
 		<div class="mocha-text mocha-text-center">
-			<p>累计签到天数(0/14)</p>
+			<p>累计签到天数(<span>0</span>/14)</p>
 		</div>
 	</p>
 	<div class="mocha-text">
 		<h4>签到奖励</h4>
-		<p>每日签到可获得888钻石，累计签到还额外获得以下</p>
+		<p>每日签到可获得<span>888钻石</span>，累计签到还额外获得以下</p>
 	</div>
 	<div class="mocha-gift mocha-gift-scheme4 mocha-gift-scheme5 mocha-gift-skin1">
 	    <ul>
 	        <li class="act">
-	            <p>第一天</p>
+	            <p class="date">第一天</p>
 	            <div class="mocha-gift-box">
 	                <img src="http://dummyimage.com/130x130/000/fff" width="100%" height="100%" alt="">
 	            </div>
-	            <p>礼品x1</p>
+	            <p class="txt">礼品x1</p>
 	        </li>
 	        <li class="act">
-	            <p>第二天</p>
+	            <p class="date">第二天</p>
 	            <div class="mocha-gift-box">
 	                <img src="http://dummyimage.com/130x130/000/fff" width="100%" height="100%" alt="">
 	            </div>
-	            <p>礼品x1</p>
+	            <p class="txt">礼品x1</p>
 	        </li>
 	        <li>
-	            <p>第三天</p>
+	            <p class="date">第三天</p>
 	            <div class="mocha-gift-box">
 	                <img src="http://dummyimage.com/130x130/000/fff" width="100%" height="100%" alt="">
 	            </div>
-	            <p>礼品x1</p>
+	            <p class="txt">礼品x1</p>
 	        </li>
 	        <li>
-	            <p>第四天</p>
+	            <p class="date">第四天</p>
 	            <div class="mocha-gift-box">
 	                <img src="http://dummyimage.com/130x130/000/fff" width="100%" height="100%" alt="">
 	            </div>
-	            <p>礼品x1</p>
+	            <p class="txt">礼品x1</p>
 	        </li>
 	        <li>
-	            <p>第五天</p>
+	            <p class="date">第五天</p>
 	            <div class="mocha-gift-box">
 	                <img src="http://dummyimage.com/130x130/000/fff" width="100%" height="100%" alt="">
 	            </div>
-	            <p>礼品x1</p>
+	            <p class="txt">礼品x1</p>
 	        </li>
 	        <li>
-	            <p>第六天</p>
+	            <p class="date">第六天</p>
 	            <div class="mocha-gift-box">
 	                <img src="http://dummyimage.com/130x130/000/fff" width="100%" height="100%" alt="">
 	            </div>
-	            <p>礼品x1</p>
+	            <p class="txt">礼品x1</p>
 	        </li>
 	        <li>
-	            <p>第七天</p>
+	            <p class="date">第七天</p>
 	            <div class="mocha-gift-box">
 	                <img src="http://dummyimage.com/130x130/000/fff" width="100%" height="100%" alt="">
 	            </div>
-	            <p>礼品x1</p>
+	            <p class="txt">礼品x1</p>
 	        </li>
 	    </ul>
 	</div>
-	<div class="mocha-text">
+	<div class="mocha-text mocha-text-skin3">
 		<h4>活动规则：</h4>
 		<p>文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容</p>
 	</div>
-	
 </div>
 <div id="demoDialog1" class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1" style="display:none;">
 	<div class="mocha-dialog-mark"></div>
