@@ -27,6 +27,7 @@ build/Release
 node_modules
 src
 doc
+website
 
 # Sublime
 *.sublime-project
