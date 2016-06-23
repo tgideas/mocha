@@ -21,8 +21,8 @@ var gulp 		  = require('gulp'),
  * Setting Pathsstella
  */
 var paths = {
-  // src  : "src/"
-	src	: "website/"
+  src  : "src/",
+	web	: "website/"
 };
 
 /* ---------------------------------------------------
@@ -127,6 +127,13 @@ gulp.task('build-mocha-demo', function(){
       .pipe(gulp.dest('demo/'))
       console.log('Build demo/**/*.html OK！')
 })
+/* ---------------------------------------------------
+ * Task website Build [向/ 目录输出mocha网页文件]
+ */
+gulp.task('build-mocha-website', function(){
+  return gulp.src([paths.web+'**/*'])
+    .pipe(gulp.dest('/'))
+})
 
 /* ---------------------------------------------------
  * Task build docs files [向/docs目录输出相关文件]
@@ -143,6 +150,7 @@ gulp.task('build-mocha-docs', function(){
 gulp.task('watch',gulp.parallel('connect','watch-file'));		           //文件更新自动 F5
 gulp.task('demo',gulp.parallel('build-mocha-css','build-ingame-css','build-mocha-js','build-mocha-demo'));
 gulp.task('docs',gulp.parallel('build-mocha-docs'));
+gulp.task('web',gulp.parallel('build-mocha-webiste'));
 
 
 
