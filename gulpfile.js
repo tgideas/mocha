@@ -21,7 +21,8 @@ var gulp 		  = require('gulp'),
  * Setting Pathsstella
  */
 var paths = {
-	src	: "src/"
+  // src  : "src/"
+	src	: "website/"
 };
 
 /* ---------------------------------------------------
@@ -48,7 +49,7 @@ gulp.task('reload-html', function () {
  */
 gulp.task('watch-file', function () {
     // return gulp.watch(paths.currentAct+'css/**/*.css', gulp.parallel('reload-html'));
-    return gulp.watch([paths.src+'**/*.html',paths.src+'**/*.htm', paths.src+'css/**/*.css'], gulp.parallel('reload-html'));
+    return gulp.watch([paths.src+'**/*.html',paths.src+'**/*.htm', paths.src+'**/*.css'], gulp.parallel('reload-html'));
 });
 
 
