@@ -69,6 +69,8 @@ body{background-color:#fff;font-family:"microsoft yahei"}
 	.btn a:hover{text-decoration: none;opacity:0.8;filter:alpha(opacity=80);}
 	.btn .btn-info{background-color: #82cff0;}
 	.btn .btn-primary{color: #2fa5d5;background-color: #fff;}
+	.btn .btn-primary:hover{color: #fff;background-color: #82cff0;}
+
 
 .main-show{position: relative;color: #fff;background:#58b7dd url(bg2.png) repeat;height:420px;margin-bottom:200px;padding:30px 0 0 0;}
 	.main-show-arrow{position: absolute;left:50%;bottom:-35px;margin-left:-35px;width:70px;height:35px;background:url(jumbotron-arrow.png) no-repeat;}
@@ -92,6 +94,10 @@ body{background-color:#fff;font-family:"microsoft yahei"}
 	.main-intro-ul:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
 	.miu-item{position: relative;float: left;text-align: center;width: 284px;height:120px;padding:70px 20px 50px 20px;border: 1px solid #dcdcdc;margin-right:12px;}
 	.miu-item .icon{position: absolute;top:-20px;left:50%;margin-left:-38px;width:76px;height:76px;background:url(icon-intro.png) no-repeat;}
+	.miu-item.i1 .icon{background-position: 0 0;}
+	.miu-item.i2 .icon{background-position: 0 -80px;}
+	.miu-item.i3 .icon{background-position: 0 -160px;}
+
 	.miu-item h3{font-size: 1.8em;color: #333;margin-bottom:0.5em;}
 	.miu-item p{}
 
@@ -115,7 +121,7 @@ body{background-color:#fff;font-family:"microsoft yahei"}
 /* Start
 --------------------------------------------------------------------------  */
 .jumbotron .icon-start{position: relative;left:30px;width:141px;height:146px;margin:0 auto;background:url(icon-start.png) no-repeat;}
-.jumbotron-arrow{position: absolute;left:50%;bottom:-35px;margin-left:-36px;width:72px;height:36px;background:url(jumbotron-arrow2.png) no-repeat; }
+.jumbotron-arrow{position: absolute;left:50%;bottom:-36px;margin-left:-34px;width:72px;height:36px;background:url(jumbotron-arrow2.png) no-repeat; }
 .guide-box{width: 1003px;margin:0 auto;padding:50px 0;}
 	.guide-box-list{}
 	.gbl-item{padding:60px 0;border-bottom: 1px solid #ddd;}
