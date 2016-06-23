@@ -30,6 +30,7 @@ doc/public
 doc/db.json
 docs
 demo
+website
 
 # Sublime
 *.sublime-project
