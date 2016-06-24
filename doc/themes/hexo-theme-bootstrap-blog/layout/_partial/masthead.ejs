@@ -1,34 +1,15 @@
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <% if (theme.navbar_brand){ %>
-        <a class="navbar-brand" href="<%- config.root %>"><%- theme.navbar_brand %></a>
-      <% } %>
+<header class="header">
+  <div class="inner">
+    <a href="/mocha/" class="logo">Mocha</a>
+    <div class="navigation">
+      <ul class="nav-ul">
+        <li><a href="/mocha/">首页</a></li>
+        <li><a href="/mocha/start.html">快速开始</a></li>
+        <li class="current"><a href="/mocha/docs/">文档</a></li>
+        <li><a href="/mocha/demo/">Demo</a></li>
+        <li><a href="/mocha/download.html">下载</a></li>
+        <li><a href="https://github.com/tgideas/mocha">Github</a></li>
+      </ul>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="main-menu-navbar">
-      <ul class="nav navbar-nav">
-        <% for (var i in theme.menu){ %>
-          <li><a class="<%= is_current(theme.menu[i]) ? 'active' : '' %>"
-                 href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-        <% } %>
-      </ul>
-
-      <!--
-      <ul class="nav navbar-nav navbar-right">
-        <% if (theme.rss){ %>
-          <li><a href="<%- theme.rss %>" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
-        <% } %>
-      </ul>
-      -->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+  </div>
+</header>

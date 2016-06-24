@@ -2,8 +2,9 @@
 <body>
   <%- partial('_partial/masthead') %>
   <div class="container">
-    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-    <div class="row">
+    <%- partial('_partial/jumbotron', null, {cache: !config.relative_link}) %>
+    <%!- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <div class="row docs-box">
         <div class="col-sm-3 blog-sidebar">
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
         </div>

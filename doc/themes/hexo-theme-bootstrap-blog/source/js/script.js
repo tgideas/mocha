@@ -75,4 +75,19 @@
     $('.fancybox').fancybox();
   }
 
+
+  // sidebar current add by sonic 2016-06-24
+  var localSplit = window.location.href.split("/");
+      curSideBarName = localSplit[localSplit.length-2];
+  console.log(curSideBarName);
+  $("ul.sidebar-module-list li").each(function(){
+    var _self = $(this),
+        hrefSplit = _self.find("a").attr("href"),
+        hrefSplit = hrefSplit.split("/"),
+        hrefKey =  hrefSplit[hrefSplit.length-2];
+        if (hrefKey == curSideBarName){
+          _self.addClass("current")
+        }
+  })
+
 })(jQuery);
