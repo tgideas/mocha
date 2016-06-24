@@ -2,7 +2,7 @@
  * Mocha Website
  */
 blockquote,body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
-body{font:12px/1.5 Tahoma,Helvetica,simsun,sans-serif;color:#666;word-wrap:break-word;word-break:break-all}
+body{font:12px/1.5 microsoft yahei,Tahoma,Helvetica,simsun,sans-serif;color:#666;word-wrap:break-word;word-break:break-all;background-color:#fff;}
 table{border-collapse:collapse;border-spacing:0}
 address,b,caption,cite,code,dfn,em,i,strong,th,var{font-style:normal;font-weight:400}
 code,kbd,pre,samp,tt{font-family:"courier new",courier,monospace;font-size:100%;line-height:100%}
@@ -21,7 +21,6 @@ a:hover{text-decoration:underline}
 img{vertical-align:middle}
 .clearfix:after{content:".";height:0;visibility:hidden;display:block;clear:both;font-size:0;line-height:0}
 .clearfix{*zoom:1}
-body{background-color:#fff;font-family:"microsoft yahei"}
 .red{color: #c00;}
 
 /* Public
@@ -121,6 +120,7 @@ body{background-color:#fff;font-family:"microsoft yahei"}
 /* Start
 --------------------------------------------------------------------------  */
 .jumbotron .icon-start{position: relative;left:30px;width:141px;height:146px;margin:0 auto;background:url(icon-start.png) no-repeat;}
+.jumbotron .icon-docs{position: relative;left:36px;width:158px;height:139px;margin:0 auto;background:url(icon-docs.png) no-repeat;}
 .jumbotron-arrow{position: absolute;left:50%;bottom:-36px;margin-left:-34px;width:72px;height:36px;background:url(jumbotron-arrow2.png) no-repeat; }
 .guide-box{width: 1003px;margin:0 auto;padding:50px 0;}
 	.guide-box-list{}
