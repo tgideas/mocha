@@ -829,9 +829,23 @@ code {
   .mocha-jumbotron-arrow{position: absolute;left:50%;bottom:-36px;margin-left:-34px;width:72px;height:36px;background:url(http://tgideas.github.io/mocha/assets/jumbotron-arrow2.png) no-repeat; }
 
 
-
-
-
-
+.highlight{position: relative;}
+.highlight .gutter{display: none;}
+.highlight::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 2px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    background: #eee;
+    content: 'Code';
+    border:1px solid #ddd;border-bottom:0;
+    border-radius:2px;
+}
+.highlight pre{background-color: #f7f7f7;border-color:#ddd;}
+.highlight .code pre{padding-top:30px;}
 
 
