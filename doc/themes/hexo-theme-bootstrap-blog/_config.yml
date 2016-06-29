@@ -14,8 +14,8 @@ sidebar: true
 widgets:
 # - about         # See also: `about_content`
 - category
-- tag
-- tagcloud
+#- tag
+#- tagcloud
 # - archive
 - recent_posts
 about_widget_content: >

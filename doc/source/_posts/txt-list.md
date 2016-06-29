@@ -1,16 +1,13 @@
 ---
-title: txt-list
+title: test-list(文本列表)
 date: 2016-01-08 12:44:01
-tags:
+tags: 
 ---
-
-## txt-list(文字列表模块)
 作者：`sonichuang`
 版本：`v.1`
 依赖：`mocha.css`
 
 ![txt-list](http://game.gtimg.cn/images/js/mocha/images/demo/txt-list.png)
-
 ### [运行Demo](http://tgideas.github.io/mocha/demo/txt-list/demo.html "txt-list(文字列表模块)")
 
 ### 样式1-带图标 `.mocha-txt-list-scheme1`
