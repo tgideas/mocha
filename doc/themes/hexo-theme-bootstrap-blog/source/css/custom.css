@@ -352,7 +352,6 @@ code {
   .mocha-jumbotron-arrow{position: absolute;left:50%;bottom:-36px;margin-left:-34px;width:72px;height:36px;background:url(http://tgideas.github.io/mocha/assets/jumbotron-arrow2.png) no-repeat; }
 
 
-/* heightlight code */
 .highlight{position: relative;}
 .highlight .gutter{display: none;}
 .highlight::after {
