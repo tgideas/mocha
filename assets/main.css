@@ -71,7 +71,7 @@ img{vertical-align:middle}
 	.btn .btn-primary:hover{color: #fff;background-color: #82cff0;}
 
 
-.main-show{position: relative;color: #fff;background:#58b7dd url(bg2.png) repeat;height:420px;margin-bottom:200px;padding:30px 0 0 0;}
+.main-show{position: relative;color: #fff;background:#58b7dd url(bg2.png) repeat;height:400px;margin-bottom:200px;padding:70px 0 0 0;}
 	.main-show-arrow{position: absolute;left:50%;bottom:-35px;margin-left:-35px;width:70px;height:35px;background:url(jumbotron-arrow.png) no-repeat;}
 	.main-show .inner{width: 1020px;margin:0 auto;}
 	.main-show-list{overflow: hidden;*zoom:1;}
