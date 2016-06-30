@@ -92,7 +92,7 @@
 
   // jquery QRcode
   var $QRcode = $("#QRcode"),
-      qrLink = $QRcode.find("a").attr("href");
+      qrLink = $QRcode.attr("href");
   if(qrLink){
     $QRcode.qrcode({width:120,height:120,text: qrLink});
   }

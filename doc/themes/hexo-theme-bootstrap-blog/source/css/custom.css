@@ -362,7 +362,7 @@ html{font-size:100px;}
           box-shadow: 2px 2px 2px #ddd;
 }
 .demo-qrcode{position: absolute;right:0;top:0;text-align: center;width:120px;height:120px;}
-
+.demo-qrcode a{color: #999;font-size: 12px;}
 /* code highlight */
 .highlight{position: relative;margin-bottom:0;}
 .highlight .gutter{display: none;}
@@ -371,9 +371,9 @@ html{font-size:100px;}
 .highlight .code pre{padding-top:30px;}
 
 .article-entry{position: relative;}
-/*
-.article-entry h2{font-size:26px;}
-.article-entry h3{font-size:24px;}
-.article-entry h4{font-size:22px;}
-.article-entry h5{font-size:18px;}*/
+
+.article-entry>h2{font-size:26px;}
+.article-entry>h3{font-size:24px;margin-top:30px;margin-bottom:30px;}
+.article-entry>h4{font-size:22px;}
+.article-entry>h5{font-size:18px;}
 

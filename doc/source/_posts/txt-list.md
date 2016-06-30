@@ -6,7 +6,7 @@ tags:
 作者：`sonichuang`
 版本：`v.1`
 依赖：`mocha.css`
-<div id="QRcode" class="demo-qrcode"><a href="http://tgideas.github.io/mocha/demo/txt-list/demo.html" target="_blank">运行Demo</a></div>
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/txt-list/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1-带图标 `.mocha-txt-list-scheme1`
 <div class="demo-preview"><div class="box-w320"><div class="mocha-txt-list mocha-txt-list-scheme1 mocha-txt-list-skin1"><ul class="mocha-txt-list-ul"><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon style1">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li></ul></div></div>
 ``` html
