@@ -6,11 +6,9 @@ tags:
 作者：`sonichuang`
 版本：`v.1`
 依赖：`mocha.css`
-
-![txt-list](http://game.gtimg.cn/images/js/mocha/images/demo/txt-list.png)
-### [运行Demo](http://tgideas.github.io/mocha/demo/txt-list/demo.html "txt-list(文字列表模块)")
-
+<div id="QRcode" class="demo-qrcode"><a href="http://tgideas.github.io/mocha/demo/txt-list/demo.html" target="_blank">运行Demo</a></div>
 ### 样式1-带图标 `.mocha-txt-list-scheme1`
+<div class="demo-preview"><div class="box-w320"><div class="mocha-txt-list mocha-txt-list-scheme1 mocha-txt-list-skin1"><ul class="mocha-txt-list-ul"><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon style1">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li></ul></div></div>
 ``` html
 <div class="mocha-txt-list mocha-txt-list-scheme1 mocha-txt-list-skin1">
 	<ul class="mocha-txt-list-ul">
@@ -32,8 +30,9 @@ tags:
 	</ul>
 </div>
 ```
-
+</div>
 ### 样式2 不带图标 `.mocha-txt-list-scheme2`
+<div class="demo-preview"><div class="box-w320"><div class="mocha-txt-list mocha-txt-list-scheme2 mocha-txt-list-skin1"><ul class="mocha-txt-list-ul"><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon style1">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li><li class="mocha-tlu-item"><cite class="mocha-tlu-item-icon">公告</cite><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p></li></ul></div></div>
 ``` html
 <div class="mocha-txt-list mocha-txt-list-scheme2 mocha-txt-list-skin1">
 	<ul class="mocha-txt-list-ul">
@@ -55,8 +54,9 @@ tags:
 	</ul>
 </div>
 ```
-
+</div>
 ### 样式3 显示一行 `.mocha-txt-list-scheme3`
+<div class="demo-preview"><div class="box-w320"><div class="mocha-txt-list mocha-txt-list-scheme3 mocha-txt-list-skin1"><ul class="mocha-txt-list-ul"><li class="mocha-tlu-item"><span class="mocha-tlu-item-sup"><a href="#">[玩家社区]</a></span><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><time>11/03</time></p></li><li class="mocha-tlu-item"><span class="mocha-tlu-item-sup"><a href="#">[玩家社区]</a></span><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><time>11/03</time></p></li><li class="mocha-tlu-item"><span class="mocha-tlu-item-sup"><a href="#">[玩家社区]</a></span><h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4><p class="mocha-tlu-item-meta"><time>11/03</time></p></li></ul></div></div>
 ``` html
 <div class="mocha-txt-list mocha-txt-list-scheme3 mocha-txt-list-skin1">
 	<ul class="mocha-txt-list-ul">
@@ -78,7 +78,7 @@ tags:
 	</ul>
 </div>
 ```
-
+</div>
 ### 修改模块皮肤CSS 
 模块的默认皮肤类`.mocha-txt-list-skin1`，您可以在您项目的`page.css`里修改`.mocha-txt-list-skin1`皮肤类，或者新增`.mocha-txt-list-skin2`。
 ``` css
