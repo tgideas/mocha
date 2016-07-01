@@ -6,7 +6,7 @@
  */
  .mocha-box{}
  	.mocha-box-hd{padding:0.16rem 0;}
- 	.mocha-box-hd-title{text-align: center;}
+ 	.mocha-box-hd-title{text-align: center;margin:0;}
  	.mocha-box-bd{padding:0.16rem;line-height:0.32rem;}
  	.mocha-box-fd{padding:0.16rem 0;text-align: center;border-top: 1px solid #ccc;}
 	/* scheme */
@@ -15,4 +15,4 @@
 	.mocha-box-skin1{font-size:0.16rem;color: #666;}
 	.mocha-box-skin1 .mocha-box-hd{background-color: #ddd;}
 	.mocha-box-skin1 .mocha-box-fd{border-top-color:#ddd;}
-	.mocha-box-skin1 .mocha-box-fd-more{color:#666;}
+	.mocha-box-skin1 .mocha-box-fd-more{olor:#666;}
