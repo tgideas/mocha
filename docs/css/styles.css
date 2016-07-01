@@ -828,24 +828,30 @@ code {
   .mocha-jumbotron .icon-docs{position: relative;left:36px;width:158px;height:139px;margin:0 auto;background:url(http://tgideas.github.io/mocha/assets/icon-docs.png) no-repeat;}
   .mocha-jumbotron-arrow{position: absolute;left:50%;bottom:-36px;margin-left:-34px;width:72px;height:36px;background:url(http://tgideas.github.io/mocha/assets/jumbotron-arrow2.png) no-repeat; }
 
-
-.highlight{position: relative;}
-.highlight .gutter{display: none;}
-.highlight::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 2px 7px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #999;
-    background: #eee;
-    content: 'Code';
-    border:1px solid #ddd;border-bottom:0;
-    border-radius:2px;
+/* only for doc demo */
+html{font-size:100px;} 
+.demo-preview{position: relative;background-color: #fdfdfd;border:1px solid #ddd;border-radius:4px;padding-top:30px;}
+.demo-preview::after {position: absolute;top: 0;right: 0;left: 0;width:80px;padding: 4px 7px;font-size: 12px;font-weight: 700;color: #fff;background: #7fbfdf;content: 'Demo';border-top-left-radius:4px;border-bottom-right-radius:4px;}
+.box-w320{width: 375px;margin:0 auto;border:1px solid #ccc;
+  /* css3 box-shadow */
+  -webkit-box-shadow: 2px 2px 2px #ddd;
+     -moz-box-shadow: 2px 2px 2px #ddd;
+          box-shadow: 2px 2px 2px #ddd;
 }
+.demo-qrcode{position: absolute;right:0;top:0;text-align: center;width:120px;height:120px;}
+.demo-qrcode a{color: #999;font-size: 12px;}
+/* code highlight */
+.highlight{position: relative;margin-bottom:0;}
+.highlight .gutter{display: none;}
+.highlight::after {position: absolute;top: 0;right: 0;left: 0;padding: 2px 7px;font-size: 12px;font-weight: 700;color: #999;background: #eee;content: 'Code';border:1px solid #ddd;border-bottom:0;border-radius:4px;}
 .highlight pre{background-color: #f7f7f7;border-color:#ddd;}
 .highlight .code pre{padding-top:30px;}
+
+.article-entry{position: relative;}
+
+.article-entry>h2{font-size:26px;}
+.article-entry>h3{font-size:24px;margin-top:30px;margin-bottom:30px;}
+.article-entry>h4{font-size:22px;}
+.article-entry>h5{font-size:18px;}
 
 

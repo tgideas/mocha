@@ -79,7 +79,7 @@
   // sidebar current add by sonic 2016-06-24
   var localSplit = window.location.href.split("/");
       curSideBarName = localSplit[localSplit.length-2];
-  console.log(curSideBarName);
+  // console.log(curSideBarName);
   $("ul.sidebar-module-list li").each(function(){
     var _self = $(this),
         hrefSplit = _self.find("a").attr("href"),
@@ -89,5 +89,12 @@
           _self.addClass("current")
         }
   })
+
+  // jquery QRcode
+  var $QRcode = $("#QRcode"),
+      qrLink = $QRcode.attr("href");
+  if(qrLink){
+    $QRcode.qrcode({width:120,height:120,text: qrLink});
+  }
 
 })(jQuery);
