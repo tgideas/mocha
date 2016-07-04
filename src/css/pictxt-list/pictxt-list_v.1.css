@@ -5,7 +5,7 @@
  * 
  */
  .mocha-pictxt-list{}
-	.mocha-pictxt-list-ul{letter-spacing:-0.05rem;width:100%;text-align: justify;}
+	.mocha-pictxt-list-ul{letter-spacing:-0.05rem;width:100%;text-align: justify;line-height: 0;}
 	.mocha-pictxt-list-ul:after{content:'.';height: 0;line-height: 0;width:100%;display:inline-block;clear: both;visibility: hidden;}
 	.mocha-ptlu-item{position: relative;letter-spacing:normal;display: inline-block;vertical-align: top;text-align: left;}
 	.mocha-ptlu-item-a{}

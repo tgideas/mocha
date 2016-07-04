@@ -5,6 +5,8 @@
  * 
  */
 .mocha-ingame{height: 100%;}
+	.mocha-ingame-index-wrap{padding: .1rem;
+    overflow: hidden;-webkit-transform-origin: 0 0;}
 	.mocha-ingame-media{margin-top: .1rem;overflow: hidden;}
 	.mocha-ingame .mocha-pic-list-scheme1 .mocha-pic-list-item{display: block;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-ingame-media-l .mocha-pic-list-scheme1 .mocha-pic-list-item{float: left;width: 50%;}
@@ -12,8 +14,8 @@
 	.mocha-ingame-media-l .mocha-pic-list-scheme1 .mocha-pic-list-item:last-child{padding-right: 0;padding-left: .05rem;}
 	.mocha-ingame .mocha-slider-scheme1 .content,.mocha-ingame .mocha-slider-scheme1 .content li,.mocha-ingame .mocha-slider-scheme1 .content li a,.mocha-ingame .mocha-slider-scheme1 .content li img{height:100% !important;} 
 	.mocha-ingame .mocha-txt-list .mocha-tlu-item{height: .5rem;padding: .1rem 0 .1rem .4rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
-	.mocha-ingame .mocha-txt-list .mocha-tlu-item-icon{top: .1rem;left: 0;width: .3rem;height: .3rem;padding: .05rem;font-size: .09rem;line-height: .1rem;border-radius: .03rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
-	.mocha-ingame .mocha-txt-list .mocha-tlu-item-title{font-size: .15rem;}
+	.mocha-ingame .mocha-txt-list .mocha-tlu-item-icon{top: .1rem;left: 0;width: .3rem;height: .3rem;padding: .05rem .05rem 0;font-size: .09rem;line-height: .1rem;border-radius: .03rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame .mocha-txt-list .mocha-tlu-item-title{font-weight: normal;font-size: .15rem;line-height: .18rem;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
 	.mocha-ingame .mocha-txt-list .mocha-tlu-item-meta{padding-top: .05rem;font-size: .1rem;}
 	.mocha-ingame .mocha-txt-list .mocha-tlu-item-hot{display: inline-block;width: .1rem;height: .1rem;margin-right: .05rem;text-align: center;line-height: .1rem;font-size: .07rem;vertical-align: top;}
 	.mocha-ingame .mocha-txt-list-scheme2 .mocha-tlu-item{padding: .1rem 0;}
@@ -32,6 +34,7 @@
 	.mocha-ingame-tab1 .mocha-ingame-tab-fixed,.mocha-ingame-tab2 .mocha-ingame-tab-fixed{z-index: 5;}
 	.mocha-ingame-strategy .mocha-tab-scheme4{padding: 0 .1rem;}
 	.mocha-ingame-strategy .mocha-tab-scheme4 .mocha-tab-triggers-ul li:first-child{margin-left: 0;}
+	.mocha-ingame-content-wrap{position: relative;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-ingame-content-wrap .mocha-title-skin3{height: .31rem;padding: .11rem 0 .06rem .1rem;border-top: 1px solid #cfcfcf;border-bottom: 1px solid #cfcfcf;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-ingame-content-wrap .mocha-title-skin3 .mocha-title-txt{font-size: .1rem;line-height: .12rem;padding-left: .05rem;font-weight: normal;border-left: 3px solid #333;background-color: transparent;}
 	.mocha-ingame-index-wrap .mocha-ingame-media-l .mocha-pictxt-list-scheme1 .mocha-ptlu-item{position: relative;width: 100%;height: 100%;margin-top: 0;}
@@ -42,8 +45,10 @@
 	.mocha-ptlu-item-head{position: absolute;left: 0;bottom: .35rem;}
 	.mocha-ptlu-item-info{height: .35rem;padding: .05rem;background-color: #d3d3d3;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-pictxt-list-skin1 .mocha-ptlu-item h4{font-size: .13rem;font-weight: normal;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta{font-size: .1rem;padding-top: 0;overflow: hidden;}
-	.mocha-ptlu-item-meta .icon{display: inline-block;width: .05rem;height: .05rem;margin-right: .05rem;vertical-align: middle;background-color: #000;}
+	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta{font-size: .1rem;line-height: .14rem;padding-top: 0;overflow: hidden;}
+	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta span:first-child{float: left;}
+	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta span:last-child{float: right;}
+	.mocha-ptlu-item-meta .icon{display: inline-block;width: .05rem;height: .05rem;margin-right: .05rem;vertical-align: top;background-color: #000;}
 	.mocha-ingame-media-l .mocha-pictxt-list-scheme1{}
 	.mocha-ingame-media-l .mocha-ptlu-item-meta{text-align: left;}
 	.mocha-ingame-media-l .mocha-ptlu-item-icon{position: absolute;top: .1rem;left: .1rem;width: .3rem;height: .3rem;padding: .05rem;font-size: .09rem;line-height: .1rem;color: #fff;text-align: center;border-radius: .03rem;-webkit-box-sizing: border-box;box-sizing: border-box;background-color: #888;}
@@ -52,9 +57,7 @@
 
 
 @media screen and (orientation: landscape) {
-	.mocha-ingame-index-wrap{padding: .1rem;
-    overflow: hidden;-webkit-transform-origin: 0 0;}
-	.mocha-ingame-content-wrap {position: relative;margin-left: .5rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-ingame-content-wrap {margin-left: .5rem;}
 	.mocha-ingame-media-l{float: left;width: 3.94rem;height: 1.45rem;}
 	.mocha-ingame .mocha-slider-scheme1{height:100% !important;}
 	.mocha-ingame-media-r{float: right;width: 1.93rem;height: 1.45rem;}
@@ -70,16 +73,12 @@
 	.mocha-ingame-tab2 .mocha-ingame-tab-fixed{left: .5rem;width: 1.04rem;height: 100%;}
 	.mocha-ingame-tab2 .mocha-ingame-tab-fixed .mocha-tab-scheme2 li{display: block;border-bottom: 1px solid #ccc;}
 	.mocha-ingame-tab2 .mocha-ingame-tab-fixed .mocha-tab-scheme2 .mocha-tab-triggers-ul .current{border-bottom-color: #ccc;border-right: 2px solid #09f;}
-	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta span:first-child{float: left;}
-	.mocha-pictxt-list-skin1 .mocha-ptlu-item-meta span:last-child{float: right;}
 	.mocha-ingame-video .mocha-ingame-media-l,.mocha-ingame-video .mocha-ingame-media-r{width: 2.935rem;height: 1.65rem;}
 	.mocha-ingame-video .mocha-ingame-media-r .mocha-pic-list-scheme1 .mocha-pic-list-item{height: .775rem;}
 }
 
 @media screen and (orientation: portrait) {
-	.mocha-ingame-index-wrap{padding: .1rem;overflow: hidden;-webkit-transform-origin: 0 0;}
 	.mocha-ingame-index-wrap:last-child{padding-bottom: .6rem;}
-	.mocha-ingame-content-wrap {position: relative;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-ingame-media-l,.mocha-ingame-media-r{width: 100%;}
 	.mocha-ingame-media-l .mocha-pic-list-scheme1 .mocha-pic-list-item{margin-bottom: 0;}
 	.mocha-ingame-media-r{margin-top: .1rem;}
