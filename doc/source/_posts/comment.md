@@ -1,19 +1,14 @@
 ---
-title: comment
+title: comment(评论样式)
 date: 2016-01-14 11:00:00
 tags:
 ---
-
-## comment(评论样式)
 作者：`kevinhehe`
 版本：`v.1`
 依赖：`mocha.css`
-
-![comment](http://game.gtimg.cn/images/js/mocha/images/demo/comment.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/comment/demo.html "comment(评论样式)")
-
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/comment/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1 `.mocha-comment-scheme1`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/comment.png" alt="样式1"></div>
 ``` html
 <div class="mocha-comment mocha-comment-scheme1 mocha-comment-skin1">
     <div class="mocha-comment-content">
@@ -65,7 +60,7 @@ tags:
     </div>
 </div>
 ```
-
+</div>
 ### comment实例化JS
 依赖`zepto.js`组件
 ``` html

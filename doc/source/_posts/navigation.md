@@ -1,19 +1,14 @@
 ---
-title: navigation
+title: navigation(导航栏模块)
 date: 2016-01-14 11:00:00
 tags:
 ---
-
-## navigation(导航栏模块)
 作者：`kevinhehe`
 版本：`v.1`
 依赖：`mocha.css`
-
-![navigation](http://game.gtimg.cn/images/js/mocha/images/demo/navigation1.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/navigation/demo.html "navigation(导航栏模块)")
-
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/navigation/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1-无导航 `.mocha-navigation-scheme1`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/navigation1.png" alt="样式1-无导航"></div>
 ``` html
 <header class="mocha-nav mocha-navigation-scheme1 mocha-nav-skin1">
     <div class="mocha-nav-cover"></div>
@@ -27,8 +22,9 @@ tags:
     <a href="javascript:;" class="mocha-nav-btn">关注</a>
 </header>
 ```
-
+</div>
 ### 样式2-有导航 `.mocha-navigation-scheme2`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/navigation2.png" alt="样式2-有导航"></div>
 ``` html
 <header class="mocha-nav mocha-navigation-scheme2 mocha-nav-skin1">
     <div class="mocha-nav-cover"></div>
@@ -59,12 +55,10 @@ tags:
     <a href="javascript:;" class="mocha-nav-btn">进入游戏</a>
 </header>
 ```
-
-![navigation](http://game.gtimg.cn/images/js/mocha/images/demo/navigation2.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/navigation/demo2.html "navigation(导航栏模块)")
-
+</div>
+<!-- <div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/navigation/demo2.html" target="_blank">点击运行Demo</a></div> -->
 ### 样式3-导航在下方且滚动固定 `.mocha-navigation-scheme3`(导航在下方)+`.mocha-navigation-scheme4`(滚动固定 )
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/navigation3.png" alt="样式3-导航在下方且滚动固定"></div>
 ``` html
 <header class="mocha-nav mocha-navigation-scheme3 mocha-navigation-scheme4 mocha-nav-skin1">
     <div class="mocha-nav-cover"></div>
@@ -95,7 +89,7 @@ tags:
     <a href="javascript:;" class="mocha-nav-btn">进入游戏</a>
 </header>
 ```
-
+</div>
 ### navigation实例化JS
 依赖`zepto.js`组件
 ``` html

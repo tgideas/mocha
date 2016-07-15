@@ -1,18 +1,14 @@
 ---
-title: search-bar
+title: search-bar(搜索栏模块)
 date: 2016-03-07 20:00:00
 tags:
 ---
-
-## search-bar(搜索栏模块)
 作者：`kevinhehe`
 版本：`v.1`
 依赖：`mocha.css` `zepto.js` 
-
-![search-bar](http://ossweb-img.qq.com/images/js/mocha/images/demo/search-bar.png)
-### [运行Demo](http://tgideas.github.io/mocha/demo/search-bar/demo.html "search-bar(搜索栏模块)")
-
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/search-bar/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1 `.mocha-search-bar-scheme1`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/search-bar.png" alt="样式1"></div>
 ``` html
 <div class="mocha-search-bar mocha-search-bar-scheme1 mocha-search-bar-skin1">
 	<div class="mocha-search-bar-wrap" id="searchBar">
@@ -53,7 +49,7 @@ tags:
     </div>
 </div>
 ```
-
+</div>
 ### search-bar实例化JS
 依赖`zepto.js`组件
 ``` html

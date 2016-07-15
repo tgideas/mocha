@@ -1,19 +1,14 @@
 ---
-title: audio
+title: audio(音频样式)
 date: 2016-01-13 16:30:00
 tags:
 ---
-
-## audio(音频样式)
 作者：`kevinhehe`
 版本：`v.1`
 依赖：`mocha.css`
-
-![audio](http://game.gtimg.cn/images/js/mocha/images/demo/audio.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/audio/demo.html "audio(视频模块)")
-
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/audio/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1 `.mocha-audio-scheme1`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/audio.png" alt="样式1"></div>
 ``` html
 <div class="mocha-audio mocha-audio-scheme1 mocha-audio-skin1">
     <a id="mochaAudioPlay" class="mocha-audio-btn" href="javascript:;"><span class="mocha-audio-icon-play"></span></a>
@@ -24,7 +19,7 @@ tags:
     </div>
 </div>
 ```
-
+</div>
 ### audio实例化JS
 依赖`zepto.js`组件
 ``` html
