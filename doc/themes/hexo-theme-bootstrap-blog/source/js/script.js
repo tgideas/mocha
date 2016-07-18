@@ -55,6 +55,7 @@
   });
 
   // Caption
+  /*
   $('.article-entry').each(function(i){
     $(this).find('img').each(function(){
       if ($(this).parent().hasClass('fancybox')) return;
@@ -73,7 +74,7 @@
 
   if ($.fancybox){
     $('.fancybox').fancybox();
-  }
+  }*/
 
 
   // sidebar current add by sonic 2016-06-24
