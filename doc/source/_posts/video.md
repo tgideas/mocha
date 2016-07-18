@@ -1,23 +1,18 @@
 ---
-title: video
+title: video(视频模块)
 date: 2016-01-13 16:30:00
 tags:
 ---
-
-## video(视频模块)
 作者：`kevinhehe`
 版本：`v.1`
 依赖：`mocha.css`
-
-![video](http://game.gtimg.cn/images/js/mocha/images/demo/video.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/video/demo.html "video(视频模块)")
-
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/video/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1 `.mocha-video-scheme1`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/video.png" alt="样式1"></div>
 ``` html
-<div id="mochaVideo" class="mocha-video mocha-video-scheme1 mocha-video-skin1">
+<div id="mochaVideo" class="mocha-video mocha-video-scheme1 mocha-video-skin1"></div>
 ```
-
+</div>
 ### video实例化JS
 依赖`tvp.player_v2.js`组件
 ``` html

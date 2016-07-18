@@ -1,20 +1,14 @@
 ---
-title: data-user
+title: data-user(用户资料)
 date: 2016-03-31 21:00:00
 tags:
 ---
-
-## data-user(用户资料)
 作者：`kevinhehe`
 版本：`v.1`
 依赖：`mocha.css`
-
-![data-user(竖屏)](http://ossweb-img.qq.com/images/js/mocha/images/demo/data-user1.png)
-![data-user(横屏)](http://ossweb-img.qq.com/images/js/mocha/images/demo/data-user2.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/data-user/demo.html "data-user(用户资料)")
-
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/data-user/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1-资料位1个 `.mocha-data-user-scheme1`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/data-user1.png" alt="样式1-资料位1个"></div>
 ``` html
 <div class="mocha-data-user mocha-data-user-scheme1 mocha-data-user-skin1">
     <div class="mocha-data-user-hd">
@@ -35,8 +29,9 @@ tags:
     </div>
 </div>
 ```
-
+</div>
 ### 样式2-资料位2个 `.mocha-data-user-scheme2`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/data-user2.png" alt="样式2-资料位2个"></div>
 ``` html
 <div class="mocha-data-user mocha-data-user-scheme2 mocha-data-user-skin1">
     <div class="mocha-data-user-hd">
@@ -63,8 +58,9 @@ tags:
     </div>
 </div>
 ```
-
+</div>
 ### 样式3-资料位3个 `.mocha-data-user-scheme3`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/data-user3.png" alt="样式3-资料位3个"></div>
 ``` html
 <div class="mocha-data-user mocha-data-user-scheme3 mocha-data-user-skin1">
     <div class="mocha-data-user-hd">
@@ -97,7 +93,7 @@ tags:
     </div>
 </div>
 ```
-
+</div>
 ### 修改模块皮肤CSS 
 模块的默认皮肤类`.mocha-data-user-skin1`，您可以在您项目的`page.css`里修改`.mocha-data-user-skin1`皮肤类，或者新增`.mocha-data-user-skin2`。
 ``` css
