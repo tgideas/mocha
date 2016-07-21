@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>video(视频模块) | Mocha</title>
+  <title>Archives: 2016/7 | Mocha</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -178,80 +178,100 @@
 
         </div>
         <div class="col-sm-9 col-sm-offset-0 blog-main">
-          <article id="post-video" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
+          
+  
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/mocha/docs/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <header class="archive-article-header">
     
   
-    <h1 class="article-title" itemprop="name">
-      video(视频模块)
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/mocha/docs/slider/">slider(slider模块)</a>
     </h1>
   
 
 
-  </header>
-
-  <div class="article-meta">
     <div class="article-datetime">
-  <a href="/mocha/docs/video/" class="article-date"><time datetime="2016-01-13T08:30:00.000Z" itemprop="datePublished">2016-01-13</time></a>
+  <a href="/mocha/docs/slider/" class="archive-article-date"><time datetime="2016-07-20T05:35:00.000Z" itemprop="datePublished">July 20th</time></a>
 </div>
 
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>作者：<code>kevinhehe</code><br>版本：<code>v.1</code><br>依赖：<code>mocha.css</code></p>
-<p><div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/video/demo.html" target="_blank">点击运行Demo</a></div></p>
-<h3 id="u6837_u5F0F1_-mocha-video-scheme1"><a href="#u6837_u5F0F1_-mocha-video-scheme1" class="headerlink" title="样式1 .mocha-video-scheme1"></a>样式1 <code>.mocha-video-scheme1</code></h3><p><div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/video.png" alt="样式1"></div><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"mochaVideo"</span> <span class="attribute">class</span>=<span class="value">"mocha-video mocha-video-scheme1 mocha-video-skin1"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div></p>
-<p></p>
-<h3 id="video_u5B9E_u4F8B_u5316JS"><a href="#video_u5B9E_u4F8B_u5316JS" class="headerlink" title="video实例化JS"></a>video实例化JS</h3><p>依赖<code>tvp.player_v2.js</code>组件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js"</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="actionscript"></span><br><span class="line"><span class="keyword">var</span> video = <span class="keyword">new</span> tvp.VideoInfo();</span><br><span class="line">video.setVid(<span class="string">"l0165p3yzq5"</span>);</span><br><span class="line"><span class="keyword">var</span> player =<span class="keyword">new</span> tvp.Player();</span><br><span class="line">player.create(&#123;</span><br><span class="line">    width:<span class="string">"100%"</span>,</span><br><span class="line">    video:video,</span><br><span class="line">    modId:<span class="string">"mochaVideo"</span>,</span><br><span class="line">    playerType: <span class="string">'html5'</span>,</span><br><span class="line">    isHtml5UseUI:<span class="literal">true</span>,</span><br><span class="line">    isHtml5UseAirPlay:<span class="literal">true</span>,</span><br><span class="line">    isHtml5ShowPosterOnChange:<span class="literal">false</span>, <span class="comment">/*HTML5播放器切换视频的时候是否要显示Poster*/</span></span><br><span class="line">    autoplay:<span class="literal">false</span> </span><br><span class="line">&#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS"><a href="#u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS" class="headerlink" title="修改模块皮肤CSS"></a>修改模块皮肤CSS</h3><p>模块的默认皮肤类<code>.mocha-video-skin1</code>，您可以在您项目的<code>page.css</code>里修改<code>.mocha-video-skin1</code>皮肤类，或者新增<code>.mocha-video-skin2</code>。</p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/video/" data-id="ciqw1gypx00015fpvqcimoami" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-
-    </footer>
-  </div>
-  
-    
-<ul id="article-nav" class="nav nav-pills nav-justified">
-  
-  <li role="presentation">
-    <a href="/mocha/docs/gift/" id="article-nav-older" class="article-nav-link-wrap">
-      <i class="fa fa-chevron-left pull-left"></i>
-      <span class="article-nav-link-title">gift(领取礼包模块)</span>
-    </a>
-  </li>
-  
-  
-  <li role="presentation">
-    <a href="/mocha/docs/select/" id="article-nav-newer" class="article-nav-link-wrap">
-      <span class="article-nav-link-title">select(选单样式)</span>
-      <i class="fa fa-chevron-right pull-right"></i>
-    </a>
-  </li>
-  
-</ul>
-
-
-  
+  </header>
 </article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <header class="archive-article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/mocha/docs/countdown/">countdown(倒计时)</a>
+    </h1>
+  
+
+
+    <div class="article-datetime">
+  <a href="/mocha/docs/countdown/" class="archive-article-date"><time datetime="2016-07-20T03:22:02.000Z" itemprop="datePublished">July 20th</time></a>
+</div>
+
+  </header>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <header class="archive-article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/mocha/docs/sign-in/">sign-in(签到模块)</a>
+    </h1>
+  
+
+
+    <div class="article-datetime">
+  <a href="/mocha/docs/sign-in/" class="archive-article-date"><time datetime="2016-07-20T02:46:09.000Z" itemprop="datePublished">July 20th</time></a>
+</div>
+
+  </header>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <header class="archive-article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/mocha/docs/lottery/">lottery(抽奖模块)</a>
+    </h1>
+  
+
+
+    <div class="article-datetime">
+  <a href="/mocha/docs/lottery/" class="archive-article-date"><time datetime="2016-07-20T01:45:13.000Z" itemprop="datePublished">July 20th</time></a>
+</div>
+
+  </header>
+</article>
+
+  
+  
+    </div></section>
+  
 
 
 
