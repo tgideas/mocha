@@ -52,7 +52,7 @@
 	 * 2.html中data-isscale代表是否要自适应屏幕尺寸进行缩放，如true/false (注：如果本身body有进行zoom缩放的，这里就不要再缩放了，即设为false)
 	 */
 	function lotteryScaleFun(lotteryId) {
-		var clientW = parseInt($("#" + lotteryId).data('psdw')) / 2;
+		var clientW = parseInt($("#" + lotteryId).data('psdw'));
 		document.getElementById(lotteryId).style.width = clientW + 'px';
 		var clientWidth = document.documentElement.clientWidth ? document.documentElement.clientWidth : clientW;
 		document.getElementById(lotteryId).style.zoom = clientWidth / clientW;
@@ -90,15 +90,15 @@
 	var lotteryObj1 = new mo.Lottery({
 		//'lighturl':'http://ossweb-img.qq.com/images/motion/lottery/light.png',
 		'total': 12,
-		'width': 307,
-		'height': 247,
-		'sbtnx': 77,
-		'sbtny': 62,
-		'sbtnw': 153,
-		'sbtnh': 123,
-		'boxw': 75,
-		'boxh': 60,
-		'position': "0_0,77_0,154_0,231_0,231_62,231_124,231_186,154_186,77_186,0_186,0_124,0_62",
+		'width': 614,
+		'height': 494,
+		'sbtnx': 154,
+		'sbtny': 124,
+		'sbtnw': 306,
+		'sbtnh': 246,
+		'boxw': 150,
+		'boxh': 120,
+		'position': "0_0,154_0,308_0,462_0,462_124,462_248,462_372,308_372,154_372,0_372,0_248,0_124",
 		'contentId': 'lottery1content',
 		'onClickRollEvent': callJsToStart1,
 		'onCompleteRollEvent': callJsToComplete1
@@ -126,8 +126,8 @@
 	var lotteryObj2 = new mo.Lottery({
 		//'flashUrl' : 'http://ossweb-img.qq.com/images/flash/lottery/circle/lotteyround_2013_v1.swf',
 		'r': 8, //奖品总数
-		'width': 244, //转盘宽度
-		'height': 244, //转盘高度
+		'width': 488, //转盘宽度
+		'height': 488, //转盘高度
 		'flashFirst': false,
 		'b': 'http://ossweb-img.qq.com/images/flash/lottery/circle/g.png', //圆盘的图片
 		's': 'http://ossweb-img.qq.com/images/flash/lottery/circle/z.png', //开始抽奖按钮图片

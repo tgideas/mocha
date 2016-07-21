@@ -1,38 +1,38 @@
 ---
-title: lottery
-date: 2016-01-21 19:45:13
+title: lottery(抽奖模块)
+date: 2016-07-20 09:45:13
 tags:
 ---
 
-## lottery(抽奖模块)
 作者：`dereksu`
 版本：`v.1`
 依赖：`mocha.min.css` `zepto.js` `lottery.min.js`
-
-![lottery 样式一（方形）](http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery1.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/lottery/demo.html#lotterydemo1 "lottery 样式一（方形）")
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/lottery/demo.html" target="_blank">点击运行Demo</a></div>
 
 ### **样式一 方形抽奖** `.mocha-lottery-scheme1`
+
+<div class="demo-preview">
+![lottery 样式一（方形）](http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery1.png)
+
 ``` html
 <div id="lottery1" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme1 mocha-lottery-skin1">
   <div id="lottery1content" class="content"></div>
 </div>
 ```
 
-### 可以在您的css中覆盖`.mocha-lottery-scheme1.mocha-lottery-skin1`皮肤类
+可以在您的css中覆盖`.mocha-lottery-scheme1.mocha-lottery-skin1`皮肤类
 ``` css
 /* skin */
-.mocha-lottery-scheme1.mocha-lottery-skin1 .content{width:307px; height: 247px;background: url(http://game.gtimg.cn/images/moba/cp/a20151016bbzbm/cj_bg.jpg) no-repeat;background-size: 100% auto;}
+.mocha-lottery-scheme1.mocha-lottery-skin1 .content{width:614px; height: 494px;background: url(http://game.gtimg.cn/images/moba/cp/a20151016bbzbm/cj_bg.jpg) no-repeat;background-size: 100% auto;}
 ```
 
-### 自定义属性说明
+自定义属性说明
 <table class="table table-bordered table-striped table-condensed"><tr><th>自定义属性</th><th>说明</th></tr><tr><td>data-psdw</td><td>设计稿宽度</td></tr><tr><td>data-isscale</td><td>true/false，代表是否要自适应屏幕尺寸进行缩放，不配置默认为true。`(如果本身body有进行整体缩放的话，这里就不要再缩放了，即设为false)`</td></tr></table>
 
-### JS代码
+JS代码
 ```js
 //缩放方法
-function lotteryScaleFun(a){var b=parseInt($("#"+a).data("psdw"))/2;document.getElementById(a).style.width=b+"px";var c=document.documentElement.clientWidth?document.documentElement.clientWidth:b;document.getElementById(a).style.zoom=c/b}function lotteryScale(b){var a=$("#"+b).data("isscale");if(a!==false){lotteryScaleFun(b);$(window).bind("orientationchange",function(c){lotteryScaleFun(b)});$(window).bind("resize",function(c){lotteryScaleFun(b)})}};
+function lotteryScaleFun(a){var b=parseInt($("#"+a).data("psdw"));document.getElementById(a).style.width=b+"px";var c=document.documentElement.clientWidth?document.documentElement.clientWidth:b;document.getElementById(a).style.zoom=c/b}function lotteryScale(b){var a=$("#"+b).data("isscale");if(a!==false){lotteryScaleFun(b);$(window).bind("orientationchange",function(c){lotteryScaleFun(b)});$(window).bind("resize",function(c){lotteryScaleFun(b)})}};
 
 //点击开始抽奖
 function callJsToStart1() {
@@ -51,15 +51,15 @@ function callJsToComplete1() {
 var lotteryObj1 = new mo.Lottery({
   //'lighturl':'http://ossweb-img.qq.com/images/motion/lottery/light.png',
   'total': 12,
-  'width': 307,
-  'height': 247,
-  'sbtnx': 77,
-  'sbtny': 62,
-  'sbtnw': 153,
-  'sbtnh': 123,
-  'boxw': 75,
-  'boxh': 60,
-  'position': "0_0,77_0,154_0,231_0,231_62,231_124,231_186,154_186,77_186,0_186,0_124,0_62",
+  'width': 614,
+  'height': 494,
+  'sbtnx': 154,
+  'sbtny': 124,
+  'sbtnw': 306,
+  'sbtnh': 246,
+  'boxw': 150,
+  'boxh': 120,
+  'position': "0_0,154_0,308_0,462_0,462_124,462_248,462_372,308_372,154_372,0_372,0_248,0_124",
   'contentId': 'lottery1content',
   'onClickRollEvent': callJsToStart1,
   'onCompleteRollEvent': callJsToComplete1
@@ -67,31 +67,32 @@ var lotteryObj1 = new mo.Lottery({
 //执行缩放
 lotteryScale('lottery1');
 ```
-
-![lottery 样式二（圆形）](http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery2.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/lottery/demo.html#lotterydemo2 "lottery 样式二（圆形）")
+</div>
 
 ### **样式二 圆形抽奖** `.mocha-lottery-scheme2`
+
+<div class="demo-preview">
+![lottery 样式二（圆形）](http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery2.png)
+
 ``` html
 <div id="lottery2" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme2 mocha-lottery-skin1">
   <div id="lottery2content" class="content"></div>
 </div>
 ```
 
-### 可以在您的css中覆盖`.mocha-lottery-scheme2.mocha-lottery-skin1`皮肤类
+可以在您的css中覆盖`.mocha-lottery-scheme2.mocha-lottery-skin1`皮肤类
 ``` css
 /* skin */
-.mocha-lottery-scheme2.mocha-lottery-skin1 .content{width:244px; height: 244px;}
+.mocha-lottery-scheme2.mocha-lottery-skin1 .content{width:488px; height: 488px;}
 ```
 
-### 自定义属性说明
+自定义属性说明
 <table class="table table-bordered table-striped table-condensed"><tr><th>自定义属性</th><th>说明</th></tr><tr><td>data-psdw</td><td>设计稿宽度</td></tr><tr><td>data-isscale</td><td>true/false，代表是否要自适应屏幕尺寸进行缩放，不配置默认为true。`(如果本身body有进行整体缩放的话，这里就不要再缩放了，即设为false)`</td></tr></table>
 
-### JS代码
+JS代码
 ```js
 //缩放方法
-function lotteryScaleFun(a){var b=parseInt($("#"+a).data("psdw"))/2;document.getElementById(a).style.width=b+"px";var c=document.documentElement.clientWidth?document.documentElement.clientWidth:b;document.getElementById(a).style.zoom=c/b}function lotteryScale(b){var a=$("#"+b).data("isscale");if(a!==false){lotteryScaleFun(b);$(window).bind("orientationchange",function(c){lotteryScaleFun(b)});$(window).bind("resize",function(c){lotteryScaleFun(b)})}};
+function lotteryScaleFun(a){var b=parseInt($("#"+a).data("psdw"));document.getElementById(a).style.width=b+"px";var c=document.documentElement.clientWidth?document.documentElement.clientWidth:b;document.getElementById(a).style.zoom=c/b}function lotteryScale(b){var a=$("#"+b).data("isscale");if(a!==false){lotteryScaleFun(b);$(window).bind("orientationchange",function(c){lotteryScaleFun(b)});$(window).bind("resize",function(c){lotteryScaleFun(b)})}};
 
 //点击开始抽奖
 function callJsToStart2() {
@@ -110,8 +111,8 @@ function callJsToComplete2() {
 var lotteryObj2 = new mo.Lottery({
   //'flashUrl' : 'http://ossweb-img.qq.com/images/flash/lottery/circle/lotteyround_2013_v1.swf',
   'r': 8, //奖品总数
-  'width': 244, //转盘宽度
-  'height': 244, //转盘高度
+  'width': 488, //转盘宽度
+  'height': 488, //转盘高度
   'flashFirst': false,
   'b': 'http://ossweb-img.qq.com/images/flash/lottery/circle/g.png', //圆盘的图片
   's': 'http://ossweb-img.qq.com/images/flash/lottery/circle/z.png', //开始抽奖按钮图片
@@ -126,3 +127,4 @@ var lotteryObj2 = new mo.Lottery({
 //执行缩放
 lotteryScale('lottery2');
 ```
+</div>

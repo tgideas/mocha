@@ -1,19 +1,19 @@
 ---
-title: sign-in
-date: 2016-01-20 19:46:09
+title: sign-in(签到模块)
+date: 2016-07-20 10:46:09
 tags:
 ---
 
-## sign-in(签到模块)
 作者：`dereksu`
 版本：`v.1`
 依赖：`mocha.min.css` `qqapi.js` `zepto.js` `milo.js` `reporting.js`
-
-![sign-in 样式一](http://ossweb-img.qq.com/images/js/mocha/images/demo/sign-in1.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/sign-in/demo.html#signindemo1 "sign-in 样式一")
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/sign-in/demo.html" target="_blank">点击运行Demo</a></div>
 
 ### **样式一 日历签到** `.mocha-sign-in-scheme1`
+
+<div class="demo-preview">
+![sign-in 样式一](http://ossweb-img.qq.com/images/js/mocha/images/demo/sign-in1.png)
+
 ``` html
 <div class="mocha-sign-in mocha-sign-in-scheme1 mocha-sign-in-skin1">
   <div class="title-panel clearfix">
@@ -34,7 +34,7 @@ tags:
 </div>
 ```
 
-### 可以在您的css中覆盖`.mocha-sign-in-scheme1.mocha-sign-in-skin1`皮肤类
+可以在您的css中覆盖`.mocha-sign-in-scheme1.mocha-sign-in-skin1`皮肤类
 ``` css
 /* skin */
 .mocha-sign-in-scheme1.mocha-sign-in-skin1{background: #bbb;border: #2a2a2a solid 1px;}
@@ -79,7 +79,7 @@ tags:
 .mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .nosigncls{background:gray;color:black;}
 ```
 
-### JS代码
+JS代码
 ```js
 //获取当前的日期
 var myDate = new Date();
@@ -135,12 +135,13 @@ milo.ready(function() {
   });
 });
 ```
-
-![sign-in 样式二](http://ossweb-img.qq.com/images/js/mocha/images/demo/sign-in2.png)
-
-### [运行Demo](http://tgideas.github.io/mocha/demo/sign-in/demo.html#signindemo2 "sign-in 样式二")
+</div>
 
 ### **样式二 短期签到** `.mocha-sign-in-scheme2`
+
+<div class="demo-preview">
+![sign-in 样式二](http://ossweb-img.qq.com/images/js/mocha/images/demo/sign-in2.png)
+
 ``` html
 <div class="mocha-sign-in mocha-sign-in-scheme2 mocha-sign-in-skin1">
   <div class="content">
@@ -157,7 +158,7 @@ milo.ready(function() {
 </div>
 ```
 
-### 可以在您的css中覆盖`.mocha-sign-in-scheme2.mocha-sign-in-skin1`皮肤类
+可以在您的css中覆盖`.mocha-sign-in-scheme2.mocha-sign-in-skin1`皮肤类
 ``` css
 /* skin */
 .mocha-sign-in-scheme2.mocha-sign-in-skin1 .content{width: 2.7rem;height:0.30rem;}
@@ -171,8 +172,9 @@ milo.ready(function() {
 .mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem:last-child{margin-right: 0;}
 ```
 
-### 其他说明
+其他说明
 amsSubmit(39028活动ID,216921提交签到ID)
 amsInit(39028活动ID,216920查询签到ID)
 amsCfg_216921.sData.appid：开发那边配置的，一般用于检测用户是否已经关注了微信公众号等操作
 `注：活动ID、提交签到ID、查询签到ID都是由开发同学在系统中配置的。所以前端同学编写完JS代码之后还要交给开发同学进一步开发完成`
+</div>

@@ -8,7 +8,7 @@ tags:
 依赖：`mocha.css`
 <div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/menu/demo.html" target="_blank">点击运行Demo</a></div>
 ### 样式1-有标题无图标及贴底 `.mocha-menu-scheme1`
-<div class="demo-preview"><div class="box-w320 box-h520"><div class="mocha-menu mocha-menu-scheme1 mocha-menu-skin1"><ul><li><a href="javascript:;" title="游戏攻略"><i class="mocha-menu-icon style1">图标</i>游戏攻略</a></li><li><a href="javascript:;" title="签到领礼"><i class="mocha-menu-icon">图标</i>签到领礼</a></li><li><a href="javascript:;" title="游戏论坛"><i class="mocha-menu-icon">图标</i>游戏论坛</a></li></ul></div></div>
+<div class="demo-preview"><div class="box-w320 box-h520"><div class="mocha-menu mocha-menu-scheme1 mocha-menu-skin1" style="position:absolute;"><ul><li><a href="javascript:;" title="游戏攻略"><i class="mocha-menu-icon style1">图标</i>游戏攻略</a></li><li><a href="javascript:;" title="签到领礼"><i class="mocha-menu-icon">图标</i>签到领礼</a></li><li><a href="javascript:;" title="游戏论坛"><i class="mocha-menu-icon">图标</i>游戏论坛</a></li></ul></div></div>
 ``` html
 <div class="mocha-menu mocha-menu-scheme1 mocha-menu-skin1">
     <ul>
