@@ -33,7 +33,7 @@
 		.mocha-data-user{position: relative;padding-bottom: .4rem;}
 	    .mocha-data-user-hd {width: 50%;}
 	    .mocha-data-user-bd {width: 25%;}
-	    .mocha-data-user-btn{position: absolute;top:0.6rem;left:0;right:0;width:100%;text-align: center;}
+	    .mocha-data-user-btn{position: absolute;top:0.6rem;left:-1px;right:0;width:100%;text-align: center;}
 	    .mocha-data-user-btn a{width:100%;margin-top: 0;}
 	    .mocha-data-user-ui{display: inline-block;margin: -.01rem 0 0 .05rem;}
 		
@@ -54,9 +54,7 @@
 	.mocha-data-user-skin1 .mocha-data-user-bd{border-left: 1px solid #c4c4c4;}
 	.mocha-data-user-skin1 .mocha-data-user-level{background: #818181;color:#fff;}
 	.mocha-data-user-skin1 .mocha-data-user-content p,.mocha-data-user-skin1 .mocha-data-user-bd p{font-size: .09rem;line-height: .14rem;color:#474747;}
-	.mocha-data-user-skin1 .mocha-data-user-name,.mocha-data-user-skin1 .mocha-data-user-num{font-size: .15rem;line-height: .25rem;}
+	.mocha-data-user-skin1 .mocha-data-user-name,.mocha-data-user-skin1 .mocha-data-user-num{font-size: .15rem;font-weight: normal;line-height: .25rem;}
 	.mocha-data-user-skin1 .mocha-data-user-num{font-size: .18rem;}
 	.mocha-data-user-skin1 .mocha-data-user-level{font-size: .09rem;line-height: .14rem;}
-	.mocha-data-user-skin1 .mocha-data-user-btn a{font-size: .13rem;background: #afaeae;color:#fff;}
-	.mocha-data-user-skin1 .mocha-data-user-ui{color: #fff;border: 1px solid #fff;}
-	.mocha-data-user-skin1 .mocha-data-user-ui:before{border-color: #fff;}
+	.mocha-data-user-skin1 .mocha-data-user-btn a{font-size: .13rem;background: #afaeae;color:#fff;border: 1px solid #afaeae;}
