@@ -53,9 +53,9 @@
 	.mocha-navigation-scheme4.mocha-nav-fixed{position: fixed;}
 
 	/* skin */
-	.mocha-nav-skin1{font-size: .16rem;background-color: #dadada;}
+	.mocha-nav-skin1{font-size: .16rem;background-color: #1d1d1d;}
 	.mocha-nav-skin1 .mocha-nav-cover{background-color: #dadada;}
-	.mocha-nav-skin1 .mocha-nav-logo{color: #000;}
+	.mocha-nav-skin1 .mocha-nav-logo{color: #fff;}
 	.mocha-nav-skin1 .mocha-nav-btn{background-color: #717171;color: #fff;}
 	.mocha-nav-skin1.mocha-navigation-scheme1{background-color: none;}
 	.mocha-nav-skin1 .mocha-nav-slide-icon,.mocha-nav-skin1 .mocha-nav-slide-icon:before,.mocha-nav-skin1 .mocha-nav-slide-icon:after{background:#717171;}
