@@ -4,6 +4,7 @@
  * Modify:2016-04-21
  * 
  */
+.mocha-layout{overflow:hidden;}
 @media screen and (orientation: landscape) {
 	.mocha-layout{display:flex;justify-content:flex-start;align-content:flex-start;align-items:flex-start;flex-flow:row wrap;}
 		.mocha-layout-flex{position: relative;}
