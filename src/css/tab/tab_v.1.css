@@ -6,8 +6,8 @@
  */
 .mocha-tab{margin-bottom:0.16rem;}
 	.mocha-tab-triggers{}
-	.mocha-tab-triggers-ul{display:table;width: 100%;}
-	.mocha-tab-triggers-ul li{position: relative;text-align: center;display:table-cell;padding:0.16rem 0.08em;}
+	.mocha-tab-triggers-ul{width: 100%;display: -webkit-box;display: box;display: -webkit-flexbox;display: flexbox;display: -webkit-flex;display: flex;overflow: hidden;}
+	.mocha-tab-triggers-ul li{position: relative;text-align: center;padding:0.16rem 0.08em;-webkit-box-flex: 1;box-flex: 1;-webkit-flex: 1;flex: 1;}
 	.mocha-tab-panels{}
 	.mocha-tab-panel{display:none;padding:0.16rem;}
 	/* scheme */
