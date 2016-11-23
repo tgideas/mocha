@@ -4,7 +4,7 @@
  * Modify:2015-12-07
  * 
  */
- .mocha-data-user{}
+ .mocha-data-user{margin-bottom: .1rem;}
 	.mocha-data-user,.mocha-data-user-hd,.mocha-data-user-bd{display: -webkit-box;display: box;display: -webkit-flexbox;display: flexbox;display: -webkit-flex;display:flex;}
 	.mocha-data-user,.mocha-data-user-hd,.mocha-data-user-bd{-webkit-box-align:center;box-align:center;-webkit-flex-align:center;flex-align:center;-webkit-align-items:center;align-items:center;}
 	.mocha-data-user-name,.mocha-data-user-num,.mocha-data-user-box p{display: block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
@@ -18,6 +18,7 @@
 	.mocha-data-user-content{width: 100%;padding-left: .6rem;padding-right: .1rem;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-data-user-name{position:relative;display: block;}
 	.mocha-data-user-level{padding:.01rem .07rem;border-radius: .06rem;}
+	.mocha-data-user-level i{display: inline-block;}
 	.mocha-data-user-box{width: 100%;padding:0 .1rem 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-data-user-btn a{display: block;height: .4rem;min-width: 1.15rem;margin-top: .1rem;line-height: .4rem;text-indent: .1rem;}
 	.mocha-data-user-ui{position: relative;width: .16rem;height: .16rem;text-align: center;line-height: .16rem;vertical-align: middle;border-radius: 50%;}
