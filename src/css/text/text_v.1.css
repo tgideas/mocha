@@ -16,8 +16,3 @@
 	/* scheme */
 	.mocha-text-center{text-align: center;}
 	.mocha-text-right{text-align: right;}
-	/* skin */
-	.mocha-text-skin1 h1,.mocha-text-skin1 h2,.mocha-text-skin1 h3,.mocha-text-skin1 h4,.mocha-text-skin1 h5,.mocha-text-skin1 h6{border-bottom: 1px solid #ddd;}
-	.mocha-text-skin1 div,.mocha-text-skin1 p,.mocha-text-skin1 li{color: #333;}
-	.mocha-text-skin2{color: #fff;background-color: #222;}
-	.mocha-text-skin2 h2,.mocha-text-skin2 h3,.mocha-text-skin2 h4,.mocha-text-skin2 h5,.mocha-text-skin2 p{color: #fff;}

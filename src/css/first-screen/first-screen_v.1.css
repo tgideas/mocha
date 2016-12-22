@@ -14,7 +14,7 @@
 .mocha-firstscreen-nav a{height:100%;display:block;-webkit-box-flex:1;color:#fff;text-align:center;border-right:0.01rem solid #c15d51;}
 .mocha-firstscreen-nav a:last-child{border-right:0;}
 .mocha-firstscreen-nav a:before{content:"";display:inline-block;vertical-align:middle;width:0.25rem;height:0.25rem;margin-right:0.05rem;}
-.mocha-firstscreen-ico-strategy:before{background:url(http://game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -.8rem;background-size:1.6rem auto;}
-.mocha-firstscreen-ico-bbs:before{background:url(http://game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -1.23rem;background-size:1.6rem auto;}
-.mocha-firstscreen-ico-gallery:before{background:url(http://game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -1.62rem;background-size:1.6rem auto;}
-.mocha-firstscreen-ico-contnect:before{background:url(http://game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -2.1rem;background-size:1.6rem auto;}
+.mocha-firstscreen-ico-strategy:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -.8rem;background-size:1.6rem auto;}
+.mocha-firstscreen-ico-bbs:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -1.23rem;background-size:1.6rem auto;}
+.mocha-firstscreen-ico-gallery:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -1.62rem;background-size:1.6rem auto;}
+.mocha-firstscreen-ico-contnect:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -2.1rem;background-size:1.6rem auto;}

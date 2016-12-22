@@ -4,7 +4,7 @@
  * Modify:2015-12-07
  * 
  */
-.mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;overflow: hidden;}
+.mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;font-size:0.12rem;overflow: hidden;}
 	.mocha-select select{float: left;height: .3rem;margin-right: 3.5%;margin-bottom: .11rem;line-height:.3rem;border-width: 1px;border-style: solid;border-radius: .045rem;}
 	.mocha-select label{float: left;margin-bottom: .05rem;}
 	.mocha-select .mocha-select-panel{float: left;margin-right: 3.5%;}
@@ -21,7 +21,3 @@
 	.mocha-select-scheme4 label,.mocha-select-scheme5 label{width: 40%;padding-right: 2.5%;text-align: right;line-height: .3rem;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;-webkit-box-sizing: border-box;box-sizing: border-box;}
 	.mocha-select-scheme4 .mocha-select-panel select{width: 60%;}
 	.mocha-select-scheme5 .mocha-select-panel select{width: 28.25%;}
-
-
-	/* skin */
-	.mocha-select-skin1 select{font-size:0.12rem;color:#000;border-color:#65655b;}

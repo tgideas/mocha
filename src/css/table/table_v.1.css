@@ -4,22 +4,10 @@
  * Modify:2015-12-14
  * 
  */
-.mocha-table{width: 90.625%;margin-left: auto;margin-right: auto;border-collapse: collapse;}
+.mocha-table{width: 90.625%;margin-left: auto;margin-right: auto;font-size: .16rem;border-collapse: collapse;}
 	.mocha-table th{line-height: .20rem;}
 	.mocha-table td{line-height: .25rem}
 	
 	/* scheme */
 	.mocha-table-scheme1 {text-align: center;}
 	.mocha-table-scheme1 tr td:nth-child(2){width: 47%;}
-	
-	/* skin */
-	.mocha-table-skin1{font-size: .16rem;color: #000;}
-	.mocha-table-skin1 th{background-color: #1b1b1b;color: #fff;}
-	.mocha-table-skin1 tr:nth-child(odd){background-color: #bbb;}
-	.mocha-table-skin1 tr:nth-child(even){background-color: #fff;}
-
-
-
-
-
-
