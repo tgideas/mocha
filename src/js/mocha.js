@@ -1,12 +1,14 @@
 // 设置Font-size
-(function (win,doc){
-	if (!win.addEventListener) return; 
-	var html=document.documentElement; 
-	function setFont() {
-		var w = html.clientWidth,
-			h = html.clientHeight;
-		html.style.fontSize= w > h ? h/320*100+"px" : w/320*100+"px";
-	} 
-	win.addEventListener('resize',setFont,false);
-	doc.addEventListener('DOMContentLoaded',setFont,false);
-})(window,document);
+function resize() {
+    var html=document.documentElement,
+        w = html.clientWidth,
+        h = html.clientHeight;
+    document.getElementsByTagName("body")[0].style.opacity = "0";
+    html.style.fontSize= w > h ? w/586*100+"px" : w/320*100+"px";
+    setTimeout(function() {
+    	document.getElementsByTagName("body")[0].style.opacity = "1";
+    }, 50);
+};
+resize();
+var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+window.addEventListener(evt, resize, false);

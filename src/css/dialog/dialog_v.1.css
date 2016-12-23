@@ -9,7 +9,7 @@
 	background-color: transparent;
 	background-color: rgba(0, 0, 0, 0.7); 
 }
-.mocha-dialog{}
+.mocha-dialog{font-size:0.16rem;}
 	.mocha-dialog-mark{position: fixed;z-index:999;left:0;top:0;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.7);}
 	.mocha-dialog-box{position: fixed;z-index:1001;left:50%;top:20%;margin:0 0 0 -45%;width:90%;background-color: #fff;}
 	.mocha-dialog-close{position: absolute;right:10px;top:10px;font-size:0.288rem;}
@@ -17,20 +17,11 @@
 	.mocha-dialog-hd-title{font-size: 0.18rem;text-align: center;padding:0 0.16rem;}
 	.mocha-dialog-bd{padding:0.16rem;}
 	.mocha-dialog-fd{font-size:0.16rem;padding:0.14rem;border-top:1px solid #ccc;text-align: center;}
-	.mocha-box-fd-btn{display: inline-block;vertical-align: middle;padding:0.08rem 0.16rem;margin:0 0.08rem;}
+	.mocha-box-fd-btn{display: inline-block;vertical-align: middle;padding:0.08rem 0.16rem;margin:0 0.08rem;font-size:0.16rem;}
 	/* scheme */
 	.mocha-dialog-scheme1{}
 	.mocha-dialog-scheme1 .mocha-dialog-bd{font-size:0.16rem;line-height:0.24rem;}
 	.mocha-dialog-scheme2{}
 	.mocha-dialog-scheme2 .mocha-dialog-hd{display: none;}
 	.mocha-dialog-scheme2 .mocha-dialog-bd{font-size:0.16rem;line-height:0.24rem;padding:0.48rem 0 0 0;text-align: center;}
-	.mocha-dialog-scheme2 .mocha-dialog-bd p{margin:0 0 0.08rem;}
-	/* skin */
-	.mocha-dialog-skin1{font-size:0.16rem;}
-	.mocha-dialog-skin1 .mocha-dialog-box{background-color: #fff;}
-	.mocha-dialog-skin1 .mocha-dialog-hd{background-color: #ddd;}
-	.mocha-dialog-skin1 .mocha-dialog-close{color: #666;}
-	.mocha-dialog-skin1 .mocha-dialog-close:active{color: #333;}
-	.mocha-dialog-skin1 .mocha-box-fd-btn{background-color: #ddd;color: #333;font-size:0.16rem;}
-	.mocha-dialog-scheme2.mocha-dialog-skin1 .mocha-dialog-box{background:none;color: #fff;}
-	.mocha-dialog-scheme2.mocha-dialog-skin1 .mocha-dialog-close{color: #ccc;}
+	.mocha-dialog-scheme2 .mocha-dialog-bd p{margin:0 0 0.08rem;}.mocha-dialog-skin1 .mocha-dialog-close{color: #ccc;}

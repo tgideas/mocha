@@ -17,7 +17,3 @@
 	.mocha-pic-list-scroll{overflow: hidden;overflow-x:auto;font-size: 0rem;}
 	.mocha-pic-list-scroll .mocha-pic-list-ul{display: inline;width:auto;white-space:nowrap;}
 	.mocha-pic-list-scroll .mocha-pic-list-item{font-size: 0.16rem;margin-right:0.1rem;}
-	/* skin */
-	.mocha-pic-list-skin1{}
-	.mocha-pic-list-skin1 .mocha-pic-list-item .txt{color: #333;}
-

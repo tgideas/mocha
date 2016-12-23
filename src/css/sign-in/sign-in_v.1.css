@@ -23,57 +23,46 @@
 	.mocha-sign-in-scheme2 .content:before{content:'';position: absolute;top:50%;left: 2%;right: 2%;display: block;z-index: 1;}
 	.mocha-sign-in-scheme2 .content .signinbox{width: 100%;height: 100%;position: absolute;top:0;left: 0;z-index: 2;}
 	.mocha-sign-in-scheme2 .content .signinbox .signinitem{display: block;float:left;height: 100%;z-index: 2;}
-
 	/* skin */
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1{background: #bbb;border: #2a2a2a solid 1px;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .title-panel{background:#2a2a2a;font-size: .12rem;color:#fff;line-height:.16rem;padding: .02rem 0;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .title-panel{font-size: .12rem;line-height:.16rem;padding: .02rem 0;}
 	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .title-panel .tit{padding-left: 5px;}
 	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .title-panel .total{padding-right:5px;}
 	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .title-panel .qqnum{padding-right:5px;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .date-panel{font-size: .12rem;line-height: .16rem;padding: .02rem 0;color:#171717;border-top:1px #65655b solid;border-bottom: 1px #65655b solid;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .date-panel{font-size: .12rem;line-height: .16rem;padding: .02rem 0;}
 	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .date-panel .nowdate{padding-right:5px;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .btn-panel{font-size: .12rem;color:#fff;line-height: .22rem;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .btn-panel .signinbtn{border: 1px solid #ccc;border-radius: 5px;background: #009dfe;margin:.1rem .05rem;padding:0 .05rem;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .btn-panel .querysigninbtn{border: 1px solid #ccc;border-radius: 5px;background: #009dfe;margin:.1rem .05rem;padding:0 .05rem;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .btn-panel{font-size: .12rem;line-height: .22rem;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .btn-panel .signinbtn{border-radius: 5px;margin:.1rem .05rem;padding:0 .05rem;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .btn-panel .querysigninbtn{border-radius: 5px;margin:.1rem .05rem;padding:0 .05rem;}
 	/*日历请用TABLE构造 以下为基础样式*/
 	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar table{ border-collapse:collapse;margin:0 auto;padding:0;border: 0;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar td{ border:5px #bbb solid; padding:.3em .3em;text-align:center;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar th{border:5px #bbb solid; padding:.3em .3em;text-align:center;}
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar tbody{background: #4f4f4f; color: #bbb; }
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar thead{background: #bbb; color: #171717; }
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar td{padding:.3em .3em;text-align:center;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar th{padding:.3em .3em;text-align:center;}
 	/*以下样式为组件根据类名自动为对应元素追加的样式*/
 	/*可不用此类名，也可更改对应DOM结构，只需要修改对应控件接口即可*/
 	/*main是追加在标签TABLE上的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .main{background: #4f4f4f; color: #bbb;font-size: .14rem;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .main{font-size: .14rem;}
 	/*head是追加在标签THEAD上的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .head{background: #bbb; color: #171717;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .head{}
 	/*head是追加在标签TBODY上的样式*/
 	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .body{}
 	/*week是追加在标签TBODY中的TR的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .week{background: #4f4f4f; color: #bbb;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .week{}
 	/*normal是追加在标签TD上的样式，用以表示普通日的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .normal{color:#fefefe;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .normal{}
 	/*normal是追加在标签TD上的样式，用以表示非活动日的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .noday{color: #bbb;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .noday{}
 	/*normal是追加在标签TD上的样式，用以表示今日的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .today{color: green;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .today{}
 	/*normal是追加在标签TD上的样式，用以表示特殊日的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .special{color: #000; background:red;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .special{}
 	/*normal是追加在标签TD上的样式，用以表示周末的样式*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .weekend{color:red;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .weekend{}
 	/*normal是追加在标签TD上的样式，用以表示签到日的样式，仅在签到日历中使用*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .signcls{background:green;color:black;}
+	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .signcls{}
 	/*normal是追加在标签TD上的样式，用以表示未签到日的样式，仅在签到日历中使用*/
-	.mocha-sign-in-scheme1.mocha-sign-in-skin1 .calendar .nosigncls{background:gray;color:black;}
-
 	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content{width: 2.7rem;height:0.30rem;}
-	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content:before{background: #4e4e4e;height: 0.06rem;margin-top: -0.03rem;}
-	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox{color:#fefefe;font-size: .12rem;text-align: center;line-height: 0.3rem;}
-	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem{background: #4e4e4e;border-radius: 50%;color: inherit;width:.3rem;margin: 0 .05rem;}
-	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem.normal{background: #4e4e4e;}
-	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem.signcls{background: green;}
-	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem.today{background: #009dfe;}
+	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content:before{height: 0.06rem;margin-top: -0.03rem;}
+	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox{font-size: .12rem;text-align: center;line-height: 0.3rem;}
+	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem{border-radius: 50%;color: inherit;width:.3rem;margin: 0 .05rem;}
 	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem:first-child{margin-left: 0;}
 	.mocha-sign-in-scheme2.mocha-sign-in-skin1 .content .signinbox .signinitem:last-child{margin-right: 0;}
-	
-	
