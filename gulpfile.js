@@ -87,7 +87,7 @@ gulp.task('build-mocha-css', function(){
            paths.src + "css/" + "first-screen/" + "first-screen_v.1.css",
            paths.src + "css/" + "fill-info/" + "fill-info_v.1.css",
            paths.src + "css/" + "common-foot/" + "common-foot_v.1.css"])
-    .pipe(concat('mocha-1.1.min.css'))
+    .pipe(concat('mocha-1.2.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest(paths.src + "css/"));
 });
@@ -104,7 +104,7 @@ gulp.task('build-ingame-css', function(){
  */
 gulp.task('build-mocha-js', function(){
   return gulp.src([paths.src + "js/" + "mocha.js"])
-    .pipe(concat('mocha.min.js'))
+    .pipe(concat('mocha-1.2.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.src + "js/"))
 });

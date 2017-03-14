@@ -4,7 +4,7 @@
  * Modify:2015-12-05
  * 
  */
-.mocha-nav{position:relative;left:0;top:0;width:100%;height:.6rem;font-size: .16rem;}
+.mocha-nav{position:relative;z-index:100;left:0;top:0;width:100%;height:.6rem;font-size: .16rem;}
 	.mocha-nav-logo{position: relative;float: left;}
 	.mocha-nav-logo img{float: left;width: .4rem;height: .4rem;margin-top: .11rem;margin-left: .1rem;}
 	.mocha-nav-logo .mocha-nav-logo-desc{float: left;margin-top: .11rem;margin-left: .1rem;}
