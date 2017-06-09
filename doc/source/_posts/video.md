@@ -14,7 +14,7 @@ tags:
 ```
 </div>
 ### video实例化JS
-依赖`tvp.player_v2.js`组件
+依赖`txplayer.js(v3)`组件
 ``` html
 <script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
 <script type="text/javascript">
