@@ -12,12 +12,12 @@
 	<!-- debug css Star 
 	<link href="../../css/base/base_v.3.css" rel="stylesheet">
 	<link href="../../css/navigation/navigation_v.1.css" rel="stylesheet">
-	<script src="../../js/mocha.js"></script>
+	<link href="../../css/color.css" rel="stylesheet">
 	 debug css End -->
 
 	<!-- online css Star -->
-	<link href="http://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
-	<script src="http://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	<link href="https://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="https://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
 	<!-- online css End -->
 	<style type="text/css" media="screen">
 		.h2{font-size:0.22rem;margin:0.7rem 0 0.1rem;}
@@ -33,7 +33,7 @@
 <header class="mocha-nav mocha-navigation-scheme1 mocha-nav-skin1">
 	<div class="mocha-nav-cover"></div>
 	<a href="javascript:;" class="mocha-nav-logo">
-		<img src="http://dummyimage.com/40x40/000/fff" alt="游戏名字" />
+		<img src="https://dummyimage.com/40x40/000/fff" alt="游戏名字" />
 		<div class="mocha-nav-logo-desc">
 			<h1>我叫MT2</h1>
 			<h2>焕新一代3D手游</h2>
@@ -46,7 +46,7 @@
 <header class="mocha-nav mocha-navigation-scheme2 mocha-nav-skin1">
 	<div class="mocha-nav-cover"></div>
 	<a href="javascript:;" class="mocha-nav-logo">
-		<img src="http://dummyimage.com/40x40/000/fff" alt="游戏名字" />
+		<img src="https://dummyimage.com/40x40/000/fff" alt="游戏名字" />
 		<div class="mocha-nav-logo-desc">
 			<h1>我叫MT2</h1>
 			<h2>焕新一代3D手游</h2>
@@ -72,11 +72,11 @@
   	<a href="javascript:;" class="mocha-nav-btn">进入游戏</a>
 </header>
 <p class="p"><a href="demo2.html">样式1-2</a></p>
-
+<script src="../../js/mocha.js"></script>
 <!-- demo JS -->
-<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
 <script>
-	$(".mocha-nav-slide").bind("touchstart", function() {
+	$(".mocha-nav-slide").bind("touchstart", function(e) {
         if ($(".mocha-nav-list-open").length) {
             $(".mocha-nav-list").removeClass("mocha-nav-list-open");
             $(".mocha-nav-slide").removeClass("mocha-nav-slide-close");
@@ -88,6 +88,7 @@
             $("body").bind("touchmove", false);
             $(".mocha-nav-box").addClass("mocha-nav-box-big");
         }
+        e.preventDefault(); 
     }, false);
 
     $("body").bind("touchend", function() {
@@ -97,6 +98,7 @@
 	        $(".mocha-nav-fixed").removeClass("mocha-nav-fixed");
 	    }
 	}, false);
+	window.onload = function(){$('.mocha-nav').addClass('mocha-nav-transition')} 
 </script>
 </body>
 </html>

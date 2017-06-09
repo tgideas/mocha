@@ -14,12 +14,12 @@
 	<!-- debug css Star 
 	<link href="../../css/base/base_v.3.css" rel="stylesheet">
 	<link href="../../css/countdown/countdown_v.1.css" rel="stylesheet">
-	<script src="../../js/mocha.js"></script>
+	<link href="../../css/color.css" rel="stylesheet">
 	 debug css End -->
 	
 	<!-- online css Star -->
-	<link href="http://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
-	<script src="http://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	<link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
 	<!-- online css End -->
 	<style>
 	.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
@@ -44,10 +44,10 @@
 <div class="mocha-countdown mocha-countdown-scheme1 mocha-countdown-skin1">
 	<p id="ctime3" class="content ctime3"></p>
 </div>
-
-<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script src="../../js/mocha.js"></script>
+<script src="//pingjs.qq.com/ping_tcss_ied.js"></script>
 <script>if(typeof(pgvMain) == 'function') pgvMain();</script>
-<script src="http://game.gtimg.cn/images/js/mocha/countdown.min.js"></script>
+<script src="//game.gtimg.cn/images/js/mocha/countdown.min.js"></script>
 <script>
 /**
  * demo1 JS
@@ -64,7 +64,7 @@ var ctimer1 = new countDown("ctime1",{
  * demo2和demo3 JS
  */
 var scriptLoader=function(b,a,f){var d=b.split("."),c=d[d.length-1],e=document.createElement("script"),g="src";e.setAttribute(g,b);document.body.appendChild(e);e.onload=function(){if(typeof a=="function"){if(typeof f!="undefined"){a(f)}else{a()}}};e.onerror=function(){}};
-scriptLoader('http://apps.game.qq.com/CommArticle/app/reg/gdate.php',function(){
+scriptLoader('//apps.game.qq.com/CommArticle/app/reg/gdate.php',function(){
 //通过php获取本地与服务器时间差_gapTime，获取不到则使用客户端时间
 var _gapTime = typeof(json_curdate)!=="undefined" ? +new Date(json_curdate.replace(/-/g,"/"))-(+new Date()) : 0;
 
