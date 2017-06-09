@@ -1,38 +1,33 @@
 ---
-title: video(è§†é¢‘æ¨¡å—)
-date: 2016-01-13 16:30:00
+title: video(ÊÓÆµÄ£¿é)
+date: 2017-06-09 11:00:00
 tags:
 ---
-ä½œè€…ï¼š`kevinhehe`
-ç‰ˆæœ¬ï¼š`v.1`
-ä¾èµ–ï¼š`mocha.css`
-<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/video/demo.html" target="_blank">ç‚¹å‡»è¿è¡ŒDemo</a></div>
-### æ ·å¼1 `.mocha-video-scheme1`
-<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/video.png" alt="æ ·å¼1"></div>
+×÷Õß£º`kevinhehe`
+°æ±¾£º`v.1`
+ÒÀÀµ£º`mocha.css`
+<div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/video/demo.html" target="_blank">µã»÷ÔËĞĞDemo</a></div>
+### ÑùÊ½1 `.mocha-video-scheme1`
+<div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/video.png" alt="ÑùÊ½1"></div>
 ``` html
 <div id="mochaVideo" class="mocha-video mocha-video-scheme1 mocha-video-skin1"></div>
 ```
 </div>
-### videoå®ä¾‹åŒ–JS
-ä¾èµ–`tvp.player_v2.js`ç»„ä»¶
+### videoÊµÀı»¯JS
+ÒÀÀµ`tvp.player_v2.js`×é¼ş
 ``` html
-<script src="http://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="utf-8"></script>
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
 <script type="text/javascript">
-var video = new tvp.VideoInfo();
-video.setVid("l0165p3yzq5");
-var player =new tvp.Player();
-player.create({
-    width:"100%",
-    video:video,
-    modId:"mochaVideo",
-    playerType: 'html5',
-    isHtml5UseUI:true,
-    isHtml5UseAirPlay:true,
-    isHtml5ShowPosterOnChange:false, /*HTML5æ’­æ”¾å™¨åˆ‡æ¢è§†é¢‘çš„æ—¶å€™æ˜¯å¦è¦æ˜¾ç¤ºPoster*/
-    autoplay:false 
+var player = new Txplayer({
+  containerId: 'mochaVideo',
+  vid: 'r0018hmh1pa',
+  width: '100%',
+  height: '100%',
+  // ×Ô¶¯²¥·Å
+  autoplay: true
 });
 </script>
 ```
 
-### ä¿®æ”¹æ¨¡å—çš®è‚¤CSS 
-æ¨¡å—çš„é»˜è®¤çš®è‚¤ç±»`.mocha-video-skin1`ï¼Œæ‚¨å¯ä»¥åœ¨æ‚¨é¡¹ç›®çš„`page.css`é‡Œä¿®æ”¹`.mocha-video-skin1`çš®è‚¤ç±»ï¼Œæˆ–è€…æ–°å¢`.mocha-video-skin2`ã€‚
+### ĞŞ¸ÄÄ£¿éÆ¤·ôCSS 
+Ä£¿éµÄÄ¬ÈÏÆ¤·ôÀà`.mocha-video-skin1`£¬Äú¿ÉÒÔÔÚÄúÏîÄ¿µÄ`page.css`ÀïĞŞ¸Ä`.mocha-video-skin1`Æ¤·ôÀà£¬»òÕßĞÂÔö`.mocha-video-skin2`¡£
