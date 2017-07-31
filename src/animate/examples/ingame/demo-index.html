@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>ingame(微官网-首页) - TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/menu/menu_v.1.css" rel="stylesheet">
+	<link href="../../css/data-user/data-user_v.1.css" rel="stylesheet">
+	<link href="../../css/slider/slider_v.1.css" rel="stylesheet">
+	<link href="../../css/txt-list/txt-list_v.1.css" rel="stylesheet">
+	<link href="../../css/pic-list/pic-list_v.1.css" rel="stylesheet">
+	<link href="../../css/ingame/ingame_v.1.css" rel="stylesheet">
+	<script src="../../js/mocha.js"></script>
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha-ingame.min.css" rel="stylesheet">
+	<script src="http://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<script>
+	(function (win,doc){
+    if (!win.addEventListener) return; 
+	    var html=document.documentElement; 
+	    function setFont() {
+	        var w = html.clientWidth,
+	            h = html.clientHeight;
+	        html.style.fontSize= w > h ? w/667*100+"px" : w/375*100+"px";
+	    } 
+	    win.addEventListener('resize',setFont,false);
+	    doc.addEventListener('DOMContentLoaded',setFont,false);
+	})(window,document);
+	</script>
+</head>
+<body>
+<div class="mocha-ingame mocha-ingame-skin1">
+	<!-- mocha-menu-scheme3(样式3-有标题及图标上下结构) -->
+	<div class="mocha-menu mocha-menu-scheme1 mocha-menu-scheme3 mocha-menu-skin1">
+		<ul>
+			<li>
+				<a href="javascript:;" title="精选"><i class="mocha-menu-icon style1">图标</i>精选</a>
+			</li>
+			<li>
+				<a href="javascript:;" title="攻略"><i class="mocha-menu-icon">图标</i>攻略</a>
+			</li>
+			<li>
+				<a href="javascript:;" title="个人"><i class="mocha-menu-icon">图标</i>个人</a>
+			</li>
+			<li>
+				<a href="javascript:;" title="勋章"><i class="mocha-menu-icon">图标</i>勋章</a>
+			</li>
+		</ul>
+	</div>	
+	<div class="mocha-ingame-content-wrap">
+		<div class="mocha-ingame-index-wrap">
+			<!-- mocha-data-user-scheme2(样式2-资料位2个) -->
+			<div class="mocha-data-user mocha-data-user-scheme2 mocha-data-user-skin1">
+				<div class="mocha-data-user-hd">
+					<div class="mocha-data-user-img"><img src="http://dummyimage.com/100x100/222/fff.png&text=head" alt="头像"></div>
+					<div class="mocha-data-user-content">
+						<span class="mocha-data-user-level">Lv.51</span>
+						<h1 class="mocha-data-user-name">测试测试测试测试</h1>
+					</div>
+				</div>
+				<div class="mocha-data-user-bd">
+					<div class="mocha-data-user-box">
+						<p>战斗力</p>
+						<span class="mocha-data-user-num">6186</span>
+					</div>
+				</div>
+				<div class="mocha-data-user-bd">
+					<div class="mocha-data-user-box">
+						<p>累积杀敌数</p>
+						<span class="mocha-data-user-num">99999999</span>
+					</div>
+				</div>
+				<div class="mocha-data-user-btn">
+					<a href="javascript:;">跳转按钮<i class="mocha-data-user-ui"></i></a>
+				</div>
+			</div>
+
+			<div class="mocha-ingame-media">
+				<!-- 广告位 -->
+				<div class="mocha-ingame-media-l">
+					<!-- 广告图板式a -->
+					<div id="slider1" data-psdw="788" data-sliderw="788" data-sliderh="290" class="mocha-slider mocha-slider-scheme1 mocha-slider-skin1" style="display:none;">
+						<ul class="content">
+							<li><a href='#'><img data-src="http://dummyimage.com/394x145/222/fff.png" alt=""></a></li>
+							<li><a href='#'><img data-src="http://dummyimage.com/394x145/222/fff.png" alt=""></a></li>
+							<li><a href='#'><img data-src="http://dummyimage.com/394x145/222/fff.png" alt=""></a></li>
+							<li><a href='#'><img data-src="http://dummyimage.com/394x145/222/fff.png" alt=""></a></li>
+							<li><a href='#'><img data-src="http://dummyimage.com/394x145/222/fff.png" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- 广告图板式b -->
+					<div class="mocha-pic-list mocha-pic-list-scheme1">
+						<ul class="mocha-pic-list-ul">
+							<li class="mocha-pic-list-item">
+								<a href="#"><img width="100%" src="http://dummyimage.com/384x290/222/fff.png" alt="" class="pic"></a>
+							</li>
+							<li class="mocha-pic-list-item">
+								<a href="#"><img width="100%" src="http://dummyimage.com/384x290/222/fff.png" alt="" class="pic"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 快捷入口 -->
+				<div class="mocha-ingame-media-r">
+					<div class="mocha-pic-list mocha-pic-list-scheme1">
+						<ul class="mocha-pic-list-ul">
+							<li class="mocha-pic-list-item">
+								<a href="#"><img width="100%" src="http://dummyimage.com/386x135/222/fff.png" alt="" class="pic"></a>
+							</li>
+							<li class="mocha-pic-list-item">
+								<a href="#"><img width="100%" src="http://dummyimage.com/386x135/222/fff.png" alt="" class="pic"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="mocha-txt-list mocha-txt-list-scheme1 mocha-txt-list-skin1">
+				<ul class="mocha-txt-list-ul">
+					<li class="mocha-tlu-item">
+						<cite class="mocha-tlu-item-icon style1">分类标签</cite>
+						<h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS11月新八本本爆料：木桩世界BOSS</a></h4>
+						<p class="mocha-tlu-item-meta"><span class="mocha-tlu-item-hot">热</span><em>我叫MT运营团队</em><time>11/03</time></p>
+					</li>
+					<li class="mocha-tlu-item">
+						<cite class="mocha-tlu-item-icon">分类标签</cite>
+						<h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4>
+						<p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p>
+					</li>
+					<li class="mocha-tlu-item">
+						<cite class="mocha-tlu-item-icon style1">分类标签</cite>
+						<h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4>
+						<p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p>
+					</li>
+					<li class="mocha-tlu-item">
+						<cite class="mocha-tlu-item-icon">分类标签</cite>
+						<h4 class="mocha-tlu-item-title"><a href="#">11月新八本本爆料：木桩世界BOSS</a></h4>
+						<p class="mocha-tlu-item-meta"><em>我叫MT运营团队</em><time>11/03</time></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<!--注明: slider.min.js 目前还在测试阶段，引用请联系dereksu 20160104-->
+<script src="http://game.gtimg.cn/images/js/mocha/slider.min.js"></script>
+<!--注明: slider.min.js 目前还在测试阶段，引用请联系dereksu 20160104-->
+
+<script>
+//Slider初始化
+Slider.init(function(slider) {
+	//设置slider样式一
+	slider.type(1, [{
+		id: "slider1",
+		callback: function() {
+			console.log('slider1创建完成');
+			sliderObj.slider1.stop();
+		}
+	}]);
+});
+
+/*测试广告图a,b切换*/
+if (window.DeviceMotionEvent) {
+    var speed = 25;
+    var x = y = z = lastX = lastY = lastZ = 0;
+    window.addEventListener('devicemotion', function() {
+        var acceleration = event.accelerationIncludingGravity;
+        x = acceleration.x;
+        y = acceleration.y;
+        if (Math.abs(x - lastX) > speed || Math.abs(y - lastY) > speed) {
+        	if($('#slider1').css('display') == 'none'){
+        		$('#slider1').css('display','block');
+				$('.mocha-ingame-media-l .mocha-pic-list').css('display','none');
+			}else if($('#slider1').css('display') == 'block'){
+				$('#slider1').css('display','none');
+				$('.mocha-ingame-media-l .mocha-pic-list').css('display','block');
+			}
+        }
+        lastX = x;
+        lastY = y;
+    }, false);
+}
+</script>
+</body>
+</html>

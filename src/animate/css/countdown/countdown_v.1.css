@@ -1,0 +1,21 @@
+/*
+ * countdown v.1
+ * Author:dereksu
+ * Modify:2015-12-25
+ */
+
+/* countdown */
+.mocha-countdown{position: relative;margin:0 auto;overflow: hidden;text-align: center;font-size: 0;}
+/* scheme */
+.mocha-countdown-scheme1{}
+/* skin */
+.mocha-countdown-skin1 .content{line-height: .3rem;font-size: .2rem;padding: .2rem .04rem;display: inline-block;letter-spacing: .01rem;}
+.mocha-countdown-skin1 .content .ctime2_p{display:inline-block;vertical-align:middle;margin:0 .01rem;width:.16rem;height:.4rem;line-height:.4rem;overflow:hidden;text-align:center;border-radius:.05rem;}
+.mocha-countdown-skin1 .content .nanistyle{-webkit-animation:nanistyle 0.8s;}
+@-webkit-keyframes nanistyle{
+  0% {opacity: 0;-webkit-transform-origin: 50% 0%;-webkit-transform: perspective(800px) rotateX(90deg);}
+  50% {opacity: 1;-webkit-transform-origin: 50% 0%;-webkit-transform: perspective(800px) rotateX(-20deg);}
+  100% {opacity: 1;-webkit-transform-origin: 50% 0%;-webkit-transform: perspective(800px) rotateX(0deg);}
+}  
+
+	

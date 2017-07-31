@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>search-bar(搜索栏样式) - TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/search-bar/search-bar_v.1.css" rel="stylesheet">
+    <link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+    <!-- online css Star
+    <link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+    <script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+    online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.2rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+        .btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	</style>
+</head>
+<body>
+<h2 class="h2">search-bar(搜索栏样式)<a href="/mocha/docs/search-bar/" class="btn-docs" target="_blank">查看文档</a></h2>
+<!-- mocha-search-bar-scheme1 -->
+<div class="mocha-search-bar mocha-search-bar-scheme1 mocha-search-bar-skin1">
+	<div class="mocha-search-bar-wrap" id="searchBar">
+        <form class="mocha-search-bar-outer">
+            <div class="mocha-search-bar-inner">
+                <i class="icon-search"></i>
+                <input type="search" class="mocha-search-bar-input" id="searchInput" placeholder="搜索" required/>
+                <a href="javascript:" class="icon-clear" id="searchClear"></a>
+            </div>
+            <label for="searchInput" class="mocha-search-bar-text" id="searchText">
+                <i class="icon-search"></i>
+                <span>搜索</span>
+            </label>
+        </form>
+        <a href="javascript:" class="mocha-search-bar-cancel" id="searchCancel">取消</a>
+    </div>
+    <div class="mocha-search-bar-cells mocha-search-bar-cells-access mocha-search-bar-show" id="searchShow">
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/mocha.js"></script>
+<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script>
+$("#searchInput").on({
+    focus: function() {
+        //searchBar
+        var $mochaSearchBar = $('#searchBar');
+        $mochaSearchBar.addClass('mocha-search-bar-focusing');
+    },
+    blur: function() {
+        var $mochaSearchBar = $('#searchBar');
+        $mochaSearchBar.removeClass('mocha-search-bar-focusing');
+        if ($(this).val()) {
+            $('#searchText').hide();
+        } else {
+            $('#searchText').show();
+        }
+    },
+    input: function() {
+        var $searchShow = $("#searchShow");
+        if ($(this).val()) {
+            $searchShow.show();
+        } else {
+            $searchShow.hide();
+        }
+    }
+})
+$("#searchCancel").on('touchend',function() {
+    $("#searchShow").hide();
+    $('#searchInput').val('');
+})
+$("#searchClear").on('touchend',function() {
+    $("#searchShow").hide();
+    $('#searchInput').val('');
+})
+</script>
+</body>
+</html>

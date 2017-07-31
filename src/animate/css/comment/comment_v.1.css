@@ -1,0 +1,38 @@
+/*
+ * comment v.1
+ * Author:kevinhehe
+ * Modify:2015-12-10
+ * 
+ */
+.mocha-comment{font-size: .16rem;}
+	.mocha-comment-list{padding: .1rem 4.6875% .14rem;border-bottom: 1px solid #8e8e8e;}
+	.mocha-comment-content{padding-bottom: .48rem;}
+	.mocha-comment-content .mocha-comment-list:last-child{ border-bottom:none;}
+	.mocha-comment-list-infobox{ width:100%; padding:.1rem 0 0;line-height: .4rem;overflow: hidden;}
+	.mocha-comment-list-head{float: left;width:.4rem; height:.4rem;display:inline-block;overflow:hidden;}
+	.mocha-comment-list-head img{ width:100%; height:100%; }
+	.mocha-comment-list-title{float: left;height:.4rem;display:block;margin-left: .05rem;}
+	.mocha-comment-list-reply{float: right;}
+	.mocha-comment-list-date{padding: .05rem 0 0 .45rem;font-size:.12rem; overflow:hidden;}
+	.mocha-comment-list-date span{ padding-right:.1rem;}
+	.mocha-comment-list-date span:last-child{ padding:0;}
+	.mocha-comment-list-txt{clear:both; padding-left:.45rem;}
+	.mocha-comment-list-second{padding-top:.1rem; margin-left:.47rem;font-size:.14rem;}
+	.mocha-comment-list-second-bar{ padding: .05rem .08rem;}
+	.mocha-comment-list-second-bar ul li{ display:block; clear:both; padding: .03rem 0;line-height: .24rem}
+	.mocha-comment-btn{ width:100%; height:.34rem; padding: .07rem 0;border-top:1px solid #e2e2e6;font-size:.14rem; position:fixed;left:0;bottom:0;z-index:9;}
+	.mocha-comment-btn a{ display:block; padding:.072rem 0 .072rem .35rem;  border:1px solid #c5c5c5; margin:0 .1rem;line-height: 0.175rem; border-radius:.25rem;color:#aeaeae; background:#fff url(//game.gtimg.cn/images/js/mocha/images/icon-comment.png) no-repeat .15rem .0784rem; background-size:.16rem .18rem; position:relative;}
+	.mocha-comment-alert{ display:none; position:fixed; top:.1rem; width:100%;height:1.95rem; z-index:29; }
+	.mocha-comment-alert-box{width:90.625%; height:1.95rem; margin: 0 auto;font-size:.14rem;border-radius:.05rem; position:relative;z-index: 1001;}
+	.imocha-comment-alert-form{ height:1.36rem; padding:.08rem .1rem;}
+	.mocha-comment-alert-textarea{ width:100%; height:1.3rem; font-size:.14rem;overflow-y:auto; -webkit-box-sizing:border-box;box-sizing:border-box; border:none; outline:none;}
+	.mocha-comment-alert-shop{border-top:1px solid #e2e2e6; }
+	.mocha-comment-alert-shop .mocha-comment-alert-words{float: left; line-height:.38rem; padding-left:.15rem;}
+	.mocha-comment-alert-shop .mocha-comment-alert-words b{ font-style:normal;}
+	.mocha-comment-alert-shop .mocha-comment-alert-btn{float: right;padding:.06rem .1rem 0 0;}
+	.mocha-comment-alert-shop .mocha-comment-alert-btn span{ width:.5rem; margin-left:.15rem; display:inline-block;line-height:.21rem; text-align:center;}
+	.mocha-comment-alert-shop .mocha-comment-alert-btn span:nth-last-of-type(1){ padding:.02rem 0; border-radius:.04rem;}
+	.mocha-comment-alert-mark{position: fixed;z-index:999;left:0;top:0;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.7);}
+	/* scheme */
+	.mocha-comment-scheme1{}
+	.mocha-comment-scheme1 .mocha-comment-list-head{border-radius:.2rem;}

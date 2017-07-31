@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>tab(页签/选项卡模块) - TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/tab/tab_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="http://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+		.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	</style>
+</head>
+<body>
+<h2 class="h2">tab(页签/选项卡模块)<a href="/mocha/docs/tab/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h3 class="h3">样式1</h3>
+<!-- mocha-tab-scheme1(样式1) -->
+<div id="tabBox1" class="mocha-tab mocha-tab-scheme1 mocha-tab-skin1">
+	<div class="mocha-tab-triggers">
+		<ul class="mocha-tab-triggers-ul">
+			<li class="current">页签1</li>
+			<li>页签2</li>
+			<li>页签3</li>
+			<li>页签4</li>
+		</ul>
+	</div>
+	<div class="mocha-tab-panels">
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签1内容区</p>
+			<p>页签1内容区</p>
+			<p>页签1内容区</p>
+			<p>页签1内容区</p>
+			<p>页签1内容区</p>
+		</div>
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签2内容区</p>
+			<p>页签2内容区</p>
+			<p>页签2内容区</p>
+			<p>页签2内容区</p>
+			<p>页签2内容区</p>
+		</div>
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签3内容区</p>
+			<p>页签3内容区</p>
+			<p>页签3内容区</p>
+			<p>页签3内容区</p>
+			<p>页签3内容区</p>
+		</div>
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签4内容区</p>
+			<p>页签4内容区</p>
+			<p>页签4内容区</p>
+			<p>页签4内容区</p>
+			<p>页签4内容区</p>
+		</div>
+	</div>
+</div>
+
+<h3 class="h3">样式2</h3>
+<!-- mocha-tab-scheme2(样式2) -->
+<div id="tabBox2" class="mocha-tab mocha-tab-scheme2 mocha-tab-skin1">
+	<div class="mocha-tab-triggers">
+		<ul class="mocha-tab-triggers-ul">
+			<li class="current">页签1</li>
+			<li>页签2</li>
+			<li>页签3</li>
+			<li>页签4</li>
+		</ul>
+	</div>
+	<div class="mocha-tab-panels">
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签1内容区</p>
+			<p>页签1内容区</p>
+			<p>页签1内容区</p>
+			<p>页签1内容区</p>
+		</div>
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签2内容区</p>
+			<p>页签2内容区</p>
+			<p>页签2内容区</p>
+			<p>页签2内容区</p>
+		</div>
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签3内容区</p>
+			<p>页签3内容区</p>
+			<p>页签3内容区</p>
+			<p>页签3内容区</p>
+		</div>
+		<div class="mocha-tab-panel" style="display:block">
+			<p>页签4内容区</p>
+			<p>页签4内容区</p>
+			<p>页签4内容区</p>
+			<p>页签4内容区</p>
+		</div>
+	</div>
+</div>
+<script src="../../js/mocha.js"></script>
+<!--### 页签JS -->
+<script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<!-- 实例化：点击式选择卡 -->
+<script src="http://game.gtimg.cn/images/js/motion/tab.min.js"></script>
+<script>
+$(function(){
+	window.tab1 = new mo.Tab({
+		target: $('#tabBox1 div.mocha-tab-panel'),
+		controller: $('#tabBox1 .mocha-tab-triggers-ul li'),
+		lazy: true
+	});
+});
+</script>
+
+<!-- 实例化：滑动式选择卡 -->
+<script src="http://game.gtimg.cn/images/js/motion/slide.v2.0.min.js"></script>
+<script>
+	$('#tabBox2 div.mocha-tab-panels').css("height",100);	//指定slider内容区高度
+	tab2 = new mo.Slide({
+		target: $('#tabBox2 div.mocha-tab-panel'),
+		controller: $('#tabBox2 .mocha-tab-triggers-ul li'),
+		direction: 'x',
+		effect: 'slide',
+		circle: true,
+		autoPlay: false
+	})	
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*
+ * audio v.1
+ * Author:kevinhehe
+ * Modify:2015-12-16
+ * 
+ */
+.mocha-audio{width: 90.625%;margin-left: auto;margin-right: auto;font-size: .16rem;text-align: center;}
+	.mocha-audio-btn {display: inline-block;width: .35rem;height: .238rem;padding-top: .112rem;text-align: center;vertical-align: top;background: transparent;border: none;border-radius: .175rem;}
+	.mocha-audio-icon-play,.mocha-audio-icon-pause{margin: 0 auto;display: block;}
+	.mocha-audio-icon-play {width: 0;height: 0;border-left: .11rem solid #fff;border-top: .06rem solid transparent;border-bottom: .06rem solid transparent;}
+	.mocha-audio-icon-pause {width: .11rem;height: .12rem;background: linear-gradient(90deg, #fff 37%, transparent 37%, transparent 63%, #fff 63%);}
+	.mocha-audio-info{display: inline-block;text-align: left;font-size: .12rem;line-height: .175rem;}
+	/* scheme */
+	.mocha-audio-scheme1{}
+

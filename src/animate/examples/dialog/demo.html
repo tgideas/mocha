@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>dialog(弹层模块) - TGideas Mocha</title>
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/dialog/dialog_v.2.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<style type="text/css" media="screen">
+		html,
+		body {
+		color: #031a2a;
+		font: 14px/40px 'Lato', sans-serif;
+		font-weight: 300;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		transition: all .5s ease;
+		width: 100%;
+		}
+		.container {
+			padding: 0 10px;		
+		}
+		a[data-toggle] {
+		background: #108ee9;
+		color: rgba(255,255,255,0.5);
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 7px 14px;
+		text-transform: uppercase;
+		transition: all .8s ease .3s, color .3s ease;
+		white-space: nowrap;
+		}
+		a[data-toggle]:hover {
+		background: #0d77c3;
+		color: rgba(255,255,255,0.9);
+		transition: all .3s ease, color .8s ease .3s;
+		}
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+		.button{color: #fff;font-size:0.18rem;display: block;width: 90%;margin:0.16rem auto;line-height:0.4rem;background-color: #06f;border:0;border-radius:0.16rem;}
+		.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	</style>
+</head>
+<body>
+<h2 class="h2">dialog(弹层模块)<a href="/mocha/docs/dialog/" class="btn-docs" target="_blank">查看文档</a></h2>
+
+<div class="container">
+	<a data-toggle="modal" data-effect="mocha-fade">Fade</a>
+	<a data-toggle="modal" data-effect="mocha-scale">Scale</a>
+	<a data-toggle="modal" data-effect="mocha-newspaper">Newspaper</a>
+	<a data-toggle="modal" data-effect="mocha-slide-in-top">Slide in top</a>
+	<a data-toggle="modal" data-effect="mocha-slide-in-left">Slide in left</a>
+	<a data-toggle="modal" data-effect="mocha-slide-in-right">Slide in right</a>
+	<a data-toggle="modal" data-effect="mocha-slide-in-bottom">Slide in bottom</a>
+	<a data-toggle="modal" data-effect="mocha-expand-horiz">Expand horizontal</a>
+	<a data-toggle="modal" data-effect="mocha-expand-vert">Expand vertical</a>
+	<a data-toggle="modal" data-effect="mocha-sticky-top">Sticky top</a>
+	<a data-toggle="modal" data-effect="mocha-sticky-bottom">Sticky bottom</a>
+	<a data-toggle="modal" data-effect="mocha-rotate-top">3D Rotate top</a>
+	<a data-toggle="modal" data-effect="mocha-rotate-bottom">3D Rotate bottom</a>
+	<a data-toggle="modal" data-effect="mocha-elastic-flip">3D Elastic flip</a>
+	<a data-toggle="modal" data-effect="mocha-bounce-zoom">Bounce + zoom</a>
+</div>
+
+<div class="modal slide-in-bottom">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h4>Dear reader,</h4>
+    </div>
+    <div class="modal-body">
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read</strong>: modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look</strong>: a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+      </ul>
+      
+      <p>
+        <strong>You've selected the following effect: <span id="effect-name"></span></strong>
+      </p>
+      
+      <small>
+        Click anywhere to close
+      </small>
+    </div>
+  </div>
+</div>
+
+<script src="/js/zepto.min.js"></script>
+<script src="../../js/mocha.js"></script>
+<script>
+	$(document).ready(function() {
+		Modal.init();
+	});
+
+	var Modal = {
+		effects : [
+			'fade',
+			'scale',
+			'newspaper',
+			'slide-in-top',
+			'slide-in-left',
+			'slide-in-right',
+			'slide-in-bottom',
+			'expand-horiz',
+			'expand-vert',
+			'sticky-top',
+			'sticky-bottom',
+			'rotate-top',
+			'rotate-bottom',
+			'elastic-flip',
+			'bounce-zoom'
+		],
+		
+		init: function() {
+			$('a[data-toggle=modal]').on('click', function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				
+				$('#effect-name').html($(this).text());
+				
+				var effect = $(this).attr('data-effect');
+				$('.modal').addClass(effect).addClass('show').removeClass('hiding');
+				$('body').addClass('modal-open');
+				$('body').addClass('modal-' + effect);
+				
+				var h = $('.modal-dialog').height();
+				$('.modal-dialog').css({
+					'margin-top': '-' + parseInt(h / 2) + 'px'
+				});
+			});
+			
+			$('.modal').on('click', function(e) {
+			$('.modal').removeClass('show').addClass('hiding');
+			
+			setTimeout(function() {
+				for(var i = 0; i < Modal.effects.length; i++) {
+					$('.modal').removeClass(Modal.effects[i]);
+					$('body').removeClass('modal-' + Modal.effects[i]);
+					}
+					
+					$('.modal').removeClass('hiding');
+					$('body').removeClass('modal-open');
+				}, 250);
+			});
+		}
+	};
+</script>
+</body>
+</html>

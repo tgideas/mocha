@@ -1,0 +1,13 @@
+/*
+ * button v.1
+ * Author:sonichuang
+ * Modify:2015-12-15
+ * 
+ */
+
+.mocha-button{font-size:0.16rem;line-height:0.4rem;text-align: center;border-radius:0.032rem;}
+	/* scheme */
+	.mocha-button-scheme1{display:block;width: 100%;}
+	.mocha-button-scheme2{display:inline-block;width:48%;margin-right:2%;}
+	.mocha-button-scheme3{display:inline-block;width:32%;margin-right:1%;}
+	.mocha-button-scheme4{display:inline-block;margin-right:1%;padding:0 0.08rem;}
