@@ -1,0 +1,23 @@
+/*
+ * lottery v.1
+ * Author:dereksu
+ * Modify:2015-12-13
+ */
+	/* lottery */
+  .mocha-lottery{overflow:hidden;margin:0 auto;}
+	.mocha-lottery .content{margin:0 auto;}
+	/* scheme */
+	.mocha-lottery-scheme1{}
+	
+	.mocha-lottery-scheme2{}
+	
+	.mocha-lottery-scheme2 .content div div{background-size: 100% auto;}
+	/* .mocha-lottery-scheme2 .content div img{zoom: 0.5;} */
+/* 	.mocha-lottery-scheme2 .content .lottery2content_hover{background-size: 100% auto;}
+.mocha-lottery-scheme2 .content .lottery2content_start,.mocha-lottery-scheme2 .content .lottery2content_disable{zoom: 0.5;} */
+	
+	/* skin */
+	.mocha-lottery-scheme1.mocha-lottery-skin1 .content{width:614px; height: 494px;background: url(http://ossweb-img.qq.com/images/flash/lottery/square/bg.jpg) no-repeat;background-size: 100% auto;}
+
+	.mocha-lottery-scheme2.mocha-lottery-skin1 .content{width:488px; height: 488px;}
+	

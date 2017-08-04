@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>lottery(抽奖模块) - TGideas Mocha</title>
+	<!-- 页面重构：dereksu | 创建：20151213 | 团队博客：http://tgideas.qq.com/ -->
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/lottery/lottery_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style>
+	.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: .14rem;}
+	.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	body{padding-bottom: 10px;}
+	</style>
+</head>
+<body>
+	<h2 class="h2">lottery(抽奖模块)<a href="/mocha/docs/lottery/" class="btn-docs" target="_blank">查看文档</a></h2>
+	<h3 id="lotterydemo1">样式一（方形）:</h3>
+	<div id="lottery1" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme1 mocha-lottery-skin1">
+		<div id="lottery1content" class="content"></div>
+	</div>
+
+	<h3 id="lotterydemo2">样式二（圆形）:</h3>
+	<div id="lottery2" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme2 mocha-lottery-skin1">
+		<div id="lottery2content" class="content"></div>
+	</div>
+	
+	<script src="../../js/mocha.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/motion/lottery.min.js"></script>
+	<script>
+	/*
+	 * lottery v.1
+	 * Author:dereksu
+	 * Modify:2015-12-13
+	 * Description:
+	 * 1.html中data-psdw代表设计稿宽度，如640
+	 * 2.html中data-isscale代表是否要自适应屏幕尺寸进行缩放，如true/false (注：如果本身body有进行zoom缩放的，这里就不要再缩放了，即设为false)
+	 */
+	function lotteryScaleFun(lotteryId) {
+		var clientW = parseInt($("#" + lotteryId).data('psdw'));
+		document.getElementById(lotteryId).style.width = clientW + 'px';
+		var clientWidth = document.documentElement.clientWidth ? document.documentElement.clientWidth : clientW;
+		document.getElementById(lotteryId).style.zoom = clientWidth / clientW;
+	}
+	//缩放方法
+	function lotteryScale(lotteryId) {
+		var lottery1IsScale = $("#" + lotteryId).data('isscale');
+		if (lottery1IsScale !== false) {
+			lotteryScaleFun(lotteryId);
+			$(window).bind('orientationchange', function(event) {
+				lotteryScaleFun(lotteryId);
+			});
+			$(window).bind('resize', function(event) {
+				lotteryScaleFun(lotteryId);
+			});
+		}
+	}
+	/**
+	 * 样式1js
+	 */
+	//点击开始抽奖
+	function callJsToStart1() {
+		callFlashToRoll1(3);
+	}
+	//开发获得抽奖结果 开始播放效果
+	function callFlashToRoll1(id) {
+		//通知转盘转到对应的中奖产品的id （序号从0,1,2.....，0是指针初始指示的位置，沿着顺时针的方向递增）
+		if (lotteryObj1) lotteryObj1.stopRoll(id);
+	}
+	//动画完成通知js
+	function callJsToComplete1() {
+		alert('lotteryObj1-恭喜你获奖了！');
+	}
+	//初始化抽奖对象的lotteryObj1 
+	var lotteryObj1 = new mo.Lottery({
+		//'lighturl':'//ossweb-img.qq.com/images/motion/lottery/light.png',
+		'total': 12,
+		'width': 614,
+		'height': 494,
+		'sbtnx': 154,
+		'sbtny': 124,
+		'sbtnw': 306,
+		'sbtnh': 246,
+		'boxw': 150,
+		'boxh': 120,
+		'position': "0_0,154_0,308_0,462_0,462_124,462_248,462_372,308_372,154_372,0_372,0_248,0_124",
+		'contentId': 'lottery1content',
+		'onClickRollEvent': callJsToStart1,
+		'onCompleteRollEvent': callJsToComplete1
+	});
+	//执行缩放
+	lotteryScale('lottery1');
+
+	/**
+	 * 样式2js
+	 */
+	//点击开始抽奖
+	function callJsToStart2() {
+		callFlashToRoll2(5);
+	}
+	//开发获得抽奖结果 开始播放效果 
+	function callFlashToRoll2(id) {
+		//通知转盘转到对应的中奖产品的id （序号从0,1,2.....，0是指针初始指示的位置，沿着顺时针的方向递增）
+		if (lotteryObj2) lotteryObj2.stopRoll(id);
+	}
+	//动画完成通知js
+	function callJsToComplete2() {
+		alert('lotteryObj2-恭喜你获奖了！');
+	}
+	//初始化抽奖对象的lotteryObj2 
+	var lotteryObj2 = new mo.Lottery({
+		//'flashUrl' : '//ossweb-img.qq.com/images/flash/lottery/circle/lotteyround_2013_v1.swf',
+		'r': 8, //奖品总数
+		'width': 488, //转盘宽度
+		'height': 488, //转盘高度
+		'flashFirst': false,
+		'b': '//ossweb-img.qq.com/images/flash/lottery/circle/g.png', //圆盘的图片
+		's': '//ossweb-img.qq.com/images/flash/lottery/circle/z.png', //开始抽奖按钮图片
+		'bx': 0, //圆盘的图片位置x坐标 （转盘的中心点坐标为（0,0））
+		'by': 0, //圆盘的图片位置y坐标
+		'sx': 0, //开始抽奖按钮x坐标
+		'sy': 0, //开始抽奖按钮y坐标
+		'contentId': 'lottery2content', //转盘div层的id 
+		'onClickRollEvent': callJsToStart2, //对应上面接口
+		'onCompleteRollEvent': callJsToComplete2 //对应上面接口
+	});
+	//执行缩放
+	lotteryScale('lottery2');
+	</script>
+</body>
+</html>

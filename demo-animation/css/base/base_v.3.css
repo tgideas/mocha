@@ -1,0 +1,42 @@
+/*
+ * base v.2
+ * Author:sonichuang
+ * Modify:2015-12-29
+ * 
+ */
+@charset "gb2312";
+/*
+@media only screen and (max-width:3000px),only screen and (max-device-width:3000px){body,html{font-size:240px}}
+@media only screen and (max-width:1080px),only screen and (max-device-width:1080px){body,html{font-size:337.5px}}
+@media only screen and (max-width:960px),only screen and (max-device-width:960px){body,html{font-size:300px}}
+@media only screen and (max-width:800px),only screen and (max-device-width:800px){body,html{font-size:250px}}
+@media only screen and (max-width:720px),only screen and (max-device-width:720px){body,html{font-size:225px}}
+@media only screen and (max-width:640px),only screen and (max-device-width:640px){body,html{font-size:200px}}
+@media only screen and (max-width:600px),only screen and (max-device-width:600px){body,html{font-size:187.5px}}
+@media only screen and (max-width:540px),only screen and (max-device-width:540px){body,html{font-size:168.75px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){body,html{font-size:150px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){body,html{font-size:129.38px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){body,html{font-size:125px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){body,html{font-size:117.19px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){body,html{font-size:112.5px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){body,html{font-size:100px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){body,html{font-size:75px}}
+*/
+body,ul,ol,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,p,img,section,header,ruby,rb,rt,i,b,input{margin:0;padding:0;font-style:normal;}
+html,body{font-weight:400;line-height:1;font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;}
+html{font-size: 100px;}
+body{opacity: 0;}
+i{display:block;font-style:normal;}
+li{list-style:none;}
+a,a:visited{text-decoration:none;}
+img{border:0;}
+em,cite{font-style:normal;}
+body{font-size: 0.16rem;color: #000;}
+h1{font-size: 0.32rem;}
+h2{font-size: 0.30rem;}
+h3{font-size: 0.28rem;}
+h4{font-size: 0.26rem;}
+h5{font-size: 0.24rem;}
+h6{font-size: 0.20rem;}
+p{font-size: 0.16rem;}
+.clearfix:after{content: '.';height: 0;line-height: 0;display: block;clear: both;visibility: hidden;}

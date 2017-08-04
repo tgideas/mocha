@@ -1,0 +1,90 @@
+/*
+ * dialog v.2
+ * Author:echowtyang
+ * Modify:2017-8-2
+ * 
+ */
+.mocha-tab-anim-card-content div {
+	box-sizing: border-box;
+	transition: all ease-in-out .5s;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+}
+
+.mocha-tab-anim-card-content {
+	overflow: hidden;
+	position: relative;
+}
+
+.mocha-tab-anim-card-content-item {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #fff;
+	width: 100%;
+	border-top: 0px;
+	border: 2px solid #ff9900;
+	border-top: 0px;
+	transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+
+.mocha-tab-anim-card-content-item:first-child {
+	position: relative;	
+}
+.mocha-tab-anim-card-content-item.tab-active {
+	border-top: 0px;
+	display: block;
+	transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+}
+
+.mocha-tab-anim-card {
+  max-width: 700px;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mocha-tab-anim-card-content-item {
+	padding: 40px;
+}
+
+.mocha-tab .current-tab { 
+	background: #ff9900;
+}
+
+.mocha-tab-anim-scale-content-item{
+  position:absolute;
+  width:50%;
+  height:50%;
+  background-color:#dc5f48;
+  color:#fff;
+  text-align:center;
+  line-height:150px;
+  opacity:0;
+  border-radius:32px;left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:37px auto;
+  transition:all ease-in-out 0.3s;
+  /* display:none; */
+  
+  
+  }
+a.active{
+  background-color:#672114;
+}
+.mocha-tab-anim-scale-content-item.tab-active{
+  width:100%;
+  height:100%; 
+  opacity:1;
+  border-radius:0px;
+  transition:all ease-in-out 0.6s;
+  margin:0 auto;
+  
+ /* display:block */
+}

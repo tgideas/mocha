@@ -1,0 +1,13 @@
+/*
+ * table v.1
+ * Author:kevinhehe
+ * Modify:2015-12-14
+ * 
+ */
+.mocha-table{width: 90.625%;margin-left: auto;margin-right: auto;font-size: .16rem;border-collapse: collapse;}
+	.mocha-table th{line-height: .20rem;}
+	.mocha-table td{line-height: .25rem}
+	
+	/* scheme */
+	.mocha-table-scheme1 {text-align: center;}
+	.mocha-table-scheme1 tr td:nth-child(2){width: 47%;}

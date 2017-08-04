@@ -1,0 +1,15 @@
+/*
+ * base v.1
+ * Author:sonichuang
+ * Modify:2015-11-30
+ * 
+ */
+body,ul,ol,dl,dt,dd,form,h1,h2,h3,h4,p,img,section,header,ruby,rb,rt,i,b,input{margin:0;padding:0;}
+html,body,h1,h2{font:400 16px/100% "Helvetica Neue",Helvetica,STHeiTi,sans-serif;}
+body{color:#333;}
+i{display:block;font-style:normal;}
+li{list-style:none;}
+a,a:visited{text-decoration:none;}
+img{border:0;}
+em,cite{font-style:normal;}
+.clearfix:after{content: '.';height: 0;line-height: 0;display: block;clear: both;visibility: hidden;}

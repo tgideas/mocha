@@ -1,0 +1,430 @@
+/*
+ * loading v.2
+ * Author:echowtyang
+ * Modify:2017-07-28
+ * 
+ */
+.modal {
+  background: rgba(0,0,0,0.6);
+  bottom: 0;
+  display: none;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+.modal .modal-dialog {
+  left: 50%;
+  line-height: 20px;
+  margin-left: -150px;
+  position: absolute;
+  top: 50%;
+  transition: all .5s ease;
+  width: 300px;
+}
+.modal .modal-dialog .modal-header {
+  background: #108ee9;
+  font-size: 18px;
+  padding: 10px;
+}
+.modal .modal-dialog .modal-header h4 {
+  margin: 0;
+  padding: 0;
+}
+.modal .modal-dialog .modal-body {
+  background: #3aa5f2;
+  padding: 10px;
+}
+.modal .modal-dialog .modal-body p {
+  margin: 0;
+  padding: 0;
+}
+.modal.show,
+.modal.hiding {
+  display: block;
+}
+.modal.show {
+  animation: modal-fade-animation .5s ease;
+}
+.modal.hiding {
+  animation: modal-fade-animation-out .25s ease;
+}
+.modal.mocha-scale.show {
+  animation: modal-scale-animation .5s ease;
+}
+.modal.mocha-scale.hiding {
+  animation: modal-scale-animation-out .25s ease;
+  display: block;
+}
+.modal.mocha-newspaper.show .modal-dialog {
+  animation: modal-newspaper-animation .5s ease;
+}
+.modal.mocha-newspaper.hiding .modal-dialog {
+  animation: modal-newspaper-animation-out .25s ease;
+}
+.modal.mocha-slide-in-top.show .modal-dialog {
+  animation: modal-slide-top-animation .5s ease;
+}
+.modal.mocha-slide-in-top.hiding .modal-dialog {
+  animation: modal-slide-top-animation-out .25s ease;
+}
+.modal.mocha-slide-in-left.show .modal-dialog {
+  animation: modal-slide-left-animation .5s ease;
+}
+.modal.mocha-slide-in-left.hiding .modal-dialog {
+  animation: modal-slide-left-animation-out .25s ease;
+}
+.modal.mocha-slide-in-right.show .modal-dialog {
+  animation: modal-slide-right-animation .5s ease;
+}
+.modal.mocha-slide-in-right.hiding .modal-dialog {
+  animation: modal-slide-right-animation-out .25s ease;
+}
+.modal.mocha-slide-in-bottom.show .modal-dialog {
+  animation: modal-slide-bottom-animation .5s ease;
+}
+.modal.mocha-slide-in-bottom.hiding .modal-dialog {
+  animation: modal-slide-bottom-animation-out .25s ease;
+}
+.modal.mocha-expand-horiz.show .modal-dialog {
+  animation: modal-expand-horiz-animation .5s ease;
+}
+.modal.mocha-expand-horiz.hiding .modal-dialog {
+  animation: modal-expand-horiz-animation-out .25s ease;
+}
+.modal.mocha-expand-vert.show .modal-dialog {
+  animation: modal-expand-vert-animation .5s ease;
+}
+.modal.mocha-expand-vert.hiding .modal-dialog {
+  animation: modal-expand-vert-animation-out .25s ease;
+}
+.modal.mocha-sticky-top.show .modal-dialog {
+  animation: modal-sticky-top-animation .5s ease;
+  margin-top: 0 !important;
+  top: 0;
+}
+.modal.mocha-sticky-top.hiding .modal-dialog {
+  animation: modal-sticky-top-animation-out .25s ease;
+}
+.modal.mocha-sticky-bottom.show .modal-dialog {
+  animation: modal-sticky-bottom-animation .5s ease;
+  bottom: 0;
+  margin-bottom: 0;
+  top: auto;
+}
+.modal.mocha-sticky-bottom.hiding .modal-dialog {
+  animation: modal-sticky-bottom-animation-out .25s ease;
+  bottom: 0;
+  margin-bottom: 0;
+  top: auto;
+}
+.modal.mocha-rotate-top {
+  perspective: 200px;
+  perspective-origin: 50% 0;
+}
+.modal.mocha-rotate-top.show .modal-dialog {
+  animation: modal-rotate-top-animation .5s ease;
+}
+.modal.mocha-rotate-top.hiding .modal-dialog {
+  animation: modal-rotate-top-animation-out .25s ease;
+}
+.modal.mocha-rotate-bottom {
+  perspective: 200px;
+  perspective-origin: 50% 0;
+}
+.modal.mocha-rotate-bottom.show .modal-dialog {
+  animation: modal-rotate-bottom-animation .5s ease;
+}
+.modal.mocha-rotate-bottom.hiding .modal-dialog {
+  animation: modal-rotate-bottom-animation-out .25s ease;
+}
+.modal.mocha-elastic-flip {
+  perspective: 2000px;
+  perspective-origin: 50% 0;
+  transform: scale(1.1,1.1);
+}
+.modal.mocha-elastic-flip.show .modal-dialog {
+  animation: modal-elastic-flip-animation 0.75s ease;
+}
+.modal.mocha-bounce-zoom {
+  transform: scale(1.6666667,1.6666667);
+  top: -11%;
+}
+.modal.bounce-zoom.show .modal-dialog {
+  animation: modal-bounce-zoom-animation 0.75s ease;
+}
+body.modal-bounce-zoom {
+  transform: scale(0.6,0.6);
+}
+@keyframes modal-fade-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modal-fade-animation-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes modal-scale-animation {
+  from {
+    opacity: 0;
+    transform: scale(2,2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+}
+@keyframes modal-scale-animation-out {
+  from {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2,2);
+  }
+}
+@keyframes modal-newspaper-animation {
+  from {
+    opacity: 0;
+    transform: rotate(-900deg) scale(0,0);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1,1);
+  }
+}
+@keyframes modal-newspaper-animation-out {
+  from {
+    opacity: 1;
+    transform: rotate(0deg) scale(1,1);
+  }
+  to {
+    opacity: 0;
+    transform: rotate(-900deg) scale(0,0);
+  }
+}
+@keyframes modal-slide-top-animation {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 50%;
+  }
+}
+@keyframes modal-slide-top-animation-out {
+  from {
+    top: 50%;
+  }
+  to {
+    top: -100%;
+  }
+}
+@keyframes modal-slide-left-animation {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes modal-slide-left-animation-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes modal-slide-right-animation {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes modal-slide-right-animation-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes modal-slide-bottom-animation {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 50%;
+  }
+}
+@keyframes modal-slide-bottom-animation-out {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 100%;
+  }
+}
+@keyframes modal-expand-horiz-animation {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes modal-expand-horiz-animation-out {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(90deg);
+  }
+}
+@keyframes modal-expand-vert-animation {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes modal-expand-vert-animation-out {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(90deg);
+  }
+}
+@keyframes modal-sticky-top-animation {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+@keyframes modal-sticky-top-animation-out {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+@keyframes modal-sticky-bottom-animation {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@keyframes modal-sticky-bottom-animation-out {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -100%;
+  }
+}
+@keyframes modal-rotate-top-animation {
+  from {
+    top: 0;
+    transform: rotateX(-90deg) translate(0,-50%);
+  }
+  to {
+    top: 50%;
+    transform: rotateX(0deg) translate(0,0);
+  }
+}
+@keyframes modal-rotate-top-animation-out {
+  to {
+    top: 50%;
+    transform: rotateX(0deg) translate(0,0);
+  }
+  to {
+    top: 100%;
+    transform: rotateX(90deg) translate(0,50%);
+  }
+}
+@keyframes modal-rotate-bottom-animation {
+  from {
+    top: 100%;
+    transform: rotateX(90deg) translate(0,-50%);
+  }
+  to {
+    top: 50%;
+    transform: rotateX(0deg) translate(0,0);
+  }
+}
+@keyframes modal-rotate-bottom-animation-out {
+  to {
+    top: 50%;
+    transform: rotateX(0deg) translate(0,0);
+  }
+  to {
+    top: 100%;
+    transform: rotateX(90deg) translate(0,-50%);
+  }
+}
+@keyframes modal-elastic-flip-animation {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  30% {
+    transform: rotateX(30deg);
+  }
+  50% {
+    transform: rotateX(-30deg);
+  }
+  75% {
+    transform: rotateX(10deg);
+  }
+  87% {
+    transform: rotateX(-10deg);
+  }
+  94% {
+    transform: rotateX(5deg);
+  }
+  98% {
+    transform: rotateX(-5deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes modal-bounce-zoom-animation {
+  0% {
+    top: -100%;
+  }
+  60% {
+    top: 70%;
+  }
+  70% {
+    top: 30%;
+  }
+  80% {
+    top: 63%;
+  }
+  90% {
+    top: 42%;
+  }
+  100% {
+    top: 50%;
+  }
+}

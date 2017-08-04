@@ -1,0 +1,13 @@
+/*
+ * base v.1
+ * Author:sonichuang
+ * Modify:2015-11-30
+ * 
+ */
+ .mocha-box{font-size:0.16rem;}
+ 	.mocha-box-hd{padding:0.16rem 0;}
+ 	.mocha-box-hd-title{text-align: center;margin:0;}
+ 	.mocha-box-bd{padding:0.16rem;line-height:0.32rem;}
+ 	.mocha-box-fd{padding:0.16rem 0;text-align: center;border-top-width: 1px;border-top-style: solid;}
+	/* scheme */
+	

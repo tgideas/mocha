@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>layout(布局样式) - TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/layout/layout_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+	
+	<!-- online css Star
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="http://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+		.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+		
+		.mocha-layout-flex{padding:5px;border:1px solid #666}
+		.mocha-layout-box{padding:5px;border: 1px solid #ddd;}
+	</style>
+</head>
+<body>
+<h2 class="h2">layout(布局样式)<a href="/mocha/docs/layout/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h2 class="h2" style="text-align:center;color:#f00;">{{ 横屏浏览！}}</h2>
+<!-- mocha-layout-scheme1(左右布局 四宫格子) -->
+<h3 class="h3">左右布局 左2右2</h3>
+<div class="mocha-layout mocha-layout-scheme1">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">A</div>
+		<div class="mocha-layout-box">B</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">C</div>
+		<div class="mocha-layout-box">D</div>
+	</div>
+</div>
+<!-- mocha-layout-scheme1(左右布局 左2右1) -->
+<h3 class="h3">左右布局 左2右1</h3>
+<div class="mocha-layout mocha-layout-scheme1">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">A</div>
+		<div class="mocha-layout-box">B</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">C</div>
+	</div>
+</div>
+<!-- mocha-layout-scheme1(左右布局 左1右2) -->
+<h3 class="h3">左右布局 左1右2</h3>
+<div class="mocha-layout mocha-layout-scheme1">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">A</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">B</div>
+		<div class="mocha-layout-box">C</div>
+	</div>
+</div>
+<!-- mocha-layout-scheme1(左右布局 左右非等分) -->
+<h3 class="h3">左右布局 左右非等分</h3>
+<div class="mocha-layout mocha-layout-scheme1 mocha-layout-row-1-2">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">1/3</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">2/3</div>
+	</div>
+</div>
+<div class="mocha-layout mocha-layout-scheme1 mocha-layout-row-2-3">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">2/5</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">3/5</div>
+	</div>
+</div>
+<div class="mocha-layout mocha-layout-scheme1 mocha-layout-row-3-2">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">3/5</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">2/5</div>
+	</div>
+</div>
+<div class="mocha-layout mocha-layout-scheme1 mocha-layout-row-2-1">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">2/3</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">1/3</div>
+	</div>
+</div>
+
+
+<!-- mocha-layout-scheme2(上下布局 上1下2) -->
+<h3 class="h3">上下布局 上2下1</h3>
+<div class="mocha-layout mocha-layout-scheme2">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">A</div>
+		<div class="mocha-layout-box">B</div>
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">C</div>
+	</div>
+</div>
+<!-- mocha-layout-scheme5(上下布局 上1下2) -->
+<h3 class="h3">上下布局 上1下2</h3>
+<div class="mocha-layout mocha-layout-scheme2">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">A</div>	
+	</div>
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">B</div>
+		<div class="mocha-layout-box">C</div>
+	</div>
+</div>
+<!-- mocha-layout-scheme5(上下布局 左右非等分) -->
+<h3 class="h3">上下布局 左右非等分</h3>
+<div class="mocha-layout mocha-layout-scheme2">
+	<div class="mocha-layout-flex">
+		<div class="mocha-layout-box">A</div>	
+	</div>
+	<div class="mocha-layout-flex mocha-layout-row-1-2">
+		<div class="mocha-layout-box">B</div>
+		<div class="mocha-layout-box">C</div>
+	</div>
+	<div class="mocha-layout-flex mocha-layout-row-2-3">
+		<div class="mocha-layout-box">B</div>
+		<div class="mocha-layout-box">C</div>
+	</div>
+	<div class="mocha-layout-flex mocha-layout-row-3-2">
+		<div class="mocha-layout-box">B</div>
+		<div class="mocha-layout-box">C</div>
+	</div>
+	<div class="mocha-layout-flex mocha-layout-row-2-1">
+		<div class="mocha-layout-box">B</div>
+		<div class="mocha-layout-box">C</div>
+	</div>
+</div>
+<script src="../../js/mocha.js"></script>
+</body>
+</html>

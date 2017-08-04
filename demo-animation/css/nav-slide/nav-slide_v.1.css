@@ -1,0 +1,43 @@
+.mocha-nav-slide-container {
+    overflow: hidden;
+}
+.mocha-nav-slide-controller-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.mocha-nav-slide-controller {
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all .5s ease;
+}
+.mocha-nav-slide-controller-list {
+    overflow: scroll;
+    display: -webkit-box;
+}
+.mocha-nav-slide-controller-list li {
+    display: inline-block;
+    line-height: .4rem;
+    float: left;
+    position: relative;
+}
+.mocha-nav-slide-content {
+    position: relative;
+    overflow: hidden;
+}
+.mocha-nav-slide-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.mocha-nav-slide-container .swiper-slide {
+    flex-shrink: 0;
+    position: relative;
+}
