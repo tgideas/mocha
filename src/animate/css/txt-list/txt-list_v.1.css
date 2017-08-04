@@ -1,0 +1,26 @@
+/*
+ * txt-list v.1
+ * Author:sonichuang
+ * Modify:2015-12-29
+ * 
+ */
+.mocha-txt-list{font-size:0.14rem;}
+	.mocha-txt-list-ul{}
+	.mocha-tlu-item{position: relative;border-bottom: 1px solid #ccc;padding:0.16rem 0 0.16rem 0.64rem;}
+	.mocha-tlu-item:after{content: '.';height: 0;line-height: 0;display: block;clear: both;visibility: hidden;}
+	.mocha-tlu-item:last-child{border-bottom:none;}
+	.mocha-tlu-item-icon{position: absolute;left:0.16rem;top:0.16rem;width:0.4rem;height:0.24rem;line-height:0.24rem;border-radius:0.5rem;background-color: #ccc;text-align: center;}
+	.mocha-tlu-item-title{font-size:0.16rem;margin:0;}
+	.mocha-tlu-item-meta{padding-top:0.032rem;}
+	.mocha-tlu-item-meta time{padding-left:0.16rem;}
+	.mocha-tlu-item-sup{float: left;margin-right:0.08rem;margin-top:0.03rem;}
+	/* scheme */
+	.mocha-txt-list-scheme1{}
+	.mocha-txt-list-scheme2{}
+	.mocha-txt-list-scheme2 .mocha-tlu-item{padding-left:0.16rem;}
+	.mocha-txt-list-scheme2 .mocha-tlu-item-icon{display: none;}
+	.mocha-txt-list-scheme3 .mocha-tlu-item{padding-left:0.16rem;}
+	.mocha-txt-list-scheme3 .mocha-tlu-item-title{overflow: hidden;height:0.2rem;line-height:0.2rem;padding-right:0.64rem;text-overflow:ellipsis;white-space:nowrap;}
+	.mocha-txt-list-scheme3 .mocha-tlu-item-meta{position: absolute;right:0.16rem;top:0.16rem;}
+	.mocha-txt-list-scheme3 .mocha-tlu-item-icon,
+	.mocha-txt-list-scheme3 .mocha-tlu-item-meta em{display: none;}

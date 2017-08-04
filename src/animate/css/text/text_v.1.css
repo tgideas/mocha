@@ -1,0 +1,18 @@
+/*
+ * text v.1
+ * Author:sonichuang
+ * Modify:2016-03-16
+ * 
+ */
+.mocha-text{padding:0.1rem;line-height:1.5;}
+	.mocha-text h1{margin-bottom:0.5em;}
+	.mocha-text h2{margin-bottom:0.5em;}
+	.mocha-text h3{margin-bottom:0.5em;}
+	.mocha-text h4{margin-bottom:0.5em;}
+	.mocha-text h5{margin-bottom:0.5em;}
+	.mocha-text h6{margin-bottom:0.5em;}
+	.mocha-text ul li{list-style-position: inside;list-style-type:disc;}
+	.mocha-text ol li{ list-style-position: inside; list-style-type:decimal;}
+	/* scheme */
+	.mocha-text-center{text-align: center;}
+	.mocha-text-right{text-align: right;}

@@ -1,0 +1,22 @@
+/*
+ * loading v.1
+ * Author:jsonliu
+ * Modify:2016-03-22
+ * 
+ */
+.mocha-fill-info{width:100%;height:100%;background:rgba(0,0,0,0.5);z-index: 999;left: 0;top: 0;position: fixed;display:none}
+.mocha-fill-main{width:100%;position:absolute;bottom:0;left:0;padding:.1rem 0 .1rem;z-index:999;font-size:.16rem}
+.mocha-fill-info .mocha-fill-mark{position:absolute;top:0.02rem;right:0.06rem}
+.mocha-fill-info .mocha-fill-mark:after{content:'x';font-size:.15rem}
+.mocha-fill-info .mocha-fill-info-bd{padding:.1rem .1rem;}
+.mocha-fill-info .mocha-fill-info-box{line-height:2;}
+.mocha-fill-info input[type='text']{-webkit-box-flex:1;height:.1rem;line-height:.1rem;padding:0;border:none;-webkit-border-radius: 0;border-radius:0;background:none;-webkit-tap-highlight-color:transparent;}
+.mocha-fill-info-fd{text-align:center}
+.mocha-fill-info .mocha-fill-info-btn-submit{padding:0.05rem 0.1rem;font-size:0.08rem;-webkit-border-radius: 0.02rem; }
+.mocha-fill-info label, .mocha-fill-info span{font-size:.08rem;}
+.mocha-fill-info .mocha-fill-info-box{display: -webkit-box;display: box;-webkit-box-orient: horizontal;box-orient: horizontal;-webkit-box-align: center;}
+.mocha-fill-info-panel{display: -webkit-box;display: box;-webkit-box-orient: horizontal;box-orient: horizontal;-webkit-box-align:center}
+.mocha-fill-info-box label, .mocha-fill-info-box input, .mocha-fill-info-box span{display:block}
+.mocha-fill-info-box label{width:0.6rem;text-align: right;}
+.mocha-fill-info-box input[type='radio']{margin-right:0.05rem}
+.mocha-fill-info .mocha-fill-info-panel{width:50%;box-sizing: border-box;}

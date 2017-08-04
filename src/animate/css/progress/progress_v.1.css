@@ -1,0 +1,14 @@
+/*
+ * progress v.1
+ * Author:kevinhehe
+ * Modify:2015-12-21
+ * 
+ */
+.mocha-progress{width: 90.625%;margin-left: auto;margin-right: auto;font-size: .16rem;}
+	.mocha-progress-bar{position: relative;width: 90.625%;height: .25rem;margin-left: auto;margin-right: auto;border-radius: .125rem;overflow: hidden;}
+	.mocha-progress-bar-bg{position: absolute;top: 0;left: -100%;width: 100%;height: .25rem;border-radius: .125rem;}
+	.mocha-progress-num{position: relative;text-align: center;line-height: .25rem;z-index: 5;}
+	.mocha-progress-img{display: none;width: 1.2rem;height: .6rem;margin: 0 auto .2rem;}
+	/* scheme */
+	.mocha-progress-scheme1{}
+	.mocha-progress-scheme2 .mocha-progress-img{display: block;}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>sign-in(签到模块) - TGideas Mocha</title>
+	<!-- 页面重构：dereksu | 创建：20151203 | 团队博客：http://tgideas.qq.com/ -->
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/sign-in/sign-in_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style>
+	.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: .14rem;}
+	.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	body{padding-bottom: 10px !important;}
+	</style>
+</head>
+<body>
+<h2 class="h2">sign-in(签到模块)<a href="/mocha/docs/sign-in/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h3 id="signindemo1">样式一(<a href="//tgideas.qq.com/act/a20151218mochasignin/">点击这里看线上demo</a>):</h3>
+
+<div class="mocha-sign-in mocha-sign-in-scheme1 mocha-sign-in-skin1">
+	<div class="title-panel clearfix">
+		<span class="tit">签到日历</span>
+		<span class="total">本月已累积签到<i class="num" id="queryCheckInRes">0</i>天</span>
+		<span class="qqnum" id="login_qq_span"></span>
+	</div>
+	<div class="date-panel clearfix">
+		<span class="nowdate" id="nowDate"></span>
+	</div>
+	<div id="cal" class="calendar">
+		<table class="main"><thead class="head"><tr><th>星期日</th><th>星期一</th><th>星期二</th><th>星期三</th><th>星期四</th><th>星期五</th><th>星期六</th></tr></thead><tbody class="body"><tr class="week"><td class="noday">29</td><td class="noday">30</td><td class="normal">1</td><td class="normal">2</td><td class="normal">3</td><td class="normal">4</td><td class="weekend">5</td></tr><tr class="week"><td class="weekend">6</td><td class="normal">7</td><td class="normal">8</td><td class="normal">9</td><td class="normal">10</td><td class="normal">11</td><td class="weekend">12</td></tr><tr class="week"><td class="weekend">13</td><td class="normal">14</td><td class="normal">15</td><td class="normal">16</td><td class="normal">17</td><td class="normal">18</td><td class="weekend">19</td></tr><tr class="week"><td class="weekend">20</td><td class="today">21</td><td class="normal">22</td><td class="normal">23</td><td class="normal">24</td><td class="normal">25</td><td class="weekend">26</td></tr><tr class="week"><td class="weekend">27</td><td class="normal">28</td><td class="normal">29</td><td class="normal">30</td><td class="normal">31</td><td class="noday">1</td><td class="noday">2</td></tr></tbody></table>
+	</div>
+	<div class="btn-panel">
+		<a class="signinbtn" onclick="amsSubmit(39028,216921)">签到</a>
+		<a class="querysigninbtn" onclick="amsInit(39028,216920);">查询签到 </a>
+	</div>
+</div>
+
+<!-- 日历签到案例://tgideas.qq.com/act/a20151218mochasignin/ -->
+
+<h3 id="signindemo2">样式二:</h3>
+
+<div class="mocha-sign-in mocha-sign-in-scheme2 mocha-sign-in-skin1">
+	<div class="content">
+		<div class="signinbox clearfix">
+			<a href="javascript:void(0);" class="signinitem signcls"></a>
+			<a href="javascript:void(0);" class="signinitem signcls"></a>
+			<a href="javascript:void(0);" class="signinitem signcls"></a>
+			<a href="javascript:void(0);" onclick="amsSubmit(39028,216921)" class="signinitem today">签</a>
+			<a href="javascript:void(0);" class="signinitem normal"></a>
+			<a href="javascript:void(0);" class="signinitem normal"></a>
+			<a href="javascript:void(0);" class="signinitem normal"></a>
+		</div>
+	</div>
+</div>
+
+<!-- 短期签到案例://pvp.qq.com/cp/a20151208yxzj/index.html -->
+<script src="../../js/mocha.js"></script>
+<script src="//pingjs.qq.com/ping_tcss_ied.js"></script>
+<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+<!-- AMS头 -->
+<script src="//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"  ></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_build/milo.js" ></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js"></script>
+<script>
+/**
+ * 样式一JS
+ */
+//获取当前的日期
+var myDate = new Date();
+var nowYear = myDate.getFullYear(); //年
+var nowMonth = myDate.getMonth() + 1; //月
+var nowDate = myDate.getDate(); //日
+document.getElementById('nowDate').innerHTML = nowYear + '年' + nowMonth + '月' + nowDate + '日';
+//提交签到的配置
+amsCfg_216921 = {
+	type: "comit",
+	sData: {
+		"appid": "363"
+	},
+	success: function(res) {
+		amsInit(39028, 216920);
+		console.log(res.sMsg);
+	}
+};
+//查询签到的配置
+amsCfg_216920 = {
+	type: "query",
+	sData: {
+		"appid": "363"
+	},
+	success: function(checkInInfo, signDateList) { //返回总天数
+		g("queryCheckInRes").innerHTML = checkInInfo.total;
+	},
+	calCfg: { //日历显示的配置对象，更多参数可参考Calendar & SignCalendar 类
+		specialday: [], //特殊日期
+		container: "cal", //日历显示容器
+		onCreateDay: function(day, type, y, m, d) { //日历对象的dom内容
+			day.innerHTML = "" + d + "";
+		},
+		signDateList: []
+	},
+	css: "biz.calendar.cal", //css样式，有特殊样式，请用绝对地址
+	calShow: true, //日历是否显示
+	msg: { //msg 提示语句对象
+		"systemError": "很抱歉，系统繁忙，请稍后再试",
+		"hasCheckin": "您今天已签到",
+		"checkinSuccess": "签到成功",
+		"checkinFailure": "签到成功"
+	}
+};
+//初始化签到
+amsInit(39028, 216920);
+//获取当前登录的QQ号
+milo.ready(function() {
+	need("biz.login", function(LoginManager) {
+		LoginManager.checkLogin(function() {
+			g("login_qq_span").innerHTML = LoginManager.getUserUin();
+		});
+	});
+});
+</script>
+</body>
+</html>
+
+
+

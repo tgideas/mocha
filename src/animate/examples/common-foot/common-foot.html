@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="robots" content="all" />
+<link href="//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/240x240.jpg" rel="apple-touch-icon"/>
+<link href="//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/240x240.jpg" rel="apple-touch-icon-precomposed"/>
+<meta name="author" content="Tencent-TGideas" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>官网通用页脚 - Mocha - TGideas移动页面模块化</title>
+<!-- debug css Star -->
+<link href="../../css/base/base_v.3.css" rel="stylesheet">
+<link href="../../css/common-foot/common-foot_v.1.css" rel="stylesheet">
+<link href="../../css/color.css" rel="stylesheet">
+<!-- debug css End -->
+
+<!-- online css Star
+<link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+<script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+online css End -->
+</head>
+<body>
+<footer class="mocha-commonfoot-footer">
+    <div class="mocha-commonfoot-wrap o_h">
+    	<div class="mocha-commonfoot-wxcode o_h">
+        	<div class="mocha-commonfoot-codeborder o_h"><img src="//ossweb-img.qq.com/images/6l/m201511/wx_code.jpg" width="100%" height="auto" alt="长按识别二维码关注【微信公众号名称】微信公众号"></div>
+            <p>长按二维码<br>可识别关注微信公众号</p>
+        </div>
+    	<div class="mocha-commonfoot-sqcode o_h">
+        	<a href="//buluo.qq.com/mobile/barindex.html?bid=252960" onclick="return window.pgvHref({hottag:'mobile.index.buluo.sq'},this)">
+                <div class="mocha-commonfoot-codeborder o_h"><img src="//ossweb-img.qq.com/images/6l/m201511/sq_code.jpg" width="100%" height="auto" alt="长按识别二维码关注【兴趣部落名称】兴趣部落"></div>
+                <p>点击关注<br><span class="mocha-commonfoot-yel">【兴趣部落名称】</span><br>兴趣部落</p>
+            </a>
+        </div>
+        <div class="mocha-commonfoot-normalcode o_h">
+        	<p><i class="mocha-commonfoot-wxico"></i>微信搜索<br><span class="mocha-commonfoot-yel">【微信公众号名称】</span><br>微信公众号</p>
+        	<a href="//buluo.qq.com/mobile/barindex.html?bid=252960"onclick="return window.pgvHref({hottag:'mobile.index.buluo.browser'},this)">
+            	<p><i class="mocha-commonfoot-sqico"></i>点击关注<br><span class="mocha-commonfoot-yel">【兴趣部落名称】</span><br>兴趣部落</p>
+            </a>
+        </div>
+    </div>
+    <div class="mocha-commonfoot-totop o_h"><a href="#"onclick="return window.pgvHref({hottag:'mobile.index.toTop'},this)">返回顶部&nbsp;</a></div>
+    <div class="mocha-commonfoot-copyright o_h">COPYRIGHT &copy; 1998 - 2014 TENCENT. ALL RIGHTS RESERVED.<br>腾讯公司版权所有</div>
+</footer>
+<script src="../../js/mocha.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script>
+var ua=navigator.userAgent.toLowerCase();
+var systemInfo={
+	OStype:-1!=ua.indexOf("iphone")?"iphone":-1!=ua.indexOf("ipad")?"ipad":-1!=ua.indexOf("ipod")?"ipod":-1!=ua.indexOf("android")?"android":"other",		//设备:iphone,ipad,ipod,android,other
+	plat:ua.indexOf("micromessenge")!=-1?"wx":ua.indexOf("qq/")!=-1?"qq":"other",																																				//平台:wx,qq,other
+	networkType:"default"																																																																//网络环境,2g,3g,4g,wifi,other
+}
+//延迟加载
+function addload(func){var old=window.onload;if(typeof window.onload!="function"){window.onload=func;}else{window.onload=function(){old();func();}}};
+function loadJs(url,succ,v){var elem=delayJs(url);elem.onload=function(){succ(v);};elem.onerror=function(){};}
+function delayJs(url){var type=url.split("."),file=type[type.length-1];if(file=="css"){var obj=document.createElement("link"),lnk="href",tp="text/css";obj.setAttribute("rel","stylesheet")}else var obj=document.createElement("script"),lnk="src";obj.setAttribute(lnk,url);file=="css"?document.getElementsByTagName("head")[0].appendChild(obj):document.body.appendChild(obj);return obj}
+//通用加载的脚本
+function delayLoadCommon(){
+	loadJs("//ossweb-img.qq.com/images/js/dcv/ww_tcss.js",function(){
+		if(typeof(pgvMain)=='function')pgvMain();
+		if(navigator.standalone)pgvSendClick({hottag:'mobile.index.standalone'});//只能统计ios的主屏幕打开次数
+	},"");
+/*判断平台，然后选择加载相应组件，初始化相应的分享功能;
+  选择显示关注公众号还是兴趣部落，或全都显示;
+  HTML处有3个容器分别装载3种情况，默认都是隐藏，如果需要显示相对应的容器，则需要在其父容器("mocha-commonfoot-wrap")里加上样式"mocha-commonfoot-wxplat"||"mocha-commonfoot-sqplat"||"mocha-commonfoot-browserplat"*/
+	switch (systemInfo.plat){
+		case "wx":
+			loadJs("//ossweb-img.qq.com/images/js/WXJssdk.js",unitWXShare,"");
+			$(".mocha-commonfoot-wrap").addClass("mocha-commonfoot-wxplat");
+			$(".mocha-commonfoot-wxcode").bind("longTap",function(){pgvSendClick({hottag: 'mobile.index.wxcode.longtap'});},0);
+		break;
+		case "qq":
+			loadJs("//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152",unitSQShare,"");
+			$(".mocha-commonfoot-wrap").addClass("mocha-commonfoot-sqplat");
+			$(".mocha-commonfoot-sqcode").bind("longTap",function(){pgvSendClick({hottag: 'mobile.index.sqcode.longtap'});},0);
+		break;
+		default:
+		$(".mocha-commonfoot-wrap").addClass("mocha-commonfoot-browserplat");
+	}
+}
+delayLoadCommon();
+//分享信息自定义
+window.shareData = {
+  "imgUrl":"//ossweb-img.qq.com/images/tgideas/weixin/240x240.jpg",//尺寸是240x240的图片,且要存放到qq.com服务器,并填写完整的链接
+  "timeLineLink":window.location.href.split("?")[0],//需要分享的链接，默认本页面链接。
+  "tTitle": $("title").html(),//文案将会出现在微信和手Q的每一种分享方式中
+  "tContent": "腾讯游戏-腾讯官方网站",//此文案不会出现在朋友圈中，但是会出现在微信手Q的其他分享方式中
+  "actName":"mobile"//点击流命名
+};
+//微信分享初始化
+var wxShareMethod = [
+    ['py', 'onMenuShareAppMessage'],
+    ['pyq', 'onMenuShareTimeline'],
+    ['sq', 'onMenuShareQQ'],
+    ['wb', 'onMenuShareWeibo'],
+    ['qzone', 'onMenuShareQZone']
+];
+function unitWXShare(){
+	WXJssdk.init(function(wx) {
+    for (var i = 0, l = wxShareMethod.length; i < l; i++) {
+        (function(k) {
+            wx[k[1]]({
+                title:shareData.tTitle,
+                desc:shareData.tContent,
+                link:shareData.timeLineLink+"?ADTAG=tgi.relay.wx." + k[0],
+                imgUrl:shareData.imgUrl,
+                success:function(){pgvSendClick({hottag:shareData.actName+'.share' + k[0] + '.ok'});},
+                cancel:function(){pgvSendClick({hottag:shareData.actName+'.share' + k[0] + '.cancel'});}
+            });
+        })(wxShareMethod[i]);
+    }
+	wx.getNetworkType({
+		success: function (res) {
+			systemInfo.networkType = res.networkType; // 返回网络类型2g，3g，4g，wifi
+			pgvSendClick({hottag:'mobile.'+systemInfo.OStype+'.'+systemInfo.plat+'.'+systemInfo.networkType});
+		}
+	});
+});
+}
+//手Q分享初始化
+function unitSQShare(){
+	mqq.device.getNetworkType(function(result){
+		switch(result){
+			case -1:systemInfo.networkType="unknown";break;
+			case 0:systemInfo.networkType="NotReachable";break;
+			case 1:systemInfo.networkType="WiFi";break;
+			case 2:systemInfo.networkType="2G";break;
+			case 3:systemInfo.networkType="3G";break;
+			case 4:systemInfo.networkType="4G";break;
+			default:systemInfo.networkType="other";
+		}
+	pgvSendClick({hottag:'mobile.'+systemInfo.OStype+'.'+systemInfo.plat+'.'+systemInfo.networkType});
+	});
+	mqq.ui.setOnShareHandler(function(type){
+		mqq.ui.shareMessage({
+			share_url: shareData.timeLineLink+"?ADTAG=tgi.relay.qq",
+			title: shareData.tTitle,
+			desc: shareData.tContent,
+			image_url:shareData.imgUrl,
+			share_type:type
+		},
+		function(retCode){pgvSendClick({hottag:shareData.actName+'.qq.'+retCode});})
+	});
+}
+</script>
+</body>
+</html>
+
+

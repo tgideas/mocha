@@ -1,0 +1,36 @@
+/*
+ * navigation v.2
+ * Author:echowtyang
+ * Modify:2017-7-31
+ * 
+ */
+.mocha-nav{position:relative;z-index:100;left:0;top:0;width:100%;height:.6rem;font-size: .16rem;}
+.mocha-nav-box{position: relative;float: right;}
+.mocha-nav-slide{position: relative;margin-right:.1rem;margin-top:.21rem;width:.25rem;height:.2rem;z-index: 1000;}
+.mocha-nav-slide-icon,.mocha-nav-slide-icon:before,.mocha-nav-slide-icon:after{width:.25rem;height:.02rem;position:absolute;left:0;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.mocha-nav-slide-icon{top:.09rem;left:0;}
+.mocha-nav-slide-icon:before{content:"";top:-.07rem;}
+.mocha-nav-slide-icon:after{content:"";top:.07rem;}
+.mocha-nav-slide-close .mocha-nav-slide-icon{background:transparent;}
+.mocha-nav-slide-close .mocha-nav-slide-icon:before{top:0;-webkit-transform:rotate(45deg);}
+.mocha-nav-slide-close .mocha-nav-slide-icon:after{top:0;-webkit-transform:rotate(-45deg);}
+.mocha-nav-list{right:0;z-index:996;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.mocha-nav-list-open{top:.6rem;width: 100%;-webkit-transform:scale3d(1,1,1);}
+.mocha-nav-list ul{width:100%;overflow:hidden;text-align:center;}
+.mocha-nav-list li{height:.38rem;overflow:hidden;line-height:.38rem;position:relative;}
+
+.mocha-nav-transition .mocha-nav-slide-icon,.mocha-nav-transition .mocha-nav-slide-icon:before,.mocha-nav-transition .mocha-nav-slide-icon:after,.mocha-nav-transition .mocha-nav-list{-webkit-transition:all .5s;}
+
+/* scheme */
+.mocha-navigation-scheme1 {position: absolute;}
+.mocha-navigation-scheme1 .mocha-nav-box{z-index: 998;}
+.mocha-navigation-scheme1 .mocha-nav-list{position:fixed;top:.6rem;width:0;height:0;opacity: 0;}
+.mocha-navigation-scheme1 .mocha-nav-list-cover{position:absolute;left:0;top:0;width: 100%;height: 100%;z-index:996;}
+.mocha-navigation-scheme1 .mocha-nav-list-open{width: 100%;height:100%;opacity:1;}
+
+.mocha-navigation-scheme2 {position: absolute;}
+.mocha-navigation-scheme2 .mocha-nav-box{z-index: 998;}
+.mocha-navigation-scheme2 .mocha-nav-list{position:fixed;top:.6rem;width: 100%;height:100%;opacity:1;}
+.mocha-navigation-scheme2 .mocha-nav-list-cover{position:absolute;left:0;top:0;width: 100%;height: 100%;z-index:996;}
+.mocha-navigation-scheme2-content{position: absolute;top: 0;z-index: 999;height: 1000px;background: #fff;transition: transform .2s ease;transform-origin: bottom right;}
+.mocha-navigation-scheme2-content.mocha-nav-content-open{transform: rotate(-40deg);}

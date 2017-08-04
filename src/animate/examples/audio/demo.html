@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>audio(音频样式) - TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/audio/audio_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+	
+	<!-- online css Star
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="http://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+		.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	</style>
+</head>
+<body>
+<h2 class="h2">audio(音频样式)<a href="/mocha/docs/audio/" class="btn-docs" target="_blank">查看文档</a></h2>
+<!-- mocha-audio-scheme1(样式1) -->
+<div class="mocha-audio mocha-audio-scheme1 mocha-audio-skin1">
+	<a id="mochaAudioPlay" class="mocha-audio-btn" href="javascript:;"><span class="mocha-audio-icon-play"></span></a>
+	<a id="mochaAudioPause" class="mocha-audio-btn" href="javascript:;" style="display:none;"><span class="mocha-audio-icon-pause"></span></a>
+	<div class="mocha-audio-info">
+		<p>音频名称 3'33"</p>
+		<p>音频简介内容</p>
+	</div>
+</div>
+<script src="../../js/mocha.js"></script>
+<!-- demo JS -->
+<script src="http://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script>
+	(function mochaAudioFunc(){
+		$("#mochaAudioPlay").bind("tap",function(){
+			$(this).css("display","none");
+			$("#mochaAudioPause").css("display","inline-block");
+		})
+		$("#mochaAudioPause").bind("tap",function(){
+			$(this).css("display","none");
+			$("#mochaAudioPlay").css("display","inline-block");
+		})
+	})()
+</script>
+</body>
+</html>

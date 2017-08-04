@@ -1,0 +1,23 @@
+/*
+ * dialog v.1
+ * Author:sonichuang
+ * Modify:2015-12-08
+ * 
+ */
+.mocha-tab{margin-bottom:0.16rem;font-size:0.16rem;}
+	.mocha-tab-triggers{}
+	.mocha-tab-triggers-ul{width: 100%;display: -webkit-box;display: box;display: -webkit-flexbox;display: flexbox;display: -webkit-flex;display: flex;overflow: hidden;}
+	.mocha-tab-triggers-ul li{position: relative;text-align: center;padding:0.16rem 0.08em;-webkit-box-flex: 1;box-flex: 1;-webkit-flex: 1;flex: 1;}
+	.mocha-tab-panels{}
+	.mocha-tab-panel{display:none;padding:0.16rem;}
+	/* scheme */
+	.mocha-tab-scheme1 .mocha-tab-triggers-ul li{border-left:1px solid #ccc;}
+	.mocha-tab-scheme2 .mocha-tab-triggers-ul li{border-bottom:2px solid #ccc;}
+	.mocha-tab-scheme3 .mocha-tab-triggers-ul{display: block;border-bottom:1px solid #ccc;border-top:1px solid #ccc;}
+	.mocha-tab-scheme3 .mocha-tab-triggers-ul li{display: inline-block;padding: 0.1rem 0.1rem;}
+	.mocha-tab-scheme3 .mocha-tab-triggers-ul li.current::after {display: inline-block;content: '';width: 0;bottom: 0;left: 50%;margin-left: -.06rem;height: 0;border-style: solid;border-width: 0 .06rem .08rem .06rem;position: absolute;}
+	.mocha-tab-scheme4 .mocha-tab-triggers{width: 100%;border-bottom:1px solid #ccc;}
+	.mocha-tab-scheme4 .mocha-tab-triggers:after{content:"";display: block;width:0;height:0;clear: both;}
+	.mocha-tab-scheme4 .mocha-tab-triggers-ul {display: block;padding: .1rem 0;}
+	.mocha-tab-scheme4 .mocha-tab-triggers-ul li {display: inline-block;height: .25rem;margin-left: .1rem;padding: 0 .05rem;font-size: .13rem;line-height: .25rem;border-radius: .03rem;border: 1px solid #dbdfe7;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-tab-scroll{overflow: hidden;overflow-x: auto;white-space: nowrap;-webkit-overflow-scrolling: touch;overflow-scrolling: touch;}

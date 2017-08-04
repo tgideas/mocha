@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>slider(slider模块) - TGideas Mocha</title>
+	<!-- 页面重构：echowtyang | 创建：20170731 | 团队博客：//tgideas.qq.com/ -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/slider/slider_v.2.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<style>
+	.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: .14rem;}
+	.mocha-slide-container{height: 200px;}
+	.mocha-slide:nth-child(1){background: #4390EE;}
+	.mocha-slide:nth-child(2){background: #CA4040;}
+	.mocha-slide:nth-child(3){background: #FF8604;}
+	</style>
+</head>
+<body>
+
+<h2 class="h2">slider(slider模块)<a href="/mocha/docs/slider/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h3>Demo1(push)</h3>
+<div class="demo1">
+	<div class="mocha-slide-container">
+		<div class="mocha-slide-wrapper">
+			<div class="mocha-slide">Slide 1</div>
+			<div class="mocha-slide">Slide 2</div>
+			<div class="mocha-slide">Slide 3</div>
+		</div>
+		<div class="mocha-slide-pagination"></div>
+	</div>
+</div>
+
+<h3>Demo2(fade)</h3>
+<div class="demo2">
+	<div class="mocha-slide-container" data-effect="fade">
+		<div class="mocha-slide-wrapper">
+			<div class="mocha-slide">Slide 1</div>
+			<div class="mocha-slide">Slide 2</div>
+			<div class="mocha-slide">Slide 3</div>
+		</div>
+		<div class="mocha-slide-pagination"></div>
+	</div>
+</div>
+
+<h3>Demo3(cube)</h3>
+<div class="demo3">
+	<div class="mocha-slide-container" data-effect="cube">
+		<div class="mocha-slide-wrapper">
+			<div class="mocha-slide">Slide 1</div>
+			<div class="mocha-slide">Slide 2</div>
+			<div class="mocha-slide">Slide 3</div>
+		</div>
+		<div class="mocha-slide-pagination"></div>
+	</div>
+</div>
+
+<h3>Demo4(coverflow)</h3>
+<div class="demo4">
+	<div class="mocha-slide-container" data-effect="coverflow">
+		<div class="mocha-slide-wrapper">
+			<div class="mocha-slide">Slide 1</div>
+			<div class="mocha-slide">Slide 2</div>
+			<div class="mocha-slide">Slide 3</div>
+		</div>
+		<div class="mocha-slide-pagination"></div>
+	</div>
+</div>
+
+<h3>Demo5(flip)</h3>
+<div class="demo5">
+	<div class="mocha-slide-container" data-effect="flip">
+		<div class="mocha-slide-wrapper">
+			<div class="mocha-slide">Slide 1</div>
+			<div class="mocha-slide">Slide 2</div>
+			<div class="mocha-slide">Slide 3</div>
+		</div>
+		<div class="mocha-slide-pagination"></div>
+	</div>
+</div>
+
+<!-- <h3>Demo6</h3>
+<div class="demo6">
+	<div class="mocha-slide-container" data-effect="unfold">
+		<div class="mocha-slide-wrapper">
+			<div class="mocha-slide">Slide 1</div>
+			<div class="mocha-slide">Slide 2</div>
+			<div class="mocha-slide">Slide 3</div>
+		</div>
+		<div class="mocha-slide-pagination"></div>
+	</div>
+</div> -->
+
+<script src="../../js/mocha.js"></script>
+<script src="//pingjs.qq.com/ping_tcss_ied.js"></script>
+<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+<script src="/js/zepto.min.js"></script>
+<script src="swiper.min.js"></script> 
+<script src="slider.js"></script> 
+
+<script>
+var mySwiper1 = new Swiper('.demo1 .mocha-slide-container',{
+	wrapperClass : 'mocha-slide-wrapper',
+	slideClass : 'mocha-slide',
+	// pagination : '.mocha-slide-pagination',
+});
+
+var mySwiper2 = new Swiper('.demo2 .mocha-slide-container',{
+	wrapperClass : 'mocha-slide-wrapper',
+	slideClass : 'mocha-slide',
+	effect : $('.demo2 .mocha-slide-container').data('effect'),
+	// pagination : '.mocha-slide-pagination',
+});
+
+var mySwiper3 = new Swiper('.demo3 .mocha-slide-container',{
+	wrapperClass : 'mocha-slide-wrapper',
+	slideClass : 'mocha-slide',
+	effect : $('.demo3 .mocha-slide-container').data('effect'),
+	// pagination : '.mocha-slide-pagination',
+});
+
+var mySwiper4 = new Swiper('.demo4 .mocha-slide-container',{
+	wrapperClass : 'mocha-slide-wrapper',
+	slideClass : 'mocha-slide',
+	effect : $('.demo4 .mocha-slide-container').data('effect'),
+	slidesPerView: 2,
+	centeredSlides: true,
+	// pagination : '.mocha-slide-pagination',
+});
+
+var mySwiper5 = new Swiper('.demo5 .mocha-slide-container',{
+	wrapperClass : 'mocha-slide-wrapper',
+	slideClass : 'mocha-slide',
+	effect : $('.demo5 .mocha-slide-container').data('effect'),
+	// pagination : '.mocha-slide-pagination',
+});
+
+// var mySwiper6 = new Swiper('.demo6 .mocha-slide-container',{
+// 	wrapperClass : 'mocha-slide-wrapper',
+// 	slideClass : 'mocha-slide',
+// 	effect : $('.demo6 .mocha-slide-container').data('effect'),
+// 	// pagination : '.mocha-slide-pagination',
+// });
+</script>
+</body>
+</html>
+
+
+
