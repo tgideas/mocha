@@ -126,7 +126,8 @@ gulp.task('build-mocha-demo', function(){
       
       .pipe(gulp.dest('demo/'))
       console.log('Build demo/**/*.html OK！')
-})
+});
+
 /* ---------------------------------------------------
  * Task website Build [向/ 目录输出mocha网页文件]
  */
