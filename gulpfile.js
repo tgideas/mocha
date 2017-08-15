@@ -22,7 +22,8 @@ var gulp 		  = require('gulp'),
  */
 var paths = {
   src  : "src/",
-	web	: "website/"
+  web	: "website/",
+  animSrc: "src/animate/"
 };
 
 /* ---------------------------------------------------
@@ -92,6 +93,21 @@ gulp.task('build-mocha-css', function(){
     .pipe(gulp.dest(paths.src + "css/"));
 });
 
+gulp.task('build-mocha-animcss', function(){
+  return gulp.src([paths.animSrc + "css/" + "base/" + "base_v.3.css",
+           paths.animSrc + "css/" + "button/" + "button-anim_v.1.css",
+           paths.animSrc + "css/" + "dialog/" + "dialog-anim_v.1.css",
+           paths.animSrc + "css/" + "loading/" + "loading-anim_v.1.css",
+           paths.animSrc + "css/" + "navigation/" + "navigation-anim_v.1.css",
+           paths.animSrc + "css/" + "slider/" + "slider-anim_v.1.css",
+           paths.animSrc + "css/" + "search-bar/" + "search-bar-anim_v.1.css",
+           paths.animSrc + "css/" + "tab/" + "tab-anim_v.1.css",
+           paths.animSrc + "css/" + "txt-list/" + "txt-list-anim_v.1.css"])
+    .pipe(concat('mocha-anim-1.1.min.css'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest(paths.animSrc + "css/"));
+});
+
 gulp.task('build-ingame-css', function(){
   return gulp.src([paths.src + "css/" + "ingame/" + "ingame_v.1.css"])
     .pipe(concat('mocha-ingame.min.css'))
@@ -149,7 +165,7 @@ gulp.task('build-mocha-docs', function(){
  * 自动化组合
  */ 
 gulp.task('watch',gulp.parallel('connect','watch-file'));		           //文件更新自动 F5
-gulp.task('demo',gulp.parallel('build-mocha-css','build-ingame-css','build-mocha-js','build-mocha-demo'));
+gulp.task('demo',gulp.parallel('build-mocha-css','build-mocha-animcss','build-ingame-css','build-mocha-js','build-mocha-demo'));
 gulp.task('docs',gulp.parallel('build-mocha-docs'));
 gulp.task('web',gulp.parallel('build-mocha-website'));
 
