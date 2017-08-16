@@ -70,12 +70,12 @@
 	<a data-toggle="modal" data-effect="mocha-bounce-zoom">Bounce + zoom</a>
 </div>
 
-<div class="modal slide-in-bottom">
-  <div class="modal-dialog">
-    <div class="modal-header">
+<div class="mocha-modal slide-in-bottom">
+  <div class="mocha-modal-dialog">
+    <div class="mocha-modal-header">
       <h4>Dear reader,</h4>
     </div>
-    <div class="modal-body">
+    <div class="mocha-modal-body">
       <p>This is a modal window. You can do the following things with it:</p>
       <ul>
         <li><strong>Read</strong>: modal windows will probably tell you something important so don't forget to read what they say.</li>
@@ -124,10 +124,8 @@
 				e.stopPropagation();
 				e.preventDefault();
 				
-				$('#effect-name').html($(this).text());
-				
 				var effect = $(this).attr('data-effect');
-				$('.modal').addClass(effect).addClass('show').removeClass('hiding');
+				$('.mocha-modal').addClass(effect).addClass('show').removeClass('hiding');
 				$('body').addClass('modal-open');
 				$('body').addClass('modal-' + effect);
 				
@@ -137,16 +135,15 @@
 				});
 			});
 			
-			$('.modal').on('click', function(e) {
-			$('.modal').removeClass('show').addClass('hiding');
+			$('.mocha-modal').on('click', function(e) {
+				$('.mocha-modal').removeClass('show').addClass('hiding');
 			
-			setTimeout(function() {
-				for(var i = 0; i < Modal.effects.length; i++) {
-					$('.modal').removeClass(Modal.effects[i]);
-					$('body').removeClass('modal-' + Modal.effects[i]);
+				setTimeout(function() {
+					for(var i = 0; i < self.effects.length; i++) {
+						$('.mocha-modal').removeClass(self.effects[i]);
+						$('body').removeClass('modal-' + self.effects[i]);
 					}
-					
-					$('.modal').removeClass('hiding');
+					$('.mocha-modal').removeClass('hiding');
 					$('body').removeClass('modal-open');
 				}, 250);
 			});
