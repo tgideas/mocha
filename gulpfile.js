@@ -125,6 +125,13 @@ gulp.task('build-mocha-js', function(){
     .pipe(gulp.dest(paths.src + "js/"))
 });
 
+gulp.task('build-mocha-animjs', function(){
+  return gulp.src([paths.animSrc + "js/" + "mocha-anim-1.1.js"])
+    .pipe(concat('mocha-anim-1.1.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.animSrc + "js/"))
+});
+
 /* ---------------------------------------------------
  * Task demo Build [向/demo目录输出相关文件]
  */
