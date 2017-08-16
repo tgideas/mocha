@@ -14,20 +14,6 @@
 @-webkit-keyframes am-rotate{from{background-position:0 0}to{background-position:-240px 0}}
 
 .mocha-loading-skin1{width:100px;height:70px;background: rgba(0,0,0,.65); border-radius: 6px; color: #fff;} 
-	
-.load-wrapp {
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 0 10px 10px 0;
-    padding: 20px 20px 20px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #d8d8d8;
-}
-
-.load-wrapp p {padding: 0 0 20px;}
-.load-wrapp:last-child {margin-right: 0;}
 
 .mocha-loading-line {
     display: inline-block;
@@ -37,7 +23,7 @@
     background-color: #4b9cdb;
 }
 
-.ring-1 {
+.mocha-loading-ring-1 {
     width: 10px;
     height: 10px;
     margin: 0 auto;
@@ -46,7 +32,7 @@
     border-radius: 100%;
 }
 
-.ring-2 {
+.mocha-loading-ring-2 {
     position: relative;
     width: 45px;
     height: 45px;
@@ -55,7 +41,7 @@
     border-radius: 100%;
 }
 
-.ball-holder {
+.mocha-loading-ball-holder {
     position: absolute;
     width: 12px;
     height: 45px;
@@ -63,7 +49,7 @@
     top: 0px;
 }
 
-.ball {
+.mocha-loading-ball {
     position: absolute;
     top: -11px;
     left: 0;
@@ -73,30 +59,30 @@
     background: #4282B3;
 }
 
-.letter-holder {padding: 16px;}
+.mocha-loading-letter-holder {padding: 16px;}
 
-.letter {
+.mocha-loading-letter {
     float: left;
     font-size: 14px;
     color: #777;
 }
 
-.square {
+.mocha-loading-square {
     width: 12px;
     height: 12px;
     border-radius: 4px;
     background-color: #4b9cdb;
 }
 
-.spinner {
+.mocha-loading-spinner {
     position: relative;
     width: 45px;
     height: 45px;
     margin: 0 auto;
 }
 
-.bubble-1,
-.bubble-2 {
+.mocha-loading-bubble-1,
+.mocha-loading-bubble-2 {
     position: absolute;
     top: 0;
     width: 25px;
@@ -105,12 +91,12 @@
     background-color: #4b9cdb;
 }
 
-.bubble-2 {
+.mocha-loading-bubble-2 {
     top: auto;
     bottom: 0;
 }
 
-.bar {
+.mocha-loading-bar {
     float: left;
     width: 15px;
     height: 6px;
@@ -132,37 +118,37 @@
 .mocha-loading-3 .mocha-loading-line:nth-last-child(2) {animation: loadingC .6s .2s linear infinite;}
 .mocha-loading-3 .mocha-loading-line:nth-last-child(3) {animation: loadingC .6s .3s linear infinite;}
 
-.mocha-loading-4 .ring-1 {animation: loadingD 1.5s .3s cubic-bezier(.17,.37,.43,.67) infinite;}
+.mocha-loading-4 .mocha-loading-ring-1 {animation: loadingD 1.5s .3s cubic-bezier(.17,.37,.43,.67) infinite;}
 
-.mocha-loading-5 .ball-holder {animation: loadingE 1.3s linear infinite;}
+.mocha-loading-5 .mocha-loading-ball-holder {animation: loadingE 1.3s linear infinite;}
 
-.mocha-loading-6 .letter {
+.mocha-loading-6 .mocha-loading-letter {
     animation-name: loadingF;
     animation-duration: 1.6s;
     animation-iteration-count: infinite;
     animation-direction: linear;
 }
 
-.l-1 {animation-delay: .48s;}
-.l-2 {animation-delay: .6s;}
-.l-3 {animation-delay: .72s;}
-.l-4 {animation-delay: .84s;}
-.l-5 {animation-delay: .96s;}
-.l-6 {animation-delay: 1.08s;}
-.l-7 {animation-delay: 1.2s;}
-.l-8 {animation-delay: 1.32s;}
-.l-9 {animation-delay: 1.44s;}
-.l-10 {animation-delay: 1.56s;}
+.mocha-loading-l-1 {animation-delay: .48s;}
+.mocha-loading-l-2 {animation-delay: .6s;}
+.mocha-loading-l-3 {animation-delay: .72s;}
+.mocha-loading-l-4 {animation-delay: .84s;}
+.mocha-loading-l-5 {animation-delay: .96s;}
+.mocha-loading-l-6 {animation-delay: 1.08s;}
+.mocha-loading-l-7 {animation-delay: 1.2s;}
+.mocha-loading-l-8 {animation-delay: 1.32s;}
+.mocha-loading-l-9 {animation-delay: 1.44s;}
+.mocha-loading-l-10 {animation-delay: 1.56s;}
 
-.mocha-loading-7 .square {animation: loadingG 1.5s cubic-bezier(.17,.37,.43,.67) infinite;}
+.mocha-loading-7 .mocha-loading-square {animation: loadingG 1.5s cubic-bezier(.17,.37,.43,.67) infinite;}
 
 .mocha-loading-8 .mocha-loading-line {animation: loadingH 1.5s cubic-bezier(.17,.37,.43,.67) infinite;}
 
-.mocha-loading-9 .spinner {animation: loadingI 2s linear infinite;}
-.mocha-loading-9 .bubble-1, .mocha-loading-9 .bubble-2 {animation: bounce 2s ease-in-out infinite;}
-.mocha-loading-9 .bubble-2 {animation-delay: -1.0s;}
+.mocha-loading-9 .mocha-loading-spinner {animation: loadingI 2s linear infinite;}
+.mocha-loading-9 .mocha-loading-bubble-1, .mocha-loading-9 .mocha-loading-bubble-2 {animation: bounce 2s ease-in-out infinite;}
+.mocha-loading-9 .mocha-loading-bubble-2 {animation-delay: -1.0s;}
 
-.mocha-loading-10 .bar {animation: loadingJ 2s cubic-bezier(.17,.37,.43,.67) infinite;}
+.mocha-loading-10 .mocha-loading-bar {animation: loadingJ 2s cubic-bezier(.17,.37,.43,.67) infinite;}
 
 @keyframes loadingA {
     0 {height: 15px;}
