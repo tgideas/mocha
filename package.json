@@ -6,7 +6,7 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "del": "^2.2.0",
-    "gulp": "git://github.com/gulpjs/gulp#4.0",
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "latest",
     "gulp-convert-encoding": "0.0.3",
@@ -20,6 +20,6 @@
     "url": "https://github.com/tgideas/mocha"
   },
   "dependencies": {
-    "hexo": "^3.1.1"
+    "hexo": "^3.3.9"
   }
 }

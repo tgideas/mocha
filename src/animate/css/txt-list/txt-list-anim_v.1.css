@@ -24,100 +24,102 @@
 .mocha-txt-list-scheme3 .mocha-tlu-item-meta em{display: none;}
 
 .mocha-txtlist-anim-gradual-rightin li {
-  transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
+  /* transition: opacity 0.5s 0.5s, transform 0.5s 0.5s; */
   display: block;
-  transform: translateX(100%); 
+  animation: rightIn 0.5s linear;
+  animation-fill-mode: both;
+  /* transform: translateX(100%);  */
 }
 
 .mocha-txtlist-anim-gradual li:nth-child(1) {
-  transition-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(2) {
-  transition-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(3) {
-  transition-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(4) {
-  transition-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(5) {
-  transition-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(6) {
-  transition-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(7) {
-  transition-delay: 2.1s;
+  animation-delay: 2.1s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(8) {
-  transition-delay: 2.4s;
+  animation-delay: 2.4s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(9) {
-  transition-delay: 2.7s;
+  animation-delay: 2.7s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(10) {
-  transition-delay: 3s;
+  animation-delay: 3s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(11) {
-  transition-delay: 3.3s;
+  animation-delay: 3.3s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(12) {
-  transition-delay: 3.6s;
+  animation-delay: 3.6s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(13) {
-  transition-delay: 3.9s;
+  animation-delay: 3.9s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(14) {
-  transition-delay: 4.2s;
+  animation-delay: 4.2s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(15) {
-  transition-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(16) {
-  transition-delay: 4.8s;
+  animation-delay: 4.8s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(17) {
-  transition-delay: 5.1s;
+  animation-delay: 5.1s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(18) {
-  transition-delay: 5.4s;
+  animation-delay: 5.4s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(19) {
-  transition-delay: 5.7s;
+  animation-delay: 5.7s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(20) {
-  transition-delay: 6s;
+  animation-delay: 6s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(21) {
-  transition-delay: 6.3s;
+  animation-delay: 6.3s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(22) {
-  transition-delay: 6.6s;
+  animation-delay: 6.6s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(23) {
-  transition-delay: 6.9s;
+  animation-delay: 6.9s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(24) {
-  transition-delay: 7.2s;
+  animation-delay: 7.2s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(25) {
-  transition-delay: 7.5s;
+  animation-delay: 7.5s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(26) {
-  transition-delay: 7.8s;
+  animation-delay: 7.8s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(27) {
-  transition-delay: 8.1s;
+  animation-delay: 8.1s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(28) {
-  transition-delay: 8.4s;
+  animation-delay: 8.4s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(29) {
-  transition-delay: 8.7s;
+  animation-delay: 8.7s;
 }
 .mocha-txtlist-anim-gradual li:nth-child(30) {
-  transition-delay: 9s;
+  animation-delay: 9s;
 }
 
 .mocha-txtlist-anim-gradual-bottomin {
@@ -226,6 +228,19 @@
 }
 .mocha-txtlist-anim-gradual-bottomin li:nth-child(30) {
   animation-delay: 7.5s;
+}
+@-webkit-keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  75% {
+    opacity: 0.5;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-webkit-keyframes fadeIn {
   0% {
