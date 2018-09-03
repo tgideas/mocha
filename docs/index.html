@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Mocha</title>
+  <title>Mocha UI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
-    <link rel="alternate" href="/atom.xml" title="Mocha" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Mocha UI" type="application/atom+xml">
   
   
   
@@ -26,7 +26,7 @@
 <body>
   <header class="header">
   <div class="inner">
-    <a href="/mocha/" class="logo">Mocha</a>
+    <a href="/mocha/" class="logo">Mocha UI</a>
     <div class="navigation">
       <ul class="nav-ul">
         <li><a href="/mocha/">首页</a></li>
@@ -61,6 +61,10 @@
       
         <li>
           <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/hello-mocha/">Hello Mocha</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/video/">video(视频模块)</a>
         </li>
       
         <li>
@@ -124,19 +128,15 @@
         </li>
       
         <li>
-          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/progress/">progress(进度条)</a>
-        </li>
-      
-        <li>
-          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/audio/">audio(音频样式)</a>
-        </li>
-      
-        <li>
           <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/select/">select(选单样式)</a>
         </li>
       
         <li>
-          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/video/">video(视频模块)</a>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/table/">table(表格样式)</a>
+        </li>
+      
+        <li>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/progress/">progress(进度条)</a>
         </li>
       
         <li>
@@ -144,7 +144,7 @@
         </li>
       
         <li>
-          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/table/">table(表格样式)</a>
+          <a class="btn btn-default btn-lg btn-block" href="/mocha/docs/audio/">audio(音频样式)</a>
         </li>
       
         <li>
@@ -246,7 +246,63 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/hello-mocha/" data-id="ciqw1gyqt000j5fpv22lqy09q" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/hello-mocha/" data-id="cjllu46ct000jshsun7l4e477" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-video" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/mocha/docs/video/">video(视频模块)</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/mocha/docs/video/" class="article-date"><time datetime="2017-06-09T03:00:00.000Z" itemprop="datePublished">2017-06-09</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>作者：<code>kevinhehe</code><br>版本：<code>v.1</code><br>依赖：<code>mocha.css</code></p>
+<p><div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/video/demo.html" target="_blank">点击运行Demo</a></div></p>
+<h3 id="u6837_u5F0F1_-mocha-video-scheme1"><a href="#u6837_u5F0F1_-mocha-video-scheme1" class="headerlink" title="样式1 .mocha-video-scheme1"></a>样式1 <code>.mocha-video-scheme1</code></h3><p><div class="demo-preview"><div class="box-w320"><img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/video.png" alt="样式1"></div><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"mochaVideo"</span> <span class="attribute">class</span>=<span class="value">"mocha-video mocha-video-scheme1 mocha-video-skin1"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div></p>
+<p></p>
+<h3 id="video_u5B9E_u4F8B_u5316JS"><a href="#video_u5B9E_u4F8B_u5316JS" class="headerlink" title="video实例化JS"></a>video实例化JS</h3><p>依赖<code>txplayer.js(v3)</code>组件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">'//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="actionscript"></span><br><span class="line"><span class="keyword">var</span> player = <span class="keyword">new</span> Txplayer(&#123;</span><br><span class="line">  containerId: <span class="string">'mochaVideo'</span>,</span><br><span class="line">  vid: <span class="string">'r0018hmh1pa'</span>,</span><br><span class="line">  width: <span class="string">'100%'</span>,</span><br><span class="line">  height: <span class="string">'100%'</span>,</span><br><span class="line">  <span class="comment">// 自动播放</span></span><br><span class="line">  autoplay: <span class="literal">true</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS"><a href="#u4FEE_u6539_u6A21_u5757_u76AE_u80A4CSS" class="headerlink" title="修改模块皮肤CSS"></a>修改模块皮肤CSS</h3><p>模块的默认皮肤类<code>.mocha-video-skin1</code>，您可以在您项目的<code>page.css</code>里修改<code>.mocha-video-skin1</code>皮肤类，或者新增<code>.mocha-video-skin2</code>。</p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://tgideas.github.io/mocha/docs/video/" data-id="cjllu46bk0001shsuzungr6ck" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -317,7 +373,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/slider/" data-id="ciqw1gyq400075fpviegd7803" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/slider/" data-id="cjllu46ch0007shsurvaidcmw" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -375,7 +431,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/countdown/" data-id="ciqw1gyqx000o5fpv6yjnmciy" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/countdown/" data-id="cjllu46cy000oshsusrbpo6nr" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -430,7 +486,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/sign-in/" data-id="ciqw1gyq500085fpvu89q0eqc" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/sign-in/" data-id="cjllu46ci0008shsuukv0u8wh" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -485,7 +541,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/lottery/" data-id="ciqw1gyqh000g5fpvt9pit2x7" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/lottery/" data-id="cjllu46cp000gshsubfjdrvrp" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -562,7 +618,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/layout/" data-id="ciqw1gyqr000i5fpvbsotsjkb" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/layout/" data-id="cjllu46cs000ishsu890o0apb" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -621,7 +677,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/data-user/" data-id="ciqw1gyqw000n5fpv8k0mq02k" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/data-user/" data-id="cjllu46cx000nshsuwrtujuvs" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -679,7 +735,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/loading/" data-id="ciqw1gyqp000h5fpv5t8n6jcr" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/loading/" data-id="cjllu46cq000hshsumvrv71yt" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -733,68 +789,7 @@
     
 
     <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/fill-info/" data-id="ciqw1gyqu000l5fpvclooi7z9" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-title" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/mocha/docs/title/">title(标题)</a>
-    </h1>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/mocha/docs/title/" class="article-date"><time datetime="2016-03-17T07:45:38.000Z" itemprop="datePublished">2016-03-17</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>作者：<code>sonichuang</code><br>版本：<code>v.1</code><br>依赖：<code>mocha.css</code></p>
-<p><div class="demo-qrcode"><a id="QRcode" href="http://tgideas.github.io/mocha/demo/title/demo.html" target="_blank">点击运行Demo</a></div></p>
-<h3 id="u6807_u9898_u6A21_u5757"><a href="#u6807_u9898_u6A21_u5757" class="headerlink" title="标题模块"></a>标题模块</h3><p><div class="demo-preview"><div class="box-w320"><div class="mocha-title"><h3 class="mocha-title-txt">标题文字</h3><div class="mocha-title-extra"><a href="#">链接1</a><a href="#">链接2</a></div></div></div><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"mocha-title-txt"</span>&gt;</span>标题文字<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title-extra"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div></p>
-<p></p>
-<h3 id="u6807_u9898_u6A21_u5757-_u4FEE_u6539_u4E0D_u540C_u76AE_u80A4"><a href="#u6807_u9898_u6A21_u5757-_u4FEE_u6539_u4E0D_u540C_u76AE_u80A4" class="headerlink" title="标题模块-修改不同皮肤"></a>标题模块-修改不同皮肤</h3><h4 id="mocha-css_u5DF2_u63D0_u4F9B3_u5957_u9884_u8BBE_u76AE_u80A4"><a href="#mocha-css_u5DF2_u63D0_u4F9B3_u5957_u9884_u8BBE_u76AE_u80A4" class="headerlink" title="mocha.css已提供3套预设皮肤"></a><code>mocha.css</code>已提供3套预设皮肤</h4><ul>
-<li>皮肤1(灰底上划线) <code>.mohca-title-skin1</code></li>
-<li>皮肤2(白底上下划线) <code>.mohca-title-skin2</code></li>
-<li>皮肤2(灰底左划线) <code>.mohca-title-skin3</code></li>
-</ul>
-<p><div class="demo-preview"><div class="box-w320"><div class="mocha-title mocha-title-skin1"><h3 class="mocha-title-txt">标题文字</h3><div class="mocha-title-extra"><a href="#">链接1</a><a href="#">链接2</a></div></div><div class="mocha-title mocha-title-skin2"><h3 class="mocha-title-txt">标题文字</h3><div class="mocha-title-extra"><a href="#">链接1</a><a href="#">链接2</a></div></div><div class="mocha-title mocha-title-skin3"><h3 class="mocha-title-txt">标题文字</h3><div class="mocha-title-extra"><a href="#">链接1</a><a href="#">链接2</a></div></div></div><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title mocha-title-skin1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"mocha-title-txt"</span>&gt;</span>标题文字<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title-extra"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title mocha-title-skin2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"mocha-title-txt"</span>&gt;</span>标题文字<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title-extra"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title mocha-title-skin3"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"mocha-title-txt"</span>&gt;</span>标题文字<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"mocha-title-extra"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>链接2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div></p>
-<p><br>您可以在您项目的<code>page.css</code>里修改<code>.mocha-title-skin1</code>，<code>.mocha-title-skin2</code>，<code>.mocha-title-skin3</code>皮肤类，或者新增<code>.mocha-title-skin4</code>。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* skin */</span></span><br><span class="line"><span class="class">.mocha-title-skin1</span><span class="rules">&#123;<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#eee</span></span></span>;<span class="rule"><span class="attribute">border-top</span>:<span class="value"> <span class="number">2px</span> solid <span class="hexcolor">#666</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin1</span> <span class="class">.mocha-title-txt</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#000</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin1</span> <span class="class">.mocha-title-extra</span> <span class="tag">a</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#333</span></span></span>;<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;<span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">1px</span> solid <span class="hexcolor">#eee</span></span></span>;<span class="rule"><span class="attribute">border-radius</span>:<span class="value"><span class="number">0.1rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin2</span><span class="rules">&#123;<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;<span class="rule"><span class="attribute">border-top</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#eee</span></span></span>;<span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#eee</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin2</span> <span class="class">.mocha-title-txt</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#000</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin2</span> <span class="class">.mocha-title-extra</span> <span class="tag">a</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#333</span></span></span>;<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#f6f6f6</span></span></span>;<span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">1px</span> solid <span class="hexcolor">#eee</span></span></span>;<span class="rule"><span class="attribute">border-radius</span>:<span class="value"><span class="number">0.1rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin3</span><span class="rules">&#123;<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#eee</span></span></span>;<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span> <span class="number">0.1rem</span> <span class="number">0</span> <span class="number">0</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin3</span> <span class="class">.mocha-title-txt</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#000</span></span></span>;<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0.1rem</span></span></span>;<span class="rule"><span class="attribute">border-left</span>:<span class="value"><span class="number">6px</span> solid <span class="hexcolor">#333</span></span></span>;<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span> <span class="number">0.1rem</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.mocha-title-skin3</span> <span class="class">.mocha-title-extra</span> <span class="tag">a</span><span class="rules">&#123;<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#333</span></span></span>;<span class="rule"><span class="attribute">border-radius</span>:<span class="value"><span class="number">0</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://tgideas.github.io/mocha/docs/title/" data-id="ciqw1gypz00035fpvq45qp5z4" class="article-share-link">
+      <a data-url="http://tgideas.github.io/mocha/docs/fill-info/" data-id="cjllu46cv000lshsuij0wzji8" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
