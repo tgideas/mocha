@@ -1,9 +1,0 @@
-/*
- * button v.1
- * Author:echowtyang
- * Modify:2017-8-1
- * 
- */
-.mocha-button-anim-keydown {box-shadow: none;display: inline-block;}
-.mocha-button-anim-keydown:hover,.mocha-button-anim-keydown:active {box-shadow: none;}
-.mocha-button-anim-keydown:active {transform: translate(2px,2px);}
