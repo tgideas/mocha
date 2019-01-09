@@ -1,0 +1,19 @@
+/*
+ * loading v.1
+ * Author:janfzhao
+ * Modify:2016-03-22
+ * 
+ */
+.mocha-loading{}
+	.mocha-loading-icon{ width: 20px; height: 20px; display: block;  -webkit-background-size: auto 20px; -webkit-animation: am-rotate 1s steps(12) infinite;}
+	/* scheme */
+	.mocha-loading-scheme1{ display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; text-align: center; height: 40px;}
+	.mocha-loading-scheme1 .mocha-loading-icon{ background-image: url(//ossweb-img.qq.com/images/js/mocha/images/loading-sprite.png);}
+	.mocha-loading-scheme2{display: -webkit-box;-webkit-box-orient: vertical; -webkit-box-align: center; text-align: center;  }
+	.mocha-loading-scheme2 .mocha-loading-txt{font-size: 0.12rem;}
+	.mocha-loading-scheme2 .mocha-loading-icon{ background-image: url(//ossweb-img.qq.com/images/js/mocha/images/loading-sprite-white.png); margin: 10px 0;}
+	@-webkit-keyframes am-rotate{from{background-position:0 0}to{background-position:-240px 0}}
+	/* skin */
+	.mocha-loading-skin1{width:100px;height:70px;background: rgba(0,0,0,.65); border-radius: 6px; color: #fff;} 
+	
+

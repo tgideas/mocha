@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>scroll(滚动模块) - TGideas Mocha</title>
+	<!-- 页面重构：echowtyang | 创建：201707 | 团队博客：http://tgideas.qq.com/ -->
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style>
+    .section {
+        height: 400px;
+        background: #666;
+        transition: background 1s ease;
+    }
+    #section1.active {
+        background: #ff0000;
+    }
+    #section2.active {
+        background: #ffff00;
+    }
+    #section3.active {
+        background: blue;
+    }
+    #section4.active {
+        background: green;
+    }
+	</style>
+</head>
+<body>
+
+<h2 class="h2">scroll(滚动模块)<a href="/mocha/docs/scroll/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h3 id="sliderdemo1">样式一(demo1)</h3>
+<div class="container">
+    <div class="section" id="section1">
+        section1
+    </div>
+    <div class="section" id="section2">
+        section2
+    </div>
+    <div class="section" id="section3">
+        section3
+    </div>
+    <div class="section" id="section4">
+        section4
+    </div>
+</div>
+
+
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script> 
+<script src="../../js/mocha.js"></script>
+<script src="scroll.js"></script>
+<script>
+    $('.section').addScroll({
+        activeClass: 'active',
+        topOffset: -100,
+        scrollFunc: {
+            'section1': function() {
+                console.log('scroll1');
+            },
+            'section2': function() {
+                console.log('scroll2');
+            },
+            'section3': function() {
+                console.log('scroll3');
+            },
+            'section4': function() {
+                console.log('scroll4');
+            }
+        }
+    });
+</script>
+</body>
+</html>
+
+
+

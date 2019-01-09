@@ -1,0 +1,7 @@
+.mocha-scroll-more-container {
+    overflow: hidden;
+}
+.mocha-scroll-more-list {
+    height: 100%;
+    overflow: auto;
+}

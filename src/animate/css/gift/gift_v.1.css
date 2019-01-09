@@ -1,0 +1,24 @@
+/*
+ * gift v.1
+ * Author:kevinhehe
+ * Modify:2015-12-08
+ * 
+ */
+.mocha-gift{font-size: .16rem;width:90.625%;margin-left: auto;margin-right: auto;}
+	.mocha-gift ul{font-size: 0;text-align: center;}
+	.mocha-gift li{display: inline-block;margin-right: 3.5%;margin-bottom:0.1rem;vertical-align: top;}
+	.mocha-gift .mocha-gift-box{position: relative;display: block;width: 100%;margin-bottom: .05rem;}
+	.mocha-gift p{display: none;font-size: .12rem;text-align: center;margin-bottom: .05rem;}
+	.mocha-gift .mocha-gift-btn{display: block;width: 100%;height: .32rem;font-size: .16rem;line-height:.32rem;text-align: center;}
+	.mocha-gift .act .mocha-gift-box:before{content: "";display: block;position: absolute;top: -.07rem;left: -.07rem;width: .14rem;height: .14rem;border-radius: 50%;background: url("//ossweb-img.qq.com/images/js/mocha/images/icon-tick.png") no-repeat 50% 50%;background-size: .11rem .08rem;}
+
+	/* scheme */
+	.mocha-gift-scheme1 li{width: 100%;}
+	.mocha-gift-scheme1 li:last-child{margin-right: 0;}
+	.mocha-gift-scheme2 li{width: 48.25%;}
+	.mocha-gift-scheme2 li:nth-child(even){margin-right: 0;}
+	.mocha-gift-scheme3 li{width: 31%;}
+	.mocha-gift-scheme3 li:nth-child(3n){margin-right: 0;}
+	.mocha-gift-scheme4 li{width: 22.375%;}
+	.mocha-gift-scheme4 li:nth-child(4n){margin-right: 0;}
+	.mocha-gift-scheme5 p{display: block;}

@@ -1,0 +1,20 @@
+/*
+ * first-screen v.1
+ * Author:yamiedie
+ * Modify:2016-01-13
+ * 
+ */
+ .mocha-firstscreen-html,.mocha-firstscreen-html body{height:100%;}
+.mocha-firstscreen-header{width:100%;font-size:0.16rem;height:.6rem;line-height:.6rem;text-align:center;background:#ccc;position:absolute;left:0;top:0;}
+.mocha-firstscreen-section{height:100%;padding:0.6rem 0 0.56rem;box-sizing: border-box;font-size:.16rem;background:#000;}
+.mocha-firstscreen-kv{height:100%;}
+.mocha-firstscreen-kv li{height:100%;overflow:hidden;}
+.mocha-firstscreen-kv li img{display:block;position:relative;top:50%;-webkit-transform:translateY(-50%);}
+.mocha-firstscreen-nav{width:100%;height:0.56rem;line-height:0.56rem;background: #b74c3f;display:-webkit-box;-webkit-box-orient:horizontal;position:absolute;bottom:0;left:0;}
+.mocha-firstscreen-nav a{height:100%;display:block;-webkit-box-flex:1;color:#fff;text-align:center;border-right:0.01rem solid #c15d51;}
+.mocha-firstscreen-nav a:last-child{border-right:0;}
+.mocha-firstscreen-nav a:before{content:"";display:inline-block;vertical-align:middle;width:0.25rem;height:0.25rem;margin-right:0.05rem;}
+.mocha-firstscreen-ico-strategy:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -.8rem;background-size:1.6rem auto;}
+.mocha-firstscreen-ico-bbs:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -1.23rem;background-size:1.6rem auto;}
+.mocha-firstscreen-ico-gallery:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -1.62rem;background-size:1.6rem auto;}
+.mocha-firstscreen-ico-contnect:before{background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -2.1rem;background-size:1.6rem auto;}

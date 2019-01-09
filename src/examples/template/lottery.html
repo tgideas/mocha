@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>lottery(抽奖模版) - TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/navigation/navigation_v.1.css" rel="stylesheet">
+	<link href="../../css/button/button_v.1.css" rel="stylesheet">
+	<link href="../../css/text/text_v.1.css" rel="stylesheet">
+	<link href="../../css/dialog/dialog_v.1.css" rel="stylesheet">
+	<link href="../../css/lottery/lottery_v.1.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="http://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="http://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<script>
+	(function (win,doc){
+    if (!win.addEventListener) return; 
+	    var html=document.documentElement; 
+	    function setFont() {
+	        var w = html.clientWidth,
+	            h = html.clientHeight;
+	        html.style.fontSize= w > h ? w/568*100+"px" : w/320*100+"px";
+	    } 
+	    win.addEventListener('resize',setFont,false);
+	    doc.addEventListener('DOMContentLoaded',setFont,false);
+	})(window,document);
+	</script>
+<style>
+.mocha-lottery-bg{margin-top: .6rem;}
+.mocha-lottery-wrap{position: absolute;width: 100%;left: 0;top: 4rem;padding: 0 .15rem; -webkit-box-sizing: border-box;box-sizing: border-box;}
+.mocha-lottery-wrap .mocha-text{padding: .1rem 0;line-height: .22rem;}
+.mocha-lottery-wrap .mocha-text h4{margin-bottom: 0;font-size: .13rem;font-weight: normal;}
+.mocha-lottery-wrap .mocha-text p{font-size: .12rem;}
+.mocha-lottery-wrap .mocha-text-center{padding: 0;}
+.mocha-button-skin1{box-shadow: none;border-radius: 0;}
+.mocha-button-skin1.mocha-button-scheme1{font-size: .2rem;line-height: .5rem;}
+.mocha-dialog-skin1 .mocha-dialog-fd{padding-top: .1rem;border-top: 0;}
+.mocha-dialog-skin1 .mocha-dialog-hd-title{font-size: .2rem;}
+.mocha-dialog-skin1 .mocha-dialog-hd{padding: .1rem;}
+.mocha-dialog-skin1 .mocha-dialog-bd{padding: .4rem .16rem .16rem;}
+.mocha-dialog-skin1 .mocha-box-fd-btn{width: 1.4rem;height: .4rem;padding: 0;margin: 0 auto;font-size: .18rem;line-height: .4rem;}
+.mocha-dialog-skin1 .mocha-dialog-close{top: .05rem;right: .05rem;width: .3rem;height: .3rem;color: rgba(0,0,0,0);}
+.mocha-dialog-skin1 .mocha-dialog-close:before,.mocha-dialog-skin1 .mocha-dialog-close:after{content: '';display: block;position: absolute;bottom: 0;width: .01rem;height: .42rem;transform-origin: 0 100%;}
+.mocha-dialog-skin1 .mocha-dialog-close:before{left: 0;transform: rotate(45deg);}
+.mocha-dialog-skin1 .mocha-dialog-close:after{right: 0;transform: rotate(-45deg);}
+.mocha-dialog-skin1 .mocha-text-center{padding: 0;font-size: .14rem;color: #fff;}
+.mocha-dialog-skin2.mocha-dialog-scheme1 .mocha-dialog-bd{padding: .15rem .3rem 0;} 
+.mocha-dialog-skin2.mocha-dialog-scheme1 .mocha-dialog-fd{padding: 0 .3rem .15rem;}
+.mocha-lottery-skin1.mocha-lottery-scheme1{position: absolute;top: 2.21rem;}
+.mocha-lottery-skin1.mocha-lottery-scheme1 .content{width: 2.9rem;height: 1.64rem;}
+.mocha-lottery-skin1.mocha-lottery-scheme2{position: absolute;top: 1.6rem;}
+/* skin */
+body{background: url("http://ossweb-img.qq.com/images/js/mocha/images/demo/template_skin.jpg") repeat;}
+.mocha-nav-skin1{background-color: #1d1d1d;}
+.mocha-nav-skin1 .mocha-nav-logo{color: #fff;}
+.mocha-nav-skin1 .mocha-nav-slide-icon, .mocha-nav-skin1 .mocha-nav-slide-icon:before, .mocha-nav-skin1 .mocha-nav-slide-icon:after{background-color: #e40600;box-shadow: .01rem .02rem 0 #000;}
+.mocha-nav-skin1 .mocha-nav-slide-close .mocha-nav-slide-icon{box-shadow: none;}
+.mocha-nav-skin1 .mocha-nav-slide-close .mocha-nav-slide-icon:before, .mocha-nav-skin1 .mocha-nav-slide-close .mocha-nav-slide-icon:after{background-color: #e40600;}
+.mocha-lottery-wrap .mocha-text{color: #fff;}
+.mocha-lottery-wrap .mocha-text h4{color: #bcbcbc;}
+.mocha-lottery-wrap .mocha-text p{color: #a1a1a1;}
+.mocha-button-skin1{background-color: #d70600;}
+.mocha-dialog-skin1 .mocha-dialog-box{background-color: #303030;}
+.mocha-dialog-skin1 .mocha-dialog-hd{background-color: #1e1e1e;}
+.mocha-dialog-skin1 .mocha-dialog-hd-title{color: #fff;}
+.mocha-dialog-skin1 .mocha-box-fd-btn{color: #fff;background-color: #d80604;}
+.mocha-dialog-skin1 .mocha-dialog-close:before,.mocha-dialog-skin1 .mocha-dialog-close:after{background-color: #fff;}
+.mocha-dialog-skin1 .mocha-text-center{color: #fff;}
+.mocha-lottery-skin1.mocha-lottery-scheme1 .content{background: url(http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery-s.jpg) no-repeat;background-size: 100% auto;}
+</style>
+</head>
+<body>
+<header class="mocha-nav mocha-navigation-scheme2 mocha-nav-skin1">
+	<div class="mocha-nav-cover"></div>
+	<a href="javascript:;" class="mocha-nav-logo">
+		<img src="http://ossweb-img.qq.com/images/js/mocha/images/demo/nav-logo.png" alt="天天炫斗" />
+		<div class="mocha-nav-logo-desc">
+			<h1>天天炫斗公众号</h1>
+			<h2>第一实时PK动作手游</h2>
+		</div>
+	</a>
+	<!-- 导航 -->
+	<div class="mocha-nav-box">
+		<div class="mocha-nav-box-cover"></div>
+		<nav class="mocha-nav-list">
+		    <div class="mocha-nav-list-cover">
+			    <ul>
+			      <li><a href="javascript:;">首页</a></li>
+			      <li><a href="javascript:;">热门活动</a></li>
+			      <li><a href="javascript:;">新闻中心</a></li>
+			      <li><a href="javascript:;">游戏攻略</a></li>
+			      <li><a href="javascript:;">游戏图库</a></li>
+			      <li><a href="javascript:;">论坛</a></li>
+			    </ul>
+		    </div>
+		</nav>
+		<div class="mocha-nav-slide"><i class="mocha-nav-slide-icon" title="导航开关"></i></div>
+	</div>
+</header>
+<img class="mocha-lottery-bg" src="http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery-bg.jpg" width="100%" alt="幸运大抽奖">
+<div id="lottery1" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme1 mocha-lottery-skin1">
+	<div id="lottery1content" class="content"></div>
+</div>
+<div id="lottery2" data-psdw="640" data-isscale="true" class="mocha-lottery mocha-lottery-scheme2 mocha-lottery-skin1" style="display:none;">
+		<div id="lottery2content" class="content"></div>
+	</div>
+<div class="mocha-lottery-wrap">
+	<p style="font-size:0;margin:0 auto;">
+		<a id="showDialogBtn1" href="javascript:;" class="mocha-button mocha-button-scheme1 mocha-button-skin1">进入游戏</a>
+	</p>
+	<div class="mocha-text">
+		<h4>活动规则：</h4>
+		<p>文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容文字模块内容</p>
+	</div>
+	
+</div>
+<div id="demoDialog1" class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1" style="display:none;">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-hd">
+			<h3 class="mocha-dialog-hd-title">抽奖提示</h3>
+		</div>
+		<div class="mocha-dialog-bd">
+			<div class="mocha-text mocha-text-center">
+				<p><strong>恭喜您，获得奖品：</strong></p>
+				<p>｛奖品名字｝</p>
+				<p>您现在可以进入游戏领取啦！</p>
+			</div>
+		</div>
+		<div class="mocha-dialog-fd">
+			<a href="#" class="mocha-box-fd-btn">知道了</a>
+		</div>
+	</div>
+</div>
+<div id="demoDialog2" class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1" style="display:none;">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-hd">
+			<h3 class="mocha-dialog-hd-title">抽奖提示</h3>
+		</div>
+		<div class="mocha-dialog-bd">
+			<div class="mocha-text mocha-text-center">
+				<p>非常抱歉，<strong>没有抽中奖品</strong></p>
+				<p>感谢您的参与，明天再来试试吧！</p>
+			</div>
+		</div>
+		<div class="mocha-dialog-fd">
+			<a href="#" class="mocha-box-fd-btn">知道了</a>
+		</div>
+	</div>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+	<script src="http://ossweb-img.qq.com/images/js/motion/lottery.min.js"></script>
+<script>
+	/*有导航*/
+    $(".mocha-nav-slide").bind("touchstart", function() {
+        if ($(".mocha-nav-list-open").length) {
+            $(".mocha-nav-list").removeClass("mocha-nav-list-open");
+            $(".mocha-nav-slide").removeClass("mocha-nav-slide-close");
+            $("body").unbind("touchmove", false);
+            $(".mocha-nav-box").removeClass("mocha-nav-box-big");
+        } else {
+            $(".mocha-nav-list").addClass("mocha-nav-list-open");
+            $(".mocha-nav-slide").addClass("mocha-nav-slide-close");
+            $("body").bind("touchmove", false);
+            $(".mocha-nav-box").addClass("mocha-nav-box-big");
+        }
+    }, false);
+
+    /*弹窗*/
+    (function mochaDialogFunc(){
+		$("#showDialogBtn1").bind("tap",function(){
+			$("#demoDialog1").css("display","block");
+		})
+		$(".mocha-dialog-close,.mocha-dialog-mark").tap(function(){
+			// console.log("hello")
+			$(this).parents(".mocha-dialog").css("display","none");
+		})
+	})()
+
+		/*
+	 * lottery v.1
+	 * Author:dereksu
+	 * Modify:2015-12-13
+	 * Description:
+	 * 1.html中data-psdw代表设计稿宽度，如640
+	 * 2.html中data-isscale代表是否要自适应屏幕尺寸进行缩放，如true/false (注：如果本身body有进行zoom缩放的，这里就不要再缩放了，即设为false)
+	 */
+	function lotteryScaleFun(lotteryId) {
+		var clientW = parseInt($("#" + lotteryId).data('psdw')) / 2;
+		document.getElementById(lotteryId).style.width = clientW + 'px';
+		var clientWidth = document.documentElement.clientWidth ? document.documentElement.clientWidth : clientW;
+		document.getElementById(lotteryId).style.zoom = clientWidth / clientW;
+	}
+	//缩放方法
+	function lotteryScale(lotteryId) {
+		var lottery1IsScale = $("#" + lotteryId).data('isscale');
+		if (lottery1IsScale !== false) {
+			lotteryScaleFun(lotteryId);
+			$(window).bind('orientationchange', function(event) {
+				lotteryScaleFun(lotteryId);
+			});
+			$(window).bind('resize', function(event) {
+				lotteryScaleFun(lotteryId);
+			});
+		}
+	}
+	/**
+	 * 样式1js
+	 */
+	//点击开始抽奖
+	function callJsToStart1() {
+		callFlashToRoll1(3);
+	}
+	//开发获得抽奖结果 开始播放效果
+	function callFlashToRoll1(id) {
+		//通知转盘转到对应的中奖产品的id （序号从0,1,2.....，0是指针初始指示的位置，沿着顺时针的方向递增）
+		if (lotteryObj1) lotteryObj1.stopRoll(id);
+	}
+	//动画完成通知js
+	function callJsToComplete1() {
+		alert('lotteryObj1-恭喜你获奖了！');
+	}
+	//初始化抽奖对象的lotteryObj1 
+	var lotteryObj1 = new mo.Lottery({
+		//'lighturl':'http://ossweb-img.qq.com/images/motion/lottery/light.png',
+		'total': 12,
+		'width': 290,
+		'height': 165,
+		'sbtnx': 72.5,
+		'sbtny': 41,
+		'sbtnw': 145,
+		'sbtnh': 82,
+		'boxw': 72.5,
+		'boxh': 41,
+		'position': "0_0,72.5_0,145_0,217.5_0,217.5_41,217.5_82,217.5_123,145_123,72.5_123,0_123,0_82,0_41",
+		'contentId': 'lottery1content',
+		'onClickRollEvent': callJsToStart1,
+		'onCompleteRollEvent': callJsToComplete1
+	});
+	//执行缩放
+	lotteryScale('lottery1');
+
+	/**
+	 * 样式2js
+	 */
+	//点击开始抽奖
+	function callJsToStart2() {
+		callFlashToRoll2(5);
+	}
+	//开发获得抽奖结果 开始播放效果 
+	function callFlashToRoll2(id) {
+		//通知转盘转到对应的中奖产品的id （序号从0,1,2.....，0是指针初始指示的位置，沿着顺时针的方向递增）
+		if (lotteryObj2) lotteryObj2.stopRoll(id);
+	}
+	//动画完成通知js
+	function callJsToComplete2() {
+		alert('lotteryObj2-恭喜你获奖了！');
+	}
+	//初始化抽奖对象的lotteryObj2 
+	var lotteryObj2 = new mo.Lottery({
+		//'flashUrl' : 'http://ossweb-img.qq.com/images/flash/lottery/circle/lotteyround_2013_v1.swf',
+		'r': 8, //奖品总数
+		'width': 235, //转盘宽度
+		'height': 235, //转盘高度
+		'flashFirst': false,
+		'b': 'http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery-c.png', //圆盘的图片
+		's': 'http://ossweb-img.qq.com/images/js/mocha/images/demo/lottery-btn.png', //开始抽奖按钮图片
+		'bx': 0, //圆盘的图片位置x坐标 （转盘的中心点坐标为（0,0））
+		'by': 0, //圆盘的图片位置y坐标
+		'sx': 0, //开始抽奖按钮x坐标
+		'sy': 0, //开始抽奖按钮y坐标
+		'contentId': 'lottery2content', //转盘div层的id 
+		'onClickRollEvent': callJsToStart2, //对应上面接口
+		'onCompleteRollEvent': callJsToComplete2 //对应上面接口
+	});
+	//执行缩放
+	lotteryScale('lottery2');
+</script>
+</body>
+</html>

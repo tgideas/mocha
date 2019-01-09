@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>navigation(导航栏模块)- TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/navigation/navigation_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="https://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="https://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.22rem;margin:0.7rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+		.p{text-align: center;font-size:0.16rem;}
+		.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	</style>
+</head>
+<body>
+<h2 class="h2">navigation(导航栏模块)<a href="/mocha/docs/navigation/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h3 class="h3">样式1-无导航</h3>
+<!-- mocha-navigation-scheme1(样式1-无导航) -->
+<header class="mocha-nav mocha-navigation-scheme1 mocha-nav-skin1">
+	<div class="mocha-nav-cover"></div>
+	<a href="javascript:;" class="mocha-nav-logo">
+		<img src="https://dummyimage.com/40x40/000/fff" alt="游戏名字" />
+		<div class="mocha-nav-logo-desc">
+			<h1>我叫MT2</h1>
+			<h2>焕新一代3D手游</h2>
+		</div>
+	</a>
+  	<a href="javascript:;" class="mocha-nav-btn">关注</a>
+</header>
+<h3 class="h3">样式2-有导航</h3>
+<!-- mocha-navigation-scheme2(样式2-有导航) -->
+<header class="mocha-nav mocha-navigation-scheme2 mocha-nav-skin1">
+	<div class="mocha-nav-cover"></div>
+	<a href="javascript:;" class="mocha-nav-logo">
+		<img src="https://dummyimage.com/40x40/000/fff" alt="游戏名字" />
+		<div class="mocha-nav-logo-desc">
+			<h1>我叫MT2</h1>
+			<h2>焕新一代3D手游</h2>
+		</div>
+	</a>
+	<!-- 导航 -->
+	<div class="mocha-nav-box">
+		<div class="mocha-nav-box-cover"></div>
+		<nav class="mocha-nav-list">
+		    <div class="mocha-nav-list-cover">
+			    <ul>
+			      <li><a href="javascript:;">首页</a></li>
+			      <li><a href="javascript:;">热门活动</a></li>
+			      <li><a href="javascript:;">新闻中心</a></li>
+			      <li><a href="javascript:;">游戏攻略</a></li>
+			      <li><a href="javascript:;">游戏图库</a></li>
+			      <li><a href="javascript:;">论坛</a></li>
+			    </ul>
+		    </div>
+		</nav>
+		<div class="mocha-nav-slide"><i class="mocha-nav-slide-icon" title="导航开关"></i></div>
+	</div>
+  	<a href="javascript:;" class="mocha-nav-btn">进入游戏</a>
+</header>
+<p class="p"><a href="demo2.html">样式1-2</a></p>
+<script src="../../js/mocha.js"></script>
+<!-- demo JS -->
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script>
+	$(".mocha-nav-slide").bind("touchstart", function(e) {
+        if ($(".mocha-nav-list-open").length) {
+            $(".mocha-nav-list").removeClass("mocha-nav-list-open");
+            $(".mocha-nav-slide").removeClass("mocha-nav-slide-close");
+            $("body").unbind("touchmove", false);
+            $(".mocha-nav-box").removeClass("mocha-nav-box-big");
+        } else {
+            $(".mocha-nav-list").addClass("mocha-nav-list-open");
+            $(".mocha-nav-slide").addClass("mocha-nav-slide-close");
+            $("body").bind("touchmove", false);
+            $(".mocha-nav-box").addClass("mocha-nav-box-big");
+        }
+        e.preventDefault(); 
+    }, false);
+
+    $("body").bind("touchend", function() {
+	    if (window.scrollY >= 90) {
+	        $(".mocha-navigation-scheme4").addClass("mocha-nav-fixed");
+	    } else {
+	        $(".mocha-nav-fixed").removeClass("mocha-nav-fixed");
+	    }
+	}, false);
+	window.onload = function(){$('.mocha-nav').addClass('mocha-nav-transition')} 
+</script>
+</body>
+</html>

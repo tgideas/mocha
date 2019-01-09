@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>search-bar(搜索栏样式) - TGideas Mocha</title>
+    <!-- debug css Star -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css">
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/search-bar/search-bar-anim_v.1.css" rel="stylesheet">
+    <link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+    <!-- online css Star
+    <link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+    <script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+    online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.2rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+        .btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+
+        .demo2 {position: relative;height: 100px;}
+        #content {
+            position: absolute;
+            height: 50px;
+            width: 300px;
+            margin-left: 170px;
+            top: 40px;
+            left: 50%;
+        }
+
+        #content.on {
+            -webkit-animation-name: in-out;
+            animation-name: in-out;
+            -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
+	</style>
+</head>
+<body>
+<h2 class="h2">search-bar(搜索栏样式)<a href="/mocha/docs/search-bar/" class="btn-docs" target="_blank">查看文档</a></h2>
+<!-- mocha-search-bar-scheme1 -->
+<h3>Demo1</h3>
+<div class="mocha-search-bar mocha-search-bar-scheme1 mocha-search-bar-skin1">
+	<div class="mocha-search-bar-wrap" id="searchBar">
+        <form class="mocha-search-bar-outer">
+            <div class="mocha-search-bar-inner">
+                <i class="icon-search"></i>
+                <input type="search" class="mocha-search-bar-input" id="searchInput" placeholder="搜索" required/>
+                <a href="javascript:" class="icon-clear" id="searchClear"></a>
+            </div>
+            <label for="searchInput" class="mocha-search-bar-text" id="searchText">
+                <i class="icon-search"></i>
+                <span>搜索</span>
+            </label>
+        </form>
+        <a href="javascript:" class="mocha-search-bar-cancel" id="searchCancel">取消</a>
+    </div>
+    <div class="mocha-search-bar-cells mocha-search-bar-cells-access mocha-search-bar-show" id="searchShow">
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="mocha-search-bar-cell">
+            <div class="mocha-search-bar-cell-primary">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Demo2</h3>
+<div class="demo2">
+    <form id="content">
+        <input type="text" name="input" class="input mocha-search-bar-anim1-input">
+        <button type="reset" class="mocha-search-bar-anim1-button search"></button>
+    </form>
+</div>
+
+<h3>Demo3</h3>
+<div class="demo3">
+    <form class="search-container">
+        <input id="search-box" type="text" class="search-box" name="q" />
+        <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
+        <input type="submit" id="search-submit" />
+    </form>
+</div>
+
+<script src="../../js/mocha.js"></script>
+<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script>
+$("#searchInput").on({
+    focus: function() {
+        //searchBar
+        var $mochaSearchBar = $('#searchBar');
+        $mochaSearchBar.addClass('mocha-search-bar-focusing');
+    },
+    blur: function() {
+        var $mochaSearchBar = $('#searchBar');
+        $mochaSearchBar.removeClass('mocha-search-bar-focusing');
+        if ($(this).val()) {
+            $('#searchText').hide();
+        } else {
+            $('#searchText').show();
+        }
+    },
+    input: function() {
+        var $searchShow = $("#searchShow");
+        if ($(this).val()) {
+            $searchShow.show();
+        } else {
+            $searchShow.hide();
+        }
+    }
+})
+$("#searchCancel").on('touchend',function() {
+    $("#searchShow").hide();
+    $('#searchInput').val('');
+})
+$("#searchClear").on('touchend',function() {
+    $("#searchShow").hide();
+    $('#searchInput').val('');
+})
+
+function expand() {
+  $(".search").toggleClass("close");
+  $(".input").toggleClass("square");
+  if ($('.search').hasClass('close')) {
+    $('input').focus();
+  } else {
+    $('input').blur();
+  }
+}
+$('.mocha-search-bar-anim1-button').on('click', expand);
+
+document.addEventListener("touchstart", function(){}, true);
+</script>
+</body>
+</html>

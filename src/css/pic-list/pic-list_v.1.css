@@ -1,0 +1,19 @@
+/*
+ * button v.1
+ * Author:sonichuang
+ * Modify:2015-12-23
+ * 
+ */
+ .mocha-pic-list{font-size:0.16rem;line-height:0.22rem;}
+ 	.mocha-pic-list-ul{overflow: hidden;letter-spacing:-0.05rem;}
+ 	.mocha-pic-list-item{letter-spacing: normal;display: inline-block;margin-bottom:3%;}
+	.mocha-pic-list-item .pic{display: block;}
+	.mocha-pic-list-item .txt{display: block;text-align: center;margin-top:0.08rem;margin-bottom:0.08rem;}
+ 	/* scheme */
+ 	.mocha-pic-list-scheme1 .mocha-pic-list-item{width:100%;margin-bottom:3%;}
+ 	.mocha-pic-list-scheme2 .mocha-pic-list-item{width:47%;margin-right:3%;}
+ 	.mocha-pic-list-scheme3 .mocha-pic-list-item{width:30.3%;margin-right:3%;}
+ 	.mocha-pic-list-scheme4 .mocha-pic-list-item{width:22%;margin-right:3%;}
+	.mocha-pic-list-scroll{overflow: hidden;overflow-x:auto;font-size: 0rem;}
+	.mocha-pic-list-scroll .mocha-pic-list-ul{display: inline;width:auto;white-space:nowrap;}
+	.mocha-pic-list-scroll .mocha-pic-list-item{font-size: 0.16rem;margin-right:0.1rem;}

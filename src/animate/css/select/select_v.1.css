@@ -1,0 +1,23 @@
+/*
+ * select v.1
+ * Author:kevinhehe
+ * Modify:2015-12-07
+ * 
+ */
+.mocha-select{width: 81.25%;margin-left: auto;margin-right: auto;font-size:0.12rem;overflow: hidden;}
+	.mocha-select select{float: left;height: .3rem;margin-right: 3.5%;margin-bottom: .11rem;line-height:.3rem;border-width: 1px;border-style: solid;border-radius: .045rem;}
+	.mocha-select label{float: left;margin-bottom: .05rem;}
+	.mocha-select .mocha-select-panel{float: left;margin-right: 3.5%;}
+	.mocha-select .mocha-select-panel select{width: 100%;}
+
+	/* scheme */
+	.mocha-select-scheme1 select,.mocha-select-scheme1  .mocha-select-panel{width: 100%;}
+	.mocha-select-scheme1 select:last-child,.mocha-select-scheme1 .mocha-select-panel:last-child,.mocha-select-scheme4 select:last-child,.mocha-select-scheme5 select:last-child{margin-right: 0;}
+	.mocha-select-scheme2 select,.mocha-select-scheme2  .mocha-select-panel{width: 48.25%;}
+	.mocha-select-scheme2 select:nth-child(even),.mocha-select-scheme2 .mocha-select-panel:nth-child(even){margin-right: 0;}
+	.mocha-select-scheme3 select,.mocha-select-scheme3  .mocha-select-panel{width: 31%}
+	.mocha-select-scheme3 select:nth-child(3n),.mocha-select-scheme3 .mocha-select-panel:nth-child(3n){margin-right: 0;}
+	.mocha-select-scheme4 .mocha-select-panel,.mocha-select-scheme5 .mocha-select-panel{width: 100%;margin-right: 0;}
+	.mocha-select-scheme4 label,.mocha-select-scheme5 label{width: 40%;padding-right: 2.5%;text-align: right;line-height: .3rem;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;-webkit-box-sizing: border-box;box-sizing: border-box;}
+	.mocha-select-scheme4 .mocha-select-panel select{width: 60%;}
+	.mocha-select-scheme5 .mocha-select-panel select{width: 28.25%;}

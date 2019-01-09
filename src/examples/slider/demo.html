@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>slider(slider模块) - TGideas Mocha</title>
+	<!-- 页面重构：dereksu | 创建：20151203 | 团队博客：//tgideas.qq.com/ -->
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/slider/slider_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="//game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="//game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style>
+	.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+	h3{margin: 10px auto;padding-left:4px;font-family: "Microsoft YaHei";font-weight: normal;color:blue;font-size: .14rem;}
+	.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	body{padding-bottom: 10px !important;}
+	</style>
+</head>
+<body>
+
+<h2 class="h2">slider(slider模块)<a href="/mocha/docs/slider/" class="btn-docs" target="_blank">查看文档</a></h2>
+<h3 id="sliderdemo1">样式一（demo1）:</h3>
+
+<div id="slider1" data-psdw="640" data-sliderw="640" data-sliderh="330" class="mocha-slider mocha-slider-scheme1 mocha-slider-skin1">
+	<ul class="content">
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-3.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-4.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-5.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<h3 id="sliderdemo2">样式一（demo2）:</h3>
+
+<div id="slider2" data-channelid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow1" data-psdw="640" data-sliderw="580" data-sliderh="300" class="mocha-slider mocha-slider-scheme1 mocha-slider-skin1">
+	<ul class="content">
+		<!-- <li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300.jpg" alt=""></a></li> -->
+		<li data-posid="12359"></li>
+		<li data-posid="12360"></li>
+		<li data-posid="12361"></li>
+		<li data-posid="12362"></li>
+	</ul>
+</div>
+
+<h3 id="sliderdemo3">样式二（demo1）:</h3>
+
+<div id="slider3" data-psdw="640" data-sliderw="640" data-sliderh="330" class="mocha-slider mocha-slider-scheme2 mocha-slider-skin1">
+	<ul class="content">
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/640x330-6.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<h3 id="sliderdemo4">样式二（demo2）:</h3>
+
+<div id="slider4" data-channelid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow2" data-psdw="640" data-sliderw="580" data-sliderh="300" class="mocha-slider mocha-slider-scheme2 mocha-slider-skin1">
+	<ul class="content">
+		<!-- <li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/580x300-2.jpg" alt=""></a></li> -->
+		<li data-posid="12359"></li>
+		<li data-posid="12360"></li>
+		<li data-posid="12361"></li>
+		<li data-posid="12362"></li>
+	</ul>
+</div>
+
+<h3 id="sliderdemo5">样式三（demo1）:</h3>
+
+<div id="slider5Wrapper" class="mocha-slider-wrapper">
+	<div id="slider5" data-psdw="640" data-sliderw="560" data-sliderh="300" class="mocha-slider mocha-slider-scheme3 mocha-slider-skin1">
+		<ul class="content">
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn-skin1 prevBtn">&lt;</a>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn-skin1 nextBtn">&gt;</a>
+</div>
+
+<h3 id="sliderdemo6">样式三（demo2）:</h3>
+
+<div id="slider6Wrapper" class="mocha-slider-wrapper">
+	<div id="slider6" data-channelid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow3" data-psdw="640" data-sliderw="560" data-sliderh="300" class="mocha-slider mocha-slider-scheme3 mocha-slider-skin2">
+		<ul class="content">
+			<!-- <li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/560x300-2.jpg" alt=""></a></li> -->
+			<li data-posid="12359"></li>
+			<li data-posid="12360"></li>
+			<li data-posid="12361"></li>
+			<li data-posid="12362"></li>
+		</ul>
+	</div>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn-skin1 prevBtn">&lt;</a>
+	<a href="javascript:void(0);" class="mocha-slider-btn mocha-slider-btn-skin1 nextBtn">&gt;</a>
+</div>
+
+<h3 id="sliderdemo7">样式四:</h3>
+
+<div id="slider7" data-channelid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow4" data-psdw="640" data-sliderw="640" data-sliderh="380" data-liwidth="300" data-lipadding="20" class="mocha-slider mocha-slider-scheme4 mocha-slider-skin1">
+	<ul class="content">
+		<!-- <li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li>
+		<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/300x380.jpg" alt=""></a></li> -->
+		<li data-posid="12359"></li>
+		<li data-posid="12360"></li>
+		<li data-posid="12361"></li>
+		<li data-posid="12362"></li>
+	</ul>
+</div>
+
+<h3 id="sliderdemo8">样式五（demo1）:</h3>
+
+<div id="slider8" data-psdw="640" class="mocha-slider-wrapper">
+	<div data-sliderw="640" data-sliderh="330" data-slidermarginbottom="20" class="gallery-top mocha-slider">
+		<ul class="content">
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-1.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-3.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-4.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-5.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	
+	<div data-sliderw="640" data-sliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-slider mocha-slider-scheme5">
+		<ul class="content">
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-1.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-2.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-3.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-4.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-640x330-5.jpg" alt=""></li>
+		</ul>
+	</div>
+</div>
+
+<h3 id="sliderdemo9">样式五（demo2）:</h3>
+
+<div id="slider9" data-channelid="14482" data-showlink="true" data-tcssprefix="a20151208mocha.index.actshow5" data-psdw="640" class="mocha-slider-wrapper">
+	<div data-sliderw="580" data-sliderh="300" data-slidermarginbottom="20" class="gallery-top mocha-slider">
+		<ul class="content">
+			<!-- <li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-1.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-2.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-3.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-4.jpg" alt=""></a></li>
+			<li><a href='#'><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-5.jpg" alt=""></a></li> -->
+			<li data-posid="12359"></li>
+			<li data-posid="12360"></li>
+			<li data-posid="12361"></li>
+			<li data-posid="12362"></li>
+		</ul>
+	</div>
+	
+	<div data-sliderw="580" data-sliderh="110" data-lipaddingright="20" class="gallery-thumbs mocha-slider mocha-slider-scheme5">
+		<ul class="content">
+			<!-- <li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-1.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-2.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-3.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-4.jpg" alt=""></li>
+			<li><img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/gallery-580x300-5.jpg" alt=""></li> -->
+		</ul>
+	</div>
+</div>
+
+<h3 id="sliderdemo10">样式六 视频播放（demo1）:</h3>
+
+<div id="slider10" data-psdw="640" data-proportion="16-9" class="mocha-slider-wrapper">
+	<div id="slider10_player" data-sliderw="640" data-slidermarginbottom="20" class="video-top mocha-slider" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider1.videotop'})"></div>
+	
+	<div data-sliderw="640" data-sliderh="110" data-lipaddingright="20" class="video-thumbs mocha-slider mocha-slider-scheme6">
+		<ul class="content">
+			<li data-vid="b14016xwapw" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider1.videothumbs1'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-1.jpg" alt="">
+				<p>新版桶牛竞技场新版桶牛竞技场</p>
+			</li>
+			<li data-vid="d01452426av" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider1.videothumbs2'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-2.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="h0144kvxbl2" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider1.videothumbs3'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-3.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="h0144kvxbl2" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider1.videothumbs4'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-4.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="i0144nkkkdy" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider1.videothumbs5'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-5.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="w0144rtcynq" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider1.videothumbs6'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-6.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<h3 id="sliderdemo11">样式六 视频播放（demo2）:</h3>
+
+<div id="slider11" data-psdw="640" data-proportion="16-9" class="mocha-slider-wrapper">
+	<div id="slider11_player" data-sliderw="580" data-slidermarginbottom="20" class="video-top mocha-slider" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider2.videotop'})"></div>
+	
+	<div data-sliderw="580" data-sliderh="110" data-lipaddingright="20" class="video-thumbs mocha-slider mocha-slider-scheme6">
+		<ul class="content">
+			<li data-vid="b14016xwapw" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider2.videothumbs1'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-1.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="d01452426av" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider2.videothumbs2'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-2.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="h0144kvxbl2" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider2.videothumbs3'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-3.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="h0144kvxbl2" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider2.videothumbs4'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-4.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="i0144nkkkdy" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider2.videothumbs5'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-5.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+			<li data-vid="w0144rtcynq" onclick="pgvSendClick({hottag:'a20151208mocha.index.videoslider2.videothumbs6'});">
+				<img data-src="//game.gtimg.cn/images/tgideas/act/a20151201mochademo/videoimg-320x180-6.jpg" alt="">
+				<p>新版桶牛竞技场</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<script src="../../js/mocha.js"></script>
+<script src="//pingjs.qq.com/ping_tcss_ied.js"></script>
+<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+
+<!--注明: slider.min.js 目前还在测试阶段，引用请联系dereksu 20160104-->
+<script src="//game.gtimg.cn/images/js/mocha/slider.min.js"></script>
+<!--注明: slider.min.js 目前还在测试阶段，引用请联系dereksu 20160104-->
+
+<script>
+//Slider初始化
+Slider.init(function(slider) {
+	//设置slider样式一
+	slider.type(1, [{
+		id: "slider1",
+		callback: function() {
+			console.log('slider1创建完成');
+			sliderObj.slider1.play();
+		}
+	}, {
+		id: "slider2",
+		callback: function() {
+			console.log('slider2创建完成');
+			sliderObj.slider2.play();
+		}
+	}]);
+	//设置slider样式二
+	slider.type(2, [{
+		id: 'slider3',
+		controllerH: 24,
+		callback: function() {
+			console.log('slider3创建完成');
+			sliderObj.slider3.play();
+		}
+	}, {
+		id: 'slider4',
+		controllerH: 24,
+		callback: function() {
+			console.log('slider4创建完成');
+			sliderObj.slider4.playTo(1);
+		}
+	}]);
+	//设置slider样式三
+	slider.type(3, [{
+		id: 'slider5',
+		controllerH: 34,
+		callback: function() {
+			console.log('slider5创建完成');
+			sliderObj.slider5.play();
+		}
+	}, {
+		id: 'slider6',
+		controllerH: 0,
+		callback: function() {
+			console.log('slider6创建完成');
+			sliderObj.slider6.play();
+		}
+	}]);
+	//设置slider样式四
+	slider.type(4, [{
+		id: 'slider7',
+		controllerH: 34,
+		callback: function() {
+			console.log('slider7创建完成');
+			sliderObj.slider7.play();
+		}
+	}]);
+	//设置slider样式五
+	slider.type(5, [{
+		id: 'slider8',
+		callback: function() {
+			console.log('slider8创建完成');
+			sliderObj.slider8.play();
+		}
+	}, {
+		id: 'slider9',
+		callback: function() {
+			console.log('slider9创建完成');
+		}
+	}]);
+	//设置slider样式六-视频播放
+	slider.type(6, [{
+		id: 'slider10',
+		callback: function() {
+			console.log('slider10创建完成');
+			sliderObj.slider10.play();
+		}
+	},{
+		id: 'slider11',
+		callback: function() {
+			console.log('slider11创建完成');
+		}
+	}]);
+});
+</script>
+</body>
+</html>
+
+
+

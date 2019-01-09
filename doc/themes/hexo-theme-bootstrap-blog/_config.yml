@@ -1,0 +1,34 @@
+# Header
+navbar_brand: false
+menu:
+  Home: index.html
+  Archives: archives/
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: true
+widgets:
+# - about         # See also: `about_content`
+- category
+#- tag
+#- tagcloud
+# - archive
+- recent_posts
+about_widget_content: >
+  Tgideas Mobile Page Module
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
+# Miscellaneous
+google_analytics:
+favicon:
+twitter_id:
+google_plus:
+fb_admins:
+fb_app_id:

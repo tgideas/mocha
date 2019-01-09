@@ -1,0 +1,29 @@
+/*
+ * common-foot v.1
+ * Author:yamiedie
+ * Modify:2016-01-13
+ * 
+ */
+.mocha-commonfoot-footer{font-size:.16rem;}
+.o_h{overflow:hidden;}
+.mocha-commonfoot-wrap{width:100%;background:#000;overflow:hidden;font-size:.14rem;line-height:.2rem;text-align:center;color:#a1a2ae;}
+.mocha-commonfoot-wrap a{color:#a1a2ae;}
+.mocha-commonfoot-codeborder img{display:block;}
+.mocha-commonfoot-yel{color:#ff0;white-space:nowrap;}
+.mocha-commonfoot-wxcode,
+.mocha-commonfoot-sqcode{width:1.6rem;overflow:hidden;margin:.4rem auto;display:none;}
+.mocha-commonfoot-codeborder{margin:0 auto;border:.05rem solid #ccc;}
+.mocha-commonfoot-normalcode{width:90%;padding:10% 5%;display:none;}
+.mocha-commonfoot-normalcode p{width:46%;float:left;margin:0 2%;}
+.mocha-commonfoot-normalcode .mocha-commonfoot-wxico,
+.mocha-commonfoot-normalcode .mocha-commonfoot-sqico{width:.64rem;height:.64rem;margin:0 auto;display:block;background-position:-.65rem 0;background-image:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png);background-repeat:no-repeat;background-size:1.6rem auto;}
+.mocha-commonfoot-normalcode .mocha-commonfoot-sqico{background-position:0 0;}
+.mocha-commonfoot-wxplat .mocha-commonfoot-wxcode{display:block;}
+.mocha-commonfoot-sqplat .mocha-commonfoot-sqcode{display:block;}
+.mocha-commonfoot-browserplat .mocha-commonfoot-normalcode{display:block;}
+
+.mocha-commonfoot-totop{width:100%;height:.55rem;border-top:1px solid #000;background:#333;font-size:.16rem;}
+.mocha-commonfoot-totop a{width:50%;margin:0 auto;display:block;height:100%;line-height:.55rem;text-align:center;color:#adaeb1;}
+.mocha-commonfoot-totop a:after{content:"";display:inline-block;width:.1rem;height:.1rem;-webkit-transform: rotate(45deg);border-left: 2px solid #adaeb1;border-top: 2px solid #adaeb1;margin:0 0 -.02rem .1rem;}
+.mocha-commonfoot-copyright{height:.6rem;position:relative;background:#000;text-align:center;color:#666;font-size:.1rem;padding-top:.4rem;line-height:.2rem;}
+.mocha-commonfoot-copyright:before{content:"";display:block;width:.72rem;height:.2rem;background:url(//game.gtimg.cn/images/tgideas/act/a20160113firstscreen/common.png) no-repeat 0 -2.52rem;background-size:1.6rem auto;position:absolute;left:50%;top:.2rem;margin-left:-.36rem;}

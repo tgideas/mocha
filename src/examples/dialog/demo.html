@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-TGideas" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<title>dialog(弹层模块) - TGideas Mocha</title>
+	<!-- debug css Star -->
+	<link href="../../css/base/base_v.3.css" rel="stylesheet">
+	<link href="../../css/dialog/dialog_v.1.css" rel="stylesheet">
+	<link href="../../css/color.css" rel="stylesheet">
+	<!-- debug css End -->
+
+	<!-- online css Star
+	<link href="https://game.gtimg.cn/images/js/mocha/mocha-1.1.min.css" rel="stylesheet">
+	<script src="https://game.gtimg.cn/images/js/mocha/mocha.min.js"></script>
+	online css End -->
+	<style type="text/css" media="screen">
+		.h2{font-size:0.22rem;margin:0.1rem 0 0.1rem;}
+		.h3{font-size:0.18rem;margin:0.1rem 0 0.1rem;padding:0.08rem;background-color: #ddd;}
+		.button{color: #fff;font-size:0.18rem;display: block;width: 90%;margin:0.16rem auto;line-height:0.4rem;background-color: #06f;border:0;border-radius:0.16rem;}
+		.btn-docs{float: right;margin:-0.05rem 0.1rem 0 0;font-size:0.14rem;padding:0.1rem;color: #fff;background-color: #3d81bb;border-radius:0.2rem;}
+	</style>
+</head>
+<body>
+<h2 class="h2">dialog(弹层模块)<a href="/mocha/docs/dialog/" class="btn-docs" target="_blank">查看文档</a></h2>
+
+<button id="showDialogBtn1" href="javascript:;" class="button">点击弹出Dialog样式1</button>
+<button id="showDialogBtn2" href="javascript:;" class="button">点击弹出Dialog样式2</button>
+<button id="showDialogBtn3" href="javascript:;" class="button">二维码弹出层</button>
+
+
+<!-- page-mark -->
+<!-- <div class="mocha-page-mark"></div> -->
+
+<!-- mocha-dialog-scheme1(样式1-有标题及按钮) -->
+<div id="demoDialog1" class="mocha-dialog mocha-dialog-scheme1 mocha-dialog-skin1" style="display:none">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-hd">
+			<h3 class="mocha-dialog-hd-title">样式1-有标题及按钮</h3>
+		</div>
+		<div class="mocha-dialog-bd">
+			<p>{模块内容}</p>
+			<p>{模块内容}</p>
+		</div>
+		<div class="mocha-dialog-fd">
+			<a href="#" class="mocha-box-fd-btn">按钮文字</a>
+			<a href="#" class="mocha-box-fd-btn">按钮文字</a>
+		</div>
+	</div>
+</div>
+
+<!-- mocha-dialog-scheme2(样式2-无标题及按钮) -->
+<div id="demoDialog2" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-bd">
+			<p>{模块内容-无标题及按钮}</p>
+		</div>
+	</div>
+</div>
+
+<!-- mocha-dialog-scheme2(二维码浮层) -->
+<div id="demoDialog3" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1" style="display:none;">
+	<div class="mocha-dialog-mark"></div>
+	<div class="mocha-dialog-box">
+		<a href="javascript:;" class="mocha-dialog-close">&times;</a>
+		<div class="mocha-dialog-bd">
+			<p><img width="200" height="200" src="//qr.api.cli.im/qr?data=https%253A%252F%252Ftgideas.github.io%252Fmocha%252Fdemo%252F&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=280&kid=cliim&key=dc4c56a715482deb0db2a1d6b154b282" alt=""></p>
+			<p>长按识别二维码</p>
+			<p>关注XXXX官方公众号</p>
+		</div>
+	</div>
+</div>
+
+<script src="../../js/mocha.js"></script>
+<!-- demo JS -->
+<script src="https://game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script>
+
+	(function mochaDialogFunc(){
+		$("#showDialogBtn1").bind("tap",function(){
+			$("#demoDialog1").css("display","block");
+		})
+		$("#showDialogBtn2").bind("tap",function(){
+			$("#demoDialog2").css("display","block");
+		})
+		$("#showDialogBtn3").bind("tap",function(){
+			$("#demoDialog3").css("display","block");
+		})
+		$(".mocha-dialog-close,.mocha-dialog-mark").tap(function(){
+			// console.log("hello")
+			$(this).parents(".mocha-dialog").css("display","none");
+		})
+	})()
+</script>
+</body>
+</html>
